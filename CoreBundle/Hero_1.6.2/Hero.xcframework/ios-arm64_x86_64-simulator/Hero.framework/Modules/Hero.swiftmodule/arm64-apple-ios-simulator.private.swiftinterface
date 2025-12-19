@@ -1,0 +1,775 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios15.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature OpaqueTypeErasure -enable-bare-slash-regex -module-name Hero
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import CoreGraphics
+import Foundation
+@_exported import Hero
+import QuartzCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension QuartzCore.CAMediaTimingFunction {
+  public static let linear: QuartzCore.CAMediaTimingFunction
+  public static let easeIn: QuartzCore.CAMediaTimingFunction
+  public static let easeOut: QuartzCore.CAMediaTimingFunction
+  public static let easeInOut: QuartzCore.CAMediaTimingFunction
+  public static let standard: QuartzCore.CAMediaTimingFunction
+  public static let deceleration: QuartzCore.CAMediaTimingFunction
+  public static let acceleration: QuartzCore.CAMediaTimingFunction
+  public static let sharp: QuartzCore.CAMediaTimingFunction
+  public static let easeOutBack: QuartzCore.CAMediaTimingFunction
+  public static func from(name: Swift.String) -> QuartzCore.CAMediaTimingFunction?
+}
+final public class HeroModifier {
+  public init(applyFunction: @escaping (inout HeroTargetState) -> Swift.Void)
+  @objc deinit
+}
+extension HeroModifier {
+  public static var fade: HeroModifier
+  public static var forceNonFade: HeroModifier
+  public static func position(_ position: CoreFoundation.CGPoint) -> HeroModifier
+  public static func size(_ size: CoreFoundation.CGSize) -> HeroModifier
+}
+extension HeroModifier {
+  public static func transform(_ t: QuartzCore.CATransform3D) -> HeroModifier
+  public static func perspective(_ perspective: CoreFoundation.CGFloat) -> HeroModifier
+  public static func scale(x: CoreFoundation.CGFloat = 1, y: CoreFoundation.CGFloat = 1, z: CoreFoundation.CGFloat = 1) -> HeroModifier
+  public static func scale(_ xy: CoreFoundation.CGFloat) -> HeroModifier
+  public static func translate(x: CoreFoundation.CGFloat = 0, y: CoreFoundation.CGFloat = 0, z: CoreFoundation.CGFloat = 0) -> HeroModifier
+  public static func translate(_ point: CoreFoundation.CGPoint, z: CoreFoundation.CGFloat = 0) -> HeroModifier
+  public static func rotate(x: CoreFoundation.CGFloat = 0, y: CoreFoundation.CGFloat = 0, z: CoreFoundation.CGFloat = 0) -> HeroModifier
+  public static func rotate(_ point: CoreFoundation.CGPoint, z: CoreFoundation.CGFloat = 0) -> HeroModifier
+  public static func rotate(_ z: CoreFoundation.CGFloat) -> HeroModifier
+}
+extension HeroModifier {
+  public static func backgroundColor(_ backgroundColor: UIKit.UIColor) -> HeroModifier
+  public static func borderColor(_ borderColor: UIKit.UIColor) -> HeroModifier
+  public static func shadowColor(_ shadowColor: UIKit.UIColor) -> HeroModifier
+  public static func overlay(color: UIKit.UIColor, opacity: CoreFoundation.CGFloat) -> HeroModifier
+}
+extension HeroModifier {
+  public static func opacity(_ opacity: CoreFoundation.CGFloat) -> HeroModifier
+  public static func cornerRadius(_ cornerRadius: CoreFoundation.CGFloat) -> HeroModifier
+  public static func zPosition(_ zPosition: CoreFoundation.CGFloat) -> HeroModifier
+  public static func contentsRect(_ contentsRect: CoreFoundation.CGRect) -> HeroModifier
+  public static func contentsScale(_ contentsScale: CoreFoundation.CGFloat) -> HeroModifier
+  public static func borderWidth(_ borderWidth: CoreFoundation.CGFloat) -> HeroModifier
+  public static func shadowOpacity(_ shadowOpacity: CoreFoundation.CGFloat) -> HeroModifier
+  public static func shadowOffset(_ shadowOffset: CoreFoundation.CGSize) -> HeroModifier
+  public static func shadowRadius(_ shadowRadius: CoreFoundation.CGFloat) -> HeroModifier
+  public static func shadowPath(_ shadowPath: CoreGraphics.CGPath) -> HeroModifier
+  public static func masksToBounds(_ masksToBounds: Swift.Bool) -> HeroModifier
+}
+extension HeroModifier {
+  public static func duration(_ duration: Foundation.TimeInterval) -> HeroModifier
+  public static var durationMatchLongest: HeroModifier
+  public static func delay(_ delay: Foundation.TimeInterval) -> HeroModifier
+  public static func timingFunction(_ timingFunction: QuartzCore.CAMediaTimingFunction) -> HeroModifier
+  @available(iOS 9, *)
+  public static func spring(stiffness: CoreFoundation.CGFloat, damping: CoreFoundation.CGFloat) -> HeroModifier
+}
+extension HeroModifier {
+  public static func source(heroID: Swift.String) -> HeroModifier
+  public static var arc: HeroModifier
+  public static func arc(intensity: CoreFoundation.CGFloat = 1) -> HeroModifier
+  public static var cascade: HeroModifier
+  public static func cascade(delta: Foundation.TimeInterval = 0.02, direction: CascadeDirection = .topToBottom, delayMatchedViews: Swift.Bool = false) -> HeroModifier
+}
+extension HeroModifier {
+  public static func when(_ condition: @escaping (HeroConditionalContext) -> Swift.Bool, _ modifiers: [HeroModifier]) -> HeroModifier
+  public static func when(_ condition: @escaping (HeroConditionalContext) -> Swift.Bool, _ modifiers: HeroModifier...) -> HeroModifier
+  public static func whenMatched(_ modifiers: HeroModifier...) -> HeroModifier
+  public static func whenPresenting(_ modifiers: HeroModifier...) -> HeroModifier
+  public static func whenDismissing(_ modifiers: HeroModifier...) -> HeroModifier
+  public static func whenAppearing(_ modifiers: HeroModifier...) -> HeroModifier
+  public static func whenDisappearing(_ modifiers: HeroModifier...) -> HeroModifier
+}
+extension HeroTransition : UIKit.UIViewControllerTransitioningDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func interactionControllerForDismissal(using animator: any UIKit.UIViewControllerAnimatedTransitioning) -> (any UIKit.UIViewControllerInteractiveTransitioning)?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func interactionControllerForPresentation(using animator: any UIKit.UIViewControllerAnimatedTransitioning) -> (any UIKit.UIViewControllerInteractiveTransitioning)?
+}
+extension HeroTransition : UIKit.UIViewControllerAnimatedTransitioning {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animateTransition(using context: any UIKit.UIViewControllerContextTransitioning)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func transitionDuration(using transitionContext: (any UIKit.UIViewControllerContextTransitioning)?) -> Foundation.TimeInterval
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationEnded(_ transitionCompleted: Swift.Bool)
+}
+extension HeroTransition : UIKit.UIViewControllerInteractiveTransitioning {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var wantsInteractiveStart: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func startInteractiveTransition(_ transitionContext: any UIKit.UIViewControllerContextTransitioning)
+}
+@objc public protocol HeroViewControllerDelegate {
+  @objc optional func heroWillStartAnimatingFrom(viewController: UIKit.UIViewController)
+  @objc optional func heroDidEndAnimatingFrom(viewController: UIKit.UIViewController)
+  @objc optional func heroDidCancelAnimatingFrom(viewController: UIKit.UIViewController)
+  @objc optional func heroWillStartTransition()
+  @objc optional func heroDidEndTransition()
+  @objc optional func heroDidCancelTransition()
+  @objc optional func heroWillStartAnimatingTo(viewController: UIKit.UIViewController)
+  @objc optional func heroDidEndAnimatingTo(viewController: UIKit.UIViewController)
+  @objc optional func heroDidCancelAnimatingTo(viewController: UIKit.UIViewController)
+}
+@_hasMissingDesignatedInitializers public class HeroContext {
+  final public let container: UIKit.UIView
+  public var fromViews: [UIKit.UIView]
+  public var toViews: [UIKit.UIView]
+  @objc deinit
+}
+extension HeroContext {
+  public func sourceView(for heroID: Swift.String) -> UIKit.UIView?
+  public func destinationView(for heroID: Swift.String) -> UIKit.UIView?
+  public func pairedView(for view: UIKit.UIView) -> UIKit.UIView?
+  public func snapshotView(for view: UIKit.UIView) -> UIKit.UIView
+  public subscript(view: UIKit.UIView) -> HeroTargetState? {
+    get
+    set
+  }
+  public func clean()
+}
+extension HeroContext {
+  public func hide(view: UIKit.UIView)
+  public func unhide(view: UIKit.UIView)
+}
+public protocol HeroCustomSnapshotView {
+  var heroSnapshot: UIKit.UIView? { get }
+}
+extension HeroTransition : UIKit.UINavigationControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, willShow viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, didShow viewController: UIKit.UIViewController, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, animationControllerFor operation: UIKit.UINavigationController.Operation, from fromVC: UIKit.UIViewController, to toVC: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func navigationController(_ navigationController: UIKit.UINavigationController, interactionControllerFor animationController: any UIKit.UIViewControllerAnimatedTransitioning) -> (any UIKit.UIViewControllerInteractiveTransitioning)?
+}
+extension HeroModifier {
+  public static func beginWith(_ modifiers: [HeroModifier]) -> HeroModifier
+  public static func beginWith(modifiers: [HeroModifier]) -> HeroModifier
+  public static func beginWith(_ modifiers: HeroModifier...) -> HeroModifier
+  public static var useGlobalCoordinateSpace: HeroModifier
+  public static var ignoreSubviewModifiers: HeroModifier
+  public static func ignoreSubviewModifiers(recursive: Swift.Bool = false) -> HeroModifier
+  public static var useOptimizedSnapshot: HeroModifier
+  public static var useNormalSnapshot: HeroModifier
+  public static var useLayerRenderSnapshot: HeroModifier
+  public static var useNoSnapshot: HeroModifier
+  public static var forceAnimate: HeroModifier
+  public static var useScaleBasedSizeChange: HeroModifier
+}
+public struct HeroConditionalContext {
+  weak public var view: UIKit.UIView!
+  public var isAppearing: Swift.Bool {
+    get
+  }
+  public var isPresenting: Swift.Bool {
+    get
+  }
+  public var isInTabbarController: Swift.Bool {
+    get
+  }
+  public var isInNavbarController: Swift.Bool {
+    get
+  }
+  public var isMatched: Swift.Bool {
+    get
+  }
+  public var isAncestorViewMatched: Swift.Bool {
+    get
+  }
+  public var matchedView: UIKit.UIView? {
+    get
+  }
+  public var matchedAncestorView: (UIKit.UIView, UIKit.UIView)? {
+    get
+  }
+  public var fromViewController: UIKit.UIViewController {
+    get
+  }
+  public var toViewController: UIKit.UIViewController {
+    get
+  }
+  public var currentViewController: UIKit.UIViewController {
+    get
+  }
+  public var otherViewController: UIKit.UIViewController {
+    get
+  }
+}
+extension HeroTransition {
+  public func update(_ percentageComplete: CoreFoundation.CGFloat)
+  public func finish(animate: Swift.Bool = true)
+  public func cancel(animate: Swift.Bool = true)
+  public func apply(modifiers: [HeroModifier], to view: UIKit.UIView)
+  public func changeTarget(modifiers: [HeroModifier], isDestination: Swift.Bool = true, to view: UIKit.UIView)
+}
+public protocol HeroPreprocessor : AnyObject {
+  var hero: HeroTransition! { get set }
+  func process(fromViews: [UIKit.UIView], toViews: [UIKit.UIView])
+}
+public protocol HeroAnimator : AnyObject {
+  var hero: HeroTransition! { get set }
+  func canAnimate(view: UIKit.UIView, appearing: Swift.Bool) -> Swift.Bool
+  func animate(fromViews: [UIKit.UIView], toViews: [UIKit.UIView]) -> Foundation.TimeInterval
+  func clean()
+  func seekTo(timePassed: Foundation.TimeInterval)
+  func resume(timePassed: Foundation.TimeInterval, reverse: Swift.Bool) -> Foundation.TimeInterval
+  func apply(state: HeroTargetState, to view: UIKit.UIView)
+  func changeTarget(state: HeroTargetState, isDestination: Swift.Bool, to view: UIKit.UIView)
+}
+public protocol HeroProgressUpdateObserver : AnyObject {
+  func heroDidUpdateProgress(progress: Swift.Double)
+}
+public enum HeroViewOrderingStrategy {
+  case auto, sourceViewOnTop, destinationViewOnTop
+  public static func == (a: HeroViewOrderingStrategy, b: HeroViewOrderingStrategy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension HeroTransition {
+  open func complete(finished: Swift.Bool)
+}
+public protocol HeroStringConvertible {
+  static func from(node: ExprNode) -> Self?
+}
+@objc @_inheritsConvenienceInitializers open class HeroPlugin : ObjectiveC.NSObject, HeroPreprocessor, HeroAnimator {
+  weak public var hero: HeroTransition!
+  public var context: HeroContext! {
+    get
+  }
+  open var requirePerFrameCallback: Swift.Bool
+  @objc override required dynamic public init()
+  open func process(fromViews: [UIKit.UIView], toViews: [UIKit.UIView])
+  open func canAnimate(view: UIKit.UIView, appearing: Swift.Bool) -> Swift.Bool
+  open func animate(fromViews: [UIKit.UIView], toViews: [UIKit.UIView]) -> Foundation.TimeInterval
+  open func clean()
+  open func seekTo(timePassed: Foundation.TimeInterval)
+  open func resume(timePassed: Foundation.TimeInterval, reverse: Swift.Bool) -> Foundation.TimeInterval
+  open func apply(state: HeroTargetState, to view: UIKit.UIView)
+  open func changeTarget(state: HeroTargetState, isDestination: Swift.Bool, to view: UIKit.UIView)
+  @objc deinit
+}
+extension HeroPlugin {
+  public static var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  public static func enable()
+  public static func disable()
+}
+extension UIKit.UIView : HeroCompatible {
+  @available(iOS 2.0, *)
+  public typealias CompatibleType = UIKit.UIView
+}
+extension HeroExtension where Base : UIKit.UIView {
+  public var id: Swift.String? {
+    get
+    set
+  }
+  public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  public var isEnabledForSubviews: Swift.Bool {
+    get
+    set
+  }
+  public var modifiers: [HeroModifier]? {
+    get
+    set
+  }
+  public var modifierString: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UIView {
+  @objc @available(*, renamed: "hero.id")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var heroID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @available(*, renamed: "hero.isEnabled")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var isHeroEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @available(*, renamed: "hero.isEnabledForSubviews")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var isHeroEnabledForSubviews: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @available(*, renamed: "hero.modifiers")
+  @_Concurrency.MainActor @preconcurrency public var heroModifiers: [HeroModifier]? {
+    get
+    set
+  }
+  @objc @available(*, renamed: "hero.modifierString")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var heroModifierString: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension HeroModifier : HeroStringConvertible {
+  public static func from(node: ExprNode) -> HeroModifier?
+}
+extension UIKit.UIViewController : HeroCompatible {
+  @available(iOS 2.0, *)
+  public typealias CompatibleType = UIKit.UIViewController
+}
+extension HeroExtension where Base : UIKit.UIViewController {
+  public var modalAnimationType: HeroDefaultAnimationType {
+    get
+    set
+  }
+  public var modalAnimationTypeString: Swift.String? {
+    get
+    set
+  }
+  public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+}
+extension UIKit.UIViewController {
+  @available(*, renamed: "hero.modalAnimationType")
+  @_Concurrency.MainActor @preconcurrency public var heroModalAnimationType: HeroDefaultAnimationType {
+    get
+    set
+  }
+  @objc @available(*, renamed: "hero.modalAnimationTypeString")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var heroModalAnimationTypeString: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @available(*, renamed: "hero.isEnabled")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var isHeroEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension HeroExtension where Base : UIKit.UINavigationController {
+  public var navigationAnimationType: HeroDefaultAnimationType {
+    get
+    set
+  }
+  public var navigationAnimationTypeString: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UINavigationController {
+  @available(*, renamed: "hero.navigationAnimationType")
+  @_Concurrency.MainActor @preconcurrency public var heroNavigationAnimationType: HeroDefaultAnimationType {
+    get
+    set
+  }
+  @objc @available(*, renamed: "hero.navigationAnimationTypeString")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var heroNavigationAnimationTypeString: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension HeroExtension where Base : UIKit.UITabBarController {
+  public var tabBarAnimationType: HeroDefaultAnimationType {
+    get
+    set
+  }
+  public var tabBarAnimationTypeString: Swift.String? {
+    get
+    set
+  }
+}
+extension UIKit.UITabBarController {
+  @available(*, renamed: "hero.tabBarAnimationType")
+  @_Concurrency.MainActor @preconcurrency public var heroTabBarAnimationType: HeroDefaultAnimationType {
+    get
+    set
+  }
+  @objc @available(*, renamed: "hero.tabBarAnimationTypeString")
+  @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var heroTabBarAnimationTypeString: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension HeroExtension where Base : UIKit.UIViewController {
+  public func dismissViewController(completion: (() -> Swift.Void)? = nil)
+  public func unwindToRootViewController()
+  public func unwindToViewController(_ toViewController: UIKit.UIViewController)
+  public func unwindToViewController(withSelector: ObjectiveC.Selector)
+  public func unwindToViewController(withClass: Swift.AnyClass)
+  public func unwindToViewController(withMatchBlock: (UIKit.UIViewController) -> Swift.Bool)
+  public func replaceViewController(with next: UIKit.UIViewController, completion: (() -> Swift.Void)? = nil)
+}
+extension UIKit.UIViewController {
+  @objc @available(*, deprecated, renamed: "hero.dismissViewController()")
+  @IBAction @_Concurrency.MainActor @preconcurrency dynamic public func ht_dismiss(_ sender: UIKit.UIView)
+  @available(*, deprecated, renamed: "hero.replaceViewController(with:)")
+  @_Concurrency.MainActor @preconcurrency public func heroReplaceViewController(with next: UIKit.UIViewController)
+  @objc @available(*, deprecated, renamed: "hero.dismissViewController()")
+  @IBAction @_Concurrency.MainActor @preconcurrency dynamic public func hero_dismissViewController()
+  @objc @available(*, deprecated, renamed: "hero.unwindToRootViewController()")
+  @IBAction @_Concurrency.MainActor @preconcurrency dynamic public func hero_unwindToRootViewController()
+  @available(*, deprecated, renamed: "hero.unwindToViewController(_:)")
+  @_Concurrency.MainActor @preconcurrency public func hero_unwindToViewController(_ toViewController: UIKit.UIViewController)
+  @available(*, deprecated, renamed: "hero.unwindToViewController(withSelector:)")
+  @_Concurrency.MainActor @preconcurrency public func hero_unwindToViewController(withSelector: ObjectiveC.Selector)
+  @available(*, deprecated, renamed: "hero_unwindToViewController(withClass:)")
+  @_Concurrency.MainActor @preconcurrency public func hero_unwindToViewController(withClass: Swift.AnyClass)
+  @available(*, deprecated, renamed: "hero.unwindToViewController(withMatchBlock:)")
+  @_Concurrency.MainActor @preconcurrency public func hero_unwindToViewController(withMatchBlock: (UIKit.UIViewController) -> Swift.Bool)
+  @available(*, deprecated, renamed: "hero.replaceViewController(with:)")
+  @_Concurrency.MainActor @preconcurrency public func hero_replaceViewController(with next: UIKit.UIViewController)
+}
+public enum HeroTransitionState : Swift.Int {
+  case possible
+  case notified
+  case starting
+  case animating
+  case completing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension QuartzCore.CATransform3D : Swift.Equatable {
+  public static func == (lhs: QuartzCore.CATransform3D, rhs: QuartzCore.CATransform3D) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers public class Hero : ObjectiveC.NSObject {
+  public static var shared: HeroTransition
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol HeroTransitionDelegate : AnyObject {
+  func heroTransition(_ hero: HeroTransition, didUpdate state: HeroTransitionState)
+  func heroTransition(_ hero: HeroTransition, didUpdate progress: Swift.Double)
+}
+@objc @_inheritsConvenienceInitializers open class HeroTransition : ObjectiveC.NSObject {
+  weak public var delegate: (any HeroTransitionDelegate)?
+  public var defaultAnimation: HeroDefaultAnimationType
+  public var containerColor: UIKit.UIColor
+  public var isUserInteractionEnabled: Swift.Bool
+  public var viewOrderingStrategy: HeroViewOrderingStrategy
+  public var defaultAnimationDirectionStrategy: HeroDefaultAnimationType.Strategy
+  public var state: HeroTransitionState {
+    get
+  }
+  public var isTransitioning: Swift.Bool {
+    get
+  }
+  public var isPresenting: Swift.Bool {
+    get
+  }
+  @available(*, renamed: "isTransitioning")
+  public var transitioning: Swift.Bool {
+    get
+  }
+  @available(*, renamed: "isPresenting")
+  public var presenting: Swift.Bool {
+    get
+  }
+  public var container: UIKit.UIView! {
+    get
+  }
+  public var toViewController: UIKit.UIViewController? {
+    get
+  }
+  public var fromViewController: UIKit.UIViewController? {
+    get
+  }
+  public var context: HeroContext! {
+    get
+  }
+  public var interactive: Swift.Bool {
+    get
+  }
+  public var totalDuration: Swift.Double {
+    get
+  }
+  public var progress: Swift.Double {
+    get
+  }
+  @objc override dynamic public init()
+  public func observeForProgressUpdate(observer: any HeroProgressUpdateObserver)
+  @objc deinit
+}
+extension Swift.String {
+  public func match(regex: Swift.String) -> (Swift.String, Swift.CountableRange<Swift.Int>)?
+}
+extension HeroTransition {
+  public func transition(from: UIKit.UIViewController, to: UIKit.UIViewController, in view: UIKit.UIView, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+}
+public enum ParseError : Swift.Error {
+  case unexpectToken
+  case undefinedOperator(Swift.String)
+  case expectCharacter(Swift.Character)
+  case expectExpression
+  case expectArgumentList
+  case expectFunctionName
+}
+public class Parser {
+  public init(tokens: [Token])
+  public func parse() throws -> [ExprNode]
+  @objc deinit
+}
+public enum HeroSnapshotType {
+  case optimized
+  case normal
+  case layerRender
+  case noSnapshot
+  public static func == (a: HeroSnapshotType, b: HeroSnapshotType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum HeroCoordinateSpace {
+  case global
+  case local
+  public static func == (a: HeroCoordinateSpace, b: HeroCoordinateSpace) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct HeroTargetState {
+  public var beginState: [HeroModifier]?
+  public var conditionalModifiers: [((HeroConditionalContext) -> Swift.Bool, [HeroModifier])]?
+  public var position: CoreFoundation.CGPoint?
+  public var size: CoreFoundation.CGSize?
+  public var transform: QuartzCore.CATransform3D?
+  public var opacity: Swift.Float?
+  public var cornerRadius: CoreFoundation.CGFloat?
+  public var backgroundColor: CoreGraphics.CGColor?
+  public var zPosition: CoreFoundation.CGFloat?
+  public var anchorPoint: CoreFoundation.CGPoint?
+  public var contentsRect: CoreFoundation.CGRect?
+  public var contentsScale: CoreFoundation.CGFloat?
+  public var borderWidth: CoreFoundation.CGFloat?
+  public var borderColor: CoreGraphics.CGColor?
+  public var shadowColor: CoreGraphics.CGColor?
+  public var shadowOpacity: Swift.Float?
+  public var shadowOffset: CoreFoundation.CGSize?
+  public var shadowRadius: CoreFoundation.CGFloat?
+  public var shadowPath: CoreGraphics.CGPath?
+  public var masksToBounds: Swift.Bool?
+  public var displayShadow: Swift.Bool
+  public var overlay: (color: CoreGraphics.CGColor, opacity: CoreFoundation.CGFloat)?
+  public var spring: (CoreFoundation.CGFloat, CoreFoundation.CGFloat)?
+  public var delay: Swift.Double
+  public var duration: Foundation.TimeInterval?
+  public var timingFunction: QuartzCore.CAMediaTimingFunction?
+  public var arc: CoreFoundation.CGFloat?
+  public var source: Swift.String?
+  public var cascade: (Foundation.TimeInterval, CascadeDirection, Swift.Bool)?
+  public var ignoreSubviewModifiers: Swift.Bool?
+  public var coordinateSpace: HeroCoordinateSpace?
+  public var useScaleBasedSizeChange: Swift.Bool?
+  public var snapshotType: HeroSnapshotType?
+  public var nonFade: Swift.Bool
+  public var forceAnimate: Swift.Bool
+  public var custom: [Swift.String : Any]?
+  public mutating func append(_ modifier: HeroModifier)
+  public mutating func append(contentsOf modifiers: [HeroModifier])
+  public subscript(key: Swift.String) -> Any? {
+    get
+    set
+  }
+}
+extension HeroTargetState : Swift.ExpressibleByArrayLiteral {
+  public init(arrayLiteral elements: HeroModifier...)
+  public typealias ArrayLiteralElement = HeroModifier
+}
+public enum HeroDefaultAnimationType {
+  public enum Direction : HeroStringConvertible {
+    case left, right, up, down
+    public static func from(node: ExprNode) -> HeroDefaultAnimationType.Direction?
+    public static var leadingToTrailing: CascadeDirection {
+      get
+    }
+    public static var trailingToLeading: CascadeDirection {
+      get
+    }
+    public static var leading: HeroDefaultAnimationType.Direction {
+      get
+    }
+    public static var trailing: HeroDefaultAnimationType.Direction {
+      get
+    }
+    public static func == (a: HeroDefaultAnimationType.Direction, b: HeroDefaultAnimationType.Direction) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Strategy {
+    case forceLeftToRight, forceRightToLeft, userInterface
+    public static func == (a: HeroDefaultAnimationType.Strategy, b: HeroDefaultAnimationType.Strategy) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  case auto
+  case push(direction: HeroDefaultAnimationType.Direction)
+  case pull(direction: HeroDefaultAnimationType.Direction)
+  case cover(direction: HeroDefaultAnimationType.Direction)
+  case uncover(direction: HeroDefaultAnimationType.Direction)
+  case slide(direction: HeroDefaultAnimationType.Direction)
+  case zoomSlide(direction: HeroDefaultAnimationType.Direction)
+  case pageIn(direction: HeroDefaultAnimationType.Direction)
+  case pageOut(direction: HeroDefaultAnimationType.Direction)
+  case fade
+  case zoom
+  case zoomOut
+  indirect case selectBy(presenting: HeroDefaultAnimationType, dismissing: HeroDefaultAnimationType)
+  public static func autoReverse(presenting: HeroDefaultAnimationType) -> HeroDefaultAnimationType
+  case none
+  public var label: Swift.String? {
+    get
+  }
+}
+extension HeroDefaultAnimationType : HeroStringConvertible {
+  public static func from(node: ExprNode) -> HeroDefaultAnimationType?
+}
+public protocol HeroCompatible {
+  associatedtype CompatibleType
+  var hero: HeroExtension<Self.CompatibleType> { get set }
+}
+extension HeroCompatible {
+  public var hero: HeroExtension<Self> {
+    get
+    set
+  }
+}
+@_hasMissingDesignatedInitializers public class HeroExtension<Base> {
+  final public let base: Base
+  @objc deinit
+}
+extension HeroTransition {
+  open func start()
+}
+public enum Token {
+  case identifier(Swift.String, Swift.CountableRange<Swift.Int>)
+  case number(Swift.Float, Swift.CountableRange<Swift.Int>)
+  case parensOpen(Swift.CountableRange<Swift.Int>)
+  case parensClose(Swift.CountableRange<Swift.Int>)
+  case comma(Swift.CountableRange<Swift.Int>)
+  case other(Swift.String, Swift.CountableRange<Swift.Int>)
+}
+public class Lexer {
+  public init(input: Swift.String)
+  public func tokenize() -> [Token]
+  @objc deinit
+}
+extension HeroTransition {
+  open func animate()
+}
+public enum CascadeDirection {
+  case topToBottom
+  case bottomToTop
+  case leftToRight
+  case rightToLeft
+  case radial(center: CoreFoundation.CGPoint)
+  case inverseRadial(center: CoreFoundation.CGPoint)
+  public static var leadingToTrailing: CascadeDirection {
+    get
+  }
+  public static var trailingToLeading: CascadeDirection {
+    get
+  }
+}
+extension HeroTransition : UIKit.UITabBarControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tabBarController(_ tabBarController: UIKit.UITabBarController, shouldSelect viewController: UIKit.UIViewController) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tabBarController(_ tabBarController: UIKit.UITabBarController, interactionControllerFor animationController: any UIKit.UIViewControllerAnimatedTransitioning) -> (any UIKit.UIViewControllerInteractiveTransitioning)?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tabBarController(_ tabBarController: UIKit.UITabBarController, animationControllerForTransitionFrom fromVC: UIKit.UIViewController, to toVC: UIKit.UIViewController) -> (any UIKit.UIViewControllerAnimatedTransitioning)?
+}
+@objc @_inheritsConvenienceInitializers public class HeroDebugPlugin : HeroPlugin {
+  public static var showOnTop: Swift.Bool
+  override public func animate(fromViews: [UIKit.UIView], toViews: [UIKit.UIView]) -> Foundation.TimeInterval
+  override public func resume(timePassed: Foundation.TimeInterval, reverse: Swift.Bool) -> Foundation.TimeInterval
+  override public func clean()
+  @objc required dynamic public init()
+  @objc deinit
+}
+extension HeroDebugPlugin {
+  public func onDone()
+  public func onProcessSliderChanged(progress: Swift.Float)
+}
+public class ExprNode : Swift.CustomStringConvertible, Swift.Equatable {
+  public var range: Swift.Range<Swift.Int>
+  final public let name: Swift.String
+  public var description: Swift.String {
+    get
+  }
+  public init(name: Swift.String)
+  @objc deinit
+}
+public func == (lhs: ExprNode, rhs: ExprNode) -> Swift.Bool
+public class NumberNode : ExprNode {
+  final public let value: Swift.Float
+  override public var description: Swift.String {
+    get
+  }
+  public init(value: Swift.Float)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class VariableNode : ExprNode {
+  override public var description: Swift.String {
+    get
+  }
+  override public init(name: Swift.String)
+  @objc deinit
+}
+public class BinaryOpNode : ExprNode {
+  final public let lhs: ExprNode
+  final public let rhs: ExprNode
+  override public var description: Swift.String {
+    get
+  }
+  public init(name: Swift.String, lhs: ExprNode, rhs: ExprNode)
+  @objc deinit
+}
+public class CallNode : ExprNode {
+  final public let arguments: [ExprNode]
+  override public var description: Swift.String {
+    get
+  }
+  public init(name: Swift.String, arguments: [ExprNode])
+  @objc deinit
+}
+public class PrototypeNode : ExprNode {
+  final public let argumentNames: [Swift.String]
+  override public var description: Swift.String {
+    get
+  }
+  public init(name: Swift.String, argumentNames: [Swift.String])
+  @objc deinit
+}
+public class FunctionNode : ExprNode {
+  final public let prototype: PrototypeNode
+  final public let body: ExprNode
+  override public var description: Swift.String {
+    get
+  }
+  public init(prototype: PrototypeNode, body: ExprNode)
+  @objc deinit
+}
+extension HeroViewOrderingStrategy : Swift.Equatable {}
+extension HeroViewOrderingStrategy : Swift.Hashable {}
+extension HeroTransitionState : Swift.Equatable {}
+extension HeroTransitionState : Swift.Hashable {}
+extension HeroTransitionState : Swift.RawRepresentable {}
+extension HeroSnapshotType : Swift.Equatable {}
+extension HeroSnapshotType : Swift.Hashable {}
+extension HeroCoordinateSpace : Swift.Equatable {}
+extension HeroCoordinateSpace : Swift.Hashable {}
+extension HeroDefaultAnimationType.Direction : Swift.Equatable {}
+extension HeroDefaultAnimationType.Direction : Swift.Hashable {}
+extension HeroDefaultAnimationType.Strategy : Swift.Equatable {}
+extension HeroDefaultAnimationType.Strategy : Swift.Hashable {}

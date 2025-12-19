@@ -1,0 +1,341 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name XLPagerTabStrip
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import UIKit
+@_exported import XLPagerTabStrip
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseButtonBarPagerTabStripViewController<ButtonBarCellType> : XLPagerTabStrip.PagerTabStripViewController, XLPagerTabStrip.PagerTabStripDataSource, XLPagerTabStrip.PagerTabStripIsProgressiveDelegate, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource where ButtonBarCellType : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) public var settings: XLPagerTabStrip.ButtonBarPagerTabStripSettings
+  @_Concurrency.MainActor(unsafe) public var buttonBarItemSpec: XLPagerTabStrip.ButtonBarItemSpec<ButtonBarCellType>!
+  @_Concurrency.MainActor(unsafe) public var changeCurrentIndex: ((_ oldCell: ButtonBarCellType?, _ newCell: ButtonBarCellType?, _ animated: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var changeCurrentIndexProgressive: ((_ oldCell: ButtonBarCellType?, _ newCell: ButtonBarCellType?, _ progressPercentage: CoreFoundation.CGFloat, _ changeCurrentIndex: Swift.Bool, _ animated: Swift.Bool) -> Swift.Void)?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var buttonBarView: XLPagerTabStrip.ButtonBarView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) override open func reloadPagerTabStripView()
+  @_Concurrency.MainActor(unsafe) open func calculateStretchedCellWidths(_ minimumCellWidths: [CoreFoundation.CGFloat], suggestedStretchedCellWidth: CoreFoundation.CGFloat, previousNumberOfLargeCells: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int, withProgressPercentage progressPercentage: CoreFoundation.CGFloat, indexWasChanged: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAtIndexPath indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) open func configure(cell: ButtonBarCellType, for indicatorInfo: XLPagerTabStrip.IndicatorInfo)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ExampleBaseButtonBarPagerTabStripViewController : XLPagerTabStrip.BaseButtonBarPagerTabStripViewController<XLPagerTabStrip.ButtonBarViewCell> {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func initialize()
+  @_Concurrency.MainActor(unsafe) override open func configure(cell: XLPagerTabStrip.ButtonBarViewCell, for indicatorInfo: XLPagerTabStrip.IndicatorInfo)
+  @objc deinit
+}
+public enum PagerScroll {
+  case no
+  case yes
+  case scrollOnlyIfOutOfScreen
+  public static func == (a: XLPagerTabStrip.PagerScroll, b: XLPagerTabStrip.PagerScroll) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SelectedBarAlignment {
+  case left
+  case center
+  case right
+  case progressive
+  public static func == (a: XLPagerTabStrip.SelectedBarAlignment, b: XLPagerTabStrip.SelectedBarAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SelectedBarVerticalAlignment {
+  case top
+  case middle
+  case bottom
+  public static func == (a: XLPagerTabStrip.SelectedBarVerticalAlignment, b: XLPagerTabStrip.SelectedBarVerticalAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ButtonBarView : UIKit.UICollectionView {
+  @_Concurrency.MainActor(unsafe) open var selectedBar: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect, collectionViewLayout layout: UIKit.UICollectionViewLayout)
+  @_Concurrency.MainActor(unsafe) open func moveTo(index: Swift.Int, animated: Swift.Bool, swipeDirection: XLPagerTabStrip.SwipeDirection, pagerScroll: XLPagerTabStrip.PagerScroll)
+  @_Concurrency.MainActor(unsafe) open func move(fromIndex: Swift.Int, toIndex: Swift.Int, progressPercentage: CoreFoundation.CGFloat, pagerScroll: XLPagerTabStrip.PagerScroll)
+  @_Concurrency.MainActor(unsafe) open func updateSelectedBarPosition(_ animated: Swift.Bool, swipeDirection: XLPagerTabStrip.SwipeDirection, pagerScroll: XLPagerTabStrip.PagerScroll)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+public struct TwitterPagerTabStripSettings {
+  public struct Style {
+    public var dotColor: UIKit.UIColor
+    public var selectedDotColor: UIKit.UIColor
+    public var portraitTitleFont: UIKit.UIFont
+    public var landscapeTitleFont: UIKit.UIFont
+    public var titleColor: UIKit.UIColor
+  }
+  public var style: XLPagerTabStrip.TwitterPagerTabStripSettings.Style
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TwitterPagerTabStripViewController : XLPagerTabStrip.PagerTabStripViewController, XLPagerTabStrip.PagerTabStripDataSource, XLPagerTabStrip.PagerTabStripIsProgressiveDelegate {
+  @_Concurrency.MainActor(unsafe) open var settings: XLPagerTabStrip.TwitterPagerTabStripSettings
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) override open func reloadPagerTabStripView()
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int, withProgressPercentage progressPercentage: CoreFoundation.CGFloat, indexWasChanged: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class BarView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var selectedBar: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func moveTo(index: Swift.Int, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func move(fromIndex: Swift.Int, toIndex: Swift.Int, progressPercentage: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+public enum PagerTabStripBehaviour {
+  case common(skipIntermediateViewControllers: Swift.Bool)
+  case progressive(skipIntermediateViewControllers: Swift.Bool, elasticIndicatorLimit: Swift.Bool)
+  public var skipIntermediateViewControllers: Swift.Bool {
+    get
+  }
+  public var isProgressiveIndicator: Swift.Bool {
+    get
+  }
+  public var isElasticIndicatorLimit: Swift.Bool {
+    get
+  }
+}
+public struct BarPagerTabStripSettings {
+  public struct Style {
+    public var barBackgroundColor: UIKit.UIColor?
+    public var selectedBarBackgroundColor: UIKit.UIColor?
+    public var barHeight: CoreFoundation.CGFloat
+  }
+  public var style: XLPagerTabStrip.BarPagerTabStripSettings.Style
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BarPagerTabStripViewController : XLPagerTabStrip.PagerTabStripViewController, XLPagerTabStrip.PagerTabStripDataSource, XLPagerTabStrip.PagerTabStripIsProgressiveDelegate {
+  @_Concurrency.MainActor(unsafe) public var settings: XLPagerTabStrip.BarPagerTabStripSettings
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var barView: XLPagerTabStrip.BarView!
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func reloadPagerTabStripView()
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int, withProgressPercentage progressPercentage: CoreFoundation.CGFloat, indexWasChanged: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int)
+  @objc deinit
+}
+public struct SegmentedPagerTabStripSettings {
+  public struct Style {
+    public var segmentedControlColor: UIKit.UIColor?
+  }
+  public var style: XLPagerTabStrip.SegmentedPagerTabStripSettings.Style
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SegmentedPagerTabStripViewController : XLPagerTabStrip.PagerTabStripViewController, XLPagerTabStrip.PagerTabStripDataSource, XLPagerTabStrip.PagerTabStripDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var segmentedControl: UIKit.UISegmentedControl!
+  @_Concurrency.MainActor(unsafe) open var settings: XLPagerTabStrip.SegmentedPagerTabStripSettings
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) override open func reloadPagerTabStripView()
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc override open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc deinit
+}
+public enum PagerTabStripError : Swift.Error {
+  case viewControllerOutOfBounds
+  public static func == (a: XLPagerTabStrip.PagerTabStripError, b: XLPagerTabStrip.PagerTabStripError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct IndicatorInfo {
+  public var title: Swift.String?
+  public var image: UIKit.UIImage?
+  public var highlightedImage: UIKit.UIImage?
+  public var accessibilityLabel: Swift.String?
+  public var userInfo: Any?
+  public init(title: Swift.String?)
+  public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage? = nil, userInfo: Any? = nil)
+  public init(title: Swift.String?, image: UIKit.UIImage?, highlightedImage: UIKit.UIImage? = nil, userInfo: Any? = nil)
+  public init(title: Swift.String?, accessibilityLabel: Swift.String?, image: UIKit.UIImage?, highlightedImage: UIKit.UIImage? = nil, userInfo: Any? = nil)
+}
+extension XLPagerTabStrip.IndicatorInfo : Swift.ExpressibleByStringLiteral {
+  public init(stringLiteral value: Swift.String)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(unicodeScalarLiteral value: Swift.String)
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
+public protocol IndicatorInfoProvider {
+  func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo
+}
+public protocol PagerTabStripDelegate : AnyObject {
+  func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int)
+}
+public protocol PagerTabStripIsProgressiveDelegate : XLPagerTabStrip.PagerTabStripDelegate {
+  func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int, withProgressPercentage progressPercentage: CoreFoundation.CGFloat, indexWasChanged: Swift.Bool)
+}
+public protocol PagerTabStripDataSource : AnyObject {
+  func viewControllers(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> [UIKit.UIViewController]
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PagerTabStripViewController : UIKit.UIViewController, UIKit.UIScrollViewDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var containerView: UIKit.UIScrollView!
+  @_Concurrency.MainActor(unsafe) weak open var delegate: (any XLPagerTabStrip.PagerTabStripDelegate)?
+  @_Concurrency.MainActor(unsafe) weak open var datasource: (any XLPagerTabStrip.PagerTabStripDataSource)?
+  @_Concurrency.MainActor(unsafe) open var pagerBehaviour: XLPagerTabStrip.PagerTabStripBehaviour
+  @_Concurrency.MainActor(unsafe) open var viewControllers: [UIKit.UIViewController] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var currentIndex: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var preCurrentIndex: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var pageWidth: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var scrollPercentage: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var swipeDirection: XLPagerTabStrip.SwipeDirection {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var shouldAutomaticallyForwardAppearanceMethods: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) open func moveToViewController(at index: Swift.Int, animated: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) open func moveTo(viewController: UIKit.UIViewController, animated: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) open func viewControllers(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> [UIKit.UIViewController]
+  @_Concurrency.MainActor(unsafe) open func updateIfNeeded()
+  @_Concurrency.MainActor(unsafe) open func canMoveTo(index: Swift.Int) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func pageOffsetForChild(at index: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func offsetForChild(at index: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func offsetForChild(viewController: UIKit.UIViewController) throws -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func pageFor(contentOffset: CoreFoundation.CGFloat) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) open func virtualPageFor(contentOffset: CoreFoundation.CGFloat) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) open func pageFor(virtualPage: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) open func updateContent()
+  @_Concurrency.MainActor(unsafe) open func reloadPagerTabStripView()
+  @_Concurrency.MainActor(unsafe) @objc open func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc open func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum SwipeDirection {
+  case left
+  case right
+  case none
+  public static func == (a: XLPagerTabStrip.SwipeDirection, b: XLPagerTabStrip.SwipeDirection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) open class ButtonBarViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) open var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) open var label: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+public enum ButtonBarItemSpec<CellType> where CellType : UIKit.UICollectionViewCell {
+  case nibFile(nibName: Swift.String, bundle: Foundation.Bundle?, width: ((XLPagerTabStrip.IndicatorInfo) -> CoreFoundation.CGFloat))
+  case cellClass(width: ((XLPagerTabStrip.IndicatorInfo) -> CoreFoundation.CGFloat))
+  public var weight: ((XLPagerTabStrip.IndicatorInfo) -> CoreFoundation.CGFloat) {
+    get
+  }
+}
+public struct ButtonBarPagerTabStripSettings {
+  public struct Style {
+    public var buttonBarBackgroundColor: UIKit.UIColor?
+    public var buttonBarMinimumInteritemSpacing: CoreFoundation.CGFloat?
+    public var buttonBarMinimumLineSpacing: CoreFoundation.CGFloat?
+    public var buttonBarLeftContentInset: CoreFoundation.CGFloat?
+    public var buttonBarRightContentInset: CoreFoundation.CGFloat?
+    public var selectedBarBackgroundColor: UIKit.UIColor
+    public var selectedBarHeight: CoreFoundation.CGFloat
+    public var selectedBarVerticalAlignment: XLPagerTabStrip.SelectedBarVerticalAlignment
+    public var buttonBarItemBackgroundColor: UIKit.UIColor?
+    public var buttonBarItemFont: UIKit.UIFont
+    public var buttonBarItemLeftRightMargin: CoreFoundation.CGFloat
+    public var buttonBarItemTitleColor: UIKit.UIColor?
+    public var buttonBarItemsShouldFillAvailableWidth: Swift.Bool
+    public var buttonBarHeight: CoreFoundation.CGFloat?
+  }
+  public var style: XLPagerTabStrip.ButtonBarPagerTabStripSettings.Style
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ButtonBarPagerTabStripViewController : XLPagerTabStrip.PagerTabStripViewController, XLPagerTabStrip.PagerTabStripDataSource, XLPagerTabStrip.PagerTabStripIsProgressiveDelegate, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDataSource {
+  @_Concurrency.MainActor(unsafe) public var settings: XLPagerTabStrip.ButtonBarPagerTabStripSettings
+  @_Concurrency.MainActor(unsafe) public var buttonBarItemSpec: XLPagerTabStrip.ButtonBarItemSpec<XLPagerTabStrip.ButtonBarViewCell>!
+  @_Concurrency.MainActor(unsafe) public var changeCurrentIndex: ((_ oldCell: XLPagerTabStrip.ButtonBarViewCell?, _ newCell: XLPagerTabStrip.ButtonBarViewCell?, _ animated: Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var changeCurrentIndexProgressive: ((_ oldCell: XLPagerTabStrip.ButtonBarViewCell?, _ newCell: XLPagerTabStrip.ButtonBarViewCell?, _ progressPercentage: CoreFoundation.CGFloat, _ changeCurrentIndex: Swift.Bool, _ animated: Swift.Bool) -> Swift.Void)?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var buttonBarView: XLPagerTabStrip.ButtonBarView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) override open func reloadPagerTabStripView()
+  @_Concurrency.MainActor(unsafe) open func calculateStretchedCellWidths(_ minimumCellWidths: [CoreFoundation.CGFloat], suggestedStretchedCellWidth: CoreFoundation.CGFloat, previousNumberOfLargeCells: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func updateIndicator(for viewController: XLPagerTabStrip.PagerTabStripViewController, fromIndex: Swift.Int, toIndex: Swift.Int, withProgressPercentage progressPercentage: CoreFoundation.CGFloat, indexWasChanged: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAtIndexPath indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) open func configureCell(_ cell: XLPagerTabStrip.ButtonBarViewCell, indicatorInfo: XLPagerTabStrip.IndicatorInfo)
+  @objc deinit
+}
+extension XLPagerTabStrip.PagerScroll : Swift.Equatable {}
+extension XLPagerTabStrip.PagerScroll : Swift.Hashable {}
+extension XLPagerTabStrip.SelectedBarAlignment : Swift.Equatable {}
+extension XLPagerTabStrip.SelectedBarAlignment : Swift.Hashable {}
+extension XLPagerTabStrip.SelectedBarVerticalAlignment : Swift.Equatable {}
+extension XLPagerTabStrip.SelectedBarVerticalAlignment : Swift.Hashable {}
+extension XLPagerTabStrip.PagerTabStripError : Swift.Equatable {}
+extension XLPagerTabStrip.PagerTabStripError : Swift.Hashable {}
+extension XLPagerTabStrip.SwipeDirection : Swift.Equatable {}
+extension XLPagerTabStrip.SwipeDirection : Swift.Hashable {}

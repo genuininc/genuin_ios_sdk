@@ -1,0 +1,11 @@
+framework module GenuinUI {
+  umbrella header "GenuinUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GenuinUI.Swift {
+  header "GenuinUI-Swift.h"
+  requires objc
+}

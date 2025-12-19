@@ -1,0 +1,42 @@
+[
+    {
+        "FontId": "1",
+        "FontName": "Inter-ExtraBold",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "2",
+        "FontName": "Inter-ExtraBoldItalic",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "3",
+        "FontName": "BebasNeue-Regular",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "4",
+        "FontName": "CourierPrime-Bold",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "5",
+        "FontName": "ScopeOne-Regular",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "6",
+        "FontName": "Lora-Bold",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "7",
+        "FontName": "VarelaRound-Regular",
+        "FontURL": "https://"
+    },
+    {
+        "FontId": "8",
+        "FontName": "Nunito-ExtraBold",
+        "FontURL": "https://"
+    }
+]

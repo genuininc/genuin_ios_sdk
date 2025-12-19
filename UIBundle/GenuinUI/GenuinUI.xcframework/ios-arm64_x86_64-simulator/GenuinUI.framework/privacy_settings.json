@@ -1,0 +1,160 @@
+{
+  "action_types": [
+    {
+      "type": 1,
+      "title": "en_pub",
+      "description": "com_psts_se_ao",
+      "icon": "ic_new_unlock",
+      "actions": [
+        {
+          "id": 1,
+          "mapping_id" : 2,
+          "title": "com_cr_gp",
+          "access_types": [
+            {
+              "id": 1,
+              "mapping_id" : 3,
+              "icon": "ic_community_post",
+              "title": "com_cr_gp_all",
+              "description": "al_mems_n_grps",
+              "is_default": true
+            },
+            {
+              "id": 2,
+              "mapping_id" : 4,
+              "icon": "ic_mods_setting",
+              "title": "en_adm",
+              "description": "com_cr_gp_adm_st",
+              "is_default": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "title": "en_pvt",
+      "description": "com_typ_pvt_st",
+      "icon": "ic_new_lock",
+      "actions": [
+        {
+          "id": 2,
+          "mapping_id" : 1,
+          "title": "com_cr_gp",
+          "access_types": [
+            {
+              "id": 3,
+              "mapping_id" : 1,
+              "icon": "ic_community_post",
+              "title": "com_cr_gp_all",
+              "description": "com_cr_gp_all_St",
+              "is_default": true
+            },
+            {
+              "id": 4,
+              "mapping_id" : 2,
+              "icon": "ic_mods_setting",
+              "title": "en_adm",
+              "description": "com_cr_gp_adm_st",
+              "is_default": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 3,
+      "actions": [
+        {
+          "id": 3,
+          "title": "gp_vis",
+          "access_types": [
+            {
+              "id": 5,
+              "icon": "ic_new_earth",
+              "title": "en_ev",
+              "description": "grp_se_ao",
+              "is_default": true
+            },
+            {
+              "id": 6,
+              "icon": "ic_roundtable_new",
+              "title": "gp_vis_com_mem",
+              "description": "gp_vis_com_mem_st",
+              "is_default": false,
+              "disabled_access_types": [9]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "gp_pst_set",
+          "access_types": [
+            {
+              "id": 9,
+              "icon": "ic_community_post",
+              "title": "gp_pst_all_mem",
+              "description": "gp_pst_all_mem_st",
+              "is_default": true
+            },
+            {
+              "id": 10,
+              "icon": "ic_roundtable_new",
+              "title": "gp_vis_com_mem",
+              "description": "mem_adm_pst",
+              "is_default": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": 4,
+      "actions": [
+        {
+          "id": 4,
+          "title": "gp_vis",
+          "access_types": [
+            {
+              "id": 7,
+              "icon": "ic_community_post",
+              "title": "gp_pst_all_mem",
+              "description": "gp_vis_all_mem_st",
+              "is_default": true
+            },
+            {
+              "id": 8,
+              "icon": "ic_roundtable_new",
+              "title": "gp_vis_com_mem",
+              "description": "gp_vis_com_mem_st",
+              "is_default": false,
+              "disabled_access_types": [
+                11
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "gp_pst_set",
+          "access_types": [
+            {
+              "id": 11,
+              "icon": "ic_community_post",
+              "title": "gp_pst_all_mem",
+              "description": "gp_pst_all_mem_st",
+              "is_default": true
+            },
+            {
+              "id": 12,
+              "icon": "ic_check_circle",
+              "title": "gp_pst_inv_only",
+              "description": "mem_cn_pst",
+              "is_default": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

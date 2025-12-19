@@ -1,0 +1,11 @@
+framework module GenuinCamera {
+  umbrella header "GenuinCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GenuinCamera.Swift {
+  header "GenuinCamera-Swift.h"
+  requires objc
+}

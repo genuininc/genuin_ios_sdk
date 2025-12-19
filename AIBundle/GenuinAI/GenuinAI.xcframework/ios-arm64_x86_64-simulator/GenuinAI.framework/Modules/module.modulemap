@@ -1,0 +1,11 @@
+framework module GenuinAI {
+  umbrella header "GenuinAI-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GenuinAI.Swift {
+  header "GenuinAI-Swift.h"
+  requires objc
+}

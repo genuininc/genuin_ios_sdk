@@ -1,0 +1,11 @@
+framework module GenuinCore {
+  umbrella header "GenuinCore-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module GenuinCore.Swift {
+  header "GenuinCore-Swift.h"
+  requires objc
+}

@@ -1,0 +1,2644 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GenuinUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AVFAudio
+import AVFoundation
+import AVKit
+import Accelerate
+import AudioToolbox
+import Combine
+import Contacts
+import CoreData
+import CoreGraphics
+import CryptoSwift
+import DeveloperToolsSupport
+import EasyTipView
+import Foundation
+@_spi(GenuinInternal) import GenuinCore
+@_exported import GenuinUI
+import GoogleInteractiveMediaAds
+import Hero
+import Lottie
+import MaterialComponents.MaterialActivityIndicator
+import MaterialComponents
+import MessageUI
+import Photos
+import SafariServices
+import SkeletonView
+import SocketIO
+import Swift
+import SwiftUI
+import TOCropViewController
+import UIKit
+import URLEmbeddedView
+import UserNotifications
+import WebKit
+import XLPagerTabStrip
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import libPhoneNumberiOS
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ABFrameIndicator : ABProgressIndicator {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ABProgressIndicator : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class ABTimeView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var timeLabel: UIKit.UILabel
+  @_Concurrency.MainActor @preconcurrency public var backgroundView: UIKit.UIView {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var marginTop: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var marginBottom: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var marginLeft: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var marginRight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public init(size: CoreFoundation.CGSize, position: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
+  func didChangeValue(videoRangeSlider: ABVideoRangeSlider, startTime: Swift.Float64, endTime: Swift.Float64)
+  func indicatorDidChangePosition(videoRangeSlider: ABVideoRangeSlider, position: Swift.Float64)
+  func didStartDragging()
+  func didEndDragging(at seconds: CoreFoundation.CGFloat)
+  func didChangePosition(to position: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ABVideoRangeSlider : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var allVideoArr: [Swift.String]
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any ABVideoRangeSliderDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var progressImageIndicator: ABFrameIndicator
+  @_Concurrency.MainActor @preconcurrency public var isThumnailSelectionMode: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var startTimeView: ABTimeView
+  @_Concurrency.MainActor @preconcurrency public var endTimeView: ABTimeView
+  @_Concurrency.MainActor @preconcurrency public var minSpace: Swift.Float
+  @_Concurrency.MainActor @preconcurrency public var maxSpace: Swift.Float
+  @_Concurrency.MainActor @preconcurrency public var isFromGalleryUpload: Swift.Bool {
+    get
+    set
+  }
+  public enum ABTimeViewPosition {
+    case top
+    case bottom
+    public static func == (a: ABVideoRangeSlider.ABTimeViewPosition, b: ABVideoRangeSlider.ABTimeViewPosition) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency public func setupFrameSelector()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor @preconcurrency public func hideHandles()
+  @_Concurrency.MainActor @preconcurrency public func setProgressIndicatorImage(image: UIKit.UIImage)
+  @_Concurrency.MainActor @preconcurrency public func hideProgressIndicator()
+  @_Concurrency.MainActor @preconcurrency public func showProgressIndicator()
+  @_Concurrency.MainActor @preconcurrency public func updateProgressIndicator(seconds: Swift.Float64)
+  @_Concurrency.MainActor @preconcurrency public func setStartIndicatorImage(image: UIKit.UIImage)
+  @_Concurrency.MainActor @preconcurrency public func setEndIndicatorImage(image: UIKit.UIImage)
+  @_Concurrency.MainActor @preconcurrency public func setBorderImage(image: UIKit.UIImage)
+  @_Concurrency.MainActor @preconcurrency public func setTimeView(view: ABTimeView)
+  @_Concurrency.MainActor @preconcurrency public func setTimeViewPosition(position: ABVideoRangeSlider.ABTimeViewPosition)
+  @_Concurrency.MainActor @preconcurrency public func setVideoURL(totalDuration: Swift.Float64)
+  @_Concurrency.MainActor @preconcurrency public func updateThumbnails()
+  @_Concurrency.MainActor @preconcurrency public func setStartPosition(seconds: Swift.Float)
+  @_Concurrency.MainActor @preconcurrency public func setEndPosition(seconds: Swift.Float)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  @objc deinit
+}
+@objc public enum AGCommentType : Swift.Int {
+  case video = 1
+  case audio = 2
+  case text = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_spi(GenuinInternal) @objc @_hasMissingDesignatedInitializers public class AGComment : ObjectiveC.NSObject {
+  @_spi(GenuinInternal) public var comment_id: Swift.String
+  @_spi(GenuinInternal) public var url: Swift.String
+  @_spi(GenuinInternal) public var thumbnail: Swift.String
+  @_spi(GenuinInternal) public var link: Swift.String?
+  @_spi(GenuinInternal) public var duration: Swift.String
+  @_spi(GenuinInternal) public var created_at: Swift.String
+  @_spi(GenuinInternal) public init(dict: [Swift.String : Any])
+  @_spi(GenuinInternal) @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AGContact : Swift.Hashable {
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var isGenuinContact: Swift.Bool
+  public var userName: Swift.String
+  public var isAvatar: Swift.Bool
+  public var profileImage: Swift.String
+  public var genuinUUID: Swift.String
+  public var brand: GenuinCore.Brand?
+  public init(contactDict: [Swift.String : Any])
+  public init(fromDictionary dictionary: [Swift.String : Any])
+  public func displayName() -> Swift.String
+  public func getNumber() -> Swift.String
+  public func getFormtattedPhoneNumber() -> Swift.String
+  public func toFullDict() -> [Swift.String : Any]
+  public func toMemberDict() -> [Swift.String : Any]
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: AGContact, rhs: AGContact) -> Swift.Bool
+  @objc deinit
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BadgePosition {
+  case left
+  case right
+  public static func == (a: BadgePosition, b: BadgePosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BadgeSize {
+  case extraSmall
+  case small
+  case medium
+  case large
+  public static func == (a: BadgeSize, b: BadgeSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BadgedButtonItem : UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor @preconcurrency public func setBadge(with value: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency public var badgeTintColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var badgeTextColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var badgeFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var position: BadgePosition? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var hasBorder: Swift.Bool? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var borderColor: UIKit.UIColor? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var badgeSize: BadgeSize {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var badgeAnimation: Swift.Bool? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var tapAction: (() -> Swift.Void)?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(BGAudioAsset) public class BGAudioAsset : CoreData.NSManagedObject {
+  public class func createLocalAudioAsset(avatarId: Swift.String, assetLocalURL: Swift.String, duration: Swift.String)
+  public class func getAudioAsset(assetLocalURL: Swift.String) -> BGAudioAsset?
+  public func updateAudioAsset(assetId: Swift.String? = nil, assetType: Swift.String? = nil, mediaKey: Swift.String? = nil, mimetype: Swift.String? = nil, audioUploadStatus: Swift.String? = nil, duration: Swift.String? = nil)
+  public class func getAllFailedAssets() -> [BGAudioAsset]?
+  public class func getAllAssets(avatarId: Swift.String) -> [BGAudioAsset]?
+  public class func getAllCompletedAssets(avatarId: Swift.String) -> [BGAudioAsset]?
+  public class func deleteAssets(avatarId: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGAudioAsset {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGAudioAsset>
+  @objc @NSManaged dynamic public var assetId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var assetType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var audioUploadStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mediaKey: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mimetype: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var assetLocalURL: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var avatarId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension BGAudioAsset : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public enum AVCapturSessionSetupResult {
+  case success
+  case notAuthorized
+  case configurationFailed
+  case notDetermined
+  public static func == (a: AVCapturSessionSetupResult, b: AVCapturSessionSetupResult) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class BGAudioRecorder : ObjectiveC.NSObject {
+  weak public var recordingDelegate: (any BGAudioManagerRecordingDelegate)?
+  weak public var playbackDelegate: (any BGAudioManagerPlaybackDelegate)?
+  public func recordedAudioFileURL() -> Foundation.URL?
+  public var isForVoiceAsset: Swift.Bool
+  public var isRecording: Swift.Bool {
+    get
+  }
+  public func startRecording()
+  public func lastAveragePower() -> Swift.Float
+  public func stopRecording()
+  public func getRecordedDuration() -> CoreFoundation.CGFloat
+  public func prepareAudioRecording(isStereo: Swift.Bool = true)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension BGAudioRecorder : AVFAudio.AVAudioRecorderDelegate {
+  @objc dynamic public func audioRecorderDidFinishRecording(_ recorder: AVFAudio.AVAudioRecorder, successfully flag: Swift.Bool)
+}
+extension BGAudioRecorder : AVFAudio.AVAudioPlayerDelegate {
+  @objc dynamic public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
+}
+public protocol BGAudioManagerRecordingDelegate : AnyObject {
+  func audioManager(_ audioManager: BGAudioRecorder, didAllowRecording granted: Swift.Bool)
+  func audioManager(_ audioManager: BGAudioRecorder, didFinishRecordingSuccessfully flag: Swift.Bool)
+  func audioManager(_ audioManager: BGAudioRecorder, didUpdateRecordProgress progress: Swift.Float)
+  func audioManager(_ audioManager: BGAudioRecorder, recordingInterrupted interrupted: Swift.Bool)
+}
+public protocol BGAudioManagerPlaybackDelegate : AnyObject {
+  func audioManager(_ audioManager: BGAudioRecorder, didFinishPlayingSuccessfully flag: Swift.Bool)
+  func audioManager(_ audioManager: BGAudioRecorder, didUpdatePlayProgress progress: Swift.Float)
+}
+@_inheritsConvenienceInitializers @objc(BGAvatarVoice) public class BGAvatarVoice : CoreData.NSManagedObject {
+  public class func createLocalAvatarVoice(avatarId: Swift.String, name: Swift.String)
+  public func updateAvatarVoice(name: Swift.String? = nil, lastStep: Swift.Int16? = nil, status: Swift.String? = nil, totalSteps: Swift.Int16? = nil)
+  public class func getAllAvatarVoice() -> [BGAvatarVoice]?
+  public class func deleteAvatarVoice(avatarId: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGAvatarVoice {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGAvatarVoice>
+  @objc @NSManaged dynamic public var avatarId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastStep: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var totalSteps: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+}
+extension BGAvatarVoice : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+@objc @_inheritsConvenienceInitializers public class BGConversation : CoreData.NSManagedObject {
+  public var group: BGGroup?
+  public var messages: [BGMessage]?
+  public var privacyActions: [GenuinCore.CommunityAction]?
+  public var isAiGeneratedVideo: Swift.Bool?
+  public var scheduler: GenuinCore.BGScheduler?
+  public var position: Swift.Int?
+  public class func upsert(communityId: Swift.String? = nil, data: [Swift.String : Any])
+  public class func createLocalConversation(communityId: Swift.String, chatId: Swift.String, templateId: Swift.String?, conversationType: Swift.Int16, settings: [Swift.String : Any]?, isWelcomeLoop: Swift.Bool = false, actions: [[Swift.String : Any]]? = nil, trackingId: Swift.String? = nil, isAiGenerated: Swift.Bool? = nil, autoChatId: Swift.String? = nil)
+  public func update(newChatId: Swift.String? = nil, settings: [Swift.String : Any]? = nil, latestMessageAt: Swift.Double? = nil, unreadMessageCount: Swift.Double? = nil)
+  public class func getConversations() -> [BGConversation]?
+  public class func getFailedConversations() -> [BGConversation]?
+  public class func getConversation(by chatId: Swift.String) -> BGConversation?
+  public class func delete(using chatId: Swift.String)
+  public class func deleteAll(using chatIds: [Swift.String])
+  public class func deleteAll(using conversationType: Swift.Int16, exceptPending: Swift.Bool = false)
+  public func toRequestDictionary() -> [Swift.String : Any]
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGConversation {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGConversation>
+  @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
+  @objc @NSManaged dynamic public var chatId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latestMessageAt: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var settings: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var shareUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var unreadMessageCount: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var communityId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var templateId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isSubscriber: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var memberInfo: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isWelcomeLoop: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var actions: [[Swift.String : Any]]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var loggedinUserId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trackingId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isAiGenerated: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var autoChatId: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class BGGroup : CoreData.NSManagedObject {
+  public var members: [BGMember]?
+  public var subscribers: [BGSubscriber]?
+  public class func createLocalGroup(chatId: Swift.String, conversationType: Swift.Int16, desc: Swift.String?, tags: Swift.String?, dp: Swift.String?, name: Swift.String?, members: [[Swift.String : Any]]?)
+  public func updateStatus(dpUploadStatus: Swift.String? = nil)
+  public class func getGroup(by chatId: Swift.String) -> BGGroup?
+  public func toDictionary() -> [Swift.String : Any]
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGGroup {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGGroup>
+  @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
+  @objc @NSManaged dynamic public var chatId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var colorCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var desc: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dp: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpL: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var groupId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var noOfMembers: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var noOfSubscribers: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var noOfVideos: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var noOfViews: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var textColorCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tags: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dpUploadStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class BGMember : CoreData.NSManagedObject {
+  public var user: BGUser?
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGMember {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGMember>
+  @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
+  @objc @NSManaged dynamic public var chatId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var groupId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var memberId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var role: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var status: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var createdAt: Foundation.Date {
+    @objc get
+    @objc set
+  }
+}
+public enum CompressionStatus : Swift.String {
+  case pending
+  case completed
+  case failed
+  case cancelled
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class BGMessage : CoreData.NSManagedObject {
+  public var owner: BGUser?
+  public class func createLocalMessage(chatId: Swift.String, messageId: Swift.String, conversationType: Swift.Int16, compressionStatus: Swift.String?, ffmpegCommand: Swift.String?, attachedLink: Swift.String?, metadata: [Swift.String : Any]?, questions: [[Swift.String : Any]]?, owner: [Swift.String : Any]?, thumbnailName: Swift.String?, thumbnailUrl: Swift.String?, videoName: Swift.String?, descriptionText: Swift.String?, descriptionData: Swift.String?, linkouts: [[Swift.String : Any]]?, trackingId: Swift.String? = nil, autoMessageId: Swift.String? = nil, autoThumbnailPath: Swift.String? = nil, clickableUrl: Swift.String? = nil)
+  public func updateStatus(compressionStatus: Swift.String? = nil, imageUploadStatus: Swift.String? = nil, videoUploadStatus: Swift.String? = nil, apiCallStatus: Swift.String? = nil, isRetry: Swift.Bool? = nil, messageId: Swift.String? = nil, mediaUrl: Swift.String? = nil, messageAt: Any? = nil, chatId: Swift.String? = nil, thumbnailUrl: Swift.String? = nil)
+  public class func getAllFailedMessages() -> [BGMessage]?
+  public class func getMessage(chatId: Swift.String, messageId: Swift.String) -> BGMessage?
+  public class func getMessage(videoName: Swift.String) -> BGMessage?
+  public class func delete(using chatId: Swift.String, videoName: Swift.String)
+  public func toRequestDictionary() -> [Swift.String : Any]
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGMessage {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGMessage>
+  @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
+  @objc @NSManaged dynamic public var apiCallStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var chatId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var compressionStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ffmpegCommand: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var imageUploadStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isRead: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isRetry: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var attachedLink: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageAt: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var metadata: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var noOfComments: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var noOfViews: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ownerId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var questions: [[Swift.String : Any]]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var repost: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var shareUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var thumbnailName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var thumbnailUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var thumbnailUrlL: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var thumbnailUrlS: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var videoName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var messageSummary: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var videoUploadStatus: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mediaUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mediaUrlM3u8: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var descriptionText: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var descriptionData: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var linkouts: [[Swift.String : Any]]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var trackingId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var autoMessageId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var autoThumbnailPath: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var clickableUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc public class BGQuestion : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc public static var supportsSecureCoding: Swift.Bool
+  public var question_id: Swift.String?
+  public var question: Swift.String?
+  public var date: Swift.String?
+  public var owner: GenuinCore.AGMember?
+  public var share_url: Swift.String?
+  public init(from dictionary: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc required public init(coder aDecoder: Foundation.NSCoder)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum BGSettingOptionType {
+  case communityPrivacy
+  case createLoopPrivilege
+  case whoCanSeeLoop
+  case whoCanPostInLoop
+  case privateCommunityInfo
+  public static func == (a: BGSettingOptionType, b: BGSettingOptionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class BGSettingOption : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BGSetting : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BGSettingsManager : ObjectiveC.NSObject {
+  @_spi(GenuinInternal) public static let shared: BGSettingsManager
+  @_spi(GenuinInternal) public var brands: [GenuinCore.Brand]
+  @_spi(GenuinInternal) public func getSettingsFromJson() -> [[Swift.String : Any]]
+  @_spi(GenuinInternal) public func getCommunityPrivacySettings() -> BGSetting
+  @_spi(GenuinInternal) public func getCreateLoopSettings(communityType: Swift.Int) -> BGSetting
+  @_spi(GenuinInternal) public func getWhoCanSeeLoopSettings(communityType: Swift.Int, isWelcomeLoop: Swift.Bool? = false) -> BGSetting
+  @_spi(GenuinInternal) public func getWhoCanPostInLoopSettings(communityType: Swift.Int, isWelcomeLoop: Swift.Bool? = false) -> BGSetting
+  @_spi(GenuinInternal) public func cleanData()
+  @_spi(GenuinInternal) public func cleanDataIfBrandNotExist(brand: GenuinCore.Brand)
+  @_spi(GenuinInternal) public func getPrivateCommunityInfo() -> BGSetting
+  @_spi(GenuinInternal) public func getBrandList(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  @_spi(GenuinInternal) @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class BGSubscriber : CoreData.NSManagedObject {
+  public var user: BGUser?
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGSubscriber {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGSubscriber>
+  @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
+  @objc @NSManaged dynamic public var chatId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversationType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var groupId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var memberId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var role: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var status: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var createdAt: Foundation.Date {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers public class BGUser : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension BGUser {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGUser>
+  @objc @NSManaged dynamic public var bio: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isAvatar: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var phoneNumber: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var profileImage: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var profileImageL: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var profileImageM: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var profileImageS: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var username: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+public protocol BrandSearchViewDelegate : AnyObject {
+  func getSelectedBrand(brand: GenuinCore.Brand)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BrandSearchViewController : GenuinCore.BaseViewController, UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor @preconcurrency public static let identifier: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static func instantiate() -> BrandSearchViewController?
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BrandSearchViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension BrandSearchViewController : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+}
+extension BrandSearchViewController : UIKit.UITableViewDelegate {
+}
+extension BrandSearchViewController : UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension BrandSearchViewController : UIKit.UISearchBarDelegate, UIKit.UISearchDisplayDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CenterCellCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func targetContentOffset(forProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint, withScrollingVelocity velocity: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ChangeCoverImageDelegate : AnyObject {
+  func didSelectedCover(at time: CoreMedia.CMTime, videoURL: Swift.String?, videoAsset: AVFoundation.AVAsset?)
+  func didCancelled()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ChangeCoverImageViewController : GenuinCore.BaseViewController {
+  @_Concurrency.MainActor @preconcurrency public static func instance() -> ChangeCoverImageViewController
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any ChangeCoverImageDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var videoURL: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var endTime: Swift.Double?
+  @_Concurrency.MainActor @preconcurrency public var videoAsset: AVFoundation.AVAsset?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension ChangeCoverImageViewController : ABVideoRangeSliderDelegate {
+  @_Concurrency.MainActor @preconcurrency public func didChangeValue(videoRangeSlider: ABVideoRangeSlider, startTime: Swift.Float64, endTime: Swift.Float64)
+  @_Concurrency.MainActor @preconcurrency public func indicatorDidChangePosition(videoRangeSlider: ABVideoRangeSlider, position: Swift.Float64)
+  @_Concurrency.MainActor @preconcurrency public func didStartDragging()
+  @_Concurrency.MainActor @preconcurrency public func didEndDragging(at seconds: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func didChangePosition(to position: CoreFoundation.CGFloat)
+}
+@objc public enum CircularProgressTrackViewGlowMode : Swift.Int {
+  case forward, reverse, constant, noGlow
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @objcMembers @_Concurrency.MainActor @preconcurrency public class CircularProgressTrackView : UIKit.UIView, QuartzCore.CAAnimationDelegate {
+  @objc @_Concurrency.MainActor @preconcurrency public var progress: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var angle: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var startAngle: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var clockwise: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var roundedCorners: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var lerpColorMode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var gradientRotateSpeed: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var glowAmount: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var glowMode: CircularProgressTrackViewGlowMode {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var progressThickness: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var trackThickness: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var trackColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency public var progressInsideFillColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public var progressColors: [UIKit.UIColor] {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, colors: UIKit.UIColor...)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func set(colors: UIKit.UIColor...)
+  @objc @_Concurrency.MainActor @preconcurrency public func animate(fromAngle: Swift.Double, toAngle: Swift.Double, duration: Foundation.TimeInterval, relativeDuration: Swift.Bool = true, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor @preconcurrency public func animate(toAngle: Swift.Double, duration: Foundation.TimeInterval, relativeDuration: Swift.Bool = true, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor @preconcurrency public func pauseAnimation()
+  @objc @_Concurrency.MainActor @preconcurrency public func stopAnimation()
+  @objc @_Concurrency.MainActor @preconcurrency public func isAnimating() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
+  @objc deinit
+}
+public struct CircularWaveformRenderer : WaveformRenderer {
+  public enum Kind {
+    case circle
+    case ring(CoreFoundation.CGFloat)
+  }
+  public init(kind: CircularWaveformRenderer.Kind = .circle)
+  public func render(samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, lastOffset: Swift.Int)
+}
+public protocol SquareCameraDelegate : AnyObject {
+  func commentPosted()
+}
+@_hasMissingDesignatedInitializers public class Suggestion {
+  public var type: GenuinCore.SuggestionType
+  public var user: GenuinCore.AGMember?
+  public var community: GenuinCore.BGCommunity?
+  public init()
+  @objc deinit
+}
+public struct CommentsService {
+  public static func getSuggestions(communityId: Swift.String? = nil, chatId: Swift.String? = nil, queryString: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CommunitiesCollectionView : UIKit.UICollectionView {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var collectionViewDelegate: (any CommunitiesCollectionViewDelegate)?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public init(communities: [GenuinCore.BGCommunity], communityDelegate: (any CommunityCellDelegate)?, hasCellAction: Swift.Bool, cellSize: CoreFoundation.CGSize? = nil)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func applySnapshot(communities: [GenuinCore.BGCommunity], animatingDifferences: Swift.Bool = true)
+  @_spi(GenuinInternal) @objc deinit
+}
+@_spi(GenuinInternal) extension CommunitiesCollectionView : UIKit.UICollectionViewDelegate {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+public protocol CommunitiesCollectionViewDelegate : AnyObject {
+  func didSelectCommunity(community: GenuinCore.BGCommunity?)
+  func actionTapped(community: GenuinCore.BGCommunity?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCategoryShimmerCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol CommunityCellDelegate : AnyObject {
+  func actionTapped(community: GenuinCore.BGCommunity?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CommunityCellDelegate)?
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency weak public var community: GenuinCore.BGCommunity? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
+  @objc deinit
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCreateCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol CommunityEmptyCellDelegate : AnyObject {
+  func createCommunityTapped()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityEmptyCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CommunityEmptyCellDelegate)?
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CommunitySectionHeaderView : UIKit.UITableViewHeaderFooterView {
+  @_Concurrency.MainActor @preconcurrency public static func getViewNIB() -> UIKit.UINib
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblTitle: GenuinCore.GenuinLabel!
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @objc deinit
+}
+extension GenuinCore.CommunityService {
+  public static func doVerifyHandleNameAvailable(handle: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getProfileCommunity(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getBrandProfileCommunity(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getProfileLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getBrandProfileLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getProfileLoopsVideos(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getBrandProfileLoopsVideos(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getCommunityCategories(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [GenuinCore.CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [GenuinCore.AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: GenuinCore.Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getCommunityDetail(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getCommunityLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getCommunityHandleSuggestion(name: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func editCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getCommunityMembers(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func addModeratorsInCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func deleteCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getMetaDataFromSlug(type: Swift.Int, slug: Swift.String? = nil, userName: Swift.String? = nil, uuid: Swift.String? = nil, inviteId: Swift.String? = nil, brandId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+}
+extension GenuinCore.CommunityService {
+  public static func getCommunityTutorialDetails(tutorialId: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getRequestsForCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func rejectRequest(communityId: Swift.String, userId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getFeedLoops(userId: Swift.String, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, pageSession: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getBrandFeedLoops(brandId: Swift.Int, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func generateCommunityDetails(category: GenuinCore.BGCategory? = nil, brandId: Swift.Int? = nil, lat: Swift.String? = nil, lng: Swift.String? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getCategoryAndTopicList(communityId: Swift.String, brandId: Swift.Int? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+}
+extension GenuinCore.CommunityService {
+  public static func getBrandList(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func checkIfGroupIsEmpty(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+}
+public enum CommunitySetupActions : Swift.Int {
+  case communityCreated
+  case createLoopTutorialWatched
+  case loopCreatedInCommunity
+  case communityGuidelinesCreated
+  case communityMembersInvited
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityShimmerCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityTabCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblOption: GenuinCore.GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var viewOptionCount: UIKit.UIView!
+  @_Concurrency.MainActor @preconcurrency public var unreadCount: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct CommunityTemplate {
+  public let id: Swift.Int
+  public let title: Swift.String?
+  public let group_name: Swift.String?
+  public let group_description: Swift.String?
+  public let is_loop_created: Swift.Bool?
+  public let tutorial_id: Swift.Int?
+  public static func parseInMemory(data: [Swift.String : Any]) -> CommunityTemplate
+}
+public enum CommunitySection {
+  case leader
+  case moderator
+  case member
+  public static func == (a: CommunitySection, b: CommunitySection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_spi(GenuinInternal) public class CommunityViewModel {
+  @_spi(GenuinInternal) public init()
+  @_spi(GenuinInternal) public var leaderCommunities: [GenuinCore.BGCommunity]
+  @_spi(GenuinInternal) public var moderatorCommunities: [GenuinCore.BGCommunity]
+  @_spi(GenuinInternal) public var memberCommunities: [GenuinCore.BGCommunity]
+  @_spi(GenuinInternal) public func getCommunities(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  @_spi(GenuinInternal) public func verifyHandleNameAvailable(handle: Swift.String, completion: @escaping (Swift.Bool?, GenuinCore.BGError?) -> ())
+  @_spi(GenuinInternal) public func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [GenuinCore.CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [GenuinCore.AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: GenuinCore.Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool?, Swift.String?, GenuinCore.BGError?) -> ())
+  @_spi(GenuinInternal) public func editCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool?, Swift.String?, GenuinCore.BGError?) -> ())
+  @_spi(GenuinInternal) public func deleteCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool?, GenuinCore.BGError?) -> ())
+  @_spi(GenuinInternal) public func leaveCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool?, GenuinCore.BGError?) -> ())
+  @_spi(GenuinInternal) @objc deinit
+}
+public struct WalkthroughModel {
+  public let image: Swift.String
+  public let bigTitle: GenuinCore.LanguageInfo?
+  public let title: GenuinCore.LanguageInfo
+  public let description: GenuinCore.LanguageInfo
+  public init(image: Swift.String, bigTitle: GenuinCore.LanguageInfo?, title: GenuinCore.LanguageInfo, description: GenuinCore.LanguageInfo)
+}
+public protocol ContactsManagerProtocol : ObjectiveC.NSObject {
+  func contactsDidFinishSyncing(contacts: [[Swift.String : Any]], _ error: Swift.String?)
+}
+@_spi(GenuinInternal) @_hasMissingDesignatedInitializers public class ContactsManager {
+  @_spi(GenuinInternal) public static let shared: ContactsManager
+  @_spi(GenuinInternal) weak public var delegate: (any ContactsManagerProtocol)?
+  @_spi(GenuinInternal) public func checkPermissionStatus() -> Contacts.CNAuthorizationStatus
+  @_spi(GenuinInternal) public func checkIfAuthorised() -> Swift.Bool
+  @_spi(GenuinInternal) public func requestPermission(showAlertIfNotAvailable: Swift.Bool = true, screenName: Swift.String? = nil, _ completion: @escaping (_ isAllowed: Swift.Bool) -> Swift.Void)
+  @_spi(GenuinInternal) public func syncContacts(_ completion: @escaping (_ contacts: [[Swift.String : Any]], _ error: Swift.String?) -> Swift.Void)
+  @_spi(GenuinInternal) public func getDataFromJSONFile() -> [Swift.String : Any]?
+  @_spi(GenuinInternal) public func getInvitedContactsFromJSONFile() -> [[Swift.String : Any]]?
+  @_spi(GenuinInternal) public func writeInvitedContactsToJSON(invitedContacts: [[Swift.String : Any]])
+  @_spi(GenuinInternal) @objc deinit
+}
+extension GenuinCore.ConversationVideos {
+  public static func updateGroupDetails(chatId: Swift.String, param: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getDestinations(sourceVideoId: Swift.String, sourceContentType: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func createRepost(sourceVideoId: Swift.String, sourceContentType: Swift.Int, chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func rejectRequest(chatId: Swift.String, userId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func embedEmail(sourceId: Swift.String, embedType: Swift.Int, emailId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getSubscribers(chatId: Swift.String, lastSubscriberId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getMembers(chatId: Swift.String, lastMemberId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getLoopMessages(chatId: Swift.String, messageIds: [Swift.String]? = nil, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, isOrderByPinned: Swift.Bool? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getRequesters(chatId: Swift.String, lastRequesterId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func pinUnpinVideo(loopId: Swift.String, videoId: Swift.String, isPin: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func pinUnpinGroup(communityId: Swift.String, groupId: Swift.String, isPin: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getSummaryFromTranscription(transcript: Swift.String, noOfClicks: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func leaveConversation(chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func createAutoVideo(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func uploadThumbnail(thumbnailLocalPath: Foundation.URL, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getTranscriptDetails(uuid: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getTranscriptShareImage(conversationId: Swift.String, shareUrl: Swift.String, fileName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func uploadTranscriptThumbnail(thumbnailLinkLocalPath: Foundation.URL, completion: @escaping (Swift.Bool, Swift.String?, [Swift.String : Any]?) -> ())
+  public static func deleteComment(commentId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+}
+@_hasMissingDesignatedInitializers public class CoreDataManager {
+  public static let shared: CoreDataManager
+  @objc deinit
+}
+public protocol AutoCreateDelegate : AnyObject {
+  func communityDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, community: GenuinCore.BGCommunity, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?, selectedCategory: GenuinCore.BGCategory?, brand: GenuinCore.Brand?)
+}
+public protocol AGContactPickerDelegate : AnyObject {
+  func agContactPicker(didContactFetchFailed error: Foundation.NSError)
+  func agContactPicker(didCancel error: Foundation.NSError?)
+  func agContactPicker(didSelectContact contact: AGContact)
+  func agContactPicker(didSelectMultipleContacts contacts: [AGContact])
+  func agContactPickerDidSkipped()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CreateGroupViewController : GenuinCore.BaseViewController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency public static func instance() -> CreateGroupViewController
+  @_Concurrency.MainActor @preconcurrency weak public var contactDelegate: (any AGContactPickerDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var isFromGroupEdit: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var isRoundtable: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var groupName: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var isFromCommunity: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var recordType: RecordVideoType?
+  @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension CreateGroupViewController : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+extension CreateGroupViewController : UIKit.UISearchResultsUpdating, UIKit.UISearchBarDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateSearchResults(for searchController: UIKit.UISearchController)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+extension CreateGroupViewController : ContactsManagerProtocol {
+  @_Concurrency.MainActor @preconcurrency public func contactsDidFinishSyncing(contacts: [[Swift.String : Any]], _ error: Swift.String?)
+}
+public class DeltaResponse {
+  public var pageLimit: Swift.Int?
+  public var isResync: Swift.Bool?
+  public var updatedIds: [Swift.String]?
+  public var deletedIds: [Swift.String]?
+  public var lastSyncId: Swift.Int?
+  public init(from dictionary: [Swift.String : Any])
+  @objc deinit
+}
+public protocol CommunityDetailDelegate : AnyObject {
+  func reloadData(community: GenuinCore.BGCommunity?)
+}
+public protocol CreateAvatarDelegate : AnyObject {
+  func avatarDataUpdated()
+}
+@_hasMissingDesignatedInitializers public class CommunityItem {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PeopleItem {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class VideoItem {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class LoopItem {
+  @objc deinit
+}
+public enum AiNudgeSourceViewType : Swift.String {
+  case tabBarCreateCommunity
+  case loopDetailPostButton
+  case loopInboxPostButton
+  case communityDetailCreateLoop
+  case feedViewLoopViewPostButton
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_spi(GenuinInternal) public protocol UpdateInboxProtocol : ObjectiveC.NSObject {
+  @_spi(GenuinInternal) func progressUpdateForChat(chatId: Swift.String?, videoName: Swift.String?, progress: Swift.Double)
+}
+@_spi(GenuinInternal) public protocol UpdateProfileProtocol : ObjectiveC.NSObject {
+  @_spi(GenuinInternal) func rtCreated(conversation: GenuinCore.BGConversationDisplay)
+  @_spi(GenuinInternal) func rtUpdated(chatId: Swift.String, group: GenuinCore.AGGroup, settings: [Swift.String : Any]?)
+  @_spi(GenuinInternal) func rtVideoDeleted(chatId: Swift.String, conversationId: Swift.String?)
+  @_spi(GenuinInternal) func receivedNewNotification(isNewNotification: Swift.Bool)
+}
+@_spi(GenuinInternal) public protocol UpdateCommentProtocol : ObjectiveC.NSObject {
+  @_spi(GenuinInternal) func commentCreated(comment: AGComment)
+  @_spi(GenuinInternal) func reloadMyComment(comment: AGComment?)
+  @_spi(GenuinInternal) func progressUpdateForComment(fileName: Swift.String?, progress: Swift.Double)
+}
+@_spi(GenuinInternal) @_hasMissingDesignatedInitializers public class GenuinSocket {
+  @_spi(GenuinInternal) public static let shared: GenuinSocket
+  @_spi(GenuinInternal) public func updateMessage(_ chatId: Swift.String, _ messageData: [Swift.String : Any], isFromSocket: Swift.Bool)
+  @_spi(GenuinInternal) public func sendConversationUpdatedNotification(transactionType: GenuinCore.DBTransactionType, conversation: BGConversation? = nil, chatId: Swift.String? = nil, message: BGMessage? = nil, isSubscribed: Swift.Bool? = nil, deletedMessageId: Swift.String? = nil, isForLoopDelete: Swift.Bool? = nil)
+  @_spi(GenuinInternal) public func commentCreated(_ commentData: [Swift.String : Any])
+  @_spi(GenuinInternal) public func reloadConversation(conversation: BGConversation?)
+  @_spi(GenuinInternal) public func progressUpdateForChat(chatId: Swift.String?, videoName: Swift.String?, progress: Swift.Double)
+  @_spi(GenuinInternal) public func reloadMyComment(myComment: MyComment?)
+  @_spi(GenuinInternal) public func progressUpdateForComment(fileName: Swift.String?, progress: Swift.Double)
+  @_spi(GenuinInternal) public func newLoopCreated(loopData: [Swift.String : Any])
+  @_spi(GenuinInternal) public func sigConnectIfNotConnected()
+  @_spi(GenuinInternal) @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GenuinUI : ObjectiveC.NSObject {
+  @objc public static let shared: GenuinUI
+  @objc @_Concurrency.MainActor public func initialize()
+  @objc deinit
+}
+extension GenuinCore.Guideline : Swift.Equatable {
+}
+public struct SocialLinksImages {
+  public static let LINKED_IN_IMAGE: Swift.String
+  public static let INSTAGRAM_IMAGE: Swift.String
+  public static let TWITTER_IMAGE: Swift.String
+}
+public struct VIDEO_AUDIO_DURATION {
+  public static let MAX_VIDEO_DURATION: Swift.Double
+  public static let MAX_AUDIO_DURATION: Swift.Double
+}
+public enum RecordVideoType {
+  case none
+  case reply
+  case loop
+  case comment
+  case updateCover
+  case updateProfilePicture
+  case communityProfileUpload
+  case updateDPRT
+  case communityBanner
+  public var type: Swift.String {
+    get
+  }
+  public var languageInfo: GenuinCore.LanguageInfo {
+    get
+  }
+  public static func == (a: RecordVideoType, b: RecordVideoType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_spi(GenuinInternal) extension GenuinCore.LanguageConstants {
+  @_spi(GenuinInternal) public static var HOME: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var MANAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITIES: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var POST: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GROUP: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GROUPS: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PUBLIC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PRIVATE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var VISIBLE_TO_EVERYONE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var VISIBLE_TO_GROUP_MEMBERS_ONLY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var VISIBLE_TO_COMMUNITY_MEMBERS_ONLY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var NO_POSTS_YET: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var REMOVE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var QNA: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ADD_MEMBERS: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DELETE_COMMENT_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DELETE_COMMENT_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_DONE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_GO_BACK: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ONE_LINK: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var N_LINKS: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var POST_SAVED_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var POST_SAVE_ERROR_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var EDIT_COVER: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ADD_LINK: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var POST_TO: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_TO_EVERYONE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_TO_MEM_ONLY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_GRP_MEM_ONLY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var NEW_POST: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DISCARD_EDIT_POST_MSG_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DISCARD_EDIT_POST_MSG: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PLACEHOLDER_NEW_POST_DESCRIPTION: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GROUP_CREATED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var RECORD_A_POST: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var SCHEDULE_POST: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var AUTO_LOOP_SUCCESS_DESC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var WO_POST_SUCCESS_DESC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var REPOST_NO_LOOPS_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var POST_NO_LOOPS_DESC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DISCARD_DETAILS_MSG_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DISCARD_DETAILS_MSG_DESC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DELETED_ROUNDTABLE_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var YOU: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CREATE_YOUR_AVATAR: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var AVATAR_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_INVITE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var INVITED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PERSONALISATION: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CONTACT_PERMISSION_ER_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CONTACT_PERMISSION_ERROR: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_CLEAR_ALL: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var RECENT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var NO_SEARCH_RESULTS: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TRY_SOMETHING_ELSE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BIRTHDATE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var EMAIL_ALREADY_ASSOCIATED_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PHONE_ALREADY_ASSOCIATED_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var UNABLE_TO_SEND_CODE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BIRTHDATE_INFO: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TIKTOK_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TIKTOK_PH: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var INSTAGRAM_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var INSTAGRAM_PH: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var X_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var X_PH: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var LINKED_IN_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var LINKEDIN_PH: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var YOUTUBE_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var YOUTUBE_PH: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var INVALID_PROFILE_URL: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var INVALID_USER_NAME: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_ONBOARD_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_ONBOARD_DESC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_1: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_1: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_2: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_2: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_3: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_3: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_1: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_1: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_2: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_2: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_3: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_3: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_BECOME_A_CREATOR: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var SUGGESTED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CLEAR_VIDEO_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CLEAR_VIDEO_POST_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_CLEAR: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var AUTO_CREATE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DISCARD: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_GENERATE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CAMERA_PERMISSION_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COVER_IMAGE_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COVER_IMAGE_SUB_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PREVIEW: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ADD_BUTTON: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_GIVE_PERMISSIONS: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var MICROPHONE_NO_PERMISSION_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var MICROPHONE_NO_PERMISSION_DESCRIPTION_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CAMERA_MICROPHONE_NO_PERMISSION_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CAMERA_NO_PERMISSION_DESCRIPTION_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var POSTING: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var JUST_NOW: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TIME_AGO: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var FAILED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var NO_TRANSCRIPTION_AVAIALABLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TAP_TO_HIDE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TAP_TO_SEE_TRANSCRIPTION: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var LOADING_TRANSCRIPTION: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_RETRY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMENT_COPIED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_COPY: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TAP_TO_RECORD_COMMENT_TOOL_TIP: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var REPOST_TUTORIAL_TITLE_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var REPOST_TUTORIAL_DESC_TEXT: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_REPOST: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_REPOSTED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CONTACT_AWAITING_RESPONSE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var START_COMMUNITY_TITE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CLEAR_ALL_VIDEO_TITLE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CLEAR_ALL_VIDEO_MESSAGE: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var NO_CONTACTS: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_CLEAR_ALL_CAP: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CHOOSE_AVATAR_DESC: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var JOIN_COMMUNITY_SMS_MSG: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ALL_SELECTED: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+}
+public struct LinearWaveformRenderer : WaveformRenderer {
+  public init()
+  public func render(samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, lastOffset: Swift.Int)
+}
+public protocol LinksDelegate : AnyObject {
+  func linkoutUpdated(linkout: GenuinCore.LinkOutCollection?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinksViewController : GenuinCore.BaseViewController {
+  @_Concurrency.MainActor @preconcurrency public static let identifier: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static func instantiate() -> LinksViewController?
+  @_Concurrency.MainActor @preconcurrency public var isEditMode: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var linkout: GenuinCore.LinkOutCollection?
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LinksDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension LinksViewController : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension LinksViewController : UIKit.UITableViewDragDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, itemsForBeginning session: any UIKit.UIDragSession, at indexPath: Foundation.IndexPath) -> [UIKit.UIDragItem]
+}
+extension LinksViewController : UIKit.UITableViewDropDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, dropSessionDidUpdate session: any UIKit.UIDropSession, withDestinationIndexPath destinationIndexPath: Foundation.IndexPath?) -> UIKit.UITableViewDropProposal
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, performDropWith coordinator: any UIKit.UITableViewDropCoordinator)
+}
+extension LinksViewController : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+extension LinksViewController : UIKit.UINavigationControllerDelegate, UIKit.UIImagePickerControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+}
+extension LinksViewController : TOCropViewControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func cropViewController(_ cropViewController: TOCropViewController, didCropTo image: UIKit.UIImage, with cropRect: CoreFoundation.CGRect, angle: Swift.Int)
+}
+public enum SharedContentType : Swift.Int {
+  case video
+  case link
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol ScheduleAIPostsDelegate : AnyObject {
+  func schedulerUpdated()
+  func schedulerCreatedEditted(schedule: GenuinCore.BGScheduler)
+  func schedulerDeleted()
+}
+public protocol LoopInboxCellDelegate : AnyObject {
+  func postTapped(chatId: Swift.String?, conversationType: Swift.Int16, group: GenuinCore.AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?)
+  func retryTapped(conversation: BGConversation?, message: BGMessage?)
+  func deleteTapped(chatId: Swift.String, videoName: Swift.String)
+  func deleteAllTapped(chatId: Swift.String, pendingMessages: [Swift.String])
+  func beginChanges()
+  func endChanges()
+  func cellTapped(chatId: Swift.String, isWelcomeLoop: Swift.Bool?)
+  func thumbnailTapped(conversation: BGConversation)
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LoopInboxCell : UIKit.UITableViewCell {
+  @_spi(GenuinInternal) @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var btnPost: GenuinCore.GenuinButton!
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LoopInboxCellDelegate)?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var conversation: BGConversation? {
+    @_spi(GenuinInternal) get
+    @_spi(GenuinInternal) set
+  }
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func showAndReturnToolTip() -> EasyTipView?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func progressUpdateForChat(chatId: Swift.String?, videoName: Swift.String?, progress: Swift.Double)
+  @_spi(GenuinInternal) @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_spi(GenuinInternal) @objc deinit
+}
+@_spi(GenuinInternal) extension LoopInboxCell {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func collapseUploadView(completion: (() -> Swift.Void)? = nil)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func collapseUploadViewWithoutDelay(completion: (() -> Swift.Void)? = nil)
+}
+public enum LoggedInUserStatus : Swift.Int {
+  case notMember
+  case requested
+  case member
+  public static func getLoggedInUserStatus(status: Swift.Int) -> LoggedInUserStatus
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension GenuinCore.LoopInboxService {
+  public static func getCommunities(userId: Swift.String, brandId: Swift.Int? = nil, loggedInUserRole: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getLoopsConversations(lastChatId: Swift.String? = nil, chatIds: [Swift.String]? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getRecentUpdates(lastSyncId: Swift.Int, screenName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getMessagesIds(chatId: Swift.String, fromMessageId: Swift.String?, firstMessageId: Swift.String?, lastMessageId: Swift.String?, fromTopToSpecificMessageId: Swift.String?, getSingleVideo: Swift.Bool? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getOldestUnreadMessageId(chatId: Swift.String, shouldGetUnreadCount: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func markAllMessagesAsRead(chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getConversationDetails(chatId: Swift.String, getMiniMembersList: Swift.Bool = false, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func createComment(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func createConversation(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func generateLoopDetails(community: GenuinCore.BGCommunity? = nil, selectedCategory: GenuinCore.BGCategory? = nil, selectedSubCategory: GenuinCore.BGSubCategory? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LoopInboxShimmerCell : UIKit.UITableViewCell {
+  @_spi(GenuinInternal) @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var imgSingleVideo: UIKit.UIImageView!
+  @_spi(GenuinInternal) @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var viewMultipleVideos: UIKit.UIView!
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @_spi(GenuinInternal) @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_spi(GenuinInternal) @objc deinit
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LoopsCollectionView : UIKit.UICollectionView {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var collectionViewDelegate: (any LoopsCollectionViewDelegate)?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public init(conversations: [GenuinCore.BGConversationDisplay], collectionViewDelegate: (any LoopsCollectionViewDelegate)?, showRecentUpdates: Swift.Bool, cellSize: CoreFoundation.CGSize? = nil)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func applySnapshot(conversations: [GenuinCore.BGConversationDisplay], animatingDifferences: Swift.Bool = true)
+  @_spi(GenuinInternal) @objc deinit
+}
+@_spi(GenuinInternal) extension LoopsCollectionView : UIKit.UICollectionViewDelegate {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+@_spi(GenuinInternal) public protocol LoopsCollectionViewDelegate : AnyObject {
+  @_spi(GenuinInternal) func didSelect(conversation: GenuinCore.BGConversationDisplay?)
+  @_spi(GenuinInternal) func thumbnailsTapped(conversation: GenuinCore.BGConversationDisplay?)
+}
+public protocol ModeratorsListViewDelegate : ObjectiveC.NSObject {
+  func updateModeratorsList(moderators: [GenuinCore.AGMember])
+}
+public enum ModeratorsSectionType {
+  case main
+  public static func == (a: ModeratorsSectionType, b: ModeratorsSectionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(MyComment) public class MyComment : CoreData.NSManagedObject {
+  public class func insertMyComment(dict: [Swift.String : Any], _ completion: @escaping (_ myComment: MyComment) -> Swift.Void)
+  public class func retriveAllComments() -> [MyComment]
+  public class func updateMyComment(fileName: Swift.String, videoStatus: Swift.String?, imageStatus: Swift.String?, apiStatus: Swift.String?, compressionStatus: Swift.String? = nil, isRetry: Swift.Bool, onCompletion: ((MyComment?) -> ())? = nil)
+  public class func updateMyComment(thumbName: Swift.String, videoStatus: Swift.String?, imageStatus: Swift.String?, apiStatus: Swift.String?, isRetry: Swift.Bool, onCompletion: ((MyComment?) -> ())? = nil)
+  public class func deleteComment(fileName: Swift.String, completion: @escaping (Swift.Bool) -> ())
+  public class func getMyComment(by file_name: Swift.String) -> MyComment?
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension MyComment {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<MyComment>
+  @objc @NSManaged dynamic public var chat_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversation_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var comment_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var thumbnail: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var link: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var meta_data: [Swift.String : Any]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var created_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var no_of_views: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var is_read: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var file_name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var thumbnail_name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var api_call_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var image_upload_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var video_upload_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isRetry: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var questions: [BGQuestion]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var compression_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ffmpeg_command: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var comment_text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var comment_data: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var loggedinUserId: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class NoContactFoundView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblSearchTerm: GenuinCore.GenuinLabel!
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+public protocol CommunityOptionsDelegate : AnyObject {
+  func optionDidSelected(createCommunityOption: BGSetting)
+  func optionDidEditted(createCommunityOption: BGSetting, selectedOption: BGSettingOption)
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PrivacySettingOptionsViewController : GenuinCore.BaseViewController {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func instance() -> PrivacySettingOptionsViewController
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var setting: BGSetting?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CommunityOptionsDelegate)?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var isReadOnly: Swift.Bool
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_spi(GenuinInternal) @objc deinit
+}
+@_spi(GenuinInternal) extension PrivacySettingOptionsViewController : UIKit.UITableViewDelegate {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public enum MenuOption {
+  case settings
+  case inviteFriend
+  public static func == (a: MenuOption, b: MenuOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol AutoCreateLoopDelegate : AnyObject {
+  func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PublishRoundtableViewController : GenuinCore.BaseViewController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency public static func instance() -> PublishRoundtableViewController
+  @_Concurrency.MainActor @preconcurrency public var community: GenuinCore.BGCommunity?
+  @_Concurrency.MainActor @preconcurrency public var communityTemplate: CommunityTemplate?
+  @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var generatedGroup: GenuinCore.BGConversationGroupDisplay?
+  @_Concurrency.MainActor @preconcurrency public var trackingId: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var selectedMembers: [GenuinCore.AGMember]?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension PublishRoundtableViewController : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+}
+extension PublishRoundtableViewController : GenuinCore.SJTwitterTagInputTextViewDelegate {
+  @_Concurrency.MainActor @preconcurrency public func didTextChanged(count: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func didSearchWithAtTag(tagString: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func didSearchWithHashTag(tagString: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func textDidBeginEditing()
+}
+extension PublishRoundtableViewController : AGContactPickerDelegate {
+  @_Concurrency.MainActor @preconcurrency public func agContactPicker(didContactFetchFailed error: Foundation.NSError)
+  @_Concurrency.MainActor @preconcurrency public func agContactPickerDidSkipped()
+  @_Concurrency.MainActor @preconcurrency public func agContactPicker(didCancel error: Foundation.NSError?)
+  @_Concurrency.MainActor @preconcurrency public func agContactPicker(didSelectContact contact: AGContact)
+  @_Concurrency.MainActor @preconcurrency public func agContactPicker(didSelectMultipleContacts contacts: [AGContact])
+}
+extension PublishRoundtableViewController : CommunityOptionsDelegate {
+  @_Concurrency.MainActor @preconcurrency public func optionDidEditted(createCommunityOption: BGSetting, selectedOption: BGSettingOption)
+  @_Concurrency.MainActor @preconcurrency public func optionDidSelected(createCommunityOption: BGSetting)
+}
+extension PublishRoundtableViewController : CollaboratorListDelegate {
+  @_Concurrency.MainActor @preconcurrency public func updateCollaboratorList(members: [GenuinCore.AGMember])
+}
+extension PublishRoundtableViewController : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewWillBeginDecelerating(_ scrollView: UIKit.UIScrollView)
+}
+extension PublishRoundtableViewController : AutoCreateLoopDelegate {
+  @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : GenuinCore.BaseViewController {
+  @_Concurrency.MainActor @preconcurrency public static func instance() -> SearchCommunityMembersViewController
+  @_Concurrency.MainActor @preconcurrency public var viewModel: SearchCommunityMembersViewModel
+  @_Concurrency.MainActor @preconcurrency public var isFromPrivateCommunity: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension SearchCommunityMembersViewController : UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
+}
+extension SearchCommunityMembersViewController : UIKit.UISearchResultsUpdating, UIKit.UISearchBarDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func updateSearchResults(for searchController: UIKit.UISearchController)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+}
+public protocol CollaboratorListDelegate : ObjectiveC.NSObject {
+  func updateCollaboratorList(members: [GenuinCore.AGMember])
+}
+@_hasMissingDesignatedInitializers public class SearchCommunityMembersViewModel {
+  public var community: GenuinCore.BGCommunity?
+  weak public var loopDelegate: (any CollaboratorListDelegate)?
+  @objc deinit
+}
+@objc public class SearchResultsViewModel : ObjectiveC.NSObject {
+  public init(keyword searchKeyword: Swift.String)
+  @objc deinit
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SquareProgressBarView : UIKit.UIView {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var progress: CoreFoundation.CGFloat {
+    @_spi(GenuinInternal) get
+    @_spi(GenuinInternal) set
+  }
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @_spi(GenuinInternal) @objc get
+  }
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_spi(GenuinInternal) @objc deinit
+}
+public protocol SuggestionsViewDelegate : AnyObject {
+  func suggestionDidSelected(mention: GenuinCore.Mention)
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SuggestionsView : UIKit.UIView {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var delegate: (any SuggestionsViewDelegate)?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var suggestions: [Suggestion]
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var defaultSuggestions: [Suggestion]
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func setUpSuggestionsTableViewViewNib()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func reloadTableView()
+  @_spi(GenuinInternal) @objc deinit
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@_spi(GenuinInternal) extension SuggestionsView : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+public enum UPCarouselFlowLayoutSpacingMode {
+  case fixed(spacing: CoreFoundation.CGFloat)
+  case overlap(visibleOffset: CoreFoundation.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class UPCarouselFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var sideItemScale: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var sideItemAlpha: CoreFoundation.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var sideItemShift: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency open var spacingMode: UPCarouselFlowLayoutSpacingMode
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func prepare()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func targetContentOffset(forProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint, withScrollingVelocity velocity: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_spi(GenuinInternal) extension GenuinCore.APPURL {
+  @_spi(GenuinInternal) public static var BRAND_CONTINUE_ON_WEB_LINK: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var VALIDATE_COMMUNITY_HANDLE: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CREATE_COMMUNITY: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var EDIT_COMMUNITY: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var LEAVE_COMMUNITY: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var DEEPLINK_META_DATA: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_TUTORIAL: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_COMMUNITY_CATEGORIES: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_PROFILE_COMMUNITY: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_BRAND_PROFILE_COMMUNITY: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_PROFILE_LOOPS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_BRAND_PROFILE_LOOPS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_PROFILE_LOOPS_VIDEOS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_BRAND_PROFILE_LOOPS_VIDEOS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CONTACT_SYNC: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var UPDATE_GROUP_MEMBER: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var COMMUNITY_ADD_MODERATORS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var PROFILE_FEED: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_FEED: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var REJECT_COMMUNITY_REQUEST: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var RECENT_SERCH_TERMS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var TOP_SEARCH: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var SEARCH_SUGGESTIONS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_COMMUNITY_DETAIL: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_COMMUNITY_LOOPS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_COMMUNITY_MEMBERS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_COMMENTS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_SUGGESTIONS: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CREATE_COMMENT: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_TRANSCRIPTION: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_GUIDELINES: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var HANDLE_SUGGESTION: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var BRAND_LIST: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GENERATE_COMMUNITY_DATA: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_CATEGORY_AND_TOPICS_BY_COMMUNITY: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var GET_LOOP_MESSAGES: Swift.String {
+    @_spi(GenuinInternal) get
+  }
+}
+@_inheritsConvenienceInitializers @objc(UTMSource) public class UTMSource : CoreData.NSManagedObject {
+  public class func clearDumpedUTMSources()
+  public class func getLatestUTMSource() -> UTMSource?
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public enum UTMSourceAction : Swift.String {
+  case subscribe
+  case comment
+  case repost
+  case save
+  case reply
+  case dm
+  case create
+  case join
+  case invite
+  case upgrade
+  case report
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum UTMSourceContentType : Swift.String {
+  case loop
+  case group
+  case video
+  case profile
+  case community
+  case brand
+  case notification
+  case sms_download
+  case highlights
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UTMSource {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<UTMSource>
+  @objc @NSManaged dynamic public var sourceLink: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dynamicLink: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var utmSource: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var utmMedium: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var utmCampaign: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var action: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var fromUsername: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sourceId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var inviteId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var contentType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var parentId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isDump: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var createdAt: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var utmId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var utmUUID: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sourceApplication: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var invitedUserId: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(VideoCacheRecord) public class VideoCacheRecord : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension VideoCacheRecord {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<VideoCacheRecord>
+  @objc @NSManaged dynamic public var video_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var video_url: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var video_local_path: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var downloaded_date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var last_played_date: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var conversation_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class VideoCollectionViewCell : UIKit.UICollectionViewCell, GenuinCore.AutoPlayableCollectionViewCellProtocol {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var videoPlaybackDelegate: (any VideoPlaybackDelegate)?
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSublayers(of layer: QuartzCore.CALayer)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func setCell(video: GenuinCore.BGConversationMessageDisplay?, shouldPlay autoPlay: Swift.Bool = true)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func playIfPossible()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func pause(isPlayerDidPlayToEndTime: Swift.Bool, isFromScroll: Swift.Bool)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func resume()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func isPlaying() -> Swift.Bool
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_spi(GenuinInternal) @objc deinit
+}
+public protocol VideoPlaybackDelegate : AnyObject {
+  func playerDidPlayToEndTime(for cell: UIKit.UICollectionViewCell)
+}
+@_spi(GenuinInternal) extension VideoCollectionViewCell : GenuinCore.BrandProfileBadgeViewDelegate {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func sizeChanged(brandProfileBadgeView: GenuinCore.BrandProfileBadgeView, size: CoreFoundation.CGSize)
+}
+public class WaveformAnalyzer {
+  public enum AnalyzeError : Swift.Error {
+    case generic
+    public static func == (a: WaveformAnalyzer.AnalyzeError, b: WaveformAnalyzer.AnalyzeError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var noiseFloorDecibelCutoff: Swift.Float
+  public init?(audioAssetURL: Foundation.URL)
+  public func samples(count: Swift.Int, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated) async throws -> [Swift.Float]
+  public func samples(count: Swift.Int, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ amplitudes: [Swift.Float]?) -> ())
+  @objc deinit
+}
+public class WaveformImageDrawer : Foundation.ObservableObject {
+  public enum GenerationError : Swift.Error {
+    case generic
+    public static func == (a: WaveformImageDrawer.GenerationError, b: WaveformImageDrawer.GenerationError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public init()
+  public var shouldDrawSilencePadding: Swift.Bool
+  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: Waveform.Configuration, renderer: any WaveformRenderer = LinearWaveformRenderer(), qos: Dispatch.DispatchQoS.QoSClass = .userInitiated) async throws -> DSImage
+  public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: Waveform.Configuration, renderer: any WaveformRenderer = LinearWaveformRenderer(), qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ waveformImage: DSImage?) -> ())
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+extension WaveformImageDrawer {
+  public func draw(waveform samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, renderer: any WaveformRenderer)
+}
+extension WaveformImageDrawer {
+  public func waveformImage(from samples: [Swift.Float], with configuration: Waveform.Configuration, renderer: any WaveformRenderer) -> DSImage?
+}
+public typealias DSColor = UIKit.UIColor
+public typealias DSImage = UIKit.UIImage
+public enum DSScreen {
+  public static var scale: CoreFoundation.CGFloat {
+    get
+  }
+}
+public protocol WaveformRenderer {
+  func render(samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, lastOffset: Swift.Int)
+}
+public enum Waveform {
+  public enum Style : Swift.Equatable {
+    public struct StripeConfig : Swift.Equatable {
+      public let color: DSColor
+      public let width: CoreFoundation.CGFloat
+      public let spacing: CoreFoundation.CGFloat
+      public let lineCap: CoreGraphics.CGLineCap
+      public init(color: DSColor, width: CoreFoundation.CGFloat = 1, spacing: CoreFoundation.CGFloat = 5, lineCap: CoreGraphics.CGLineCap = .round)
+      public static func == (a: Waveform.Style.StripeConfig, b: Waveform.Style.StripeConfig) -> Swift.Bool
+    }
+    case filled(DSColor)
+    case outlined(DSColor, CoreFoundation.CGFloat)
+    case gradient([DSColor])
+    case gradientOutlined([DSColor], CoreFoundation.CGFloat)
+    case striped(Waveform.Style.StripeConfig)
+    public static func == (a: Waveform.Style, b: Waveform.Style) -> Swift.Bool
+  }
+  public struct Damping : Swift.Equatable {
+    public enum Sides : Swift.Equatable {
+      case left
+      case right
+      case both
+      public static func == (a: Waveform.Damping.Sides, b: Waveform.Damping.Sides) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public let percentage: Swift.Float
+    public let sides: Waveform.Damping.Sides
+    public let easing: (Swift.Float) -> Swift.Float
+    public init(percentage: Swift.Float = 0.125, sides: Waveform.Damping.Sides = .both, easing: @escaping (Swift.Float) -> Swift.Float = { x in pow(x, 2) })
+    public func with(percentage: Swift.Float? = nil, sides: Waveform.Damping.Sides? = nil, easing: ((Swift.Float) -> Swift.Float)? = nil) -> Waveform.Damping
+    public static func == (lhs: Waveform.Damping, rhs: Waveform.Damping) -> Swift.Bool
+  }
+  public struct Configuration : Swift.Equatable {
+    public let size: CoreFoundation.CGSize
+    public let backgroundColor: DSColor
+    public let style: Waveform.Style
+    public let damping: Waveform.Damping?
+    public let scale: CoreFoundation.CGFloat
+    public let verticalScalingFactor: CoreFoundation.CGFloat
+    public let shouldAntialias: Swift.Bool
+    public init(size: CoreFoundation.CGSize = .zero, backgroundColor: DSColor = DSColor.clear, style: Waveform.Style = .gradient([DSColor.black, DSColor.gray]), damping: Waveform.Damping? = nil, scale: CoreFoundation.CGFloat = DSScreen.scale, verticalScalingFactor: CoreFoundation.CGFloat = 0.95, shouldAntialias: Swift.Bool = false)
+    public func with(size: CoreFoundation.CGSize? = nil, backgroundColor: DSColor? = nil, style: Waveform.Style? = nil, damping: Waveform.Damping? = nil, scale: CoreFoundation.CGFloat? = nil, verticalScalingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool? = nil) -> Waveform.Configuration
+    public static func == (a: Waveform.Configuration, b: Waveform.Configuration) -> Swift.Bool
+  }
+}
+@objc @_Concurrency.MainActor @preconcurrency public class WaveformImageView : UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency public var configuration: Waveform.Configuration {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var waveformAudioURL: Foundation.URL? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func reset()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class WaveformLiveView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static let defaultConfiguration: Waveform.Configuration
+  @_Concurrency.MainActor @preconcurrency public var shouldDrawSilencePadding: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var configuration: Waveform.Configuration {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var samples: [Swift.Float] {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public var renderer: any WaveformRenderer {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(configuration: Waveform.Configuration = defaultConfiguration, renderer: any WaveformRenderer = LinearWaveformRenderer())
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public func add(sample: Swift.Float)
+  @_Concurrency.MainActor @preconcurrency public func add(samples: [Swift.Float])
+  @_Concurrency.MainActor @preconcurrency public func reset()
+  @objc deinit
+}
+extension WaveformRenderer {
+  public func defaultStyle(context: CoreGraphics.CGContext, with configuration: Waveform.Configuration)
+}
+extension ABVideoRangeSlider.ABTimeViewPosition : Swift.Equatable {}
+extension ABVideoRangeSlider.ABTimeViewPosition : Swift.Hashable {}
+extension AGCommentType : Swift.Equatable {}
+extension AGCommentType : Swift.Hashable {}
+extension AGCommentType : Swift.RawRepresentable {}
+extension BadgePosition : Swift.Equatable {}
+extension BadgePosition : Swift.Hashable {}
+extension BadgeSize : Swift.Equatable {}
+extension BadgeSize : Swift.Hashable {}
+extension AVCapturSessionSetupResult : Swift.Equatable {}
+extension AVCapturSessionSetupResult : Swift.Hashable {}
+extension CompressionStatus : Swift.Equatable {}
+extension CompressionStatus : Swift.Hashable {}
+extension CompressionStatus : Swift.RawRepresentable {}
+extension BGSettingOptionType : Swift.Equatable {}
+extension BGSettingOptionType : Swift.Hashable {}
+extension CircularProgressTrackViewGlowMode : Swift.Equatable {}
+extension CircularProgressTrackViewGlowMode : Swift.Hashable {}
+extension CircularProgressTrackViewGlowMode : Swift.RawRepresentable {}
+extension CommunitySetupActions : Swift.Equatable {}
+extension CommunitySetupActions : Swift.Hashable {}
+extension CommunitySetupActions : Swift.RawRepresentable {}
+extension CommunitySection : Swift.Equatable {}
+extension CommunitySection : Swift.Hashable {}
+extension AiNudgeSourceViewType : Swift.Equatable {}
+extension AiNudgeSourceViewType : Swift.Hashable {}
+extension AiNudgeSourceViewType : Swift.RawRepresentable {}
+extension RecordVideoType : Swift.Equatable {}
+extension RecordVideoType : Swift.Hashable {}
+extension SharedContentType : Swift.Equatable {}
+extension SharedContentType : Swift.Hashable {}
+extension SharedContentType : Swift.RawRepresentable {}
+extension LoggedInUserStatus : Swift.Equatable {}
+extension LoggedInUserStatus : Swift.Hashable {}
+extension LoggedInUserStatus : Swift.RawRepresentable {}
+extension ModeratorsSectionType : Swift.Equatable {}
+extension ModeratorsSectionType : Swift.Hashable {}
+extension MenuOption : Swift.Equatable {}
+extension MenuOption : Swift.Hashable {}
+extension UTMSourceAction : Swift.Equatable {}
+extension UTMSourceAction : Swift.Hashable {}
+extension UTMSourceAction : Swift.RawRepresentable {}
+extension UTMSourceContentType : Swift.Equatable {}
+extension UTMSourceContentType : Swift.Hashable {}
+extension UTMSourceContentType : Swift.RawRepresentable {}
+extension WaveformAnalyzer.AnalyzeError : Swift.Equatable {}
+extension WaveformAnalyzer.AnalyzeError : Swift.Hashable {}
+extension WaveformImageDrawer.GenerationError : Swift.Equatable {}
+extension WaveformImageDrawer.GenerationError : Swift.Hashable {}
+extension Waveform.Damping.Sides : Swift.Hashable {}

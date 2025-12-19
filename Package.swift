@@ -1,0 +1,148 @@
+// swift-tools-version: 5.7
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "GenuinSDK",
+    platforms: [.iOS(SupportedPlatform.IOSVersion.v15)],
+    products: [
+        .library(
+            name: "GenuinCore",
+            targets: ["GenuinCoreWrapper"]),
+        .library(
+            name: "GenuinUI",
+            targets: ["GenuinUIWrapper"]),
+        .library(
+            name: "GenuinCamera",
+            targets: ["GenuinCameraWrapper"]),
+        .library(
+            name: "GenuinAI",
+            targets: ["GenuinAIWrapper"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.5.2"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.28.10"),
+        .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
+//        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.19.7"),
+    ],
+    targets: [
+            .binaryTarget(name: "GenuinCore",
+                          path: "CoreBundle/GenuinCore/GenuinCore.xcframework"),
+            .binaryTarget(name: "TOCropViewController",
+                          path: "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework"),
+            .binaryTarget(name: "MaterialComponents",
+                          path: "CoreBundle/MaterialComponents_124.2.0/MaterialComponents.xcframework"),
+            .binaryTarget(name: "MDFInternationalization",
+                          path: "CoreBundle/MaterialComponents_124.2.0/MDFInternationalization.xcframework"),
+            .binaryTarget(name: "MotionAnimator",
+                          path: "CoreBundle/MaterialComponents_124.2.0/MotionAnimator.xcframework"),
+            .binaryTarget(name: "MotionInterchange",
+                          path: "CoreBundle/MaterialComponents_124.2.0/MotionInterchange.xcframework"),
+//            .binaryTarget(name: "SDWebImage",
+//                          path: "CoreBundle/SDWebImage_5.20.0/SDWebImage.xcframework"),
+            .binaryTarget(name: "libPhoneNumberiOS",
+                          path: "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework"),
+            .binaryTarget(name: "CryptoSwift",
+                          path: "CoreBundle/CryptoSwift_1.8.1/CryptoSwift.xcframework"),
+            .binaryTarget(name: "EasyTipView",
+                          path: "CoreBundle/EasyTipView_2.1/EasyTipView.xcframework"),
+            .binaryTarget(name: "Hero",
+                          path: "CoreBundle/Hero_1.6.2/Hero.xcframework"),
+            .binaryTarget(name: "SkeletonView",
+                          path: "CoreBundle/SkeletonView_1.30.4/SkeletonView.xcframework"),
+            .binaryTarget(name: "SnapKit",
+                          path: "CoreBundle/SnapKit_5.7.1/SnapKit.xcframework"),
+            .binaryTarget(name: "MetricsReporter",
+                          path: "CoreBundle/Rudder_1.31.0/MetricsReporter.xcframework"),
+            .binaryTarget(name: "RSCrashReporter",
+                          path: "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework"),
+            .binaryTarget(name: "Rudder",
+                          path: "CoreBundle/Rudder_1.31.0/Rudder.xcframework"),
+            .binaryTarget(name: "RudderKit",
+                          path: "CoreBundle/Rudder_1.31.0/RudderKit.xcframework"),
+            .binaryTarget(name: "GenuinUI",
+                          path: "UIBundle/GenuinUI/GenuinUI.xcframework"),
+            .binaryTarget(name: "URLEmbeddedView",
+                          path: "UIBundle/URLEmbeddedView_0.18.0/URLEmbeddedView.xcframework"),
+            .binaryTarget(name: "XLPagerTabStrip",
+                          path: "UIBundle/XLPagerTabStrip_9.1.0/XLPagerTabStrip.xcframework"),
+            .binaryTarget(name: "SocketIO",
+                          path: "UIBundle/SocketIO_16.1.0/SocketIO.xcframework"),
+            .binaryTarget(name: "Starscream",
+                          path: "UIBundle/SocketIO_16.1.0/Starscream.xcframework"),
+            .binaryTarget(name: "GenuinCamera",
+                          path: "CameraBundle/GenuinCamera/GenuinCamera.xcframework"),
+            .binaryTarget(name: "libswscale",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libswscale.xcframework"),
+            .binaryTarget(name: "libswresample",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libswresample.xcframework"),
+            .binaryTarget(name: "libavutil",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libavutil.xcframework"),
+            .binaryTarget(name: "libavformat",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libavformat.xcframework"),
+            .binaryTarget(name: "libavfilter",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libavfilter.xcframework"),
+            .binaryTarget(name: "libavdevice",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libavdevice.xcframework"),
+            .binaryTarget(name: "libavcodec",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/libavcodec.xcframework"),
+            .binaryTarget(name: "ffmpegkit",
+                          path: "CameraBundle/ffmpeg-kit-min-gpl-6.0-ios-xcframework/ffmpegkit.xcframework"),
+            .binaryTarget(name: "GenuinAI",
+                          path: "AIBundle/GenuinAI/GenuinAI.xcframework"),
+        
+        .target(
+            name: "GenuinCoreWrapper",
+            dependencies: [
+                "GenuinCore",
+                "CryptoSwift",
+                "EasyTipView",
+                .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),
+                "TOCropViewController",
+                "Hero",
+                .product(name: "Lottie", package: "lottie-spm"),
+                "MaterialComponents", "MDFInternationalization", "MotionAnimator", "MotionInterchange",
+//                .product(name: "SDWebImage", package: "SDWebImage"),
+                "SkeletonView",
+                "SnapKit",
+                "libPhoneNumberiOS",
+                "MetricsReporter", "RSCrashReporter", "Rudder", "RudderKit",
+            ],
+            path: "CoreBundle/GenuinCoreWrapper"
+        ),
+        .target(
+            name: "GenuinUIWrapper",
+            dependencies: [
+                "GenuinCoreWrapper",
+                "GenuinUI",
+                "SocketIO",
+                "Starscream",
+                "XLPagerTabStrip",
+                "URLEmbeddedView",
+            ],
+            path: "UIBundle/GenuinUIWrapper"
+        ),
+        .target(
+            name: "GenuinCameraWrapper",
+            dependencies: [
+                "GenuinCoreWrapper",
+                "GenuinUIWrapper",
+                "GenuinCamera",
+                "libswscale", "libswresample", "libavutil", "libavformat", "libavfilter", "libavdevice", "libavcodec", "ffmpegkit",
+                .product(name: "GiphyUISDK", package: "giphy-ios-sdk"),
+            ],
+            path: "CameraBundle/GenuinCameraWrapper"
+        ),
+        .target(
+            name: "GenuinAIWrapper",
+            dependencies: [
+                "GenuinCoreWrapper",
+                "GenuinUIWrapper",
+                "GenuinCameraWrapper",
+                "GenuinAI",
+            ],
+            path: "AIBundle/GenuinAIWrapper"
+        ),
+    ]
+)

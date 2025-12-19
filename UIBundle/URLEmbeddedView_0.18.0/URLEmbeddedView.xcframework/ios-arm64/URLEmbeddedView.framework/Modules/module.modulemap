@@ -1,0 +1,11 @@
+framework module URLEmbeddedView {
+  umbrella header "URLEmbeddedView.h"
+  export *
+
+  module * { export * }
+}
+
+module URLEmbeddedView.Swift {
+  header "URLEmbeddedView-Swift.h"
+  requires objc
+}

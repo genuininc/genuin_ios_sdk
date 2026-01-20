@@ -145723,6 +145723,38 @@
           },
           {
             "kind": "Function",
+            "name": "getBGPresentedController",
+            "printedName": "getBGPresentedController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GenuinCore0A8BaseViewC24getBGPresentedControllerSo06UIViewG0CSgyF",
+            "mangledName": "$s10GenuinCore0A8BaseViewC24getBGPresentedControllerSo06UIViewG0CSgyF",
+            "moduleName": "GenuinCore",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "playerDidPlayToEndTime",
             "printedName": "playerDidPlayToEndTime(for:)",
             "children": [
@@ -381620,77 +381652,77 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 33579,
+      "offset": 35116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39215,
+      "offset": 40752,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 84377,
+      "offset": 85956,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 85597,
+      "offset": 87176,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 90866,
+      "offset": 92445,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 97394,
+      "offset": 98973,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 99195,
+      "offset": 100774,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 111767,
+      "offset": 113346,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 112697,
+      "offset": 114276,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 112733,
+      "offset": 114312,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 118542,
+      "offset": 120121,
       "length": 4,
       "value": "true"
     },
@@ -381815,449 +381847,477 @@
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
+      "kind": "Array",
+      "offset": 16679,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16818,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 16746,
+      "offset": 17026,
       "length": 4,
       "value": "2002"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 16831,
+      "offset": 17111,
       "length": 24,
       "value": "\"Error in image url :: \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 16908,
+      "offset": 17188,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 17491,
+      "offset": 17771,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 17495,
+      "offset": 17775,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 17527,
+      "offset": 17807,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 17531,
+      "offset": 17811,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 17562,
+      "offset": 17842,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 17566,
+      "offset": 17846,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
+      "kind": "Array",
+      "offset": 18293,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18643,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 18088,
+      "offset": 18875,
       "length": 4,
       "value": "2002"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 18191,
+      "offset": 18978,
       "length": 24,
       "value": "\"Error in image url :: \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 18268,
+      "offset": 19055,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 18719,
+      "offset": 19506,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 18803,
+      "offset": 19590,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 19926,
+      "offset": 20713,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 19984,
+      "offset": 20771,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 19992,
+      "offset": 20779,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 20167,
+      "offset": 20954,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 20179,
+      "offset": 20966,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 20512,
+      "offset": 21299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 20976,
+      "offset": 21763,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 21041,
+      "offset": 21828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 21239,
+      "offset": 22026,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 21304,
+      "offset": 22091,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 21459,
+      "offset": 22246,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 21575,
+      "offset": 22362,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 21807,
+      "offset": 22594,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 22275,
+      "offset": 23062,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 22364,
+      "offset": 23151,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 22534,
+      "offset": 23321,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 22664,
+      "offset": 23451,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 22838,
+      "offset": 23625,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 22908,
+      "offset": 23695,
       "length": 7,
       "value": "\" • \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 23158,
+      "offset": 23945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23500,
+      "offset": 24287,
       "length": 83,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23520,
+      "offset": 24307,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23579,
+      "offset": 24366,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23582,
+      "offset": 24369,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23672,
+      "offset": 24459,
       "length": 84,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23692,
+      "offset": 24479,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23752,
+      "offset": 24539,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 23755,
+      "offset": 24542,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 24124,
+      "offset": 24911,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 24248,
+      "offset": 25035,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 24334,
+      "offset": 25121,
       "length": 4,
       "value": "0.35"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 24390,
+      "offset": 25177,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 24442,
+      "offset": 25229,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 24872,
+      "offset": 25659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 24961,
+      "offset": 25748,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 25304,
+      "offset": 26091,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 25431,
+      "offset": 26218,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 25528,
+      "offset": 26315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 25683,
+      "offset": 26470,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 25894,
+      "offset": 26681,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 27377,
+      "offset": 28164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 29008,
+      "offset": 29795,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 29037,
+      "offset": 29824,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 30281,
+      "offset": 31068,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 51827,
+      "offset": 52614,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 76661,
+      "offset": 77448,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 97872,
+      "offset": 98659,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 122863,
+      "offset": 123650,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 124330,
+      "offset": 125117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UICollectionViewCell\/GenuinBaseViewCell\/GenuinBaseViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 126412,
+      "offset": 127199,
       "length": 5,
       "value": "false"
     },
@@ -382712,28 +382772,28 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 11338,
+      "offset": 11604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 16413,
+      "offset": 16679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 21602,
+      "offset": 21868,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 21804,
+      "offset": 22070,
       "length": 5,
       "value": "false"
     },
@@ -397678,161 +397738,161 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "StringLiteral",
-      "offset": 43932,
+      "offset": 44191,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 44346,
+      "offset": 44605,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "FloatLiteral",
-      "offset": 44427,
+      "offset": 44686,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "FloatLiteral",
-      "offset": 44573,
+      "offset": 44832,
       "length": 6,
       "value": "1000.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "StringLiteral",
-      "offset": 44680,
+      "offset": 44939,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 44838,
+      "offset": 45097,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "StringLiteral",
-      "offset": 44900,
+      "offset": 45159,
       "length": 7,
       "value": "\" • \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 45053,
+      "offset": 45312,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "StringLiteral",
-      "offset": 45145,
+      "offset": 45404,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "FloatLiteral",
-      "offset": 45339,
+      "offset": 45598,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 45433,
+      "offset": 45692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 68113,
+      "offset": 68372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 69701,
+      "offset": 69960,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 70653,
+      "offset": 70912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 90084,
+      "offset": 90343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 99310,
+      "offset": 99569,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 123022,
+      "offset": 123281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139076,
+      "offset": 139335,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139140,
+      "offset": 139399,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139201,
+      "offset": 139460,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139305,
+      "offset": 139564,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "FloatLiteral",
-      "offset": 139372,
+      "offset": 139631,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 142882,
+      "offset": 143141,
       "length": 5,
       "value": "false"
     },
@@ -398105,161 +398165,161 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 63801,
+      "offset": 64036,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 80303,
+      "offset": 80604,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 81002,
+      "offset": 81303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 88137,
+      "offset": 88438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 88168,
+      "offset": 88469,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 88196,
+      "offset": 88497,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 88232,
+      "offset": 88533,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 101773,
+      "offset": 102074,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 105616,
+      "offset": 105917,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 203026,
+      "offset": 203369,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 270637,
+      "offset": 270980,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 272982,
+      "offset": 273325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 307287,
+      "offset": 307630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 309422,
+      "offset": 309765,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 309486,
+      "offset": 309829,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 309547,
+      "offset": 309890,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 309661,
+      "offset": 310004,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 309733,
+      "offset": 310076,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 335708,
+      "offset": 336051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 346051,
+      "offset": 346394,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 359531,
+      "offset": 359874,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 363158,
+      "offset": 363501,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 373191,
+      "offset": 373534,
       "length": 5,
       "value": "false"
     },

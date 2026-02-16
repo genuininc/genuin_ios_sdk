@@ -9690,4 +9690,3 @@ extension VMAPTrackingEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Equatable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Hashable {}
-@_spi(GenuinInternal) extension WalletEventContentType : Swift.RawRepresentable {}

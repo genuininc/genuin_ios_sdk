@@ -384041,7 +384041,7 @@
       "kind": "StringLiteral",
       "offset": 10202,
       "length": 8,
-      "value": "\"0.2.14\""
+      "value": "\"0.2.15\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
@@ -397829,70 +397829,70 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 70912,
+      "offset": 71003,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 90343,
+      "offset": 90434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 99569,
+      "offset": 99660,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 123281,
+      "offset": 123372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139335,
+      "offset": 139426,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139399,
+      "offset": 139490,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139460,
+      "offset": 139551,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 139564,
+      "offset": 139655,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "FloatLiteral",
-      "offset": 139631,
+      "offset": 139722,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 143141,
+      "offset": 143232,
       "length": 5,
       "value": "false"
     },
@@ -398214,112 +398214,112 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 102382,
+      "offset": 102481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 106225,
+      "offset": 106324,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 203677,
+      "offset": 203776,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 271288,
+      "offset": 271482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 273633,
+      "offset": 273827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 308072,
+      "offset": 308266,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 310207,
+      "offset": 310401,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 310271,
+      "offset": 310465,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 310332,
+      "offset": 310526,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 310446,
+      "offset": 310640,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 310518,
+      "offset": 310712,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 336493,
+      "offset": 336687,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 346836,
+      "offset": 347030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 360316,
+      "offset": 360510,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 363943,
+      "offset": 364137,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 373976,
+      "offset": 374170,
       "length": 5,
       "value": "false"
     },

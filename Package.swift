@@ -25,7 +25,6 @@ let package = Package(
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.28.10"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
 //        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.19.7"),
-        .package(url: "https://github.com/iziz/libPhoneNumber-iOS.git", exact: "1.3.1")
     ],
     targets: [
             .binaryTarget(name: "GenuinCore",
@@ -42,8 +41,8 @@ let package = Package(
                           path: "CoreBundle/MaterialComponents_124.2.0/MotionInterchange.xcframework"),
 //            .binaryTarget(name: "SDWebImage",
 //                          path: "CoreBundle/SDWebImage_5.20.0/SDWebImage.xcframework"),
-//            .binaryTarget(name: "libPhoneNumberiOS",
-//                          path: "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework"),
+            .binaryTarget(name: "libPhoneNumberiOS",
+                          path: "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework"),
             .binaryTarget(name: "CryptoSwift",
                           path: "CoreBundle/CryptoSwift_1.8.1/CryptoSwift.xcframework"),
             .binaryTarget(name: "EasyTipView",
@@ -107,7 +106,7 @@ let package = Package(
 //                .product(name: "SDWebImage", package: "SDWebImage"),
                 "SkeletonView",
                 "SnapKit",
-                .product(name: "libPhoneNumber", package: "libPhoneNumber-iOS"),
+                "libPhoneNumberiOS",
                 "MetricsReporter", "RSCrashReporter", "Rudder", "RudderKit",
             ],
             path: "CoreBundle/GenuinCoreWrapper"

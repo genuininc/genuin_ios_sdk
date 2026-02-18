@@ -3599,8 +3599,8 @@
       },
       {
         "kind": "Import",
-        "name": "libPhoneNumber_iOS",
-        "printedName": "libPhoneNumber_iOS",
+        "name": "libPhoneNumberiOS",
+        "printedName": "libPhoneNumberiOS",
         "declKind": "Import",
         "moduleName": "GenuinUI"
       },
@@ -43490,8 +43490,8 @@
       },
       {
         "kind": "Import",
-        "name": "libPhoneNumber_iOS",
-        "printedName": "libPhoneNumber_iOS",
+        "name": "libPhoneNumberiOS",
+        "printedName": "libPhoneNumberiOS",
         "declKind": "Import",
         "moduleName": "GenuinUI"
       },
@@ -55704,8 +55704,8 @@
       },
       {
         "kind": "Import",
-        "name": "libPhoneNumber_iOS",
-        "printedName": "libPhoneNumber_iOS",
+        "name": "libPhoneNumberiOS",
+        "printedName": "libPhoneNumberiOS",
         "declKind": "Import",
         "moduleName": "GenuinUI"
       },
@@ -88934,21 +88934,21 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/Contacts\/AddViaPhoneNumberViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1166,
+      "offset": 1100,
       "length": 4,
       "value": "34.0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/Contacts\/AddViaPhoneNumberViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1210,
+      "offset": 1144,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/Contacts\/AddViaPhoneNumberViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1252,
+      "offset": 1186,
       "length": 1,
       "value": "9"
     },
@@ -92525,35 +92525,35 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/OtherControllers\/Settings\/EditEmailViewController.swift",
       "kind": "StringLiteral",
-      "offset": 384,
+      "offset": 318,
       "length": 25,
       "value": "\"EditEmailViewController\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/OtherControllers\/Settings\/EditEmailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1469,
+      "offset": 1403,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/OtherControllers\/Settings\/EditEmailViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1684,
+      "offset": 1618,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/OtherControllers\/Settings\/EditEmailViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1718,
+      "offset": 1652,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/ViewControllers\/OtherControllers\/Settings\/EditEmailViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1825,
+      "offset": 1759,
       "length": 5,
       "value": "false"
     },
@@ -101233,14 +101233,14 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/Util\/NBTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 726,
+      "offset": 626,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinUI\/Classes\/Util\/NBTextField.swift",
       "kind": "StringLiteral",
-      "offset": 766,
+      "offset": 666,
       "length": 4,
       "value": "\"US\""
     },

@@ -226245,8 +226245,8 @@
       },
       {
         "kind": "Import",
-        "name": "libPhoneNumber_iOS",
-        "printedName": "libPhoneNumber_iOS",
+        "name": "libPhoneNumberiOS",
+        "printedName": "libPhoneNumberiOS",
         "declKind": "Import",
         "moduleName": "GenuinCore"
       },
@@ -249415,10 +249415,13 @@
       },
       {
         "kind": "Import",
-        "name": "libPhoneNumber_iOS",
-        "printedName": "libPhoneNumber_iOS",
+        "name": "libPhoneNumberiOS",
+        "printedName": "libPhoneNumberiOS",
         "declKind": "Import",
-        "moduleName": "GenuinCore"
+        "moduleName": "GenuinCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -309881,8 +309884,8 @@
       },
       {
         "kind": "Import",
-        "name": "libPhoneNumber_iOS",
-        "printedName": "libPhoneNumber_iOS",
+        "name": "libPhoneNumberiOS",
+        "printedName": "libPhoneNumberiOS",
         "declKind": "Import",
         "moduleName": "GenuinCore"
       },
@@ -384038,7 +384041,7 @@
       "kind": "StringLiteral",
       "offset": 10202,
       "length": 8,
-      "value": "\"0.2.17\""
+      "value": "\"0.2.18\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
@@ -392184,49 +392187,49 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 352,
+      "offset": 298,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 371,
+      "offset": 317,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 422,
       "length": 24,
       "value": "\"KSSignUpViewController\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 864,
+      "offset": 810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2191,
+      "offset": 2137,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2233,
+      "offset": 2179,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/KSFlow\/KSSignUpViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2420,
+      "offset": 2366,
       "length": 1,
       "value": "0"
     },
@@ -396790,14 +396793,14 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Util\/NBTextField.swift",
       "kind": "BooleanLiteral",
-      "offset": 674,
+      "offset": 586,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Util\/NBTextField.swift",
       "kind": "StringLiteral",
-      "offset": 714,
+      "offset": 626,
       "length": 4,
       "value": "\"US\""
     },
@@ -399156,133 +399159,133 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 321,
+      "offset": 267,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 410,
+      "offset": 356,
       "length": 19,
       "value": "\"AvenirNext-Medium\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 466,
+      "offset": 412,
       "length": 27,
       "value": "\"AvenirNext-DemiBoldItalic\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 531,
+      "offset": 477,
       "length": 21,
       "value": "\"AvenirNext-DemiBold\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 593,
+      "offset": 539,
       "length": 24,
       "value": "\"AvenirNext-HeavyItalic\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 654,
+      "offset": 600,
       "length": 20,
       "value": "\"AvenirNext-Regular\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 707,
+      "offset": 653,
       "length": 23,
       "value": "\"AvenirNext-BoldItalic\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 764,
+      "offset": 710,
       "length": 17,
       "value": "\"AvenirNext-Bold\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4290,
+      "offset": 4236,
       "length": 16,
       "value": "\"isFromDeepLink\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4362,
+      "offset": 4308,
       "length": 32,
       "value": "\"isRoundtableShareTutorialShown\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4441,
+      "offset": 4387,
       "length": 23,
       "value": "\"isRepostTutorialShown\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4504,
+      "offset": 4450,
       "length": 23,
       "value": "\"introCompletedForType\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "Array",
-      "offset": 4610,
+      "offset": 4556,
       "length": 211,
       "value": "[\"cow_face\", \"alien\", \"dog_face\", \"sloth\", \"frog\", \"hear_no_evil_monkey\", \"jack_o_lantern\", \"owl\", \"penguin\", \"rabbit_face\", \"robot\", \"ghost\", \"teddy_bear\", \"smiling_face_with_horns\", \"smiling_face_with_sunglasses\", \"snowman\"]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 12593,
+      "offset": 12539,
       "length": 13,
       "value": "0.03921568627"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 12615,
+      "offset": 12561,
       "length": 12,
       "value": "0.5176470588"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 12635,
+      "offset": 12581,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 12645,
+      "offset": 12591,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13890,
+      "offset": 13836,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/ThemeConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 24755,
+      "offset": 24497,
       "length": 1,
       "value": "0"
     },

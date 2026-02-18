@@ -48,7 +48,7 @@ import XLPagerTabStrip
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import libPhoneNumber
+import libPhoneNumber_iOS
 import zlib
 public protocol AcceptGuidelinesDelegate : ObjectiveC.NSObject {
   func gotoCommunityTutorial()

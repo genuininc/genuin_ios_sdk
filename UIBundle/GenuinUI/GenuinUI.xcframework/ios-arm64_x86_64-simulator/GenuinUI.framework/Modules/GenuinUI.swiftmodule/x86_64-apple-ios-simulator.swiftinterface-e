@@ -37,7 +37,7 @@ import XLPagerTabStrip
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import libPhoneNumber_iOS
+import libPhoneNumber
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ABFrameIndicator : ABProgressIndicator {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?

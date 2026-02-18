@@ -49,7 +49,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.27.4'
   spec.dependency 'MaterialComponents/ActivityIndicator', '~> 124.2.0'
 
-  spec.vendored_frameworks = "CoreBundle/GenuinCore/GenuinCore.xcframework", "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework", "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework",
+  spec.vendored_frameworks = "CoreBundle/GenuinCore/GenuinCore.xcframework", "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework",
       "CoreBundle/Rudder_1.31.0/MetricsReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/Rudder.xcframework",

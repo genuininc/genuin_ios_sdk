@@ -36,7 +36,6 @@ import RudderKit
 import SafariServices
 import Security
 import SkeletonView
-import SnapKit
 import Swift
 import SwiftUI
 import SystemConfiguration

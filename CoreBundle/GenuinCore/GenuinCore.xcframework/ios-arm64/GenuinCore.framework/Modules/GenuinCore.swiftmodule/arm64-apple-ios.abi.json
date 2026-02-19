@@ -154119,7 +154119,10 @@
         "name": "SnapKit",
         "printedName": "SnapKit",
         "declKind": "Import",
-        "moduleName": "GenuinCore"
+        "moduleName": "GenuinCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -382772,28 +382775,28 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 11604,
+      "offset": 11613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 16679,
+      "offset": 16688,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 21868,
+      "offset": 21877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/GenuinSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 22070,
+      "offset": 22079,
       "length": 5,
       "value": "false"
     },
@@ -384041,7 +384044,7 @@
       "kind": "StringLiteral",
       "offset": 10202,
       "length": 8,
-      "value": "\"0.2.18\""
+      "value": "\"0.2.21\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",

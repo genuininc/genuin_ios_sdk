@@ -36,7 +36,6 @@ import RudderKit
 import SafariServices
 import Security
 import SkeletonView
-import SnapKit
 import Swift
 import SwiftUI
 import SystemConfiguration
@@ -9690,3 +9689,4 @@ extension VMAPTrackingEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Equatable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Hashable {}
+@_spi(GenuinInternal) extension WalletEventContentType : Swift.RawRepresentable {}

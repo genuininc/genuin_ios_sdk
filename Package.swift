@@ -60,12 +60,12 @@ let package = Package(
                           path: "CoreBundle/Rudder_1.31.0/Rudder.xcframework"),
             .binaryTarget(name: "RudderKit",
                           path: "CoreBundle/Rudder_1.31.0/RudderKit.xcframework"),
+            .binaryTarget(name: "XLPagerTabStrip",
+                          path: "CoreBundle/XLPagerTabStrip_9.1.0/XLPagerTabStrip.xcframework"),
             .binaryTarget(name: "GenuinUI",
                           path: "UIBundle/GenuinUI/GenuinUI.xcframework"),
             .binaryTarget(name: "URLEmbeddedView",
                           path: "UIBundle/URLEmbeddedView_0.18.0/URLEmbeddedView.xcframework"),
-            .binaryTarget(name: "XLPagerTabStrip",
-                          path: "UIBundle/XLPagerTabStrip_9.1.0/XLPagerTabStrip.xcframework"),
             .binaryTarget(name: "GenuinCamera",
                           path: "CameraBundle/GenuinCamera/GenuinCamera.xcframework"),
             .binaryTarget(name: "libswscale",
@@ -103,6 +103,7 @@ let package = Package(
                 .product(name: "SnapKit-Dynamic", package: "SnapKit"),
                 "libPhoneNumberiOS",
                 "MetricsReporter", "RSCrashReporter", "Rudder", "RudderKit",
+                "XLPagerTabStrip",
             ],
             path: "CoreBundle/GenuinCoreWrapper"
         ),
@@ -111,7 +112,6 @@ let package = Package(
             dependencies: [
                 "GenuinCoreWrapper",
                 "GenuinUI",
-                "XLPagerTabStrip",
                 "URLEmbeddedView",
             ],
             path: "UIBundle/GenuinUIWrapper"

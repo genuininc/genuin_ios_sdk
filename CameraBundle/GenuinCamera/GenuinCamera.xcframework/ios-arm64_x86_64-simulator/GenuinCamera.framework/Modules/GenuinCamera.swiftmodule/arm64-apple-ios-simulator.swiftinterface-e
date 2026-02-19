@@ -20,7 +20,6 @@ import Lottie
 import MobileCoreServices
 import Photos
 import PhotosUI
-import SnapKit
 import Speech
 import Swift
 import SwiftUI

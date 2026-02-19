@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		hsPwuUQNzmUFKCofR87nE0a0LOA=
+		yONFT5Nrhcfjxc483gkOznIgpSY=
 		</data>
 		<key>AutoCategorySearchCell.nib</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>GenuinAI_Privacy.bundle/Info.plist</key>
 		<data>
-		ONdADpzYC2nHDX5gQZmquL2/k9k=
+		x8CXoItmel1pYzxkMGRwpci88HE=
 		</data>
 		<key>Headers/GenuinAI-Swift.h</key>
 		<data>
-		BHBa3oK3KA5JoKNoGeWUVf2aGuQ=
+		CnFKxQ9sbBTuYbANYnnMnj1lyF8=
 		</data>
 		<key>Headers/GenuinAI-umbrella.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7WptGS/lnG0TrZ7is0wAp4+qgDI=
+		PcUaKdh+iG3d3LiBqPKEeiaT+28=
 		</data>
 		<key>Loops.storyboardc/7Og-ZC-YST-view-cpk-A7-dfi.nib</key>
 		<data>
@@ -166,43 +166,43 @@
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		AlRtIiu0wwndopZHyAT1lPeT5iA=
+		FU0CuEr/ACcNSMqKTkrwGMBAt2w=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Cee+v5hs9zkF/iblsgUTYbcB+cQ=
+		IpWe5lnkkNc1sNW+xX+QXrGWld4=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		zcggp82yVYrw1KBs1LKwc3s01WI=
+		ELFWRz4UEZVxwm98k0rArNQVJfQ=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Twh1xFCTcQiG9bIk1uA6nvGMlNM=
+		Iwfbimt8HvmeDv7m+0gx2lzs2L8=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8EjxbVg7/s7cu/GDuSedUR5oJBg=
+		cPFZKsJM64Vlaf1ceeCieUzmeFQ=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		AlRtIiu0wwndopZHyAT1lPeT5iA=
+		FU0CuEr/ACcNSMqKTkrwGMBAt2w=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pRoejIrUGxQHbJRpoXc/yaWh+t0=
+		zYU0nzswvG7InQ2utgTUBJp3ktM=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		OqMnpU2b/JbPB5P7Um675njGLNo=
+		A+cbQ6WeTlVKEsoyex956sG+a0I=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eB4FeDRCxbtZ76w3hQYYvfsi/eU=
+		cUjzoIyvmrGyDD09MZtxiCkHGCI=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DjpCqJORyzI5AC93xfoiJ0xEVxE=
+		896FeHSalGAVlOxNouxAgbcE5NQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -312,7 +312,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			24EZrK6FvkpNA+tGJwGeFLlh1MX2lU+VVl0EcJObsew=
+			Pocxudkkk9hMum2kFZ3H0oOyatepSYUThqX5nmB7IyA=
 			</data>
 		</dict>
 		<key>AutoCategorySearchCell.nib</key>
@@ -536,14 +536,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G983f8q1/o2m3P8A/3bTh3aCoatXKuIZQhHMHqAVO5k=
+			HSdgDNl00NKt+D52fRUZ0+5pQ3mHHe+607eAVygnPzs=
 			</data>
 		</dict>
 		<key>Headers/GenuinAI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FAzoBiKcQutSCzwRxI0Rk1hcR+n6uZVvDW2YkXYpuos=
+			Vt7eMBFDBR/JPDCKQ9aBcsXHTppczFHP+1E0UcMrFPA=
 			</data>
 		</dict>
 		<key>Headers/GenuinAI-umbrella.h</key>
@@ -585,70 +585,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0LJR89Hunzjcj9T53WQGTYguZ5PHsaOL8l3ZcSUi2D0=
+			l7a+SOc53kgNUO4I+nSkx/B5nMvmfP9Zd6UbKGg6dx4=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UWXisG8gT+m0VPdQ1oqCPykVeGwixFJ/mcSl8eniaQE=
+			DS6c/8u5bqvf4FSB+VsQseCFYvavBLtyCA1mFBrCikQ=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nKHtYIDpKAI1dMWj0jyp3B+3CXfxkyTQp8NVrWFKEME=
+			zZ/Y3oeGvR1o24a98nRVJA+pqze4hP3fLgbaloliFLE=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ngkmrfEWFenUM9IxnBPT9qtdpY8jFtESq6gY6A2Hbmo=
+			FbuC8QxyJAvfq1v6QOwK1avbEil1RdAPwWnIFYHZvvo=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oTLeAsFO4Spe2ocxfMZYF3wDoVgY/mFtMTRZyZju86c=
+			u9uum0hB8rm65dtPu8L73UKrlgMyULYonAU284Z817k=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0LJR89Hunzjcj9T53WQGTYguZ5PHsaOL8l3ZcSUi2D0=
+			l7a+SOc53kgNUO4I+nSkx/B5nMvmfP9Zd6UbKGg6dx4=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jKoeGxbWsiYXn//137/rm4lWKBeGybA1PlhvPepEwWc=
+			QTNwTM08+gOkAi9VlcNZquvh6gfnatwMNEIlr7RsKCY=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3CfvugO0ljXFzaF+kvQW61Hps3E399UUfdCFX9/ql0Y=
+			aZD4T4MlCjsQ7D+x5jLo8Q3HQwOEvnDNxzfQxZpkZuQ=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UeIXDToJ4cxI3WrK7lWUPWUhpvySIjhig1f9aQBQ+1s=
+			tCO2RiY1fS7zrHd9GOIY5sbLhCpT/ZrvnkrC0FKsGng=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hV2YLYnZcvG2kbFm6uBjbBTqubLTp8L63bMvlXqXZ6Y=
+			lUh3EniCQZaCfuw3wxa1cIbcQf4jLI4pWp0pAuNRXHY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

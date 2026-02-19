@@ -1272,6 +1272,15 @@ SWIFT_CLASS("_TtC10GenuinCore12LanguageInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC10GenuinCore16LayoutConstraint")
+@interface LayoutConstraint : NSLayoutConstraint
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface LayoutConstraint (SWIFT_EXTENSION(GenuinCore))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class UICollectionViewLayoutAttributes;
 SWIFT_CLASS("_TtC10GenuinCore21LeftAlignedFlowLayout")
 @interface LeftAlignedFlowLayout : UICollectionViewFlowLayout
@@ -1327,7 +1336,6 @@ SWIFT_CLASS("_TtC10GenuinCore17LinkTextImageCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSLayoutConstraint;
 SWIFT_CLASS("_TtC10GenuinCore19LoopFeedShimmerCell")
 @interface LoopFeedShimmerCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified rightOptionsBottomConstraint;
@@ -1559,13 +1567,6 @@ SWIFT_AVAILABILITY(watchos,introduced=6) SWIFT_AVAILABILITY(tvos,introduced=13) 
 - (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode)closeCode reason:(NSData * _Nullable)reason;
 @end
 
-@class NSURLSessionDownloadTask;
-@interface SessionDelegate (SWIFT_EXTENSION(GenuinCore)) <NSURLSessionDownloadDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
-@end
-
 @class NSURLSessionDataTask;
 @class NSURLResponse;
 @class NSCachedURLResponse;
@@ -1573,6 +1574,13 @@ SWIFT_AVAILABILITY(watchos,introduced=6) SWIFT_AVAILABILITY(tvos,introduced=13) 
 - (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveResponse:(NSURLResponse * _Nonnull)response completionHandler:(void (^ _Nonnull)(NSURLSessionResponseDisposition))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveData:(NSData * _Nonnull)data;
 - (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask willCacheResponse:(NSCachedURLResponse * _Nonnull)proposedResponse completionHandler:(void (^ _Nonnull)(NSCachedURLResponse * _Nullable))completionHandler;
+@end
+
+@class NSURLSessionDownloadTask;
+@interface SessionDelegate (SWIFT_EXTENSION(GenuinCore)) <NSURLSessionDownloadDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes;
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
 @end
 
 @class NSURLAuthenticationChallenge;
@@ -3082,6 +3090,15 @@ SWIFT_CLASS("_TtC10GenuinCore12LanguageInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC10GenuinCore16LayoutConstraint")
+@interface LayoutConstraint : NSLayoutConstraint
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface LayoutConstraint (SWIFT_EXTENSION(GenuinCore))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @class UICollectionViewLayoutAttributes;
 SWIFT_CLASS("_TtC10GenuinCore21LeftAlignedFlowLayout")
 @interface LeftAlignedFlowLayout : UICollectionViewFlowLayout
@@ -3137,7 +3154,6 @@ SWIFT_CLASS("_TtC10GenuinCore17LinkTextImageCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSLayoutConstraint;
 SWIFT_CLASS("_TtC10GenuinCore19LoopFeedShimmerCell")
 @interface LoopFeedShimmerCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified rightOptionsBottomConstraint;
@@ -3369,13 +3385,6 @@ SWIFT_AVAILABILITY(watchos,introduced=6) SWIFT_AVAILABILITY(tvos,introduced=13) 
 - (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode)closeCode reason:(NSData * _Nullable)reason;
 @end
 
-@class NSURLSessionDownloadTask;
-@interface SessionDelegate (SWIFT_EXTENSION(GenuinCore)) <NSURLSessionDownloadDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
-@end
-
 @class NSURLSessionDataTask;
 @class NSURLResponse;
 @class NSCachedURLResponse;
@@ -3383,6 +3392,13 @@ SWIFT_AVAILABILITY(watchos,introduced=6) SWIFT_AVAILABILITY(tvos,introduced=13) 
 - (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveResponse:(NSURLResponse * _Nonnull)response completionHandler:(void (^ _Nonnull)(NSURLSessionResponseDisposition))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask didReceiveData:(NSData * _Nonnull)data;
 - (void)URLSession:(NSURLSession * _Nonnull)session dataTask:(NSURLSessionDataTask * _Nonnull)dataTask willCacheResponse:(NSCachedURLResponse * _Nonnull)proposedResponse completionHandler:(void (^ _Nonnull)(NSCachedURLResponse * _Nullable))completionHandler;
+@end
+
+@class NSURLSessionDownloadTask;
+@interface SessionDelegate (SWIFT_EXTENSION(GenuinCore)) <NSURLSessionDownloadDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didResumeAtOffset:(int64_t)fileOffset expectedTotalBytes:(int64_t)expectedTotalBytes;
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didWriteData:(int64_t)bytesWritten totalBytesWritten:(int64_t)totalBytesWritten totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite;
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
 @end
 
 @class NSURLAuthenticationChallenge;

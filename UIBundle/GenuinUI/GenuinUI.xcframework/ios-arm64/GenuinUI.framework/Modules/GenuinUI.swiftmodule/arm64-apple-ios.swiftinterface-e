@@ -1944,4 +1944,3 @@ extension WaveformAnalyzer.AnalyzeError : Swift.Equatable {}
 extension WaveformAnalyzer.AnalyzeError : Swift.Hashable {}
 extension WaveformImageDrawer.GenerationError : Swift.Equatable {}
 extension WaveformImageDrawer.GenerationError : Swift.Hashable {}
-extension Waveform.Damping.Sides : Swift.Hashable {}

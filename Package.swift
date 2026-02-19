@@ -25,7 +25,6 @@ let package = Package(
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.28.10"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
 //        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.19.7"),
-        .package(url: "https://github.com/SnapKit/SnapKit.git", exact: "5.7.1"),
     ],
     targets: [
             .binaryTarget(name: "GenuinCore",
@@ -100,7 +99,6 @@ let package = Package(
                 "MaterialComponents", "MDFInternationalization", "MotionAnimator", "MotionInterchange",
 //                .product(name: "SDWebImage", package: "SDWebImage"),
                 "SkeletonView",
-                .product(name: "SnapKit-Dynamic", package: "SnapKit"),
                 "libPhoneNumberiOS",
                 "MetricsReporter", "RSCrashReporter", "Rudder", "RudderKit",
                 "XLPagerTabStrip",

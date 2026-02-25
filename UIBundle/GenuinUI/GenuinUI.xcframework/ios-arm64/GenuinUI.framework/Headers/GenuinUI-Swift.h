@@ -524,6 +524,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL supportsSecureCoding;)
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC8GenuinUI9BGSetting")
+@interface BGSetting : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC8GenuinUI15BGSettingOption")
+@interface BGSettingOption : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC8GenuinUI17BGSettingsManager")
+@interface BGSettingsManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC8GenuinUI12BGSubscriber")
 @interface BGSubscriber : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -777,26 +794,18 @@ SWIFT_RESILIENT_CLASS("_TtC8GenuinUI19LinksViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UISheetPresentationControllerDelegate>
+@end
+
 @protocol UIDragSession;
 @class UIDragItem;
 @interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UITableViewDragDelegate>
 - (NSArray<UIDragItem *> * _Nonnull)tableView:(UITableView * _Nonnull)tableView itemsForBeginningDragSession:(id <UIDragSession> _Nonnull)session atIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class TOCropViewController;
-@class UIImage;
-@interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <TOCropViewControllerDelegate>
-- (void)cropViewController:(TOCropViewController * _Nonnull)cropViewController didCropToImage:(UIImage * _Nonnull)image withRect:(CGRect)cropRect angle:(NSInteger)angle;
-@end
-
 @class UIImagePickerController;
 @interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<UIImagePickerControllerInfoKey, id> * _Nonnull)info;
-@end
-
-@interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UIGestureRecognizerDelegate>
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)gestureRecognizer SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol UIDropSession;
@@ -805,6 +814,17 @@ SWIFT_RESILIENT_CLASS("_TtC8GenuinUI19LinksViewController")
 @interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UITableViewDropDelegate>
 - (UITableViewDropProposal * _Nonnull)tableView:(UITableView * _Nonnull)tableView dropSessionDidUpdate:(id <UIDropSession> _Nonnull)session withDestinationIndexPath:(NSIndexPath * _Nullable)destinationIndexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView performDropWithCoordinator:(id <UITableViewDropCoordinator> _Nonnull)coordinator;
+@end
+
+@interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer * _Nonnull)gestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class TOCropViewController;
+@class UIImage;
+@interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <TOCropViewControllerDelegate>
+- (void)cropViewController:(TOCropViewController * _Nonnull)cropViewController didCropToImage:(UIImage * _Nonnull)image withRect:(CGRect)cropRect angle:(NSInteger)angle;
 @end
 
 @interface LinksViewController (SWIFT_EXTENSION(GenuinUI)) <UITableViewDelegate>
@@ -951,23 +971,6 @@ SWIFT_CLASS("_TtC8GenuinUI22SearchResultsViewModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC8GenuinUI7Setting")
-@interface Setting : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC8GenuinUI13SettingOption")
-@interface SettingOption : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC8GenuinUI15SettingsManager")
-@interface SettingsManager : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC8GenuinUI21SquareProgressBarView")
 @interface SquareProgressBarView : UIView
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
@@ -987,20 +990,6 @@ SWIFT_CLASS("_TtC8GenuinUI15SuggestionsView")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
-SWIFT_PROTOCOL("_TtP8GenuinUI18TPProgressDelegate_")
-@protocol TPProgressDelegate
-- (void)tp_scrollView:(UIScrollView * _Nonnull)scrollView didUpdate:(CGFloat)progress;
-- (void)tp_scrollViewDidLoad:(UIScrollView * _Nonnull)scrollView;
-@optional
-- (void)tp_scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)tp_scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)tp_scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-@end
-
-@interface UIViewController (SWIFT_EXTENSION(GenuinUI))
-- (UIView * _Nonnull)panView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC8GenuinUI20UPCarouselFlowLayout")

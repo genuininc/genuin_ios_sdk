@@ -373601,8 +373601,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "didTapAttributedTextInLabel",
-            "printedName": "didTapAttributedTextInLabel(label:inRange:)",
+            "name": "didTapAttributedTextInBGLabel",
+            "printedName": "didTapAttributedTextInBGLabel(label:inRange:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -373624,8 +373624,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So22UITapGestureRecognizerC10GenuinCoreE27didTapAttributedTextInLabel5label7inRangeSbSo7UILabelC_So8_NSRangeVtF",
-            "mangledName": "$sSo22UITapGestureRecognizerC10GenuinCoreE27didTapAttributedTextInLabel5label7inRangeSbSo7UILabelC_So8_NSRangeVtF",
+            "usr": "s:So22UITapGestureRecognizerC10GenuinCoreE29didTapAttributedTextInBGLabel5label7inRangeSbSo7UILabelC_So8_NSRangeVtF",
+            "mangledName": "$sSo22UITapGestureRecognizerC10GenuinCoreE29didTapAttributedTextInBGLabel5label7inRangeSbSo7UILabelC_So8_NSRangeVtF",
             "moduleName": "GenuinCore",
             "declAttributes": [
               "Preconcurrency",
@@ -382721,1190 +382721,1190 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 21388,
+      "offset": 19693,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 21607,
+      "offset": 19912,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 43489,
+      "offset": 41794,
       "length": 19,
       "value": "\"GenuinUpdateColor\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 45860,
+      "offset": 44165,
       "length": 28,
       "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46532,
+      "offset": 44837,
       "length": 11,
       "value": "\"iPhone4,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 46626,
+      "offset": 44931,
       "length": 3,
       "value": "3.5"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46656,
+      "offset": 44961,
       "length": 11,
       "value": "\"iPhone5,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46669,
+      "offset": 44974,
       "length": 11,
       "value": "\"iPhone5,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46743,
+      "offset": 45048,
       "length": 11,
       "value": "\"iPhone5,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46756,
+      "offset": 45061,
       "length": 11,
       "value": "\"iPhone5,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46831,
+      "offset": 45136,
       "length": 11,
       "value": "\"iPhone6,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46844,
+      "offset": 45149,
       "length": 11,
       "value": "\"iPhone6,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 46919,
+      "offset": 45224,
       "length": 11,
       "value": "\"iPhone8,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47007,
+      "offset": 45312,
       "length": 9,
       "value": "\"iPod5,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47111,
+      "offset": 45416,
       "length": 9,
       "value": "\"iPod7,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47215,
+      "offset": 45520,
       "length": 9,
       "value": "\"iPod9,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 47325,
+      "offset": 45630,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47355,
+      "offset": 45660,
       "length": 11,
       "value": "\"iPhone7,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47442,
+      "offset": 45747,
       "length": 11,
       "value": "\"iPhone8,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47530,
+      "offset": 45835,
       "length": 11,
       "value": "\"iPhone9,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47543,
+      "offset": 45848,
       "length": 11,
       "value": "\"iPhone9,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47617,
+      "offset": 45922,
       "length": 12,
       "value": "\"iPhone10,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47631,
+      "offset": 45936,
       "length": 12,
       "value": "\"iPhone10,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47704,
+      "offset": 46009,
       "length": 12,
       "value": "\"iPhone12,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47807,
+      "offset": 46112,
       "length": 12,
       "value": "\"iPhone14,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 47918,
+      "offset": 46223,
       "length": 3,
       "value": "4.7"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 47948,
+      "offset": 46253,
       "length": 12,
       "value": "\"iPhone13,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48041,
+      "offset": 46346,
       "length": 12,
       "value": "\"iPhone14,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 48140,
+      "offset": 46445,
       "length": 3,
       "value": "5.4"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48170,
+      "offset": 46475,
       "length": 11,
       "value": "\"iPhone7,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48262,
+      "offset": 46567,
       "length": 11,
       "value": "\"iPhone8,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48355,
+      "offset": 46660,
       "length": 11,
       "value": "\"iPhone9,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48368,
+      "offset": 46673,
       "length": 11,
       "value": "\"iPhone9,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48447,
+      "offset": 46752,
       "length": 12,
       "value": "\"iPhone10,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48461,
+      "offset": 46766,
       "length": 12,
       "value": "\"iPhone10,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 48545,
+      "offset": 46850,
       "length": 3,
       "value": "5.5"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48575,
+      "offset": 46880,
       "length": 12,
       "value": "\"iPhone10,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48589,
+      "offset": 46894,
       "length": 12,
       "value": "\"iPhone10,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48662,
+      "offset": 46967,
       "length": 12,
       "value": "\"iPhone11,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48750,
+      "offset": 47055,
       "length": 12,
       "value": "\"iPhone12,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 48848,
+      "offset": 47153,
       "length": 3,
       "value": "5.8"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48878,
+      "offset": 47183,
       "length": 12,
       "value": "\"iPhone11,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 48966,
+      "offset": 47271,
       "length": 12,
       "value": "\"iPhone12,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49054,
+      "offset": 47359,
       "length": 12,
       "value": "\"iPhone13,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49142,
+      "offset": 47447,
       "length": 12,
       "value": "\"iPhone13,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49234,
+      "offset": 47539,
       "length": 12,
       "value": "\"iPhone14,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49322,
+      "offset": 47627,
       "length": 12,
       "value": "\"iPhone14,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49414,
+      "offset": 47719,
       "length": 12,
       "value": "\"iPhone14,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49502,
+      "offset": 47807,
       "length": 12,
       "value": "\"iPhone15,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49594,
+      "offset": 47899,
       "length": 12,
       "value": "\"iPhone15,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49682,
+      "offset": 47987,
       "length": 12,
       "value": "\"iPhone16,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49774,
+      "offset": 48079,
       "length": 12,
       "value": "\"iPhone17,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 49868,
+      "offset": 48173,
       "length": 3,
       "value": "6.1"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 49886,
+      "offset": 48191,
       "length": 12,
       "value": "\"iPhone17,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 49984,
+      "offset": 48289,
       "length": 3,
       "value": "6.3"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50010,
+      "offset": 48315,
       "length": 12,
       "value": "\"iPhone17,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 50112,
+      "offset": 48417,
       "length": 3,
       "value": "6.9"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50142,
+      "offset": 48447,
       "length": 12,
       "value": "\"iPhone11,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50156,
+      "offset": 48461,
       "length": 12,
       "value": "\"iPhone11,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50234,
+      "offset": 48539,
       "length": 12,
       "value": "\"iPhone12,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 50336,
+      "offset": 48641,
       "length": 3,
       "value": "6.5"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50366,
+      "offset": 48671,
       "length": 12,
       "value": "\"iPhone13,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50462,
+      "offset": 48767,
       "length": 12,
       "value": "\"iPhone14,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50558,
+      "offset": 48863,
       "length": 12,
       "value": "\"iPhone14,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50651,
+      "offset": 48956,
       "length": 12,
       "value": "\"iPhone15,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50747,
+      "offset": 49052,
       "length": 12,
       "value": "\"iPhone15,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50840,
+      "offset": 49145,
       "length": 12,
       "value": "\"iPhone16,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 50936,
+      "offset": 49241,
       "length": 12,
       "value": "\"iPhone17,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 51035,
+      "offset": 49340,
       "length": 3,
       "value": "6.7"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51065,
+      "offset": 49370,
       "length": 9,
       "value": "\"iPad2,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51076,
+      "offset": 49381,
       "length": 9,
       "value": "\"iPad2,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51087,
+      "offset": 49392,
       "length": 9,
       "value": "\"iPad2,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51153,
+      "offset": 49458,
       "length": 9,
       "value": "\"iPad4,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51164,
+      "offset": 49469,
       "length": 9,
       "value": "\"iPad4,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51175,
+      "offset": 49480,
       "length": 9,
       "value": "\"iPad4,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51243,
+      "offset": 49548,
       "length": 9,
       "value": "\"iPad4,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51254,
+      "offset": 49559,
       "length": 9,
       "value": "\"iPad4,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51265,
+      "offset": 49570,
       "length": 9,
       "value": "\"iPad4,9\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51333,
+      "offset": 49638,
       "length": 9,
       "value": "\"iPad5,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51344,
+      "offset": 49649,
       "length": 9,
       "value": "\"iPad5,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51423,
+      "offset": 49728,
       "length": 10,
       "value": "\"iPad11,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51435,
+      "offset": 49740,
       "length": 10,
       "value": "\"iPad11,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51513,
+      "offset": 49818,
       "length": 10,
       "value": "\"iPad14,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51525,
+      "offset": 49830,
       "length": 10,
       "value": "\"iPad14,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 51609,
+      "offset": 49914,
       "length": 3,
       "value": "7.9"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51639,
+      "offset": 49944,
       "length": 9,
       "value": "\"iPad2,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51650,
+      "offset": 49955,
       "length": 9,
       "value": "\"iPad2,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51661,
+      "offset": 49966,
       "length": 9,
       "value": "\"iPad2,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51672,
+      "offset": 49977,
       "length": 9,
       "value": "\"iPad2,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51724,
+      "offset": 50029,
       "length": 9,
       "value": "\"iPad3,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51735,
+      "offset": 50040,
       "length": 9,
       "value": "\"iPad3,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51746,
+      "offset": 50051,
       "length": 9,
       "value": "\"iPad3,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51822,
+      "offset": 50127,
       "length": 9,
       "value": "\"iPad3,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51833,
+      "offset": 50138,
       "length": 9,
       "value": "\"iPad3,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51844,
+      "offset": 50149,
       "length": 9,
       "value": "\"iPad3,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51920,
+      "offset": 50225,
       "length": 9,
       "value": "\"iPad4,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51931,
+      "offset": 50236,
       "length": 9,
       "value": "\"iPad4,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 51942,
+      "offset": 50247,
       "length": 9,
       "value": "\"iPad4,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52007,
+      "offset": 50312,
       "length": 9,
       "value": "\"iPad5,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52018,
+      "offset": 50323,
       "length": 9,
       "value": "\"iPad5,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52096,
+      "offset": 50401,
       "length": 9,
       "value": "\"iPad6,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52107,
+      "offset": 50412,
       "length": 9,
       "value": "\"iPad6,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52194,
+      "offset": 50499,
       "length": 10,
       "value": "\"iPad6,11\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52206,
+      "offset": 50511,
       "length": 10,
       "value": "\"iPad6,12\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52292,
+      "offset": 50597,
       "length": 9,
       "value": "\"iPad7,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52303,
+      "offset": 50608,
       "length": 9,
       "value": "\"iPad7,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 52396,
+      "offset": 50701,
       "length": 3,
       "value": "9.7"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52426,
+      "offset": 50731,
       "length": 10,
       "value": "\"iPad7,11\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52438,
+      "offset": 50743,
       "length": 10,
       "value": "\"iPad7,12\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52524,
+      "offset": 50829,
       "length": 10,
       "value": "\"iPad11,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52536,
+      "offset": 50841,
       "length": 10,
       "value": "\"iPad11,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52622,
+      "offset": 50927,
       "length": 10,
       "value": "\"iPad12,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52634,
+      "offset": 50939,
       "length": 10,
       "value": "\"iPad12,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 52726,
+      "offset": 51031,
       "length": 4,
       "value": "10.2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52757,
+      "offset": 51062,
       "length": 9,
       "value": "\"iPad7,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52768,
+      "offset": 51073,
       "length": 9,
       "value": "\"iPad7,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52856,
+      "offset": 51161,
       "length": 10,
       "value": "\"iPad11,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52868,
+      "offset": 51173,
       "length": 10,
       "value": "\"iPad11,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 52966,
+      "offset": 51271,
       "length": 4,
       "value": "10.5"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 52997,
+      "offset": 51302,
       "length": 10,
       "value": "\"iPad13,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53009,
+      "offset": 51314,
       "length": 10,
       "value": "\"iPad13,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53101,
+      "offset": 51406,
       "length": 11,
       "value": "\"iPad13,18\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53114,
+      "offset": 51419,
       "length": 11,
       "value": "\"iPad13,19\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53200,
+      "offset": 51505,
       "length": 11,
       "value": "\"iPad13,16\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53213,
+      "offset": 51518,
       "length": 11,
       "value": "\"iPad13,17\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 53310,
+      "offset": 51615,
       "length": 4,
       "value": "10.9"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53341,
+      "offset": 51646,
       "length": 9,
       "value": "\"iPad8,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53352,
+      "offset": 51657,
       "length": 9,
       "value": "\"iPad8,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53363,
+      "offset": 51668,
       "length": 9,
       "value": "\"iPad8,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53374,
+      "offset": 51679,
       "length": 9,
       "value": "\"iPad8,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53438,
+      "offset": 51743,
       "length": 9,
       "value": "\"iPad8,9\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53449,
+      "offset": 51754,
       "length": 10,
       "value": "\"iPad8,10\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53551,
+      "offset": 51856,
       "length": 10,
       "value": "\"iPad13,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53563,
+      "offset": 51868,
       "length": 10,
       "value": "\"iPad13,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53575,
+      "offset": 51880,
       "length": 10,
       "value": "\"iPad13,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53587,
+      "offset": 51892,
       "length": 10,
       "value": "\"iPad13,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53664,
+      "offset": 51969,
       "length": 10,
       "value": "\"iPad14,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53676,
+      "offset": 51981,
       "length": 10,
       "value": "\"iPad14,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53777,
+      "offset": 52082,
       "length": 10,
       "value": "\"iPad14,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53789,
+      "offset": 52094,
       "length": 10,
       "value": "\"iPad14,9\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53890,
+      "offset": 52195,
       "length": 10,
       "value": "\"iPad16,3\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 53902,
+      "offset": 52207,
       "length": 10,
       "value": "\"iPad16,4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 54009,
+      "offset": 52314,
       "length": 4,
       "value": "11.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54040,
+      "offset": 52345,
       "length": 11,
       "value": "\"iPad14,10\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54053,
+      "offset": 52358,
       "length": 11,
       "value": "\"iPad14,11\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54153,
+      "offset": 52458,
       "length": 10,
       "value": "\"iPad16,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54165,
+      "offset": 52470,
       "length": 10,
       "value": "\"iPad16,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 54272,
+      "offset": 52577,
       "length": 4,
       "value": "13.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54291,
+      "offset": 52596,
       "length": 9,
       "value": "\"iPad6,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54302,
+      "offset": 52607,
       "length": 9,
       "value": "\"iPad6,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54390,
+      "offset": 52695,
       "length": 9,
       "value": "\"iPad7,1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54401,
+      "offset": 52706,
       "length": 9,
       "value": "\"iPad7,2\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54505,
+      "offset": 52810,
       "length": 9,
       "value": "\"iPad8,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54516,
+      "offset": 52821,
       "length": 9,
       "value": "\"iPad8,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54527,
+      "offset": 52832,
       "length": 9,
       "value": "\"iPad8,7\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54538,
+      "offset": 52843,
       "length": 9,
       "value": "\"iPad8,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54620,
+      "offset": 52925,
       "length": 10,
       "value": "\"iPad8,11\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54632,
+      "offset": 52937,
       "length": 10,
       "value": "\"iPad8,12\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54735,
+      "offset": 53040,
       "length": 10,
       "value": "\"iPad13,8\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54747,
+      "offset": 53052,
       "length": 10,
       "value": "\"iPad13,9\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54759,
+      "offset": 53064,
       "length": 11,
       "value": "\"iPad13,10\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54772,
+      "offset": 53077,
       "length": 11,
       "value": "\"iPad13,11\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54850,
+      "offset": 53155,
       "length": 10,
       "value": "\"iPad14,5\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "StringLiteral",
-      "offset": 54862,
+      "offset": 53167,
       "length": 10,
       "value": "\"iPad14,6\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 54971,
+      "offset": 53276,
       "length": 4,
       "value": "12.9"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 55504,
+      "offset": 53809,
       "length": 4,
       "value": "2.54"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 56146,
+      "offset": 54451,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 56151,
+      "offset": 54456,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 56683,
+      "offset": 54988,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/Extensions\/CommonExtension.swift",
       "kind": "BooleanLiteral",
-      "offset": 60768,
+      "offset": 59073,
       "length": 5,
       "value": "false"
     },

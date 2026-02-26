@@ -1737,7 +1737,7 @@ extension Foundation.NSMutableAttributedString {
   public func time(_ value: Swift.String) -> Foundation.NSMutableAttributedString
 }
 extension UIKit.UITapGestureRecognizer {
-  @_Concurrency.MainActor @preconcurrency public func didTapAttributedTextInLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func didTapAttributedTextInBGLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func checkIfTappedIn(range: Foundation.NSRange) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func didTapText(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
 }

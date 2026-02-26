@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.version      = GENUIN_SDK_VERSION
   spec.summary      = "GenuinSDK is an SDK that consist feeds for which user has shown interest."
   spec.description  = "This is a home sdk of Genuin. GenuinSDK is an SDK that consist feeds for which user has shown interest."
-  spec.homepage     = "https://bitbucket.org/genuindev/genuin_ios_sdk.git"
+  spec.homepage     = "https://github.com/genuininc/genuin_ios_sdk.git"
   spec.license      = "MIT"
   spec.author       = { "Genuin Dev" => "development@begenuin.com" }
 
@@ -36,11 +36,10 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://bitbucket.org/genuindev/genuin_ios_sdk.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/genuininc/genuin_ios_sdk.git", :tag => "#{spec.version}" }
 
   spec.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
   spec.dependency 'URLEmbeddedView', '~> 0.18.0'
-  spec.dependency 'XLPagerTabStrip', '~> 9.1.0'
   spec.dependency 'GenuinCore', "= #{spec.version}"
   
   spec.vendored_frameworks = "UIBundle/GenuinUI/GenuinUI.xcframework"

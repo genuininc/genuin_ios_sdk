@@ -38,7 +38,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/genuininc/genuin_ios_sdk.git", :tag => "#{spec.version}" }
 
-  spec.dependency 'Socket.IO-Client-Swift', '~> 16.1.0'
   spec.dependency 'URLEmbeddedView', '~> 0.18.0'
   spec.dependency 'GenuinCore', "= #{spec.version}"
   

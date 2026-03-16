@@ -286,7 +286,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import GoogleInteractiveMediaAds;
 @import ObjectiveC;
-@import SafariServices;
 @import TOCropViewController;
 @import UIKit;
 @import UserNotifications;
@@ -369,8 +368,6 @@ SWIFT_CLASS("_TtC10GenuinCore26AutoPlayableCollectionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)reloadData;
-- (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;
-- (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSIndexPath;
@@ -467,16 +464,6 @@ SWIFT_CLASS("_TtC10GenuinCore12BGAPIRequest")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore19BGMainViewModelItem")
-@interface BGMainViewModelItem : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore26BGAllCaughtUpViewModelItem")
-@interface BGAllCaughtUpViewModelItem : BGMainViewModelItem
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore12BGAttributes")
 @interface BGAttributes : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -535,19 +522,6 @@ SWIFT_CLASS("_TtC10GenuinCore40BGCommunityPersonalisationViewController")
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplaySupplementaryView:(UICollectionReusableView * _Nonnull)view forElementKind:(NSString * _Nonnull)elementKind atIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore25BGContainerViewController")
-@interface BGContainerViewController : BaseViewController <UIScrollViewDelegate>
-- (void)loadView;
-- (void)viewDidLoad;
-- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore21BGConversationDisplay")
@@ -624,6 +598,12 @@ SWIFT_CLASS("_TtC10GenuinCore18BGLatestActivities")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS("_TtC10GenuinCore19BGMainViewModelItem")
+@interface BGMainViewModelItem : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSTextContainer;
 SWIFT_CLASS("_TtC10GenuinCore14GenuinTextView")
 @interface GenuinTextView : UITextView
@@ -664,17 +644,6 @@ SWIFT_CLASS("_TtC10GenuinCore22BGNavigationController")
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore16BGNetworkMonitor")
-@interface BGNetworkMonitor : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore11BGPlacement")
-@interface BGPlacement : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore25BGRoundtableViewModelItem")
@@ -796,11 +765,22 @@ SWIFT_CLASS("_TtC10GenuinCore24CMSContentViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore9CTAConfig")
-@interface CTAConfig : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
+typedef SWIFT_ENUM(NSInteger, CarouselScrollDirection, open) {
+  CarouselScrollDirectionHorizontal = 0,
+  CarouselScrollDirectionVertical = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, CarouselTileAspectRatio, open) {
+  CarouselTileAspectRatioRatio9x16 = 0,
+  CarouselTileAspectRatioRatio4x5 = 1,
+  CarouselTileAspectRatioRatio3x4 = 2,
+  CarouselTileAspectRatioRatio2x3 = 3,
+  CarouselTileAspectRatioRatio1x1 = 4,
+  CarouselTileAspectRatioRatio3x2 = 5,
+  CarouselTileAspectRatioRatio4x3 = 6,
+  CarouselTileAspectRatioRatio5x4 = 7,
+  CarouselTileAspectRatioRatio16x9 = 8,
+};
 
 SWIFT_CLASS("_TtC10GenuinCore11CommentType")
 @interface CommentType : NSObject
@@ -881,14 +861,8 @@ SWIFT_CLASS("_TtC10GenuinCore25CustomSliderContainerView")
 @interface CustomSliderContainerView : UIView
 @property (nonatomic, weak) IBOutlet CustomSliderProgress * _Null_unspecified videoSlider;
 - (void)awakeFromNib;
-- (void)accessibilityElementDidBecomeFocused;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@interface CustomSliderContainerView (SWIFT_EXTENSION(GenuinCore))
-- (void)accessibilityIncrement;
-- (void)accessibilityDecrement;
 @end
 
 @class UITouch;
@@ -910,26 +884,15 @@ typedef SWIFT_ENUM(NSInteger, DisplayType, open) {
   DisplayTypeUnderlinedBottom = 4,
 };
 
-@class GenuinTileConfiguration;
-SWIFT_CLASS("_TtC10GenuinCore28GenuinContainerConfiguration")
-@interface GenuinContainerConfiguration : NSObject
+@class GenuinCarouselConfiguration;
+SWIFT_CLASS("_TtC10GenuinCore18EmbedConfiguration")
+@interface EmbedConfiguration : NSObject
 @property (nonatomic) BOOL showNavigationBar;
 @property (nonatomic) BOOL isShowProfileEnabled;
 @property (nonatomic) BOOL isDirectDeepLinkEnabled;
+@property (nonatomic, copy) NSString * _Nullable interactionDeepLink;
 @property (nonatomic) BOOL isDirectDeepLinkWithLoginEnabled;
-@property (nonatomic, strong) GenuinTileConfiguration * _Nonnull tileConfiguration;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class GenuinCarouselConfiguration;
-SWIFT_CLASS("_TtC10GenuinCore18EmbedConfiguration")
-@interface EmbedConfiguration : GenuinContainerConfiguration
 @property (nonatomic, strong) GenuinCarouselConfiguration * _Nonnull genuinCarouselConfiguration;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore18EmbedFeedViewModel")
-@interface EmbedFeedViewModel : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -987,44 +950,6 @@ SWIFT_CLASS("_TtC10GenuinCore10FlagOption")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_PROTOCOL("_TtP10GenuinCore23GenuinAnalyticsDelegate_")
-@protocol GenuinAnalyticsDelegate
-- (void)onAnalyticsEventWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore14GenuinBaseView")
-@interface GenuinBaseView : UIView <SFSafariViewControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)didMoveToWindow;
-- (void)didMoveToSuperview;
-- (void)drawRect:(CGRect)rect;
-- (void)layoutSubviews;
-@end
-
-@class UITraitCollection;
-@interface GenuinBaseView (SWIFT_EXTENSION(GenuinCore))
-- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
-@end
-
-@interface GenuinBaseView (SWIFT_EXTENSION(GenuinCore)) <AutoPlayableCollectionViewDelegate, UICollectionViewDataSource>
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didEndDisplayingCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAt:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAt:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAt:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore12GenuinButton")
 @interface GenuinButton : UIButton
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
@@ -1034,16 +959,13 @@ SWIFT_CLASS("_TtC10GenuinCore12GenuinButton")
 - (void)prepareForInterfaceBuilder;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore23GenuinTileConfiguration")
-@interface GenuinTileConfiguration : NSObject
-@property (nonatomic) UIEdgeInsets viewInset;
+SWIFT_CLASS("_TtC10GenuinCore27GenuinCarouselConfiguration")
+@interface GenuinCarouselConfiguration : NSObject
+@property (nonatomic) enum CarouselScrollDirection scrollDirection;
+@property (nonatomic) enum CarouselTileAspectRatio aspectRatio;
+@property (nonatomic) UIEdgeInsets carouselInset;
 @property (nonatomic) double interTileSpacing;
 @property (nonatomic) double tileCornerRadius;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore27GenuinCarouselConfiguration")
-@interface GenuinCarouselConfiguration : GenuinTileConfiguration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1052,25 +974,24 @@ SWIFT_CLASS("_TtC10GenuinCore19GenuinConfiguration")
 @interface GenuinConfiguration : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinConfiguration * _Nonnull shared;)
 + (GenuinConfiguration * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// If disabled then create loop function will not work. Default is <code>true</code>.
+@property (nonatomic) BOOL enableCreateLoop;
+/// If false then side pandel will not be visible. Default is <code>true</code>.
+@property (nonatomic) BOOL showSidePanel;
+/// If false then navigation bar will not be visible in feed screen. Default is <code>false</code>.
+@property (nonatomic) BOOL showNavigationBar;
 @property (nonatomic) enum GenuinEnvironment environment;
+@property (nonatomic, readonly) BOOL allowContentCreation;
 @property (nonatomic, readonly, copy) NSString * _Nonnull customLoader;
 @property (nonatomic, readonly, strong) NSBundle * _Nonnull customLoaderBundle;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable fontsConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// provide lottie file name and bundle for custom loader. Default is Genuin’s loader
 - (void)setCustomLoader:(NSString * _Nonnull)customLoader bundle:(NSBundle * _Nonnull)bundle;
-/// provide fonts config to override fonts
-- (void)setFontsConfigWithBoldFontName:(NSString * _Nonnull)boldFontName boldItalicFontName:(NSString * _Nonnull)boldItalicFontName regularFontName:(NSString * _Nonnull)regularFontName heavyItalicFontName:(NSString * _Nonnull)heavyItalicFontName demiBoldFontName:(NSString * _Nonnull)demiBoldFontName demiBoldItalicFontName:(NSString * _Nonnull)demiBoldItalicFontName mediumFontName:(NSString * _Nonnull)mediumFontName fontIncrementValue:(CGFloat)fontIncrementValue;
 @end
 
 SWIFT_PROTOCOL("_TtP10GenuinCore14GenuinDelegate_")
 @protocol GenuinDelegate
 - (void)presentLoginViewControllerWithBaseViewController:(UIViewController * _Nonnull)baseViewController;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore15GenuinEmbedView")
-@interface GenuinEmbedView : GenuinBaseView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, GenuinEnvironment, open) {
@@ -1088,11 +1009,6 @@ SWIFT_CLASS("_TtC10GenuinCore15GenuinImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
 
-SWIFT_PROTOCOL("_TtP10GenuinCore25GenuinInteractionDelegate_")
-@protocol GenuinInteractionDelegate
-- (void)onInteractionWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info onCompletion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable))onCompletion;
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore11GenuinLabel")
 @interface GenuinLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -1107,44 +1023,19 @@ SWIFT_PROTOCOL("_TtP10GenuinCore32GenuinLinkOutInterceptorDelegate_")
 - (void)onLinkOutInterceptWithUrlString:(NSString * _Nonnull)urlString viewController:(UIViewController * _Nullable)viewController;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore28GenuinPlacementConfiguration")
-@interface GenuinPlacementConfiguration : GenuinTileConfiguration
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore19GenuinPlacementView")
-@interface GenuinPlacementView : GenuinBaseView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_PROTOCOL("_TtP10GenuinCore22GenuinPlaybackDelegate_")
-@protocol GenuinPlaybackDelegate
-- (void)onPlayWithIsMuted:(BOOL)isMuted fromFullScreen:(BOOL)fromFullScreen;
-- (void)onPauseFromFullScreen:(BOOL)fromFullScreen;
-@optional
-- (void)onPlaybackErrorWithError:(NSError * _Nullable)error;
-- (void)onAudioStateChangedWithIsMuted:(BOOL)isMuted isPlaying:(BOOL)isPlaying fromFullScreen:(BOOL)fromFullScreen;
-- (void)onFullScreenOpenedWithIsMuted:(BOOL)isMuted;
-- (void)onFullScreenClosedWithIsMuted:(BOOL)isMuted isPlaying:(BOOL)isPlaying;
-@end
-
-@class PlacementConfiguration;
 SWIFT_CLASS("_TtC10GenuinCore9GenuinSDK")
 @interface GenuinSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * _Nonnull shared;)
 + (GenuinSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, weak) id <GenuinDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <GenuinLinkOutInterceptorDelegate> _Nullable linkOutInterceptorDelegate;
-@property (nonatomic, weak) id <GenuinPlaybackDelegate> _Nullable playbackDelegate;
-@property (nonatomic, weak) id <GenuinAnalyticsDelegate> _Nullable analyticsDelegate;
-@property (nonatomic, weak) id <GenuinInteractionDelegate> _Nullable interactionDelegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeWithApiKey:(NSString * _Nonnull)apiKey configuration:(GenuinConfiguration * _Nonnull)configuration completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 - (void)initializeEmbedWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewConroller:(UIViewController * _Nonnull)viewConroller ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration;
-- (void)initializePlacementWithPlacementId:(NSString * _Nonnull)placementId styleId:(NSString * _Nonnull)styleId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewController:(UIViewController * _Nonnull)viewController ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams placementConfiguration:(PlacementConfiguration * _Nonnull)placementConfiguration;
 - (void)initializeEmbedFeedWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewConroller:(UIViewController * _Nonnull)viewConroller ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration;
 - (void)initializeStandardWallWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewConroller:(UIViewController * _Nonnull)viewConroller ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration;
+- (void)addFeedViewWithContainerView:(UIView * _Nonnull)containerView viewController:(UIViewController * _Nonnull)viewController;
 - (void)ssoLoginWithSsoToken:(NSString * _Nonnull)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(BOOL))completion;
 - (void)ssoLogoutWithCompletion:(void (^ _Nullable)(BOOL))completion;
 - (void)logoutSDKWithIsFromForceLogout:(BOOL)isFromForceLogout;
@@ -1152,7 +1043,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * 
 - (UINavigationController * _Nonnull)getGenuinNavigationControllerWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_WARN_UNUSED_RESULT;
 - (UINavigationController * _Nullable)getStandardWallControllerWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration SWIFT_WARN_UNUSED_RESULT;
 - (void)loadEmbedDataWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams;
-- (void)hasDataAvailableWithParams:(NSDictionary<NSString *, id> * _Nonnull)params completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 @end
 
 @class UNUserNotificationCenter;
@@ -1176,14 +1066,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * 
 - (void)setCrossPlatformToTrue;
 - (void)registerLinkoutInterceptorWithAssociateDomains:(NSArray<NSString *> * _Nonnull)associateDomains linkOutInterceptorDelegate:(id <GenuinLinkOutInterceptorDelegate> _Nonnull)linkOutInterceptorDelegate;
 - (NSArray<NSString *> * _Nullable)getClientAssociatedDomains SWIFT_WARN_UNUSED_RESULT;
-@end
-
-SWIFT_PROTOCOL("_TtP10GenuinCore24GenuinScrollViewDelegate_")
-@protocol GenuinScrollViewDelegate
-@optional
-- (void)genuinScrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)genuinScrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)genuinScrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore15GenuinTextField")
@@ -1213,24 +1095,6 @@ SWIFT_CLASS("_TtC10GenuinCore28GradientMaskedCollectionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)layoutSubviews;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore22GradientMaskedTextView")
-@interface GradientMaskedTextView : UITextView
-- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)layoutSubviews;
-@end
-
-@interface GradientMaskedTextView (SWIFT_EXTENSION(GenuinCore)) <UITextViewDelegate>
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore19IHSectionDetailView")
-@interface IHSectionDetailView : UIView
-@property (nonatomic, weak) IBOutlet GenuinLabel * _Null_unspecified lblDesc;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore11KSDataModel")
@@ -1300,8 +1164,6 @@ SWIFT_CLASS("_TtC10GenuinCore12LinkOutDelay")
 
 SWIFT_CLASS("_TtC10GenuinCore19LinkOutFeedCellView")
 @interface LinkOutFeedCellView : UIStackView
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAddButton;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgArrow;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -1321,21 +1183,9 @@ SWIFT_CLASS("_TtC10GenuinCore14LinkSquareCell")
 
 SWIFT_CLASS("_TtC10GenuinCore17LinkTextImageCell")
 @interface LinkTextImageCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblCTAButton;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgArrow;
 - (void)awakeFromNib;
 - (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSLayoutConstraint;
-SWIFT_CLASS("_TtC10GenuinCore19LoopFeedShimmerCell")
-@interface LoopFeedShimmerCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified rightOptionsBottomConstraint;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1362,13 +1212,6 @@ SWIFT_CLASS("_TtC10GenuinCore13MobileConfigs")
 @interface MobileConfigs : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore24NoInternetCollectionCell")
-@interface NoInternetCollectionCell : UICollectionViewCell
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore18NoInternetDarkMode")
@@ -1450,25 +1293,16 @@ SWIFT_CLASS("_TtC10GenuinCore16PhysicsAnimation")
 - (void)adjustMargins;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore22PlacementConfiguration")
-@interface PlacementConfiguration : GenuinContainerConfiguration
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class VideoThumbnailView;
 SWIFT_CLASS("_TtC10GenuinCore10RTFeedCell")
 @interface RTFeedCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet GenuinVideoView * _Null_unspecified viewPlayer;
-@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified viewAd;
-@property (nonatomic, weak) IBOutlet GradientMaskedTextView * _Null_unspecified textViewRTDesc;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textViewRTDesc;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewShare;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnNickName;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnSubscribe;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewMore;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewLinksContainer;
 @property (nonatomic, weak) IBOutlet LinkOutFeedCellView * _Null_unspecified linkOutPreviewStackView;
-@property (nonatomic, weak) IBOutlet CustomSliderContainerView * _Null_unspecified videoSliderContainer;
-@property (nonatomic, weak) IBOutlet VideoThumbnailView * _Null_unspecified viewVideoThumbnail;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
@@ -1669,16 +1503,6 @@ SWIFT_CLASS("_TtC10GenuinCore18SwiftMessagesSegue")
 - (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)dismissed SWIFT_WARN_UNUSED_RESULT;
 @end
 
-SWIFT_PROTOCOL("_TtP10GenuinCore18TPProgressDelegate_")
-@protocol TPProgressDelegate
-- (void)tp_scrollView:(UIScrollView * _Nonnull)scrollView didUpdate:(CGFloat)progress;
-- (void)tp_scrollViewDidLoad:(UIScrollView * _Nonnull)scrollView;
-@optional
-- (void)tp_scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)tp_scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)tp_scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore18TopBottomAnimation")
 @interface TopBottomAnimation : NSObject
 - (void)adjustMargins;
@@ -1693,10 +1517,6 @@ SWIFT_CLASS("_TtC10GenuinCore18TopBottomAnimation")
 
 @interface UIView (SWIFT_EXTENSION(GenuinCore))
 @property (nonatomic, strong) UIColor * _Nullable subviewsBackgroundColor;
-@end
-
-@interface UIViewController (SWIFT_EXTENSION(GenuinCore))
-- (UIView * _Nonnull)panView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore25UnsupportedFeatureMessage")
@@ -2099,7 +1919,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import GoogleInteractiveMediaAds;
 @import ObjectiveC;
-@import SafariServices;
 @import TOCropViewController;
 @import UIKit;
 @import UserNotifications;
@@ -2182,8 +2001,6 @@ SWIFT_CLASS("_TtC10GenuinCore26AutoPlayableCollectionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)reloadData;
-- (void)setContentOffset:(CGPoint)contentOffset animated:(BOOL)animated;
-- (BOOL)accessibilityScroll:(UIAccessibilityScrollDirection)direction SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class NSIndexPath;
@@ -2280,16 +2097,6 @@ SWIFT_CLASS("_TtC10GenuinCore12BGAPIRequest")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore19BGMainViewModelItem")
-@interface BGMainViewModelItem : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore26BGAllCaughtUpViewModelItem")
-@interface BGAllCaughtUpViewModelItem : BGMainViewModelItem
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore12BGAttributes")
 @interface BGAttributes : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2348,19 +2155,6 @@ SWIFT_CLASS("_TtC10GenuinCore40BGCommunityPersonalisationViewController")
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplaySupplementaryView:(UICollectionReusableView * _Nonnull)view forElementKind:(NSString * _Nonnull)elementKind atIndexPath:(NSIndexPath * _Nonnull)indexPath;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore25BGContainerViewController")
-@interface BGContainerViewController : BaseViewController <UIScrollViewDelegate>
-- (void)loadView;
-- (void)viewDidLoad;
-- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore21BGConversationDisplay")
@@ -2437,6 +2231,12 @@ SWIFT_CLASS("_TtC10GenuinCore18BGLatestActivities")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS("_TtC10GenuinCore19BGMainViewModelItem")
+@interface BGMainViewModelItem : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class NSTextContainer;
 SWIFT_CLASS("_TtC10GenuinCore14GenuinTextView")
 @interface GenuinTextView : UITextView
@@ -2477,17 +2277,6 @@ SWIFT_CLASS("_TtC10GenuinCore22BGNavigationController")
 - (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore16BGNetworkMonitor")
-@interface BGNetworkMonitor : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore11BGPlacement")
-@interface BGPlacement : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore25BGRoundtableViewModelItem")
@@ -2609,11 +2398,22 @@ SWIFT_CLASS("_TtC10GenuinCore24CMSContentViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore9CTAConfig")
-@interface CTAConfig : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
+typedef SWIFT_ENUM(NSInteger, CarouselScrollDirection, open) {
+  CarouselScrollDirectionHorizontal = 0,
+  CarouselScrollDirectionVertical = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, CarouselTileAspectRatio, open) {
+  CarouselTileAspectRatioRatio9x16 = 0,
+  CarouselTileAspectRatioRatio4x5 = 1,
+  CarouselTileAspectRatioRatio3x4 = 2,
+  CarouselTileAspectRatioRatio2x3 = 3,
+  CarouselTileAspectRatioRatio1x1 = 4,
+  CarouselTileAspectRatioRatio3x2 = 5,
+  CarouselTileAspectRatioRatio4x3 = 6,
+  CarouselTileAspectRatioRatio5x4 = 7,
+  CarouselTileAspectRatioRatio16x9 = 8,
+};
 
 SWIFT_CLASS("_TtC10GenuinCore11CommentType")
 @interface CommentType : NSObject
@@ -2694,14 +2494,8 @@ SWIFT_CLASS("_TtC10GenuinCore25CustomSliderContainerView")
 @interface CustomSliderContainerView : UIView
 @property (nonatomic, weak) IBOutlet CustomSliderProgress * _Null_unspecified videoSlider;
 - (void)awakeFromNib;
-- (void)accessibilityElementDidBecomeFocused;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@interface CustomSliderContainerView (SWIFT_EXTENSION(GenuinCore))
-- (void)accessibilityIncrement;
-- (void)accessibilityDecrement;
 @end
 
 @class UITouch;
@@ -2723,26 +2517,15 @@ typedef SWIFT_ENUM(NSInteger, DisplayType, open) {
   DisplayTypeUnderlinedBottom = 4,
 };
 
-@class GenuinTileConfiguration;
-SWIFT_CLASS("_TtC10GenuinCore28GenuinContainerConfiguration")
-@interface GenuinContainerConfiguration : NSObject
+@class GenuinCarouselConfiguration;
+SWIFT_CLASS("_TtC10GenuinCore18EmbedConfiguration")
+@interface EmbedConfiguration : NSObject
 @property (nonatomic) BOOL showNavigationBar;
 @property (nonatomic) BOOL isShowProfileEnabled;
 @property (nonatomic) BOOL isDirectDeepLinkEnabled;
+@property (nonatomic, copy) NSString * _Nullable interactionDeepLink;
 @property (nonatomic) BOOL isDirectDeepLinkWithLoginEnabled;
-@property (nonatomic, strong) GenuinTileConfiguration * _Nonnull tileConfiguration;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class GenuinCarouselConfiguration;
-SWIFT_CLASS("_TtC10GenuinCore18EmbedConfiguration")
-@interface EmbedConfiguration : GenuinContainerConfiguration
 @property (nonatomic, strong) GenuinCarouselConfiguration * _Nonnull genuinCarouselConfiguration;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore18EmbedFeedViewModel")
-@interface EmbedFeedViewModel : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2800,44 +2583,6 @@ SWIFT_CLASS("_TtC10GenuinCore10FlagOption")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_PROTOCOL("_TtP10GenuinCore23GenuinAnalyticsDelegate_")
-@protocol GenuinAnalyticsDelegate
-- (void)onAnalyticsEventWithEventName:(NSString * _Nonnull)eventName properties:(NSDictionary<NSString *, id> * _Nonnull)properties;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore14GenuinBaseView")
-@interface GenuinBaseView : UIView <SFSafariViewControllerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)didMoveToWindow;
-- (void)didMoveToSuperview;
-- (void)drawRect:(CGRect)rect;
-- (void)layoutSubviews;
-@end
-
-@class UITraitCollection;
-@interface GenuinBaseView (SWIFT_EXTENSION(GenuinCore))
-- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
-@end
-
-@interface GenuinBaseView (SWIFT_EXTENSION(GenuinCore)) <AutoPlayableCollectionViewDelegate, UICollectionViewDataSource>
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView willDisplayCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)collectionView:(UICollectionView * _Nonnull)collectionView didEndDisplayingCell:(UICollectionViewCell * _Nonnull)cell forItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAt:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAt:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAt:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UIEdgeInsets)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout insetForSectionAt:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore12GenuinButton")
 @interface GenuinButton : UIButton
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
@@ -2847,16 +2592,13 @@ SWIFT_CLASS("_TtC10GenuinCore12GenuinButton")
 - (void)prepareForInterfaceBuilder;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore23GenuinTileConfiguration")
-@interface GenuinTileConfiguration : NSObject
-@property (nonatomic) UIEdgeInsets viewInset;
+SWIFT_CLASS("_TtC10GenuinCore27GenuinCarouselConfiguration")
+@interface GenuinCarouselConfiguration : NSObject
+@property (nonatomic) enum CarouselScrollDirection scrollDirection;
+@property (nonatomic) enum CarouselTileAspectRatio aspectRatio;
+@property (nonatomic) UIEdgeInsets carouselInset;
 @property (nonatomic) double interTileSpacing;
 @property (nonatomic) double tileCornerRadius;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore27GenuinCarouselConfiguration")
-@interface GenuinCarouselConfiguration : GenuinTileConfiguration
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2865,25 +2607,24 @@ SWIFT_CLASS("_TtC10GenuinCore19GenuinConfiguration")
 @interface GenuinConfiguration : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinConfiguration * _Nonnull shared;)
 + (GenuinConfiguration * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+/// If disabled then create loop function will not work. Default is <code>true</code>.
+@property (nonatomic) BOOL enableCreateLoop;
+/// If false then side pandel will not be visible. Default is <code>true</code>.
+@property (nonatomic) BOOL showSidePanel;
+/// If false then navigation bar will not be visible in feed screen. Default is <code>false</code>.
+@property (nonatomic) BOOL showNavigationBar;
 @property (nonatomic) enum GenuinEnvironment environment;
+@property (nonatomic, readonly) BOOL allowContentCreation;
 @property (nonatomic, readonly, copy) NSString * _Nonnull customLoader;
 @property (nonatomic, readonly, strong) NSBundle * _Nonnull customLoaderBundle;
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable fontsConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 /// provide lottie file name and bundle for custom loader. Default is Genuin’s loader
 - (void)setCustomLoader:(NSString * _Nonnull)customLoader bundle:(NSBundle * _Nonnull)bundle;
-/// provide fonts config to override fonts
-- (void)setFontsConfigWithBoldFontName:(NSString * _Nonnull)boldFontName boldItalicFontName:(NSString * _Nonnull)boldItalicFontName regularFontName:(NSString * _Nonnull)regularFontName heavyItalicFontName:(NSString * _Nonnull)heavyItalicFontName demiBoldFontName:(NSString * _Nonnull)demiBoldFontName demiBoldItalicFontName:(NSString * _Nonnull)demiBoldItalicFontName mediumFontName:(NSString * _Nonnull)mediumFontName fontIncrementValue:(CGFloat)fontIncrementValue;
 @end
 
 SWIFT_PROTOCOL("_TtP10GenuinCore14GenuinDelegate_")
 @protocol GenuinDelegate
 - (void)presentLoginViewControllerWithBaseViewController:(UIViewController * _Nonnull)baseViewController;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore15GenuinEmbedView")
-@interface GenuinEmbedView : GenuinBaseView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
 typedef SWIFT_ENUM(NSInteger, GenuinEnvironment, open) {
@@ -2901,11 +2642,6 @@ SWIFT_CLASS("_TtC10GenuinCore15GenuinImageView")
 - (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage SWIFT_UNAVAILABLE;
 @end
 
-SWIFT_PROTOCOL("_TtP10GenuinCore25GenuinInteractionDelegate_")
-@protocol GenuinInteractionDelegate
-- (void)onInteractionWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info onCompletion:(void (^ _Nullable)(NSDictionary<NSString *, id> * _Nullable))onCompletion;
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore11GenuinLabel")
 @interface GenuinLabel : UILabel
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -2920,44 +2656,19 @@ SWIFT_PROTOCOL("_TtP10GenuinCore32GenuinLinkOutInterceptorDelegate_")
 - (void)onLinkOutInterceptWithUrlString:(NSString * _Nonnull)urlString viewController:(UIViewController * _Nullable)viewController;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore28GenuinPlacementConfiguration")
-@interface GenuinPlacementConfiguration : GenuinTileConfiguration
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore19GenuinPlacementView")
-@interface GenuinPlacementView : GenuinBaseView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_PROTOCOL("_TtP10GenuinCore22GenuinPlaybackDelegate_")
-@protocol GenuinPlaybackDelegate
-- (void)onPlayWithIsMuted:(BOOL)isMuted fromFullScreen:(BOOL)fromFullScreen;
-- (void)onPauseFromFullScreen:(BOOL)fromFullScreen;
-@optional
-- (void)onPlaybackErrorWithError:(NSError * _Nullable)error;
-- (void)onAudioStateChangedWithIsMuted:(BOOL)isMuted isPlaying:(BOOL)isPlaying fromFullScreen:(BOOL)fromFullScreen;
-- (void)onFullScreenOpenedWithIsMuted:(BOOL)isMuted;
-- (void)onFullScreenClosedWithIsMuted:(BOOL)isMuted isPlaying:(BOOL)isPlaying;
-@end
-
-@class PlacementConfiguration;
 SWIFT_CLASS("_TtC10GenuinCore9GenuinSDK")
 @interface GenuinSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * _Nonnull shared;)
 + (GenuinSDK * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, weak) id <GenuinDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <GenuinLinkOutInterceptorDelegate> _Nullable linkOutInterceptorDelegate;
-@property (nonatomic, weak) id <GenuinPlaybackDelegate> _Nullable playbackDelegate;
-@property (nonatomic, weak) id <GenuinAnalyticsDelegate> _Nullable analyticsDelegate;
-@property (nonatomic, weak) id <GenuinInteractionDelegate> _Nullable interactionDelegate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeWithApiKey:(NSString * _Nonnull)apiKey configuration:(GenuinConfiguration * _Nonnull)configuration completion:(void (^ _Nullable)(NSError * _Nullable))completion;
 - (void)initializeEmbedWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewConroller:(UIViewController * _Nonnull)viewConroller ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration;
-- (void)initializePlacementWithPlacementId:(NSString * _Nonnull)placementId styleId:(NSString * _Nonnull)styleId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewController:(UIViewController * _Nonnull)viewController ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams placementConfiguration:(PlacementConfiguration * _Nonnull)placementConfiguration;
 - (void)initializeEmbedFeedWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewConroller:(UIViewController * _Nonnull)viewConroller ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration;
 - (void)initializeStandardWallWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId containerView:(UIView * _Nonnull)containerView viewConroller:(UIViewController * _Nonnull)viewConroller ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration;
+- (void)addFeedViewWithContainerView:(UIView * _Nonnull)containerView viewController:(UIViewController * _Nonnull)viewController;
 - (void)ssoLoginWithSsoToken:(NSString * _Nonnull)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params completion:(void (^ _Nullable)(BOOL))completion;
 - (void)ssoLogoutWithCompletion:(void (^ _Nullable)(BOOL))completion;
 - (void)logoutSDKWithIsFromForceLogout:(BOOL)isFromForceLogout;
@@ -2965,7 +2676,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * 
 - (UINavigationController * _Nonnull)getGenuinNavigationControllerWithRootViewController:(UIViewController * _Nonnull)rootViewController SWIFT_WARN_UNUSED_RESULT;
 - (UINavigationController * _Nullable)getStandardWallControllerWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId ssoToken:(NSString * _Nullable)ssoToken params:(NSDictionary<NSString *, id> * _Nullable)params contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams embedConfiguration:(EmbedConfiguration * _Nonnull)embedConfiguration SWIFT_WARN_UNUSED_RESULT;
 - (void)loadEmbedDataWithEmbedId:(NSString * _Nonnull)embedId uniqueId:(NSString * _Nullable)uniqueId contextualParams:(NSDictionary<NSString *, id> * _Nullable)contextualParams;
-- (void)hasDataAvailableWithParams:(NSDictionary<NSString *, id> * _Nonnull)params completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 @end
 
 @class UNUserNotificationCenter;
@@ -2989,14 +2699,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * 
 - (void)setCrossPlatformToTrue;
 - (void)registerLinkoutInterceptorWithAssociateDomains:(NSArray<NSString *> * _Nonnull)associateDomains linkOutInterceptorDelegate:(id <GenuinLinkOutInterceptorDelegate> _Nonnull)linkOutInterceptorDelegate;
 - (NSArray<NSString *> * _Nullable)getClientAssociatedDomains SWIFT_WARN_UNUSED_RESULT;
-@end
-
-SWIFT_PROTOCOL("_TtP10GenuinCore24GenuinScrollViewDelegate_")
-@protocol GenuinScrollViewDelegate
-@optional
-- (void)genuinScrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-- (void)genuinScrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)genuinScrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore15GenuinTextField")
@@ -3026,24 +2728,6 @@ SWIFT_CLASS("_TtC10GenuinCore28GradientMaskedCollectionView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout * _Nonnull)layout SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)layoutSubviews;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore22GradientMaskedTextView")
-@interface GradientMaskedTextView : UITextView
-- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)layoutSubviews;
-@end
-
-@interface GradientMaskedTextView (SWIFT_EXTENSION(GenuinCore)) <UITextViewDelegate>
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore19IHSectionDetailView")
-@interface IHSectionDetailView : UIView
-@property (nonatomic, weak) IBOutlet GenuinLabel * _Null_unspecified lblDesc;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore11KSDataModel")
@@ -3113,8 +2797,6 @@ SWIFT_CLASS("_TtC10GenuinCore12LinkOutDelay")
 
 SWIFT_CLASS("_TtC10GenuinCore19LinkOutFeedCellView")
 @interface LinkOutFeedCellView : UIStackView
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblAddButton;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgArrow;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -3134,21 +2816,9 @@ SWIFT_CLASS("_TtC10GenuinCore14LinkSquareCell")
 
 SWIFT_CLASS("_TtC10GenuinCore17LinkTextImageCell")
 @interface LinkTextImageCell : UICollectionViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified lblCTAButton;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imgArrow;
 - (void)awakeFromNib;
 - (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSLayoutConstraint;
-SWIFT_CLASS("_TtC10GenuinCore19LoopFeedShimmerCell")
-@interface LoopFeedShimmerCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint * _Null_unspecified rightOptionsBottomConstraint;
-- (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3175,13 +2845,6 @@ SWIFT_CLASS("_TtC10GenuinCore13MobileConfigs")
 @interface MobileConfigs : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore24NoInternetCollectionCell")
-@interface NoInternetCollectionCell : UICollectionViewCell
-- (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore18NoInternetDarkMode")
@@ -3263,25 +2926,16 @@ SWIFT_CLASS("_TtC10GenuinCore16PhysicsAnimation")
 - (void)adjustMargins;
 @end
 
-SWIFT_CLASS("_TtC10GenuinCore22PlacementConfiguration")
-@interface PlacementConfiguration : GenuinContainerConfiguration
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class VideoThumbnailView;
 SWIFT_CLASS("_TtC10GenuinCore10RTFeedCell")
 @interface RTFeedCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet GenuinVideoView * _Null_unspecified viewPlayer;
-@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified viewAd;
-@property (nonatomic, weak) IBOutlet GradientMaskedTextView * _Null_unspecified textViewRTDesc;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textViewRTDesc;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewShare;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnNickName;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnSubscribe;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewMore;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified viewLinksContainer;
 @property (nonatomic, weak) IBOutlet LinkOutFeedCellView * _Null_unspecified linkOutPreviewStackView;
-@property (nonatomic, weak) IBOutlet CustomSliderContainerView * _Null_unspecified videoSliderContainer;
-@property (nonatomic, weak) IBOutlet VideoThumbnailView * _Null_unspecified viewVideoThumbnail;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (void)prepareForReuse;
@@ -3482,16 +3136,6 @@ SWIFT_CLASS("_TtC10GenuinCore18SwiftMessagesSegue")
 - (id <UIViewControllerAnimatedTransitioning> _Nullable)animationControllerForDismissedController:(UIViewController * _Nonnull)dismissed SWIFT_WARN_UNUSED_RESULT;
 @end
 
-SWIFT_PROTOCOL("_TtP10GenuinCore18TPProgressDelegate_")
-@protocol TPProgressDelegate
-- (void)tp_scrollView:(UIScrollView * _Nonnull)scrollView didUpdate:(CGFloat)progress;
-- (void)tp_scrollViewDidLoad:(UIScrollView * _Nonnull)scrollView;
-@optional
-- (void)tp_scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
-- (void)tp_scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
-- (void)tp_scrollViewWillBeginDragging:(UIScrollView * _Nonnull)scrollView;
-@end
-
 SWIFT_CLASS("_TtC10GenuinCore18TopBottomAnimation")
 @interface TopBottomAnimation : NSObject
 - (void)adjustMargins;
@@ -3506,10 +3150,6 @@ SWIFT_CLASS("_TtC10GenuinCore18TopBottomAnimation")
 
 @interface UIView (SWIFT_EXTENSION(GenuinCore))
 @property (nonatomic, strong) UIColor * _Nullable subviewsBackgroundColor;
-@end
-
-@interface UIViewController (SWIFT_EXTENSION(GenuinCore))
-- (UIView * _Nonnull)panView SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore25UnsupportedFeatureMessage")

@@ -27,6 +27,7 @@ import MaterialComponents.MaterialActivityIndicator
 import MaterialComponents
 import MessageUI
 import MobileCoreServices
+import Network
 import Photos
 import QuartzCore
 import RegexBuilder
@@ -44,6 +45,7 @@ import TOCropViewController
 import UIKit
 import UniformTypeIdentifiers
 import WebKit
+import XLPagerTabStrip
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -379,6 +381,7 @@ public enum AuthenticationError : Swift.Error {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor open class AutoPlayableCollectionView : UIKit.UICollectionView {
   @_Concurrency.MainActor weak public var autoPlayDataSource: (any AutoPlayableCollectionViewDataSource)?
   @_Concurrency.MainActor weak public var autoPlayDelegate: (any AutoPlayableCollectionViewDelegate)?
+  @_Concurrency.MainActor weak public var playerDelegate: (any AutoPlayablePlayerDelegate)?
   @_Concurrency.MainActor @objc override dynamic open var delegate: (any UIKit.UICollectionViewDelegate)? {
     @objc get
     @objc set
@@ -389,6 +392,8 @@ public enum AuthenticationError : Swift.Error {
   @_Concurrency.MainActor public func startPlayingWhenUpload()
   @_Concurrency.MainActor public func onViewDidAppear()
   @_Concurrency.MainActor public func onViewWillDisappear()
+  @_Concurrency.MainActor @objc override dynamic open func setContentOffset(_ contentOffset: CoreFoundation.CGPoint, animated: Swift.Bool)
+  @_Concurrency.MainActor @objc override dynamic open func accessibilityScroll(_ direction: UIKit.UIAccessibilityScrollDirection) -> Swift.Bool
   @objc deinit
 }
 public protocol AutoPlayableCollectionViewDataSource : AnyObject {
@@ -403,9 +408,10 @@ public protocol AutoPlayableCollectionViewDataSource : AnyObject {
   @objc optional func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForFooterInSection section: Swift.Int) -> CoreFoundation.CGSize
 }
 public protocol AutoPlayableCollectionViewCellProtocol : AnyObject {
-  func pause()
+  func pause(isPlayerDidPlayToEndTime: Swift.Bool, isFromScroll: Swift.Bool)
   func playIfPossible()
   func resume()
+  func isPlaying() -> Swift.Bool
 }
 extension AutoPlayableCollectionView : UIKit.UICollectionViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, shouldHighlightItemAt indexPath: Foundation.IndexPath) -> Swift.Bool
@@ -446,6 +452,9 @@ extension AutoPlayableCollectionView : UIKit.UICollectionViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplayContextMenu configuration: UIKit.UIContextMenuConfiguration, animator: (any UIKit.UIContextMenuInteractionAnimating)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willEndContextMenuInteraction configuration: UIKit.UIContextMenuConfiguration, animator: (any UIKit.UIContextMenuInteractionAnimating)?)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, sceneActivationConfigurationForItemAt indexPath: Foundation.IndexPath, point: CoreFoundation.CGPoint) -> UIKit.UIWindowScene.ActivationConfiguration?
+}
+public protocol AutoPlayablePlayerDelegate : AnyObject {
+  func playerDidPlayToEndTime(for cell: UIKit.UICollectionViewCell)
 }
 extension AutoPlayableCollectionView : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
@@ -519,10 +528,32 @@ extension BaseView {
   @_Concurrency.MainActor @preconcurrency public func configureBackgroundView(sideMargin: CoreFoundation.CGFloat)
   @_Concurrency.MainActor @preconcurrency public func configureBackgroundView(width: CoreFoundation.CGFloat)
 }
+@_hasMissingDesignatedInitializers public class EPIdentityModel {
+  public var placementId: Swift.String?
+  public var embedId: Swift.String?
+  public var styleId: Swift.String?
+  public var uniqueId: Swift.String?
+  public var previousFromPlaybackSource: FromPlaybackSource?
+  public func getPlacement() -> BGPlacement?
+  public func getEmbed() -> BGEmbed?
+  public func getViewModelForPlacement() -> EmbedFeedViewModel?
+  public func getViewModelForEmbed() -> EmbedFeedViewModel?
+  public func getGenericLogParams() -> [Swift.String : Any]
+  public func setPreviousPlaybackState(playbackState: BGPlaybackState)
+  public func getContexualParams() -> [Swift.String : Any]?
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class BaseViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public var embed: BGEmbed?
+  @_Concurrency.MainActor @preconcurrency public var epIdentityModel: EPIdentityModel?
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor @preconcurrency public func getGenericLogParams() -> [Swift.String : Any]
+  @_Concurrency.MainActor @preconcurrency public func isGroupRedirectionEnabled() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func registerPlayerPlayCallback(_ fromPlaybackSource: FromPlaybackSource)
+  @_Concurrency.MainActor @preconcurrency public func registerPlayerPauseCallback(_ fromPlaybackSource: FromPlaybackSource)
+  @_Concurrency.MainActor @preconcurrency public func getVideoLayoutId() -> BGVideoLayoutId?
+  @_Concurrency.MainActor @preconcurrency public func getExtraInfoForInteraction(attributes: BGAttributes?) -> [Swift.String : Any]
+  @_Concurrency.MainActor @preconcurrency public func getPlacementViewModel(with attributes: BGAttributes) -> EmbedFeedViewModel?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
@@ -677,6 +708,22 @@ extension BGCommunityPersonalisationViewController : UIKit.UICollectionViewDeleg
 extension BGCommunityPersonalisationViewController : CommunityDelegate {
   @_Concurrency.MainActor @preconcurrency public func communityDetailDidClosed(community: BGCommunity?)
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BGContainerViewController : BaseViewController, UIKit.UIScrollViewDelegate {
+  @objc deinit
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func loadView()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc public func scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension BGContainerViewController : BottomPageDelegate {
+  @_Concurrency.MainActor @preconcurrency public func tp_pageViewController(_ currentViewController: UIKit.UIViewController?, didSelectPageAt index: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func scrollToMenu(offset: CoreFoundation.CGFloat)
+}
 @objc @_inheritsConvenienceInitializers public class BGConversationGroupDisplay : ObjectiveC.NSObject {
   public var chatId: Swift.String?
   public var colorCode: Swift.String?
@@ -760,12 +807,66 @@ public enum BGConversationType : Swift.Int16 {
     get
   }
 }
+public enum BGCardLayoutId : Swift.Int {
+  case `default`
+  case ih
+  case td
+  case gh
+  case adview
+  case wm
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BGVideoLayoutId : Swift.Int {
+  case `default`
+  case ih
+  case td
+  case adview
+  case wm
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class BGActiveViewInfo {
+  public var pId: Swift.String?
+  public var sId: Swift.String?
+  public var eId: Swift.String?
+  public var isPlaying: Swift.Bool?
+  @objc deinit
+}
+public enum BGCTAStatus {
+  case selected
+  case loading
+  case unselected
+  public static func == (a: BGCTAStatus, b: BGCTAStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc public class BGAttributes : ObjectiveC.NSObject {
+  public var desc: Swift.String?
   public var title: Swift.String?
+  public var subtitle: Swift.String?
   public var timestamp: Swift.Double?
-  public init(clipType: Swift.String? = nil, desc: Swift.String? = nil, imageUrl: Swift.String? = nil, title: Swift.String? = nil, timestamp: Swift.Double? = nil)
+  public var offerText: Swift.String?
+  public var ihContentType: IhContentType?
+  public var slug: Swift.String?
+  public var contentId: Swift.String?
+  public var pId: Swift.String?
+  public var sId: Swift.String?
+  public var eId: Swift.String?
+  public var ctaCurrentState: BGCTAStatus?
+  public var ctaStatus: Swift.Bool?
+  public init(clipType: Swift.String? = nil, desc: Swift.String? = nil, imageUrl: Swift.String? = nil, title: Swift.String? = nil, subtitle: Swift.String? = nil, timestamp: Swift.Double? = nil, offerText: Swift.String? = nil, ihContentType: IhContentType? = nil, slug: Swift.String? = nil, contentId: Swift.String? = nil, pId: Swift.String? = nil, sId: Swift.String? = nil, eId: Swift.String? = nil)
   public init(data: [Swift.String : Any])
   public func toDictionary() -> [Swift.String : Any]
+  public func getContentId() -> Swift.String?
   @objc deinit
 }
 public enum RecordContentType {
@@ -788,6 +889,60 @@ public enum RecordContentType {
   public var hashValue: Swift.Int {
     get
   }
+}
+public class BGCustomEventHandler {
+  public init()
+  public func logEventStreamStart(data: BGCustomEventModel)
+  public func logEventStreamEnd(data: BGCustomEventModel)
+  public func logEventTrackStart(data: BGCustomEventModel)
+  public func logEventTrackEnd(data: BGCustomEventModel)
+  public func logEventPlay(data: BGCustomEventModel)
+  public func logEventPause(data: BGCustomEventModel)
+  public func logEventPageView(data: BGCustomEventModel)
+  public func logEventClick(data: BGCustomEventModel)
+  @objc deinit
+}
+public enum BGEndReasonForEvent : Swift.String {
+  case new_clip_start
+  case next_clip_start
+  case stop
+  case pause
+  case background
+  case audio_interruption
+  case navigation
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class BGCustomEventModel {
+  public var type: Swift.String?
+  public var isMuted: Swift.Bool?
+  public var videoPosition: Swift.Int?
+  public var feedSize: Swift.Int?
+  public var parentStationId: Swift.String?
+  public var parentStationName: Swift.String?
+  public var parentStationType: Swift.String?
+  public var clipTitle: Swift.String?
+  public var isOfflineModeEnabled: Swift.Bool?
+  public var playbackStartTime: Swift.Double?
+  public var playedFrom: Swift.Int?
+  public var sessionId: Swift.String?
+  public var startPosition: Swift.Int?
+  public var isAutoplay: Swift.Bool?
+  public var endReason: Swift.String?
+  public var exitSpot: Swift.String?
+  public var listenTime: Swift.Int?
+  public var completionRate: Swift.Float?
+  public var location: Swift.String?
+  public var contentId: Swift.String?
+  public var pageName: Swift.String?
+  public var tab: Swift.String?
+  public var assetCategory: Swift.String?
+  public init(type: Swift.String? = nil, isMuted: Swift.Bool? = nil, videoPosition: Swift.Int? = nil, feedSize: Swift.Int? = nil, parentStationId: Swift.String? = nil, parentStationName: Swift.String? = nil, parentStationType: Swift.String? = nil, clipTitle: Swift.String? = nil, isOfflineModeEnabled: Swift.Bool? = nil, playbackStartTime: Swift.Double? = nil, playedFrom: Swift.Int? = nil, sessionId: Swift.String? = nil, startPosition: Swift.Int? = nil, isAutoplay: Swift.Bool? = nil, endReason: Swift.String? = nil, exitSpot: Swift.String? = nil, listenTime: Swift.Int? = nil, completionRate: Swift.Float? = nil, location: Swift.String? = nil, contentId: Swift.String? = nil, pageName: Swift.String? = nil, tab: Swift.String? = nil, assetCategory: Swift.String? = nil)
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BGCustomNavigationController : UIKit.UINavigationController {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool)
@@ -820,6 +975,7 @@ public protocol BGDisplayPictureDelegate : AnyObject {
 public enum BGEmbedLayout : Swift.String {
   case `default`
   case custom
+  case grubHub
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -834,10 +990,18 @@ public enum BGEmbedLayout : Swift.String {
   public var brandId: Swift.Int?
   public var customization: BGEmbedCustomization?
   public var embedLayout: Swift.String?
+  public var tileAspectRatio: CoreFoundation.CGSize?
+  public var cardLayoutId: BGCardLayoutId?
+  public var videoLayoutId: BGVideoLayoutId?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BGEmbedCustomization : ObjectiveC.NSObject {
-  public var shouldRepost: Swift.Bool?
+  public var isLoopVideo: Swift.Bool?
+  public var autoAdvancePlayback: CoreFoundation.CGFloat?
+  public var isEnableEngagementTools: Swift.Bool?
+  public var engagementTools: EngagementTools?
+  public var isEnableRedirection: Swift.Bool?
+  public var redirectionTools: RedirectionTools?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BGCommunityLoopId : ObjectiveC.NSObject {
@@ -936,6 +1100,289 @@ extension BGMentionsTextView : UIKit.UITextViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class BGNetworkMonitor : ObjectiveC.NSObject {
+  public var onStatusChange: ((Swift.Bool) -> Swift.Void)?
+  public func startMonitoring()
+  public func stopMonitoring()
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum GenuinViewTypeLayout : Swift.String {
+  case carousel
+  case grid
+  case feed
+  case standardWall
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FeedType : Swift.String {
+  case brand
+  case community
+  case group
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class BGPlacement : ObjectiveC.NSObject {
+  public var id: Swift.String?
+  public var brandId: Swift.Int?
+  public var communityIds: [Swift.String]?
+  public var communityLoopIds: [CommunityLoopId]?
+  public var createdAt: Swift.String?
+  public var customization: BGPlacementCustomization?
+  public var name: Swift.String?
+  public var placementBrandIds: [Swift.String]?
+  public var styles: [PlacementStyle]?
+  public var type: GenuinViewTypeLayout?
+  public var updatedAt: Swift.String?
+  public var hasSection: Swift.Bool
+  public var feedType: FeedType?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class CommunityLoopId {
+  public var loopId: Swift.String?
+  public var communityId: Swift.String?
+  public init(from dictionary: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class BGPlacementCustomization {
+  public var configureView: ConfigureView?
+  public var expandView: ExpandView?
+  public var implementationGuide: ImplementationGuide?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public enum SocialMetrics : Swift.String {
+  case views
+  case reactions
+  case commments
+  case shares
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PlacementCardLayout : Swift.Int {
+  case `default`
+  case ih
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PlacementCardSectionLayout : Swift.Int {
+  case `default`
+  case ih
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class ConfigureView {
+  public var dimensions: Dimensions?
+  public var videoCrop: Swift.Bool?
+  public var enableStyleFallback: Swift.Bool?
+  public var gridLayout: GridLayout?
+  public var headingTextColor: Swift.String?
+  public var mediaPlay: MediaPlay?
+  public var showSocialInteractionData: Swift.Bool?
+  public var showUsername: Swift.Bool?
+  public var showVideoDuration: Swift.Bool?
+  public var socialMetrics: SocialMetrics?
+  public var subHeadingTextColor: Swift.String?
+  public var tileAspectRatio: CoreFoundation.CGSize?
+  public var placementCardLayoutId: PlacementCardLayout?
+  public var placementCardSectionLayoutId: PlacementCardSectionLayout?
+  public var videoLayoutId: BGVideoLayoutId?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class Dimensions {
+  public var autoFitHeight: Swift.Bool?
+  public var height: Swift.Int?
+  public var width: Swift.Int?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class GridLayout {
+  public var autoAdjust: Swift.Bool?
+  public var row: Swift.Int?
+  public var column: Swift.Int?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class MediaPlay {
+  public var enableAutoplay: Swift.Bool?
+  public var enableLoopVideo: Swift.Bool?
+  public var autoAdvancePlayback: Swift.Double?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class ExpandView {
+  public var isEnableEngagementTools: Swift.Bool?
+  public var enableLinkout: Swift.Bool?
+  public var isEnableRedirection: Swift.Bool?
+  public var enableReport: Swift.Bool?
+  public var redirectionTools: RedirectionTools?
+  public var reportOptions: ReportOptions?
+  public var engagementTools: EngagementTools?
+  public var linkoutOrientation: LinkoutOrientation?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class RedirectionTools {
+  public var community: Swift.Bool?
+  public var group: Swift.Bool?
+  public var user: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class ReportOptions {
+  public var inappropriateContent: Swift.Bool?
+  public var nonProfessionalContent: Swift.Bool?
+  public var other: Swift.Bool?
+  public var spam: Swift.Bool?
+  public var threateningViolent: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class EngagementTools {
+  public var comment: Swift.Bool?
+  public var reaction: Swift.Bool?
+  public var repost: Swift.Bool?
+  public var share: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class ImplementationGuide {
+  public var showBrandId: Swift.Bool?
+  public var showCommunityGroupId: Swift.Bool?
+  public var showCustomContext: Swift.Bool?
+  public var showLocation: Swift.Bool?
+  public var showPdpUrl: Swift.Bool?
+  public var showPlace: Swift.Bool?
+  public var showPostedByUser: Swift.Bool?
+  public var showStyleId: Swift.Bool?
+  public var showTime: Swift.Bool?
+  public var showUserInterests: Swift.Bool?
+  public var showUserSegmentation: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class PlacementStyle {
+  public var id: Swift.String?
+  public var categories: [Swift.String]?
+  public var consumerJourneyIds: [Swift.String]?
+  public var contentMapping: ContentMapping?
+  public var contentRestrictions: ContentRestrictions?
+  public var isAdaptiveStylingEnabled: Swift.Bool?
+  public var sections: [PlacementSection]?
+  public var title: Swift.String?
+  public var subTitle: Swift.String?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class ContentMapping {
+  public var uniqueLinkoutVideos: Swift.Bool?
+  public var uniqueVideosToSections: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class ContentRestrictions {
+  public var pinnedVideos: Swift.Bool?
+  public var recommendationEngine: Swift.Bool?
+  public var sameBrandVideos: Swift.Bool?
+  public var sameUrlLinkoutsVideos: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class PlacementSection {
+  public var id: Swift.String?
+  public var description: Swift.String?
+  public var position: Swift.Int?
+  public var title: Swift.String?
+  public var isSelected: Swift.Bool
+  public var thumbnailUrl: Swift.String?
+  public var coverUrl: Swift.String?
+  public var noOfClips: Swift.Int?
+  public var subtitle: Swift.String?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public enum ChildViewPosition : Swift.String {
+  case overlayOnTop
+  case overlayOnBottom
+  case outsideOnBottom
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LinkoutOrientation : Swift.String {
+  case landscape
+  case portrait
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class SectionDetails {
+  public var cover: Swift.Bool?
+  public var position: ChildViewPosition?
+  public var subtitle: Swift.Bool?
+  public var thumbnail: Swift.Bool?
+  public var title: Swift.Bool?
+  public var noOfClips: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class SocialInteractionCounts {
+  public var comments: Swift.Bool?
+  public var position: ChildViewPosition?
+  public var reactions: Swift.Bool?
+  public var views: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
+public class VideoDetails {
+  public var position: ChildViewPosition?
+  public var postDate: Swift.Bool?
+  public var postDescription: Swift.Bool?
+  public var videoDuration: Swift.Bool?
+  public var showLinkouts: Swift.Bool?
+  public init(dict: [Swift.String : Any])
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+}
 public enum SchedulerIntervalType : Swift.Int {
   case daily
   case weekly
@@ -970,6 +1417,10 @@ public enum SchedulerIntervalType : Swift.Int {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public protocol BottomPageDelegate : AnyObject {
+  func tp_pageViewController(_ currentViewController: UIKit.UIViewController?, didSelectPageAt index: Swift.Int)
+  func scrollToMenu(offset: CoreFoundation.CGFloat)
+}
 @objc @_hasMissingDesignatedInitializers public class Brand : ObjectiveC.NSObject {
   public var brandId: Swift.Int?
   public var name: Swift.String?
@@ -989,9 +1440,12 @@ public enum SchedulerIntervalType : Swift.Int {
   public var languageConfigs: LanguageConfigs?
   public var brandColors: BrandColors?
   public var whiteLabelURL: Swift.String?
+  public var ctaConfig: CTAConfig?
   public var isJoinEnabled: Swift.Bool?
   public var isSubscribeEnabled: Swift.Bool?
   public var isPostEnabled: Swift.Bool?
+  public var videoLayoutId: BGVideoLayoutId?
+  public var isSocketEnabled: Swift.Bool
   public init(dict: [Swift.String : Any])
   public func toDictionary() -> [Swift.String : Any]
   @objc deinit
@@ -1022,19 +1476,31 @@ public enum TapBehaviorType : Swift.Int {
     get
   }
 }
+public enum BGResumePlaybackFrom : Swift.Double {
+  case beginning
+  case current
+  public init?(rawValue: Swift.Double)
+  public typealias RawValue = Swift.Double
+  public var rawValue: Swift.Double {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class MobileConfigs : ObjectiveC.NSObject {
   public var linkOutDelay: LinkOutDelay?
   public var videoAutoPlay: VideoAutoPlay?
+  public var isStartWithSound: Swift.Bool?
   public var tapBehavior: TapBehaviorType?
   public var feedVideoPlay: FeedVideoPlay?
   public var shareTranscriptEnabled: Swift.Bool?
   public var playbackSpeedEnabled: Swift.Bool?
+  public var resumePlaybackFrom: Swift.Double?
   @objc deinit
 }
 public enum LinkOutDelayType : Swift.Int {
   case custom
   case immediately
   case onScreen
+  public func getString() -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1043,12 +1509,14 @@ public enum LinkOutDelayType : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LinkOutDelay : ObjectiveC.NSObject {
   public var type: LinkOutDelayType?
+  public var appearAfter: Swift.Int?
   @objc deinit
 }
 public enum VideoAutoPlayType : Swift.Int {
   case always
   case never
   case custom
+  public func getString() -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1103,6 +1571,14 @@ public enum LanguageSelection : Swift.String {
 @objc @_hasMissingDesignatedInitializers public class UnsupportedFeatureMessage : ObjectiveC.NSObject {
   public var title: Swift.String?
   public var body: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class CTAConfig : ObjectiveC.NSObject {
+  public var textColor: Swift.String?
+  public var buttonColor: Swift.String?
+  public var buttonRadius: Swift.Int?
+  public var showArrowIcon: Swift.Bool?
+  public var defaultButtonText: Swift.String?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BrandColors : ObjectiveC.NSObject {
@@ -1239,9 +1715,6 @@ extension Foundation.Date {
 extension UIKit.UIApplication {
   @_Concurrency.MainActor @preconcurrency public static func getKeyWindow() -> UIKit.UIWindow?
 }
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public func scrollToTop()
-}
 extension UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency public func superview<T>(of type: T.Type) -> T?
   @_Concurrency.MainActor @preconcurrency public func subview<T>(of type: T.Type) -> T?
@@ -1264,8 +1737,9 @@ extension Foundation.NSMutableAttributedString {
   public func time(_ value: Swift.String) -> Foundation.NSMutableAttributedString
 }
 extension UIKit.UITapGestureRecognizer {
-  @_Concurrency.MainActor @preconcurrency public func didTapAttributedTextInLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func didTapAttributedTextInBGLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func checkIfTappedIn(range: Foundation.NSRange) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func didTapText(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
 }
 extension UIKit.UINavigationController {
   @_Concurrency.MainActor @preconcurrency public func popToViewController(ofClass: Swift.AnyClass, animated: Swift.Bool = true)
@@ -1302,7 +1776,7 @@ extension Swift.Encodable {
   public func toString(pretty: Swift.Bool) -> Swift.String
 }
 extension UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public var parentViewController: UIKit.UIViewController? {
+  @_Concurrency.MainActor @preconcurrency public var bgParentViewController: UIKit.UIViewController? {
     get
   }
 }
@@ -1344,6 +1818,9 @@ extension UIKit.UIScreen {
   @_Concurrency.MainActor @preconcurrency public static let dimensionInInches: CoreFoundation.CGSize?
   @_Concurrency.MainActor @preconcurrency public static let dimensionInCentimeters: CoreFoundation.CGSize?
 }
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor @preconcurrency public func setBGWebAssetImage(url: Swift.String, setDefaultImage: Swift.Bool = false)
+}
 public typealias AlertOkComplition = (_ okPressed: Swift.Bool) -> Swift.Void
 extension UIKit.UIAlertAction {
   @_Concurrency.MainActor @preconcurrency public var titleTextColor: UIKit.UIColor? {
@@ -1384,8 +1861,8 @@ public struct CommunityService {
   public static func leaveCommunity(communityId: Swift.String, leavingUserId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
 extension CommunityService {
-  public static func eventLogForJoinedCommunity(communityId: Swift.String)
-  public static func eventLogForLeaveCommunity(communityId: Swift.String)
+  public static func eventLogForJoinedCommunity(communityId: Swift.String, genericParams: [Swift.String : Any])
+  public static func eventLogForLeaveCommunity(communityId: Swift.String, genericParams: [Swift.String : Any])
   public static func getCommunityDetails(communityId: Swift.String? = nil, chatId: Swift.String? = nil, miniObject: Swift.Bool = false, guidelines: Swift.Bool? = false, welcomeLoopId: Swift.Bool? = false, conversationActions: Swift.Bool = false, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func acceptModInvitation(inviteId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
@@ -1539,25 +2016,31 @@ extension CountryViewController : UIKit.UISearchBarDelegate, UIKit.UISearchDispl
   public func showMessageToastBanner(chatId: Swift.String, messageId: Swift.String, thumbnail: Swift.String, message: Swift.String, hideImage: Swift.Bool = false, onTap: @escaping (Swift.String, Swift.String) -> Swift.Void, onHide: @escaping () -> ())
   public func showFlagMessageToastBanner(videoId: Swift.String, videoType: Swift.Int, thumbnail: Swift.String, message: Swift.String, topMargin: CoreFoundation.CGFloat, onTap: @escaping (Swift.String, Swift.Int) -> Swift.Void, onHide: @escaping () -> ())
   public func showSingleMessageToastBanner(message: Swift.String, topMargin: CoreFoundation.CGFloat, isFromTranscript: Swift.Bool = false, onTap: @escaping () -> Swift.Void, onHide: @escaping () -> ())
+  public func showIHMessageToastBanner(message: Swift.String, thumbnail: UIKit.UIImage, imageTintColor: UIKit.UIColor, bottomMargin: Swift.Double, hideImage: Swift.Bool = false, onTap: @escaping (Swift.String, Swift.String) -> Swift.Void, onHide: @escaping () -> ())
   @objc deinit
 }
 public protocol CustomSliderContainerViewDelegate : AnyObject {
   func sliderValueDidChanged(value: Swift.Float)
   func seekAndPlayVideo(value: Swift.Float)
   func pauseVideo()
+  func pauseVideoAccessibility(_ fromPlaybackSource: FromPlaybackSource)
+  func accessibility(isSwipeUp: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CustomSliderContainerView : UIKit.UIView {
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var videoSlider: CustomSliderProgress!
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CustomSliderContainerViewDelegate)?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor @preconcurrency public func setupSlider()
+  @_Concurrency.MainActor @preconcurrency public func setupSlider(videoLayoutId: BGVideoLayoutId? = nil)
   @_Concurrency.MainActor @preconcurrency public func configureSliderUI()
   @_Concurrency.MainActor @preconcurrency public func updateSliderValue(value: Swift.Float)
+  @_Concurrency.MainActor @preconcurrency public func enableUserInteraction(_ enable: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func accessibilityElementDidBecomeFocused()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CustomSliderProgress : UIKit.UISlider {
+  @_Concurrency.MainActor @preconcurrency public var isDragging: Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func continueTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
@@ -1570,9 +2053,15 @@ public protocol CustomSliderContainerViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency public func setUpVideoThumbnail(image: UIKit.UIImage)
   @_Concurrency.MainActor @preconcurrency public func setUpTime(timeInSeconds: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency public func setUpTimeWithDuration(timeInSeconds: Swift.Double, totalDuration: Swift.Double)
+  @_Concurrency.MainActor @preconcurrency public func showHideThumbnail(show: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+extension CustomSliderContainerView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func accessibilityIncrement()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func accessibilityDecrement()
 }
 public protocol DataStreamSerializer : Swift.Sendable {
   associatedtype SerializedObject : Swift.Sendable
@@ -1616,31 +2105,6 @@ public func print(_ items: Any..., separator: Swift.String = " ", terminator: Sw
   public func getDeviceId() -> Swift.String
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class EmbedConfiguration : ObjectiveC.NSObject {
-  @objc public var showNavigationBar: Swift.Bool
-  @objc public var isShowProfileEnabled: Swift.Bool
-  @objc public var isDirectDeepLinkEnabled: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc public var interactionDeepLink: Swift.String?
-  @objc public var isDirectDeepLinkWithLoginEnabled: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc public var genuinCarouselConfiguration: GenuinCarouselConfiguration
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class GenuinCarouselConfiguration : ObjectiveC.NSObject {
-  @objc public var scrollDirection: CarouselScrollDirection
-  @objc public var aspectRatio: CarouselTileAspectRatio
-  @objc public var carouselInset: UIKit.UIEdgeInsets
-  @objc public var interTileSpacing: Swift.Double
-  @objc public var tileCornerRadius: Swift.Double
-  @objc override dynamic public init()
-  @objc deinit
-}
 public enum EmbedDataStatus : Swift.String {
   case none
   case inprogress
@@ -1652,8 +2116,31 @@ public enum EmbedDataStatus : Swift.String {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers public class EmbedFeedViewModel : ObjectiveC.NSObject {
+  public var feedSize: Swift.Int?
+  public var customEventHandler: BGCustomEventHandler
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension EmbedFeedViewModel {
+  public func getContextualInfoForLog() -> [Swift.String : Any]
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController, to: UIKit.UIView? = nil, frame: CoreFoundation.CGRect? = nil)
+  @_Concurrency.MainActor @preconcurrency public func remove()
+  @_Concurrency.MainActor @preconcurrency public var bottomInset: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var topInset: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func tp_configure(with dataSource: any TPDataSource, delegate: (any TPProgressDelegate)? = nil)
+}
+extension UIKit.UIScrollView {
+  @_Concurrency.MainActor @preconcurrency public func donotAdjustContentInset()
+}
 @objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency open class FeedOptionView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public func setUpInitialState(isSelected: Swift.Bool = false, isForComment: Swift.Bool? = nil)
+  @_Concurrency.MainActor @preconcurrency public func setUpInitialState(isSelected: Swift.Bool = false, isForComment: Swift.Bool? = nil, socialCountPosition: ChildViewPosition? = nil)
   @_Concurrency.MainActor @preconcurrency public func setSelected()
   @_Concurrency.MainActor @preconcurrency public func setDeselected()
   @_Concurrency.MainActor @preconcurrency public func clearImages()
@@ -1710,6 +2197,100 @@ public enum FlagOptionType : Swift.Int {
 }
 public struct GeneralService {
 }
+public enum GenuinViewType {
+  case placement
+  case embed
+  public static func == (a: GenuinViewType, b: GenuinViewType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum IhCTAButton {
+  case fullEpisode
+  case goToEpisodes
+  case listenLive
+  public func getViewName() -> BGInteractionOnView
+  public static func == (a: IhCTAButton, b: IhCTAButton) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct GenuinBaseViewDefaults {
+  public static let interTileSpacing: Swift.Double
+  public static let viewInset: UIKit.UIEdgeInsets
+  public static let tileCornerRadius: Swift.Double
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class GenuinBaseView : UIKit.UIView, SafariServices.SFSafariViewControllerDelegate {
+  @_Concurrency.MainActor @preconcurrency weak public var scrollDelegate: (any GenuinScrollViewDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency public func enablePauseByExternalPlayer()
+  @_Concurrency.MainActor @preconcurrency public func disablePauseByExternalPlayer()
+}
+extension GenuinBaseView : UIKit.UICollectionViewDataSource, AutoPlayableCollectionViewDelegate, AutoPlayableCollectionViewDataSource {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency public func indexPathForFirstCellIn(collectionView: AutoPlayableCollectionView) -> Foundation.IndexPath?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, minimumLineSpacingForSectionAt section: Swift.Int) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, insetForSectionAt section: Swift.Int) -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+}
+extension GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency public func setConstraints()
+  @_Concurrency.MainActor @preconcurrency public func fetchDataInBackground(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func fetchDataAndLoad()
+  @_Concurrency.MainActor @preconcurrency public func load()
+}
+extension GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency public func play()
+  @_Concurrency.MainActor @preconcurrency public func pause()
+  @_Concurrency.MainActor @preconcurrency public func playByExternalPlayer()
+  @_Concurrency.MainActor @preconcurrency public func pauseByExternalPlayer()
+  @_Concurrency.MainActor @preconcurrency public func mute()
+  @_Concurrency.MainActor @preconcurrency public func unmute()
+  @_Concurrency.MainActor @preconcurrency public func forceMute()
+  @_Concurrency.MainActor @preconcurrency public func pauseBeforeInterruptionStarts(shouldSetInterruptionFlag: Swift.Bool = true)
+  @_Concurrency.MainActor @preconcurrency public func playAfterInterruptionEnds()
+  @_Concurrency.MainActor @preconcurrency public func resetAfterInterruptionEnds()
+  @_Concurrency.MainActor @preconcurrency public func getBaseViewContentSize() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func addBaseViewBottomPadding(padding: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func getBGPresentedController() -> UIKit.UIViewController?
+}
+extension GenuinBaseView : AutoPlayablePlayerDelegate {
+  @_Concurrency.MainActor @preconcurrency public func playerDidPlayToEndTime(for cell: UIKit.UICollectionViewCell)
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public func isBGInterfaceOrientationLandscape() -> Swift.Bool?
+}
+extension GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
+extension GenuinBaseView : NoInternetCollectionDelegate {
+  @_Concurrency.MainActor @preconcurrency public func noInternetTryAgainPressed()
+}
+@objc public protocol GenuinScrollViewDelegate {
+  @objc optional func genuinScrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
+  @objc optional func genuinScrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc optional func genuinScrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+}
+extension GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency public func manageExternalMedia(isPlaying: Swift.Bool, mediaInfo: [Swift.String : Any])
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class GenuinButton : UIKit.UIButton {
   @_Concurrency.MainActor @preconcurrency public var languageInfo: LanguageInfo? {
     get
@@ -1728,37 +2309,55 @@ public struct GeneralService {
 extension UIKit.UIButton {
   @_Concurrency.MainActor @preconcurrency public func setLanguageInfo(languageInfo: LanguageInfo)
 }
-@objc public enum CarouselScrollDirection : Swift.Int {
-  case horizontal
-  case vertical
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+@_hasMissingDesignatedInitializers public class GenuinContainerAttributes {
+  @objc deinit
 }
-@objc public enum CarouselTileAspectRatio : Swift.Int {
-  case ratio9x16
-  case ratio4x5
-  case ratio3x4
-  case ratio2x3
-  case ratio1x1
-  case ratio3x2
-  case ratio4x3
-  case ratio5x4
-  case ratio16x9
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+@_hasMissingDesignatedInitializers public class GenuinPlacementAttributes : GenuinContainerAttributes {
+  public init(placementId: Swift.String, styleId: Swift.String, uniqueId: Swift.String? = nil, viewController: UIKit.UIViewController, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, placementConfiguration: PlacementConfiguration = PlacementConfiguration())
+  @objc deinit
 }
-public struct GenuinCarouselDefaults {
-  public static let interTileSpacing: Swift.Double
-  public static let carouselInset: UIKit.UIEdgeInsets
-  public static let scrollDirection: CarouselScrollDirection
-  public static let aspectRatio: CarouselTileAspectRatio
-  public static let tileCornerRadius: Swift.Double
+@_hasMissingDesignatedInitializers public class GenuinEmbedAttributes : GenuinContainerAttributes {
+  public init(embedId: Swift.String, uniqueId: Swift.String? = nil, viewController: UIKit.UIViewController, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, embedConfiguration: EmbedConfiguration = EmbedConfiguration())
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GenuinContainerConfiguration : ObjectiveC.NSObject {
+  @objc public var showNavigationBar: Swift.Bool
+  @objc public var isShowProfileEnabled: Swift.Bool
+  @objc public var isDirectDeepLinkEnabled: Swift.Bool
+  @objc public var isDirectDeepLinkWithLoginEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var tileConfiguration: GenuinTileConfiguration
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class EmbedConfiguration : GenuinContainerConfiguration {
+  @objc public var genuinCarouselConfiguration: GenuinCarouselConfiguration {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PlacementConfiguration : GenuinContainerConfiguration {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GenuinTileConfiguration : ObjectiveC.NSObject {
+  @objc public var viewInset: UIKit.UIEdgeInsets
+  @objc public var interTileSpacing: Swift.Double
+  @objc public var tileCornerRadius: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GenuinCarouselConfiguration : GenuinTileConfiguration {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GenuinPlacementConfiguration : GenuinTileConfiguration {
+  @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GenuinCustomReactions {
   public struct Default {
@@ -1780,12 +2379,89 @@ public struct GenuinCarouselDefaults {
 @_hasMissingDesignatedInitializers public class GenuinLanguageModel {
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class GenuinEmbedView : GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public init(attributes: GenuinEmbedAttributes)
+  @_Concurrency.MainActor @preconcurrency public func initWith(attributes: GenuinEmbedAttributes)
+  @objc deinit
+}
 @objc @_Concurrency.MainActor @preconcurrency public class GenuinImageView : UIKit.UIImageView {
   @_Concurrency.MainActor @preconcurrency @objc required override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
+}
+public enum BGActionType : Swift.String {
+  case tap
+  case doubleTap
+  case longPress
+  case swipe
+  case scroll
+  case getStatus
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BGInteractionOnView : Swift.String {
+  case title
+  case thumbnail
+  case share
+  case offlineShare
+  case offlineCTA
+  case ctaButton
+  case fullEpisode
+  case listenLive
+  case gotoEpisodes
+  case follow
+  case library
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BGInteractionInfo : Swift.String {
+  case podcastId
+  case stationId
+  case shareUrl
+  case sourceView
+  case title
+  case description
+  case thumbnailUrl
+  case isFullscreen
+  case contentId
+  case episodeId
+  case ctaStatus
+  case view
+  case data
+  case action
+  case deepLink
+  case eventAttributes
+  case parentTitle
+  case parentSubtitle
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BGScreenName : Swift.String {
+  case fullScreen
+  case cardView
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class GenuinInteractionModel {
+  public init(screen: BGScreenName, action: BGActionType? = nil, view: BGInteractionOnView? = nil, data: [Swift.String : Any]? = nil)
+  public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class GenuinLabel : UIKit.UILabel {
   @_Concurrency.MainActor @preconcurrency public var languageInfo: LanguageInfo? {
@@ -1801,6 +2477,14 @@ public struct GenuinCarouselDefaults {
 }
 extension UIKit.UILabel {
   @_Concurrency.MainActor @preconcurrency public func setLanguageInfo(languageInfo: LanguageInfo)
+  @_Concurrency.MainActor @preconcurrency public func updateCustomFont()
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class GenuinPlacementView : GenuinBaseView {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency public init(attributes: GenuinPlacementAttributes)
+  @_Concurrency.MainActor @preconcurrency public func initWith(attributes: GenuinPlacementAttributes)
+  @objc deinit
 }
 public enum KSFlowFor {
   case spark
@@ -1824,15 +2508,32 @@ public enum KSFlowFor {
 @objc public protocol GenuinLinkOutInterceptorDelegate {
   @objc func onLinkOutIntercept(urlString: Swift.String, viewController: UIKit.UIViewController?)
 }
+@objc public protocol GenuinInteractionDelegate {
+  @objc func onInteraction(info: [Swift.String : Any], onCompletion: (([Swift.String : Any]?) -> Swift.Void)?)
+}
+@objc public protocol GenuinPlaybackDelegate {
+  @objc func onPlay(isMuted: Swift.Bool, fromFullScreen: Swift.Bool)
+  @objc func onPause(fromFullScreen: Swift.Bool)
+  @objc optional func onPlaybackError(error: (any Swift.Error)?)
+  @objc optional func onAudioStateChanged(isMuted: Swift.Bool, isPlaying: Swift.Bool, fromFullScreen: Swift.Bool)
+  @objc optional func onFullScreenOpened(isMuted: Swift.Bool)
+  @objc optional func onFullScreenClosed(isMuted: Swift.Bool, isPlaying: Swift.Bool)
+}
+@objc public protocol GenuinAnalyticsDelegate {
+  @objc func onAnalyticsEvent(eventName: Swift.String, properties: [Swift.String : Any])
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GenuinSDK : ObjectiveC.NSObject {
   @objc public static let shared: GenuinSDK
   @objc weak public var delegate: (any GenuinDelegate)?
   @objc weak public var linkOutInterceptorDelegate: (any GenuinLinkOutInterceptorDelegate)?
+  @objc weak public var playbackDelegate: (any GenuinPlaybackDelegate)?
+  @objc weak public var analyticsDelegate: (any GenuinAnalyticsDelegate)?
+  @objc weak public var interactionDelegate: (any GenuinInteractionDelegate)?
   @objc public func initialize(apiKey: Swift.String, configuration: GenuinConfiguration = GenuinConfiguration.shared, completion: (((any Swift.Error)?) -> Swift.Void)? = nil)
   @objc public func initializeEmbed(embedId: Swift.String, uniqueId: Swift.String? = nil, containerView: UIKit.UIView, viewConroller: UIKit.UIViewController, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, embedConfiguration: EmbedConfiguration = EmbedConfiguration())
+  @objc public func initializePlacement(placementId: Swift.String, styleId: Swift.String, uniqueId: Swift.String? = nil, containerView: UIKit.UIView, viewController: UIKit.UIViewController, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, placementConfiguration: PlacementConfiguration = PlacementConfiguration())
   @objc @_Concurrency.MainActor public func initializeEmbedFeed(embedId: Swift.String, uniqueId: Swift.String? = nil, containerView: UIKit.UIView, viewConroller: UIKit.UIViewController, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, embedConfiguration: EmbedConfiguration = EmbedConfiguration())
   @objc @_Concurrency.MainActor public func initializeStandardWall(embedId: Swift.String, uniqueId: Swift.String? = nil, containerView: UIKit.UIView, viewConroller: UIKit.UIViewController, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, embedConfiguration: EmbedConfiguration = EmbedConfiguration())
-  @objc public func addFeedView(containerView: UIKit.UIView, viewController: UIKit.UIViewController)
   @objc public func ssoLogin(ssoToken: Swift.String, params: [Swift.String : Any]? = nil, completion: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc @_Concurrency.MainActor public func ssoLogout(completion: ((Swift.Bool) -> Swift.Void)? = nil)
   @objc public func logoutSDK(isFromForceLogout: Swift.Bool = false)
@@ -1840,6 +2541,7 @@ public enum KSFlowFor {
   @objc public func getGenuinNavigationController(rootViewController: UIKit.UIViewController) -> UIKit.UINavigationController
   @objc public func getStandardWallController(embedId: Swift.String, uniqueId: Swift.String? = nil, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, embedConfiguration: EmbedConfiguration = EmbedConfiguration()) -> UIKit.UINavigationController?
   @objc public func loadEmbedData(embedId: Swift.String, uniqueId: Swift.String? = nil, contextualParams: [Swift.String : Any]? = nil)
+  @objc public func hasDataAvailable(params: [Swift.String : Any]) async -> Swift.Bool
   @objc deinit
 }
 extension GenuinSDK {
@@ -1869,15 +2571,9 @@ extension GenuinSDK {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GenuinConfiguration : ObjectiveC.NSObject {
   @objc public static let shared: GenuinConfiguration
-  @objc public var enableCreateLoop: Swift.Bool
-  @objc public var showSidePanel: Swift.Bool
-  @objc public var showNavigationBar: Swift.Bool
   @objc public var environment: GenuinEnvironment {
     @objc get
     @objc set
-  }
-  @objc public var allowContentCreation: Swift.Bool {
-    @objc get
   }
   @objc public var customLoader: Swift.String {
     @objc get
@@ -1885,8 +2581,12 @@ extension GenuinSDK {
   @objc public var customLoaderBundle: Foundation.Bundle {
     @objc get
   }
+  @objc public var fontsConfig: [Swift.String : Any]? {
+    @objc get
+  }
   @objc override dynamic public init()
   @objc public func setCustomLoader(_ customLoader: Swift.String, bundle: Foundation.Bundle = Bundle.main)
+  @objc public func setFontsConfig(boldFontName: Swift.String, boldItalicFontName: Swift.String, regularFontName: Swift.String, heavyItalicFontName: Swift.String, demiBoldFontName: Swift.String, demiBoldItalicFontName: Swift.String, mediumFontName: Swift.String, fontIncrementValue: CoreFoundation.CGFloat = 0.0)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class GenuinTextField : UIKit.UITextField {
@@ -1931,6 +2631,13 @@ extension GenuinSDK {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency public func updateGradientMask()
   @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class GradientMaskedTextView : UIKit.UITextView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+extension GradientMaskedTextView : UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
 }
 @_hasMissingDesignatedInitializers public class GuidelinesModel {
   public struct ApiResponse : Swift.Codable {
@@ -2108,6 +2815,24 @@ extension IconClicks : Swift.Equatable {
 public protocol Identifiable {
   var id: Swift.String { get }
 }
+public protocol IHSectionDetailDelegate : AnyObject {
+  func titleTapped(attributes: BGAttributes?)
+  func descTapped(attributes: BGAttributes?)
+  func thumbnailTapped(attributes: BGAttributes?)
+  func sectionDetailCTATapped(attributes: BGAttributes, videoId: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class IHSectionDetailView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblDesc: GenuinLabel!
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any IHSectionDetailDelegate)?
+  @_Concurrency.MainActor @preconcurrency public static func instanciate() -> IHSectionDetailView?
+  @_Concurrency.MainActor @preconcurrency public func showSkeletonView()
+  @_Concurrency.MainActor @preconcurrency public func setUp(attributes: BGAttributes?, videoId: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setMaxDescLine(isCollapsed: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func updateCtaButton(state: BGCTAStatus)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public struct ImageUploaderService {
 }
 public enum ImageUploadSourceType {
@@ -2269,6 +2994,9 @@ public struct VideoPlayback {
   public var isFromCrossPlatform: Swift.Bool
   public var sdkVersion: Swift.String
   public var brand: Brand?
+  public var previousPlaybackState: BGPlaybackState?
+  public var previousMuteState: Swift.Bool?
+  public var previousPlaybackMuteState: BGPlaybackMuteState?
   final public let sdkBundleIdentifier: Swift.String?
   public var isSDKUserVerifiedAction: Swift.Bool {
     get
@@ -2315,7 +3043,7 @@ public struct LogKeys {
   public static let SEND_OTP_BY_SMS_FAILED: Swift.String
   public static let RESEND_OTP_BY_SMS_CLICKED: Swift.String
   public static let RESEND_OTP_BY_CALL_CLICKED: Swift.String
-  public static let SIGNUP_FAILED: Swift.String
+  public static let SIGNIN_FAILED: Swift.String
   public static let SIGNUP_SESSION_EXPIRED: Swift.String
   public static let FIRST_TIME_UX: Swift.String
   public static let VIDEO_STARTED: Swift.String
@@ -2477,6 +3205,7 @@ public struct LogKeys {
   public static let VIDEO_REPORTED: Swift.String
   public static let REPORT_USER_CLICKED: Swift.String
   public static let BLOCK_USER_CLICKED: Swift.String
+  public static let USER_BLOCKED: Swift.String
   public static let REPORT_USER_CLOSED: Swift.String
   public static let USER_REPORTED: Swift.String
   public static let REPORT_COMMENT_CLICKED: Swift.String
@@ -2757,6 +3486,31 @@ public struct LogKeys {
   public static let COMMENT_HIGHLIGHTED: Swift.String
   public static let TRANSCRIPT_SHARE_CLICKED: Swift.String
   public static let TRANSCRIPT_SHARED: Swift.String
+  public static let PLACEMENT_INITIALIZED: Swift.String
+  public static let PLACEMENT_VIEWED: Swift.String
+  public static let PLACEMENT_MAXIMIZED: Swift.String
+  public static let SECTION_CHANGES: Swift.String
+  public static let PLAY_PAUSE_GESTURE: Swift.String
+  public static let MUTE_UNMUTE_GESTURE: Swift.String
+  public static let VIDEO_PAUSED_BY_USER: Swift.String
+  public static let VIDEO_PLAYED_BY_USER: Swift.String
+  public static let IH_TRACK_START: Swift.String
+  public static let IH_TRACK_END: Swift.String
+  public static let IH_STREAM_END: Swift.String
+  public static let IH_STREAM_START: Swift.String
+  public static let IH_PLAY: Swift.String
+  public static let IH_PAUSE: Swift.String
+  public static let IH_PAGE_VIEW: Swift.String
+  public static let IH_CLICK: Swift.String
+  public static let DESCRIPTION_CLICKED: Swift.String
+  public static let PLAY_AGAIN_CTA_CLICKED: Swift.String
+  public static let FOLLOW_CTA_CLICKED: Swift.String
+  public static let FOLLOWING_CTA_CLICKED: Swift.String
+  public static let ADD_TO_LIBRARY_CTA_CLICKED: Swift.String
+  public static let REMOVE_FROM_LIBRARY_CTA_CLICKED: Swift.String
+  public static let CARD_AUTO_SCROLLED: Swift.String
+  public static let BACK_BUTTON_CLICKED: Swift.String
+  public static let TRY_AGAIN_CTA_CLICKED: Swift.String
 }
 public struct LogParams {
   public static let PHONE_NO: Swift.String
@@ -2846,6 +3600,36 @@ public struct LogParams {
   public static let TRANSCRIPT: Swift.String
   public static let MODE: Swift.String
   public static let STYLE: Swift.String
+  public static let PLACEMENT_ID: Swift.String
+  public static let STYLE_ID: Swift.String
+  public static let FEED_STYLE: Swift.String
+  public static let PLACEMENT_LAYOUT: Swift.String
+  public static let SECTION_ID: Swift.String
+  public static let SECTION_NAME: Swift.String
+  public static let HAS_SECTIONS: Swift.String
+  public static let SECTION_COUNT: Swift.String
+  public static let VIDEO_AUTOPLAY: Swift.String
+  public static let AUTOPLAY_CONFIG: Swift.String
+  public static let VIDEO_STARTS_WITH_SOUND_ON: Swift.String
+  public static let VIDEO_PLAY_IN_FEED: Swift.String
+  public static let LINK_DELAY: Swift.String
+  public static let SHOULD_CARD_AUTOPLAY: Swift.String
+  public static let SHOULD_CARD_VIDEO_LOOP: Swift.String
+  public static let TAP_BEHAVIOUR: Swift.String
+  public static let IN_FEED_REACTION: Swift.String
+  public static let LINK_REDIRECTION: Swift.String
+  public static let SHARE_URL: Swift.String
+  public static let streamIsMute: Swift.String
+  public static let streamFeedPosition: Swift.String
+  public static let streamFeedTotal: Swift.String
+  public static let isAutoplay: Swift.String
+  public static let PARENT_STATION_TYPE: Swift.String
+  public static let PARENT_STATION_ID: Swift.String
+  public static let PARENT_STATION_NAME: Swift.String
+  public static let POSITION_OF_ACTION: Swift.String
+  public static let DESCRIPTION_ACTION: Swift.String
+  public static let API_DETAILS: Swift.String
+  public static let RESOURCE_DETAILS: Swift.String
   public struct ContentCategory {
     public static let PUBLIC: Swift.String
     public static let RT: Swift.String
@@ -2957,6 +3741,9 @@ public struct LogParams {
     public static let REWARDS_REDEEM: Swift.String
     public static let TAKE_PHOTO: Swift.String
     public static let SHARE_TRANSCRIPT: Swift.String
+    public static let FEED_PLACEMENT: Swift.String
+    public static let VIEW_EMBED: Swift.String
+    public static let VIEW_PLACEMENT: Swift.String
   }
   public struct State {
     public static let EMPTY: Swift.String
@@ -2979,6 +3766,28 @@ public struct LogParams {
     public static let PLAYBACK_STALLED: Swift.String
     public static let FAILED_TO_PLAY_TO_END: Swift.String
     public static let NEW_ERROR_LOG: Swift.String
+  }
+  public struct Values {
+    public static let HIGHLIGHTS: Swift.String
+    public static let HIGHLIGHT: Swift.String
+    public static let LIVE_PROFILE: Swift.String
+    public static let PODCAST_PROFILE: Swift.String
+    public static let PODCAST: Swift.String
+    public static let HIGHLIGHTS_CAP: Swift.String
+    public static let LIVE: Swift.String
+    public static let PLAYED_FROM: Swift.Int
+    public static let LIVE_HIGHLIGHTS_FULLSCREEN: Swift.String
+    public static let PODCAST_HIGHLIGHTS_FULLSCREEN: Swift.String
+    public static let LIVE_HIGHLIGHTS_FULLSCREEN_PLAYER: Swift.String
+    public static let PODCAST_HIGHLIGHTS_FULLSCREEN_PLAYER: Swift.String
+    public static let LIVE_PROFILE_HIGHLIGHT_FSP: Swift.String
+    public static let LIVE_PROFILE_HIGHLIGHT_CARD: Swift.String
+    public static let PODCAST_PROFILE_HIGHLIGHT_FSP: Swift.String
+    public static let PODCAST_PROFILE_HIGHLIGHT_CARD: Swift.String
+    public static let ENGAGEMENT_ICON: Swift.String
+    public static let WHOLE_SCREEN_TAP: Swift.String
+    public static let MORE: Swift.String
+    public static let LESS: Swift.String
   }
   public struct ClickPosition {
     public static let LEARN_MORE: Swift.String
@@ -3065,6 +3874,7 @@ public enum LocalNotificationType : Swift.String {
   case DEVICE_VOLUME_CHANGE
   case CLEAR_NAVIGATION_STACK
   case GROUP_JOIN_LEAVE
+  case NEW_CONVERSATION_FROM_DEEPLINK
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -3086,6 +3896,7 @@ public struct ProfileVideoType {
   public static let COMMENT: Swift.String
   public static let LOOP: Swift.String
   public static let CLICKABLE_POST: Swift.String
+  public static let ALL_CAUGHT_UP: Swift.String
 }
 public struct ACCESSIBILITY_IDENTIFIERS {
   public static let TAB_HOME: Swift.String
@@ -3209,6 +4020,62 @@ public enum DBTransactionType {
     get
   }
 }
+public struct IH_Constants {
+}
+public struct BGAccessibilityConstants {
+  public static let paused: Swift.String
+  public static let play: Swift.String
+  public static let not_pressed: Swift.String
+  public static let pressed: Swift.String
+  public static let mute: Swift.String
+  public static let share: Swift.String
+  public static let station_description: Swift.String
+  public static let podcast_artwork: Swift.String
+  public static let station_artwork: Swift.String
+  public static let title: Swift.String
+  public static let desc: Swift.String
+  public static let play_again: Swift.String
+  public static let heading: Swift.String
+  public static let back: Swift.String
+  public static let thumb_up: Swift.String
+  public static let clip_description: Swift.String
+  public static let slider: Swift.String
+  public static let sliderForwardSkip: Swift.String
+  public static let playbackPosition: Swift.String
+  public static let clip_title: Swift.String
+  public static let next_clip_playing: Swift.String
+  public static let prev_clip_playing: Swift.String
+  public static let follow: Swift.String
+  public static let library: Swift.String
+  public static let selected: Swift.String
+  public static let not_selected: Swift.String
+  public static let expand: Swift.String
+  public static let videoDetail: Swift.String
+  public static let views: Swift.String
+  public static let comments: Swift.String
+  public static let reactions: Swift.String
+  public static let collapse: Swift.String
+  public static let repost: Swift.String
+  public static let comment: Swift.String
+  public static let moreOption: Swift.String
+  public static let userProfile: Swift.String
+  public static let brandProfile: Swift.String
+  public static let community: Swift.String
+  public static let group: Swift.String
+  public static let notify: Swift.String
+  public static let post: Swift.String
+}
+public struct BGWebImageAssets {
+  public static var deviceScale: Swift.String {
+    get
+  }
+  public static var IC_PREVIEW_PLACEHOLDER: Swift.String {
+    get
+  }
+  public static var IC_EMPTY_LOOPS: Swift.String {
+    get
+  }
+}
 public enum LoginWith : Swift.Int {
   case phone
   case email
@@ -3278,6 +4145,25 @@ public enum UploadStatus : Swift.String {
   public init(position: Swift.Int? = nil, linkUrl: Swift.String? = nil, imageUrl: Swift.String? = nil, title: Swift.String? = nil, isExpanded: Swift.Bool? = nil, isURLValidated: Swift.Bool? = nil, uploadStatus: UploadStatus? = nil)
   @objc deinit
 }
+public enum IhContentType : Swift.String {
+  case podcast
+  case station
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BGFromView {
+  case linkout
+  case videoWatched
+  case allCaughtUp
+  public static func == (a: BGFromView, b: BGFromView) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol LinkOutFeedCellViewDelegate : AnyObject {
   func addButtonClicked(url: Swift.String, linkoutsInAppBrowser: Swift.Bool, linkOutCollection: LinkOutCollection?)
   func linkOutImageClicked(url: Swift.String, isSingleLink: Swift.Bool, linkoutsInAppBrowser: Swift.Bool)
@@ -3288,9 +4174,14 @@ public protocol LinkOutHeightDelegate : AnyObject {
   func heightUpdated(linkOutFeedCellView: LinkOutFeedCellView)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinkOutFeedCellView : UIKit.UIStackView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblAddButton: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var imgArrow: UIKit.UIImageView!
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LinkOutFeedCellViewDelegate)?
   @_Concurrency.MainActor @preconcurrency weak public var heightDelegate: (any LinkOutHeightDelegate)?
+  @_Concurrency.MainActor @preconcurrency final public let LANDSCAPE_BOTTOM_CTA_HEIGHT: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency final public let PORTRAIT_BOTTOM_CTA_HEIGHT: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func setCTAConfigurations()
   @_Concurrency.MainActor @preconcurrency public var linkout: LinkOutCollection? {
     get
     set
@@ -3303,6 +4194,7 @@ public protocol LinkOutHeightDelegate : AnyObject {
 extension LinkOutFeedCellView : UIKit.UICollectionViewDelegateFlowLayout {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor @preconcurrency public func setLinkoutOrientation(_ orientation: LinkoutOrientation)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinkSquareCell : UIKit.UICollectionViewCell {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
@@ -3311,11 +4203,14 @@ extension LinkOutFeedCellView : UIKit.UICollectionViewDelegateFlowLayout {
     get
     set
   }
+  @_Concurrency.MainActor @preconcurrency public func setLandscapeLayout(width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinkTextImageCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblCTAButton: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var imgArrow: UIKit.UIImageView!
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
@@ -3328,6 +4223,8 @@ extension LinkOutFeedCellView : UIKit.UICollectionViewDelegateFlowLayout {
     set
   }
   @_Concurrency.MainActor @preconcurrency public func configureTitle(title: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency public func setLandscapeLayout(cellWidth: CoreFoundation.CGFloat?, width: CoreFoundation.CGFloat, height: CoreFoundation.CGFloat, ctaText: Swift.String?, ctaEnabled: Swift.Bool?)
+  @_Concurrency.MainActor @preconcurrency public func setCTAConfigurations()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -3359,7 +4256,12 @@ extension LogHelper {
   public var attributes: [Swift.String : Any]
   @objc deinit
 }
+extension LogHelper {
+  public func startApiLogSessionFor(_ key: Swift.String)
+  public func fetchAndDumpApiLogParams() -> ([[Swift.String : Any]], [[Swift.String : Any]])
+}
 public class LoginViewModel {
+  public var epIdentityModel: EPIdentityModel?
   public init()
   public func login(countryCode: Swift.String?, phoneNumber: Swift.String?, email: Swift.String?, isResend: Swift.Bool = false, isCall: Swift.Bool = false, completion: @escaping (Swift.Bool, [Swift.String : Any]?, BGError?) -> ())
   public func verifyOtp(targetScreen: Swift.String, phoneNumber: Swift.String?, countryCode: Swift.String?, email: Swift.String?, otp: Swift.String, remoteDeviceId: Swift.String?, preAuthSessionId: Swift.String?, invitationID: Swift.String? = nil, brandId: Swift.Int? = nil, inviteUserId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?, BGError?) -> ())
@@ -3370,6 +4272,16 @@ public class LoginViewModel {
   public func updatePhoneOrEmailSendOtp(countryCode: Swift.String? = nil, phoneNumber: Swift.String? = nil, email: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public func updatePhoneOrEmailSendOtp(otp: Swift.String, remoteDeviceId: Swift.String?, preAuthSessionId: Swift.String?, marketingSubscription: Swift.Bool? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public func checkIsEmailVerified(completion: @escaping (Swift.Bool?, BGError?) -> ())
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LoopFeedShimmerCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var rightOptionsBottomConstraint: UIKit.NSLayoutConstraint!
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public struct LoopInboxService {
@@ -3524,6 +4436,19 @@ extension NetworkReachabilityManager.NetworkReachabilityStatus : Swift.Equatable
 public struct NewAuthenticationService {
   public static func getAuthorizationURL(thirdPartyId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
+public protocol NoInternetCollectionDelegate : AnyObject {
+  func noInternetTryAgainPressed()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class NoInternetCollectionCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NoInternetCollectionDelegate)?
+  @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func tryAgainIndicator(isHidden: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency public func setInfoImage(isHidden: Swift.Bool)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public protocol noInternetDelegate : AnyObject {
   func dismissNoInternetView()
 }
@@ -3542,6 +4467,7 @@ public protocol NoInternetFeedDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any NoInternetFeedDelegate)?
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func setType(isForIh: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency public func tryAgainIndicator(isHidden: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
   @available(iOS 3.0, *)
@@ -3667,6 +4593,17 @@ extension OptionsViewController : UIKit.UITableViewDelegate {
 extension OTPFieldView : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}
+public protocol PagerAwareProtocol : AnyObject {
+  var pageDelegate: (any BottomPageDelegate)? { get set }
+  var currentViewController: UIKit.UIViewController? { get }
+  var pagerTabHeight: CoreFoundation.CGFloat? { get }
+}
+public protocol PannableViewsProtocol {
+  func panView() -> UIKit.UIView
+}
+extension UIKit.UIViewController : PannableViewsProtocol {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func panView() -> UIKit.UIView
 }
 public protocol ParameterEncoder : Swift.Sendable {
   func encode<Parameters>(_ parameters: Parameters?, into request: Foundation.URLRequest) throws -> Foundation.URLRequest where Parameters : Swift.Encodable, Parameters : Swift.Sendable
@@ -4170,11 +5107,16 @@ extension ResponseSerializer {
   public static func decodable<T>(of type: T.Type, dataPreprocessor: any DataPreprocessor = DecodableResponseSerializer<T>.defaultDataPreprocessor, decoder: any DataDecoder = JSONDecoder(), emptyResponseCodes: Swift.Set<Swift.Int> = DecodableResponseSerializer<T>.defaultEmptyResponseCodes, emptyRequestMethods: Swift.Set<HTTPMethod> = DecodableResponseSerializer<T>.defaultEmptyRequestMethods) -> DecodableResponseSerializer<T> where Self == DecodableResponseSerializer<T>, T : Swift.Decodable, T : Swift.Sendable
 }
 public typealias AFResult<Success> = Swift.Result<Success, AFError>
+extension UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency public var bgIsTruncated: Swift.Bool {
+    get
+  }
+}
 public protocol SDKInterruptionDelegate : AnyObject {
   func didDismissedAfterInrerruption()
 }
 public protocol ViewControllerCloseDelegate : AnyObject {
-  func viewControllerDidClosed()
+  func viewControllerDidClosed(_ fromPlaybackSource: FromPlaybackSource)
 }
 public enum ScrollDirection {
   case neutral
@@ -4191,6 +5133,48 @@ public protocol RepostViewControllerDelegate : AnyObject {
 }
 public protocol AskQuestionDelegate : AnyObject {
   func didClosed()
+}
+public protocol CloseCameraDelegate : AnyObject {
+  func cameraDidClosed(withPostSuccess: Swift.Bool)
+}
+public enum FromPlaybackSource {
+  case fromForeground
+  case fromBackground
+  case fromUser
+  case fromLongPress
+  case fromNavigation
+  case fromInterruption
+  case fromFirstTime
+  case fromAutoPlayAfter
+  case fromScroll
+  case fromFeedContinue
+  case fromAudioInterruption
+  public static func == (a: FromPlaybackSource, b: FromPlaybackSource) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BGPlaybackState {
+  case playerPausedByExternal
+  case playerPause
+  case playerPlay
+  case error
+  public static func == (a: BGPlaybackState, b: BGPlaybackState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum BGPlaybackMuteState {
+  case unmuted
+  case muted
+  case mutedBySystem
+  public static func == (a: BGPlaybackMuteState, b: BGPlaybackMuteState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct SDKService {
   public static func getUpdatedDataAfterLogin(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
@@ -4368,7 +5352,7 @@ public struct ServiceAuthentication {
 }
 public struct ServicePublicVideos {
   public static func searchByTag(keyWord: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  public static func validateUrl(url: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func validateUrl(url: Swift.String, isLinkout: Swift.Bool = false, brandId: Swift.Int? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func validateUrlWithBoolean(url: Swift.String, completion: @escaping (Swift.Bool) -> ())
   public static func updateVideoViewCount(videoId: Swift.String, type: Swift.Int, screenName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
@@ -4846,6 +5830,12 @@ public struct AppColor {
   public static var secondaryMain: UIKit.UIColor {
     get
   }
+  public static var ctaTextColor: UIKit.UIColor {
+    get
+  }
+  public static var ctaButtonColor: UIKit.UIColor {
+    get
+  }
   public static var genuinBlack: UIKit.UIColor {
     get
   }
@@ -4882,6 +5872,12 @@ public struct AppColor {
   public static let GenuinRed: UIKit.UIColor
   public static let GenuinGreen: UIKit.UIColor
   public static let GenuinWhite: UIKit.UIColor
+  public static let OfferForeground: UIKit.UIColor
+  public static let OfferBackground: UIKit.UIColor
+  public static let ihRed: UIKit.UIColor
+  public static let ihWhite: UIKit.UIColor
+  public static let ihPureBlack: UIKit.UIColor
+  public static let ihBlack: UIKit.UIColor
 }
 public struct ActionSheetColor {
   public static let ProfileActionSheetColor: UIKit.UIColor
@@ -4909,6 +5905,13 @@ public func getCurrentUserId() -> Swift.String
 public func getCurrentUser() -> User?
 public func getCurrentMember() -> AGMember?
 public func checkNewUpdates()
+@_hasMissingDesignatedInitializers public class BGClickUtility {
+  public static let shared: BGClickUtility
+  public var isMultipleTimeClicked: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
 public func formatDuration(_ durationInSeconds: Swift.Int) -> Swift.String
 @objc @_hasMissingDesignatedInitializers public class TopBottomAnimation : ObjectiveC.NSObject, Animator {
   public enum Style {
@@ -4936,6 +5939,18 @@ public func formatDuration(_ durationInSeconds: Swift.Int) -> Swift.String
   public func hide(context: AnimationContext, completion: @escaping AnimationCompletion)
   @objc public func adjustMargins()
   @objc deinit
+}
+public protocol TPDataSource : AnyObject {
+  func headerViewController() -> UIKit.UIViewController
+  func bottomViewController() -> any UIKit.UIViewController & PagerAwareProtocol
+  func minHeaderHeight() -> CoreFoundation.CGFloat
+}
+@objc public protocol TPProgressDelegate {
+  @objc func tp_scrollView(_ scrollView: UIKit.UIScrollView, didUpdate progress: CoreFoundation.CGFloat)
+  @objc func tp_scrollViewDidLoad(_ scrollView: UIKit.UIScrollView)
+  @objc optional func tp_scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc optional func tp_scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @objc optional func tp_scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
 }
 public enum TrackingError : Swift.Error {
   case MissingAdBreak
@@ -5144,6 +6159,8 @@ public enum KSToCBRequestStatusType : Swift.Int {
 @_hasMissingDesignatedInitializers public class UserDefaultHelper {
   public class func setValue(value: Swift.String, key: Swift.String)
   public class func getValue(key: Swift.String) -> Swift.String
+  public class func onMuteStatusChanged(isMuted: Swift.Bool, isPlaying: Swift.Bool = false, fromFullScreen: Swift.Bool = false, isBySystem: Swift.Bool = false, isFromBrandSettings: Swift.Bool = false)
+  public class func getIsMuted() -> Swift.Bool
   @objc deinit
 }
 public protocol UserLocationManagerDelegate : AnyObject {
@@ -5843,6 +6860,7 @@ public enum BGExploreType : Swift.Int {
   case footer
   case header
   case comment
+  case allCaughtUp
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -5863,6 +6881,10 @@ public enum BGExploreType : Swift.Int {
   public var createdAt: Swift.String?
   public var videoURL: Swift.String?
   public init(item: Any)
+  @objc deinit
+}
+@objc public class BGAllCaughtUpViewModelItem : BGMainViewModelItem {
+  public init(item: LanguageInfo)
   @objc deinit
 }
 public enum VMAPAdBreakType : Swift.String, Swift.Codable {
@@ -6086,14 +7108,46 @@ extension CommunityType : Swift.RawRepresentable {}
 extension BGConversationType : Swift.Equatable {}
 extension BGConversationType : Swift.Hashable {}
 extension BGConversationType : Swift.RawRepresentable {}
+extension BGCardLayoutId : Swift.Equatable {}
+extension BGCardLayoutId : Swift.Hashable {}
+extension BGCardLayoutId : Swift.RawRepresentable {}
+extension BGVideoLayoutId : Swift.Equatable {}
+extension BGVideoLayoutId : Swift.Hashable {}
+extension BGVideoLayoutId : Swift.RawRepresentable {}
+extension BGCTAStatus : Swift.Equatable {}
+extension BGCTAStatus : Swift.Hashable {}
 extension RecordContentType : Swift.Equatable {}
 extension RecordContentType : Swift.Hashable {}
+extension BGEndReasonForEvent : Swift.Equatable {}
+extension BGEndReasonForEvent : Swift.Hashable {}
+extension BGEndReasonForEvent : Swift.RawRepresentable {}
 extension BGEmbedLayout : Swift.Equatable {}
 extension BGEmbedLayout : Swift.Hashable {}
 extension BGEmbedLayout : Swift.RawRepresentable {}
 extension SuggestionType : Swift.Equatable {}
 extension SuggestionType : Swift.Hashable {}
 extension SuggestionType : Swift.RawRepresentable {}
+extension GenuinViewTypeLayout : Swift.Equatable {}
+extension GenuinViewTypeLayout : Swift.Hashable {}
+extension GenuinViewTypeLayout : Swift.RawRepresentable {}
+extension FeedType : Swift.Equatable {}
+extension FeedType : Swift.Hashable {}
+extension FeedType : Swift.RawRepresentable {}
+extension SocialMetrics : Swift.Equatable {}
+extension SocialMetrics : Swift.Hashable {}
+extension SocialMetrics : Swift.RawRepresentable {}
+extension PlacementCardLayout : Swift.Equatable {}
+extension PlacementCardLayout : Swift.Hashable {}
+extension PlacementCardLayout : Swift.RawRepresentable {}
+extension PlacementCardSectionLayout : Swift.Equatable {}
+extension PlacementCardSectionLayout : Swift.Hashable {}
+extension PlacementCardSectionLayout : Swift.RawRepresentable {}
+extension ChildViewPosition : Swift.Equatable {}
+extension ChildViewPosition : Swift.Hashable {}
+extension ChildViewPosition : Swift.RawRepresentable {}
+extension LinkoutOrientation : Swift.Equatable {}
+extension LinkoutOrientation : Swift.Hashable {}
+extension LinkoutOrientation : Swift.RawRepresentable {}
 extension SchedulerIntervalType : Swift.Equatable {}
 extension SchedulerIntervalType : Swift.Hashable {}
 extension SchedulerIntervalType : Swift.RawRepresentable {}
@@ -6103,6 +7157,9 @@ extension InterruptionType : Swift.RawRepresentable {}
 extension TapBehaviorType : Swift.Equatable {}
 extension TapBehaviorType : Swift.Hashable {}
 extension TapBehaviorType : Swift.RawRepresentable {}
+extension BGResumePlaybackFrom : Swift.Equatable {}
+extension BGResumePlaybackFrom : Swift.Hashable {}
+extension BGResumePlaybackFrom : Swift.RawRepresentable {}
 extension LinkOutDelayType : Swift.Equatable {}
 extension LinkOutDelayType : Swift.Hashable {}
 extension LinkOutDelayType : Swift.RawRepresentable {}
@@ -6132,12 +7189,22 @@ extension EmbedDataStatus : Swift.RawRepresentable {}
 extension FlagOptionType : Swift.Equatable {}
 extension FlagOptionType : Swift.Hashable {}
 extension FlagOptionType : Swift.RawRepresentable {}
-extension CarouselScrollDirection : Swift.Equatable {}
-extension CarouselScrollDirection : Swift.Hashable {}
-extension CarouselScrollDirection : Swift.RawRepresentable {}
-extension CarouselTileAspectRatio : Swift.Equatable {}
-extension CarouselTileAspectRatio : Swift.Hashable {}
-extension CarouselTileAspectRatio : Swift.RawRepresentable {}
+extension GenuinViewType : Swift.Equatable {}
+extension GenuinViewType : Swift.Hashable {}
+extension IhCTAButton : Swift.Equatable {}
+extension IhCTAButton : Swift.Hashable {}
+extension BGActionType : Swift.Equatable {}
+extension BGActionType : Swift.Hashable {}
+extension BGActionType : Swift.RawRepresentable {}
+extension BGInteractionOnView : Swift.Equatable {}
+extension BGInteractionOnView : Swift.Hashable {}
+extension BGInteractionOnView : Swift.RawRepresentable {}
+extension BGInteractionInfo : Swift.Equatable {}
+extension BGInteractionInfo : Swift.Hashable {}
+extension BGInteractionInfo : Swift.RawRepresentable {}
+extension BGScreenName : Swift.Equatable {}
+extension BGScreenName : Swift.Hashable {}
+extension BGScreenName : Swift.RawRepresentable {}
 extension KSFlowFor : Swift.Equatable {}
 extension KSFlowFor : Swift.Hashable {}
 extension GenuinEnvironment : Swift.Equatable {}
@@ -6173,6 +7240,11 @@ extension LoginWith : Swift.RawRepresentable {}
 extension UploadStatus : Swift.Equatable {}
 extension UploadStatus : Swift.Hashable {}
 extension UploadStatus : Swift.RawRepresentable {}
+extension IhContentType : Swift.Equatable {}
+extension IhContentType : Swift.Hashable {}
+extension IhContentType : Swift.RawRepresentable {}
+extension BGFromView : Swift.Equatable {}
+extension BGFromView : Swift.Hashable {}
 extension LogType : Swift.Equatable {}
 extension LogType : Swift.Hashable {}
 extension MessageView.Layout : Swift.Equatable {}
@@ -6200,6 +7272,12 @@ extension PhysicsAnimation.Placement : Swift.Equatable {}
 extension PhysicsAnimation.Placement : Swift.Hashable {}
 extension ScrollDirection : Swift.Equatable {}
 extension ScrollDirection : Swift.Hashable {}
+extension FromPlaybackSource : Swift.Equatable {}
+extension FromPlaybackSource : Swift.Hashable {}
+extension BGPlaybackState : Swift.Equatable {}
+extension BGPlaybackState : Swift.Hashable {}
+extension BGPlaybackMuteState : Swift.Equatable {}
+extension BGPlaybackMuteState : Swift.Hashable {}
 extension SwiftMessages : AnimationDelegate {}
 extension SwiftMessagesSegue.Layout : Swift.Equatable {}
 extension SwiftMessagesSegue.Layout : Swift.Hashable {}

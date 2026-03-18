@@ -27,7 +27,6 @@ import Photos
 import SDWebImage
 import SafariServices
 import SkeletonView
-import SocketIO
 import Swift
 import SwiftUI
 import TOCropViewController
@@ -707,6 +706,25 @@ extension BGMessage {
   @objc public func encode(with aCoder: Foundation.NSCoder)
   @objc deinit
 }
+public enum BGSettingOptionType {
+  case communityPrivacy
+  case createLoopPrivilege
+  case whoCanSeeLoop
+  case whoCanPostInLoop
+  case privateCommunityInfo
+  public static func == (a: BGSettingOptionType, b: BGSettingOptionType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers public class BGSettingOption : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BGSetting : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class BGSubscriber : CoreData.NSManagedObject {
   public var user: BGUser?
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -790,10 +808,6 @@ extension BGUser {
     @objc get
     @objc set
   }
-}
-public protocol BottomPageDelegate : AnyObject {
-  func tp_pageViewController(_ currentViewController: UIKit.UIViewController?, didSelectPageAt index: Swift.Int)
-  func scrollToMenu(offset: CoreFoundation.CGFloat)
 }
 public protocol BrandSearchViewDelegate : AnyObject {
   func getSelectedBrand(brand: GenuinCore.Brand)
@@ -1134,6 +1148,7 @@ extension GenuinCore.ConversationVideos {
   public static func getTranscriptShareImage(conversationId: Swift.String, shareUrl: Swift.String, fileName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func uploadTranscriptThumbnail(thumbnailLinkLocalPath: Foundation.URL, completion: @escaping (Swift.Bool, Swift.String?, [Swift.String : Any]?) -> ())
   public static func deleteComment(commentId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getAllowedBrandsList(page: Swift.Int, queryString: Swift.String?, brandId: Swift.Int?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
 @_hasMissingDesignatedInitializers public class CoreDataManager {
   public static let shared: CoreDataManager
@@ -1210,20 +1225,6 @@ public protocol CreateAvatarDelegate : AnyObject {
 @_hasMissingDesignatedInitializers public class LoopItem {
   @objc deinit
 }
-extension UIKit.UIViewController {
-  @_Concurrency.MainActor @preconcurrency public func add(_ child: UIKit.UIViewController, to: UIKit.UIView? = nil, frame: CoreFoundation.CGRect? = nil)
-  @_Concurrency.MainActor @preconcurrency public func remove()
-  @_Concurrency.MainActor @preconcurrency public var bottomInset: CoreFoundation.CGFloat {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var topInset: CoreFoundation.CGFloat {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public func tp_configure(with dataSource: any TPDataSource, delegate: (any TPProgressDelegate)? = nil)
-}
-extension UIKit.UIScrollView {
-  @_Concurrency.MainActor @preconcurrency public func donotAdjustContentInset()
-}
 public enum AiNudgeSourceViewType : Swift.String {
   case tabBarCreateCommunity
   case loopDetailPostButton
@@ -1238,7 +1239,7 @@ public enum AiNudgeSourceViewType : Swift.String {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GenuinUI : ObjectiveC.NSObject {
   @objc public static let shared: GenuinUI
-  @objc public func initialize()
+  @objc @_Concurrency.MainActor public func initialize()
   @objc deinit
 }
 extension GenuinCore.Guideline : Swift.Equatable {
@@ -1274,6 +1275,29 @@ public enum RecordVideoType {
     get
   }
 }
+extension GenuinCore.BGWebImageAssets {
+  public static var AUTO_COMMUNITY: Swift.String {
+    get
+  }
+  public static var AUTO_COMMUNITY2: Swift.String {
+    get
+  }
+  public static var AUTO_COMMUNITY3: Swift.String {
+    get
+  }
+  public static var BG_AUTO_COMMUNITY: Swift.String {
+    get
+  }
+  public static var AUTO_LOOP: Swift.String {
+    get
+  }
+  public static var AUTO_LOOP2: Swift.String {
+    get
+  }
+  public static var AUTO_LOOP3: Swift.String {
+    get
+  }
+}
 public struct LinearWaveformRenderer : WaveformRenderer {
   public init()
   public func render(samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, lastOffset: Swift.Int)
@@ -1287,6 +1311,7 @@ public protocol LinksDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public var isEditMode: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var linkout: GenuinCore.LinkOutCollection?
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LinksDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var communityBrandId: Swift.Int?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -1317,6 +1342,8 @@ extension LinksViewController : UIKit.UINavigationControllerDelegate, UIKit.UIIm
 }
 extension LinksViewController : TOCropViewControllerDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func cropViewController(_ cropViewController: TOCropViewController, didCropTo image: UIKit.UIImage, with cropRect: CoreFoundation.CGRect, angle: Swift.Int)
+}
+extension LinksViewController : UIKit.UISheetPresentationControllerDelegate {
 }
 public enum SharedContentType : Swift.Int {
   case video
@@ -1357,7 +1384,7 @@ extension GenuinCore.LoopInboxService {
   public static func getCommunities(userId: Swift.String, brandId: Swift.Int? = nil, loggedInUserRole: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getLoopsConversations(lastChatId: Swift.String? = nil, chatIds: [Swift.String]? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getRecentUpdates(lastSyncId: Swift.Int, screenName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  public static func getMessagesIds(chatId: Swift.String, fromMessageId: Swift.String?, firstMessageId: Swift.String?, lastMessageId: Swift.String?, fromTopToSpecificMessageId: Swift.String?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func getMessagesIds(chatId: Swift.String, fromMessageId: Swift.String?, firstMessageId: Swift.String?, lastMessageId: Swift.String?, fromTopToSpecificMessageId: Swift.String?, getSingleVideo: Swift.Bool? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getOldestUnreadMessageId(chatId: Swift.String, shouldGetUnreadCount: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func markAllMessagesAsRead(chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getConversationDetails(chatId: Swift.String, getMiniMembersList: Swift.Bool = false, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
@@ -1490,20 +1517,9 @@ extension MyComment {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
-public protocol PagerAwareProtocol : AnyObject {
-  var pageDelegate: (any BottomPageDelegate)? { get set }
-  var currentViewController: UIKit.UIViewController? { get }
-  var pagerTabHeight: CoreFoundation.CGFloat? { get }
-}
-public protocol PannableViewsProtocol {
-  func panView() -> UIKit.UIView
-}
-extension UIKit.UIViewController : PannableViewsProtocol {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic open func panView() -> UIKit.UIView
-}
 public protocol CommunityOptionsDelegate : AnyObject {
-  func optionDidSelected(createCommunityOption: Setting)
-  func optionDidEditted(createCommunityOption: Setting, selectedOption: SettingOption)
+  func optionDidSelected(createCommunityOption: BGSetting)
+  func optionDidEditted(createCommunityOption: BGSetting, selectedOption: BGSettingOption)
 }
 public enum MenuOption {
   case settings
@@ -1553,8 +1569,8 @@ extension PublishRoundtableViewController : AGContactPickerDelegate {
   @_Concurrency.MainActor @preconcurrency public func agContactPicker(didSelectMultipleContacts contacts: [AGContact])
 }
 extension PublishRoundtableViewController : CommunityOptionsDelegate {
-  @_Concurrency.MainActor @preconcurrency public func optionDidEditted(createCommunityOption: Setting, selectedOption: SettingOption)
-  @_Concurrency.MainActor @preconcurrency public func optionDidSelected(createCommunityOption: Setting)
+  @_Concurrency.MainActor @preconcurrency public func optionDidEditted(createCommunityOption: BGSetting, selectedOption: BGSettingOption)
+  @_Concurrency.MainActor @preconcurrency public func optionDidSelected(createCommunityOption: BGSetting)
 }
 extension PublishRoundtableViewController : CollaboratorListDelegate {
   @_Concurrency.MainActor @preconcurrency public func updateCollaboratorList(members: [GenuinCore.AGMember])
@@ -1565,6 +1581,9 @@ extension PublishRoundtableViewController : UIKit.UIScrollViewDelegate {
 }
 extension PublishRoundtableViewController : AutoCreateLoopDelegate {
   @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
+}
+extension PublishRoundtableViewController : GenuinCore.CloseCameraDelegate {
+  @_Concurrency.MainActor @preconcurrency public func cameraDidClosed(withPostSuccess: Swift.Bool)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : GenuinCore.BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> SearchCommunityMembersViewController
@@ -1602,39 +1621,8 @@ public protocol CollaboratorListDelegate : ObjectiveC.NSObject {
   public init(keyword searchKeyword: Swift.String)
   @objc deinit
 }
-public enum SettingOptionType {
-  case communityPrivacy
-  case createLoopPrivilege
-  case whoCanSeeLoop
-  case whoCanPostInLoop
-  case privateCommunityInfo
-  public static func == (a: SettingOptionType, b: SettingOptionType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc @_hasMissingDesignatedInitializers public class SettingOption : ObjectiveC.NSObject {
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Setting : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc deinit
-}
 public protocol SuggestionsViewDelegate : AnyObject {
   func suggestionDidSelected(mention: GenuinCore.Mention)
-}
-public protocol TPDataSource : AnyObject {
-  func headerViewController() -> UIKit.UIViewController
-  func bottomViewController() -> any UIKit.UIViewController & PagerAwareProtocol
-  func minHeaderHeight() -> CoreFoundation.CGFloat
-}
-@objc public protocol TPProgressDelegate {
-  @objc func tp_scrollView(_ scrollView: UIKit.UIScrollView, didUpdate progress: CoreFoundation.CGFloat)
-  @objc func tp_scrollViewDidLoad(_ scrollView: UIKit.UIScrollView)
-  @objc optional func tp_scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
-  @objc optional func tp_scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
-  @objc optional func tp_scrollViewWillBeginDragging(_ scrollView: UIKit.UIScrollView)
 }
 public enum UPCarouselFlowLayoutSpacingMode {
   case fixed(spacing: CoreFoundation.CGFloat)
@@ -1686,6 +1674,7 @@ public enum UTMSourceContentType : Swift.String {
   case brand
   case notification
   case sms_download
+  case highlights
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -1951,6 +1940,8 @@ extension AVCapturSessionSetupResult : Swift.Hashable {}
 extension CompressionStatus : Swift.Equatable {}
 extension CompressionStatus : Swift.Hashable {}
 extension CompressionStatus : Swift.RawRepresentable {}
+extension BGSettingOptionType : Swift.Equatable {}
+extension BGSettingOptionType : Swift.Hashable {}
 extension CircularProgressTrackViewGlowMode : Swift.Equatable {}
 extension CircularProgressTrackViewGlowMode : Swift.Hashable {}
 extension CircularProgressTrackViewGlowMode : Swift.RawRepresentable {}
@@ -1974,8 +1965,6 @@ extension ModeratorsSectionType : Swift.Equatable {}
 extension ModeratorsSectionType : Swift.Hashable {}
 extension MenuOption : Swift.Equatable {}
 extension MenuOption : Swift.Hashable {}
-extension SettingOptionType : Swift.Equatable {}
-extension SettingOptionType : Swift.Hashable {}
 extension UTMSourceAction : Swift.Equatable {}
 extension UTMSourceAction : Swift.Hashable {}
 extension UTMSourceAction : Swift.RawRepresentable {}
@@ -1986,3 +1975,4 @@ extension WaveformAnalyzer.AnalyzeError : Swift.Equatable {}
 extension WaveformAnalyzer.AnalyzeError : Swift.Hashable {}
 extension WaveformImageDrawer.GenerationError : Swift.Equatable {}
 extension WaveformImageDrawer.GenerationError : Swift.Hashable {}
+extension Waveform.Damping.Sides : Swift.Hashable {}

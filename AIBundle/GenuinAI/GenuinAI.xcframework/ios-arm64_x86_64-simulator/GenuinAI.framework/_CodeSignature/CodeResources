@@ -182,7 +182,7 @@
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pXSjqO393VjO6mFKDkzUAwIL6Tw=
+		n/UAncm3LY/JjIEkjZfv97l/LAQ=
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aH6X2Yl444sAuwEt/oa0Bzjo+/8=
+		wXKFmRFKPSiPAtlDFkdUDFHo1rw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -613,7 +613,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qUQXus1mW6nCzL8V37N2VSESq2EzV5jtDLStQZuO1Ww=
+			SjQ/IYqYJFvgg5Efu3sTFFcJntM+bjpyE51UtW/NdXU=
 			</data>
 		</dict>
 		<key>Modules/GenuinAI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -648,7 +648,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P875SKGc8HHcwmqIDEH9JHtco9lZVPLRZ0Qp2gp6cdA=
+			PS3SMBMQzwIa6sR8eMNeZXfmxQErYWkXbei6rzxUle0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

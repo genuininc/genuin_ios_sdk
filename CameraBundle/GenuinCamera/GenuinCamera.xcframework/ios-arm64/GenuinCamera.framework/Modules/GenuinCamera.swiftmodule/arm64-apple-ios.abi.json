@@ -1791,13 +1791,6 @@
       },
       {
         "kind": "Import",
-        "name": "SnapKit",
-        "printedName": "SnapKit",
-        "declKind": "Import",
-        "moduleName": "GenuinCamera"
-      },
-      {
-        "kind": "Import",
         "name": "URLEmbeddedView",
         "printedName": "URLEmbeddedView",
         "declKind": "Import",
@@ -3098,15 +3091,15 @@
             "kind": "Conformance",
             "name": "ConstraintRelatableTarget",
             "printedName": "ConstraintRelatableTarget",
-            "usr": "s:7SnapKit25ConstraintRelatableTargetP",
-            "mangledName": "$s7SnapKit25ConstraintRelatableTargetP"
+            "usr": "s:10GenuinCore25ConstraintRelatableTargetP",
+            "mangledName": "$s10GenuinCore25ConstraintRelatableTargetP"
           },
           {
             "kind": "Conformance",
             "name": "LayoutConstraintItem",
             "printedName": "LayoutConstraintItem",
-            "usr": "s:7SnapKit20LayoutConstraintItemP",
-            "mangledName": "$s7SnapKit20LayoutConstraintItemP"
+            "usr": "s:10GenuinCore20LayoutConstraintItemP",
+            "mangledName": "$s10GenuinCore20LayoutConstraintItemP"
           },
           {
             "kind": "Conformance",
@@ -3610,13 +3603,6 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "GenuinCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "SnapKit",
-        "printedName": "SnapKit",
         "declKind": "Import",
         "moduleName": "GenuinCamera"
       },
@@ -4221,15 +4207,15 @@
             "kind": "Conformance",
             "name": "ConstraintRelatableTarget",
             "printedName": "ConstraintRelatableTarget",
-            "usr": "s:7SnapKit25ConstraintRelatableTargetP",
-            "mangledName": "$s7SnapKit25ConstraintRelatableTargetP"
+            "usr": "s:10GenuinCore25ConstraintRelatableTargetP",
+            "mangledName": "$s10GenuinCore25ConstraintRelatableTargetP"
           },
           {
             "kind": "Conformance",
             "name": "LayoutConstraintItem",
             "printedName": "LayoutConstraintItem",
-            "usr": "s:7SnapKit20LayoutConstraintItemP",
-            "mangledName": "$s7SnapKit20LayoutConstraintItemP"
+            "usr": "s:10GenuinCore20LayoutConstraintItemP",
+            "mangledName": "$s10GenuinCore20LayoutConstraintItemP"
           },
           {
             "kind": "Conformance",
@@ -5531,13 +5517,6 @@
         "kind": "Import",
         "name": "Lottie",
         "printedName": "Lottie",
-        "declKind": "Import",
-        "moduleName": "GenuinCamera"
-      },
-      {
-        "kind": "Import",
-        "name": "SnapKit",
-        "printedName": "SnapKit",
         "declKind": "Import",
         "moduleName": "GenuinCamera"
       },
@@ -9453,43 +9432,43 @@
             "kind": "Conformance",
             "name": "ConstraintInsetTarget",
             "printedName": "ConstraintInsetTarget",
-            "usr": "s:7SnapKit21ConstraintInsetTargetP",
-            "mangledName": "$s7SnapKit21ConstraintInsetTargetP"
+            "usr": "s:10GenuinCore21ConstraintInsetTargetP",
+            "mangledName": "$s10GenuinCore21ConstraintInsetTargetP"
           },
           {
             "kind": "Conformance",
             "name": "ConstraintConstantTarget",
             "printedName": "ConstraintConstantTarget",
-            "usr": "s:7SnapKit24ConstraintConstantTargetP",
-            "mangledName": "$s7SnapKit24ConstraintConstantTargetP"
+            "usr": "s:10GenuinCore24ConstraintConstantTargetP",
+            "mangledName": "$s10GenuinCore24ConstraintConstantTargetP"
           },
           {
             "kind": "Conformance",
             "name": "ConstraintMultiplierTarget",
             "printedName": "ConstraintMultiplierTarget",
-            "usr": "s:7SnapKit26ConstraintMultiplierTargetP",
-            "mangledName": "$s7SnapKit26ConstraintMultiplierTargetP"
+            "usr": "s:10GenuinCore26ConstraintMultiplierTargetP",
+            "mangledName": "$s10GenuinCore26ConstraintMultiplierTargetP"
           },
           {
             "kind": "Conformance",
             "name": "ConstraintOffsetTarget",
             "printedName": "ConstraintOffsetTarget",
-            "usr": "s:7SnapKit22ConstraintOffsetTargetP",
-            "mangledName": "$s7SnapKit22ConstraintOffsetTargetP"
+            "usr": "s:10GenuinCore22ConstraintOffsetTargetP",
+            "mangledName": "$s10GenuinCore22ConstraintOffsetTargetP"
           },
           {
             "kind": "Conformance",
             "name": "ConstraintPriorityTarget",
             "printedName": "ConstraintPriorityTarget",
-            "usr": "s:7SnapKit24ConstraintPriorityTargetP",
-            "mangledName": "$s7SnapKit24ConstraintPriorityTargetP"
+            "usr": "s:10GenuinCore24ConstraintPriorityTargetP",
+            "mangledName": "$s10GenuinCore24ConstraintPriorityTargetP"
           },
           {
             "kind": "Conformance",
             "name": "ConstraintRelatableTarget",
             "printedName": "ConstraintRelatableTarget",
-            "usr": "s:7SnapKit25ConstraintRelatableTargetP",
-            "mangledName": "$s7SnapKit25ConstraintRelatableTargetP"
+            "usr": "s:10GenuinCore25ConstraintRelatableTargetP",
+            "mangledName": "$s10GenuinCore25ConstraintRelatableTargetP"
           }
         ]
       },
@@ -10905,15 +10884,15 @@
             "kind": "Conformance",
             "name": "ConstraintRelatableTarget",
             "printedName": "ConstraintRelatableTarget",
-            "usr": "s:7SnapKit25ConstraintRelatableTargetP",
-            "mangledName": "$s7SnapKit25ConstraintRelatableTargetP"
+            "usr": "s:10GenuinCore25ConstraintRelatableTargetP",
+            "mangledName": "$s10GenuinCore25ConstraintRelatableTargetP"
           },
           {
             "kind": "Conformance",
             "name": "LayoutConstraintItem",
             "printedName": "LayoutConstraintItem",
-            "usr": "s:7SnapKit20LayoutConstraintItemP",
-            "mangledName": "$s7SnapKit20LayoutConstraintItemP"
+            "usr": "s:10GenuinCore20LayoutConstraintItemP",
+            "mangledName": "$s10GenuinCore20LayoutConstraintItemP"
           },
           {
             "kind": "Conformance",
@@ -11988,14 +11967,14 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/LinkView.swift",
       "kind": "FloatLiteral",
-      "offset": 998,
+      "offset": 983,
       "length": 4,
       "value": "12.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/LinkView.swift",
       "kind": "FloatLiteral",
-      "offset": 1043,
+      "offset": 1028,
       "length": 3,
       "value": "0.5"
     },
@@ -12254,7 +12233,7 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39816,
+      "offset": 39888,
       "length": 4,
       "value": "true"
     },
@@ -12352,70 +12331,70 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 747,
+      "offset": 732,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1184,
+      "offset": 1169,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1224,
+      "offset": 1209,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1265,
+      "offset": 1250,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1304,
+      "offset": 1289,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "FloatLiteral",
-      "offset": 1350,
+      "offset": 1335,
       "length": 4,
       "value": "16.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1389,
+      "offset": 1374,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1429,
+      "offset": 1414,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1468,
+      "offset": 1453,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/QnAView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1623,
+      "offset": 1608,
       "length": 2,
       "value": "10"
     },
@@ -12835,119 +12814,119 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 341,
+      "offset": 326,
       "length": 2,
       "value": "42"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 384,
+      "offset": 369,
       "length": 2,
       "value": "42"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "BooleanLiteral",
-      "offset": 429,
+      "offset": 414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "BooleanLiteral",
-      "offset": 477,
+      "offset": 462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1260,
+      "offset": 1245,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "FloatLiteral",
-      "offset": 1666,
+      "offset": 1651,
       "length": 3,
       "value": "1.1"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1709,
+      "offset": 1694,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "StringLiteral",
-      "offset": 1989,
+      "offset": 1974,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "FloatLiteral",
-      "offset": 1999,
+      "offset": 1984,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2034,
+      "offset": 2019,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2316,
+      "offset": 2301,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2321,
+      "offset": 2306,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2345,
+      "offset": 2330,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2357,
+      "offset": 2342,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "StringLiteral",
-      "offset": 2981,
+      "offset": 2966,
       "length": 17,
       "value": "\"Edit Transcript\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "FloatLiteral",
-      "offset": 3095,
+      "offset": 3080,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/TextEditorView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3529,
+      "offset": 3514,
       "length": 2,
       "value": "36"
     },

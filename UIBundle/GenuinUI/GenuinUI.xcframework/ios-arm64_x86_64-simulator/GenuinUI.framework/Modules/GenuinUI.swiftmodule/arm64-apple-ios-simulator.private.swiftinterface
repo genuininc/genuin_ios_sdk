@@ -11,7 +11,6 @@ import Combine
 import Contacts
 import CoreData
 import CoreGraphics
-import CryptoSwift
 import DeveloperToolsSupport
 import EasyTipView
 import Foundation
@@ -356,6 +355,7 @@ extension BGAvatarVoice : Swift.Identifiable {
   public class func getConversation(by chatId: Swift.String) -> BGConversation?
   public class func delete(using chatId: Swift.String)
   public class func deleteAll(using chatIds: [Swift.String])
+  public class func deleteAll(for communityId: Swift.String)
   public class func deleteAll(using conversationType: Swift.Int16, exceptPending: Swift.Bool = false)
   public func toRequestDictionary() -> [Swift.String : Any]
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)

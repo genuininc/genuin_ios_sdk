@@ -21,7 +21,6 @@ import MobileCoreServices
 import Photos
 import PhotosUI
 import SDWebImage
-import SnapKit
 import Speech
 import Swift
 import SwiftUI
@@ -300,3 +299,4 @@ extension VideoPreviewViewController : GenuinCore.CustomSliderContainerViewDeleg
 extension SwiftyCamVideoGravity : Swift.Equatable {}
 extension SwiftyCamVideoGravity : Swift.Hashable {}
 extension SwiftyGifError : Swift.Equatable {}
+extension SwiftyGifError : Swift.Hashable {}

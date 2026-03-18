@@ -24,7 +24,7 @@ extension GenuinCore.ConversationVideos {
   public static func createAutoVideo(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GenuinAI : ObjectiveC.NSObject {
-  @objc public static let shared: GenuinAI
+  @objc public static let shared: GenuinAI.GenuinAI
   @objc public func initialize()
   @objc deinit
 }

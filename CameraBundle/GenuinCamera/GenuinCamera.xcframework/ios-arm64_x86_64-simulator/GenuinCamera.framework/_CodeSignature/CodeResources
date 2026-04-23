@@ -10,7 +10,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		SdHtXezwGsNJHaO1zsNoLPmb9BY=
+		ZKyzbAYoFiAPh2WWBdTOvGIyvFg=
+		</data>
+		<key>BGPillCell.nib</key>
+		<data>
+		GzID2HWR0tCHd3/RAambfsKtZ70=
 		</data>
 		<key>BebasNeue-Regular.ttf</key>
 		<data>
@@ -18,15 +22,15 @@
 		</data>
 		<key>Camera.storyboardc/AddEditQuestionViewController.nib</key>
 		<data>
-		urjpKK0Zxo0XjAVqRJq8wNAnsFM=
+		GlRjX7nHU3jNXnRikcnprzonMR0=
 		</data>
 		<key>Camera.storyboardc/AskQuestionViewController.nib</key>
 		<data>
-		487KsgIV1ktibu58m8rPR23tzOc=
+		X6oGXA5BjC5pFYv2gqGlyg71uyc=
 		</data>
 		<key>Camera.storyboardc/CameraNavigationController.nib</key>
 		<data>
-		YZN83uCftg80ItQbMSGVwq6E1Xo=
+		/8J4GL8+1B5ncdDOPz+tTXi8BmU=
 		</data>
 		<key>Camera.storyboardc/CameraRollListViewController.nib</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>Camera.storyboardc/EBP-Rq-irW-view-Gic-2M-BWs.nib</key>
 		<data>
-		5HfLoxoV7Jv8sVX+zcE9G4wlcf0=
+		it/YnV7SuwYr4NXWI1XrAumjtTY=
 		</data>
 		<key>Camera.storyboardc/GalleryVideoEditorViewController.nib</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>Camera.storyboardc/PreviewAskedQuestionController.nib</key>
 		<data>
-		cqlPTV+L5HkwXlV6t23xJ1DbQMQ=
+		54Ru2LEn4yILiGZqavNxMP5LCIc=
 		</data>
 		<key>Camera.storyboardc/RecentVideosViewController.nib</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Camera.storyboardc/SelectQuestionViewController.nib</key>
 		<data>
-		Wkhh6nHwSs0aAEN6HyAkEabueSs=
+		yYjmG6lmkQQKwFvLAwodU4l1Rkk=
 		</data>
 		<key>Camera.storyboardc/SquareCameraViewController.nib</key>
 		<data>
@@ -66,35 +70,35 @@
 		</data>
 		<key>Camera.storyboardc/VrY-fS-YBF-view-c4c-Dy-DO1.nib</key>
 		<data>
-		UV4GloSf3R0KfuAT8oLhnP/LayU=
+		/E++pg4UqI+E1qnXZnrmSb5LaC8=
 		</data>
 		<key>Camera.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<data>
-		q4APV/RakG7N2YQ8Z4syuQQiZiQ=
+		3vGGujqtOGXEO3OenoB9Xg6hRfM=
 		</data>
 		<key>Camera.storyboardc/fIC-0t-lba-view-gDd-IV-DIn.nib</key>
 		<data>
-		Ptg1stWqVcWlF++71uo1suXuFvI=
+		GmIMxSW8axvxJAPW+GP7LljfVwQ=
 		</data>
 		<key>Camera.storyboardc/jOm-lX-hwu-view-XeS-CE-VzR.nib</key>
 		<data>
-		d5okEag5ivDtPC2eMjgYpkmIXl4=
+		qGg1I8YA7zq+6Qf/QWh1G/12MOs=
 		</data>
 		<key>Camera.storyboardc/r3f-8N-bpd-view-l4D-Ru-2m7.nib</key>
 		<data>
-		5CPYqv1yg7IVOlwSUiF2eeSy57o=
+		5tk3AcKvQuMDdGJ8+nlM0wEKUVY=
 		</data>
 		<key>Camera.storyboardc/seL-8V-TA7-view-i9h-wZ-42E.nib</key>
 		<data>
-		RrleEjvcTu3vF7LBmCR/DBX31iQ=
+		8tZVZSrHYWhr01+hsMq36HL+wSI=
 		</data>
 		<key>Camera.storyboardc/w2G-wV-k8k-view-KV9-Bq-z14.nib</key>
 		<data>
-		d5okEag5ivDtPC2eMjgYpkmIXl4=
+		/ZUjnDzlXKm0VbFtNr/nETHe8kc=
 		</data>
 		<key>Camera.storyboardc/yBf-03-uAr-view-91H-5x-eOk.nib</key>
 		<data>
-		FW14ugwjn1FN6e5IWwVtVR5gzrs=
+		nqxLhoIAFWbkvxAmcCzqjn8JIGU=
 		</data>
 		<key>ColorCollectionViewCell.nib</key>
 		<data>
@@ -134,7 +138,7 @@
 		</data>
 		<key>General.storyboardc/RhB-Rz-b8w-view-dXF-NB-Wjl.nib</key>
 		<data>
-		f3vjCEmoXFFgJHwzA/e8aL5d6cE=
+		TGmZ4dBA1iqFnzgM3jvxrkwmKvY=
 		</data>
 		<key>General.storyboardc/SELoopsListViewController.nib</key>
 		<data>
@@ -142,23 +146,23 @@
 		</data>
 		<key>General.storyboardc/Xqj-9C-it3-view-Fdi-jb-T5W.nib</key>
 		<data>
-		eGQA7CXOdBDI2XQ760VtxmbfEuI=
+		2CsNjvO9hORQCNBaakgzIaDCrBU=
 		</data>
 		<key>General.storyboardc/nXE-4I-tE3-view-N0h-kw-OXI.nib</key>
 		<data>
-		XJF3zVL6uKfI36iGMWCU0WXEtjk=
+		rnoTWhPI64J1nFsxcaxYXe7uW6I=
 		</data>
 		<key>General.storyboardc/pSw-sN-D41-view-Onj-4S-aKv.nib</key>
 		<data>
-		wIUCULylB6xYoWai1uAJy7PaxmE=
+		XjgSfFCHzQuoCkWOiBjt4+kDVMQ=
 		</data>
 		<key>GenuinCamera_Privacy.bundle/Info.plist</key>
 		<data>
-		avL7jmQmnF4ByW0WPyQOJgzIX7w=
+		84KMX4vrY5bE/uERQ2HaPEgexXI=
 		</data>
 		<key>Headers/GenuinCamera-Swift.h</key>
 		<data>
-		Fh0Gj8sZz1G1NCxcYkzTbYQxRMg=
+		JpGNwoV8mX7wtfnG0IkWaC78IlY=
 		</data>
 		<key>Headers/GenuinCamera-umbrella.h</key>
 		<data>
@@ -192,9 +196,13 @@
 		<data>
 		fMOkLcjPWwlsZ4ek3rTqFrYB7h8=
 		</data>
+		<key>IHLoopTableViewCell.nib</key>
+		<data>
+		tMmeR0Or+DKng8liN7v9k6Cby/E=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		S2MUmnYgqGp5uwKwDt7yaWEWKu8=
+		pG/SU7gepZxguTCrnr4HujvldKg=
 		</data>
 		<key>Inter-ExtraBold.ttf</key>
 		<data>
@@ -210,11 +218,11 @@
 		</data>
 		<key>Main.storyboardc/0Sn-MU-QHV-view-yAy-2R-c7i.nib</key>
 		<data>
-		8+7eWXJ9L94QplceLXhu6ognK60=
+		GD74KFOeI1eXZdabgJVMbb1Ymeg=
 		</data>
 		<key>Main.storyboardc/6Ap-sg-DZG-view-Rla-vf-vt6.nib</key>
 		<data>
-		a0T1jA2+8DlPEI7L6kv1eJ4YEHI=
+		QJ4H0PIxA1vTNNgr25kfkFznSzc=
 		</data>
 		<key>Main.storyboardc/CameraViewController.nib</key>
 		<data>
@@ -222,7 +230,7 @@
 		</data>
 		<key>Main.storyboardc/Eh9-i2-Onm-view-qZ8-Xx-ZcB.nib</key>
 		<data>
-		qYxKKcBX+ej4cD1hd4kj/HqFOYg=
+		EUuLQHp/4t/0ySw1Q6LxxEcUTpc=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -242,47 +250,47 @@
 		</data>
 		<key>Main.storyboardc/ya0-eV-FVb-view-dbx-9B-zGp.nib</key>
 		<data>
-		Inq3ETgyJhs1xwpdKKtnPDRdwB0=
+		mR5LA0E3S9xR+EE3YTgSx85643w=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		l1IlspB6bkxxeToTgpmazlvU4sM=
+		2EsY2tsMhud7/5CP9lAPPL9IdPE=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		8j1CODcdkDrygmHYW5oS2rXiZkg=
+		xnGKKhZEe/3xVDNTeUj/If+mZmI=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pmOA40vy8A8BuylwUmdp4Nd50VM=
+		x3FMKr4Hg+3ox6DEBtaOLN8MiZM=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yYmTlG/OtwK6aXGGhaprFKY8HBA=
+		+KUrOPPXdb0gzYrED5F6CcVj5ls=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JEMHJJqEnD0ACa7fBwhWxJOKXtw=
+		axn6HtsMrhuWOv8Ckb/8fZFizCk=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		l1IlspB6bkxxeToTgpmazlvU4sM=
+		2EsY2tsMhud7/5CP9lAPPL9IdPE=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WSXVk/P1U1B5tIXhL4XUarR4ktU=
+		devcl0Xnr0Ncqyv/PtekTgk8zrA=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ok4ZVcCBcw4p+GJsTXUfJFZssbI=
+		3QbGL1AwIUkW6pLBrFayy7okRnQ=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A/Z9f6ZWLaWfe97T+8xQMTJKQ1M=
+		Ixd2l0bklpP+65bsRaPTIiqm0vw=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NMzvAUJv6wK9moXVWfTjqOquCnU=
+		jmimqVO155EHkmLK6S22znVAMHo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -290,7 +298,7 @@
 		</data>
 		<key>NewPostViewController.nib</key>
 		<data>
-		dsgDsxMxpMqSo6kskiQawW2owAw=
+		huBJOUSmyvyKOYe9fFOpU9QN71U=
 		</data>
 		<key>Nunito-ExtraBold.ttf</key>
 		<data>
@@ -310,7 +318,7 @@
 		</data>
 		<key>SELoopsHeaderView.nib</key>
 		<data>
-		26bouNJ9P2qCMfGvnX7zHwCcs60=
+		mQdGmkvsUCQ7Ur0vwLqMuaNVjus=
 		</data>
 		<key>ScopeOne-Regular.ttf</key>
 		<data>
@@ -332,7 +340,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PaqzpcQZPcna8uNdA4EU219WJrQ=
+			/T7uVOU6BD/Vl48IzsoA2F6eGug=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -379,7 +387,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PheMIo6mX9U0mSFhYngUp+85nuZBOxEP4PbruSE6+Sg=
+			4M4w5D6nXfUcAATj0uxcj6GsYaPak/y5JJ0hVom9Ve8=
+			</data>
+		</dict>
+		<key>BGPillCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			17SREJUf07MAVd48oFvbEi9gcfy+vOtm8eALRVJc81A=
 			</data>
 		</dict>
 		<key>BebasNeue-Regular.ttf</key>
@@ -393,21 +408,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EwVe+r0AfZ5JDqowo5ngShn0hNHl9SyxWPDHJ88lzcw=
+			7RfnjmW1slKUQR2XLLbzsyPpaIeHXx3w/6DASOcHNL4=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/AskQuestionViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			piYfDjn92f/A1kLGCnk/8tYQC2q3z1V1ehy2H2hrfe4=
+			GusIAivhkwLhYAnagkYwjIw9QvTzzxGs8Y9ebxz0SIs=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/CameraNavigationController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k5FILoOEBE/ufWcm0WPYUbG2Qe4qhRyVZDZPF1pO66A=
+			Ta8D/7KclaSZLy8Acj31MNUtjNrtwwTprERW5F98n1Y=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/CameraRollListViewController.nib</key>
@@ -421,7 +436,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6rfHLbHIDvMjmgrlvd5hroQE5Vogcic5ioJifijGQYI=
+			zjAVZS6VPErNmOP1rseFS3Y+3XyhrW/wfWPd+TeYvCs=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/GalleryVideoEditorViewController.nib</key>
@@ -442,7 +457,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oqg0XMK0gxc7Xp7oOtAWIT8V7j42RkltLQpZpOKKUVo=
+			B/uBAzZVo+12K2oUcaYP3AoWW9r2Xi5kH5SvRCAufYM=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/RecentVideosViewController.nib</key>
@@ -456,7 +471,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			okn4jMf9+ISJZ1jYf+AZUomoJmGDLmyBc3aVJKHivI0=
+			/AR8B+3zDUawFkQJXkXQJH6MJXdgcR8hHCemYSYG+sI=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/SquareCameraViewController.nib</key>
@@ -477,56 +492,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jAcZNhqhNsfz8RY5xzg7pUbOX255/fv2rQRRA2Z3jQI=
+			uVFCHpnzHWDlsYgzhma6UXlNyfP6P9jSx/gkAbOImU0=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cQ5DxdFqZIe3wFziJ8qm9ABZZLz2aUkKEaANZwBLY68=
+			n2KjC4bUjkI/00lzLEFNWlh7zu2XLwEuIxs8NXQW9VE=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/fIC-0t-lba-view-gDd-IV-DIn.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iS5jFOwuFYJ0Wd9cuBXDeEAC+8vQma7Uj5EJMAw56M8=
+			PHZy34b+G9icXjzHUQKXqd8aAYbR1ZsjfUHFLUgrw0U=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/jOm-lX-hwu-view-XeS-CE-VzR.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nYJAROmoGPsVSGlIpZ9rHZUwc5rSe4ba/AH/lwtwLW0=
+			QdkQw1IpT5WWApiRZ00DFh8c76T5t1knl07enz6S7Go=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/r3f-8N-bpd-view-l4D-Ru-2m7.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0IYPq6e4bGhoC1ZbYwvzb7O65fmsJ/MlRpI+J57bCnk=
+			wQ2YhERjLPm+LAhSyTkVsmJQ/fOsTjfv85LNSmPjKko=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/seL-8V-TA7-view-i9h-wZ-42E.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SG3FcYzZsdgq+5Fq5J6NA4shStNis18IlzDML72GWHk=
+			fRtfN6z3ZpBoQmkWuvcdzoA/a80xpYCOc+ZvUEHeGu0=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/w2G-wV-k8k-view-KV9-Bq-z14.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nYJAROmoGPsVSGlIpZ9rHZUwc5rSe4ba/AH/lwtwLW0=
+			ltMUqiUz0zdjf1QKRTHCQ7atMGnarAt1F+YhbI3FyRE=
 			</data>
 		</dict>
 		<key>Camera.storyboardc/yBf-03-uAr-view-91H-5x-eOk.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6mRHozUJC8+gA2QSZgqlPfcd6Kb289fb9qhtG0CVl3Y=
+			nA7/ecIJMYLIXDTi+3j1HByTPEADCmpH98FqS7Z7KnI=
 			</data>
 		</dict>
 		<key>ColorCollectionViewCell.nib</key>
@@ -596,7 +611,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hKUAv2HvQGHqe0OGpL431gAqhTBtc1HizpcBvS+HdBk=
+			7WfPvotjQ3/gofDkadwQyGGK69MZtxxo73va64IWHFs=
 			</data>
 		</dict>
 		<key>General.storyboardc/SELoopsListViewController.nib</key>
@@ -610,35 +625,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Nx9bVx9TeuSz7ilyeOGTL/4h49UtWm5oERS8jLnPA8=
+			8qjjyVudVbz3XnidSL883zJ/DFuV3k0iULugmQAGeHs=
 			</data>
 		</dict>
 		<key>General.storyboardc/nXE-4I-tE3-view-N0h-kw-OXI.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EDvw2nHQN5cwV7C9Dm8a+xh3odflF1h5oM/Vn5qByvQ=
+			0BrK/EYLcPzyT2JCy/HlqyfUEk5NXx+DQCKyxVpfAC4=
 			</data>
 		</dict>
 		<key>General.storyboardc/pSw-sN-D41-view-Onj-4S-aKv.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GviDcjlaToUtZunTSeromYMn1qsOos1y1CaCD1nQJ68=
+			ti7dxwt6jKz/ETCzoyyzrrHYAU8dtzWJ6z3nt1s6ryQ=
 			</data>
 		</dict>
 		<key>GenuinCamera_Privacy.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f/VzB9x99pL4KW2bRbw4eVf4ToiFHa+e7Ia0eEtCnk4=
+			OjA5oRmmoFZkWRfIMKIrpW4Ch8XbyOAEWKNZC4ee5bQ=
 			</data>
 		</dict>
 		<key>Headers/GenuinCamera-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zDkZz6SNotTst+wUHQelSzLyvJe1n2BnA0CFSW25QnY=
+			7xCZFtjw/9Ulflbvqm36cTQpnbczl/dwBYd/J81zVJA=
 			</data>
 		</dict>
 		<key>Headers/GenuinCamera-umbrella.h</key>
@@ -697,6 +712,13 @@
 			jar828mYJ8gw6DFstLyBzzYeWXtmsxp577vv+5l9YUM=
 			</data>
 		</dict>
+		<key>IHLoopTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M2mV/rY9llecac6i+a2pOmHYFh+WgrkIDT81JOEUPOc=
+			</data>
+		</dict>
 		<key>Inter-ExtraBold.ttf</key>
 		<dict>
 			<key>hash2</key>
@@ -722,14 +744,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kPsMd3HTCmXwFr36lB59dJQh5KEZeKe9s+wkTN5nhx0=
+			lsC7sTN1QJWwh+ZK+RQUQbGx/YuTFliT5LrdF9/oUJ4=
 			</data>
 		</dict>
 		<key>Main.storyboardc/6Ap-sg-DZG-view-Rla-vf-vt6.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uuNV73fs5dNL0vi32TFNTDfNDJliDa/jE+R5qf5XOR4=
+			0/N1sbo4/DBmkQKrXJCl8bbdzTBfwCSy/iLCxvHP+YA=
 			</data>
 		</dict>
 		<key>Main.storyboardc/CameraViewController.nib</key>
@@ -743,7 +765,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			64JflbQCbG3fYSl8DmF5+UoVULYmxw/xJcliWGg+Nmw=
+			ABjIG2SoyJ9zne4VaSK/CWIRoi+UcXAStrLniUWtEpY=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -778,77 +800,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0o1UesjWA2gEHv/3Et07u8i26BxCTRfybVCLjZGN/W8=
+			2EnvU6sPPrRLM/xiYDMB6QgjcyUPNykeNbd1Mr9Z94A=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Au6pzR/SfHEOvdnEAjXrNBdkSmtpNCt370iuI+kWTf8=
+			26351VMQUC8aByV8T25SaXfS2l0HpkMg7KxO3Sn3Nh0=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E9xtGcqWRSN6zOztEscFb6BZhyU6sJ1IcsvfksdD0AU=
+			TNybS/lm+3lkNezV0e4Reh11Ta851wxe+xqwA0N+yks=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q6LFnMo+iyCsDd+ncSjnfaZ5NsmJCJDfkKCYNEy3vS0=
+			KhapWMEl4Xh/qfXO+Qr0pr9r3B0jizaGry1X28jhfiI=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jL03hQONouccdRHEZ3D4vkA2VTv0zXSrcQrdpHRUyuQ=
+			tFgH2U3GWpqor70OFZgn9KVNoakHRQ7LjQFUZlzjLvk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pq1I475QJY7WXdfOU+5S0gi9HCBxIe9miD5+fk60zd4=
+			UvHV5HmZn3WKSTTTCrVQiELrvdTu8wiWKYRuYvG4nMM=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Au6pzR/SfHEOvdnEAjXrNBdkSmtpNCt370iuI+kWTf8=
+			26351VMQUC8aByV8T25SaXfS2l0HpkMg7KxO3Sn3Nh0=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jwqf0zr2Eue42jp54NNJhFhInJB7qpuBNCL9tzYKjCI=
+			qItByi1fDSzyp4BGPdM6/iu8vujpZOb5IHOj0GzJzZk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3K3RHSKR0mNc75fXL1mk4p/vPECGXOmozSpKJLuiMU8=
+			sd2979XrSsaP5wySmyHtWgPOVChXh+87EL1U7mGGWgk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ir6h837Sj7W/Dlx5wYpsSBcdF9Hb/bUIlOnUF1InHIo=
+			id7MD4161G5g4KFJWRhdgJCTQgyzuUbcavegtnrAZzg=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+i7XqKLzFaufgq6fgINgxcT6ADK0fNwKnky/4JrVAvI=
+			Hha+PbK+q9PeEavqRYgfB8dywVDasBt9lsIPd9hHIjM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -862,7 +884,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NoeZMtIUW5VhX5+zIno8XZ8im0lWlKCTFzjNpFspMZg=
+			MjxQCEuFN0ehuNvV/j3bOyjdwxQKZyupgtYj6Uvf6lg=
 			</data>
 		</dict>
 		<key>Nunito-ExtraBold.ttf</key>
@@ -897,7 +919,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ajrZ1nRm6U8Zd++3oBPqQ/1YdAClVNDOSdbFRofG5nE=
+			2e7cWDp676glASH234sRAlPLC40d69XqiwaOhhA3faI=
 			</data>
 		</dict>
 		<key>ScopeOne-Regular.ttf</key>
@@ -932,7 +954,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xzwg1ij+1cH4a3Bk8sH6w98ZY1g+EQuibmV2I2D3wZ4=
+			IsZbKjmCPu6Yw1zeEeKztzQWyzO1Xl0E7Xg05hspJMg=
 			</data>
 			<key>optional</key>
 			<true/>

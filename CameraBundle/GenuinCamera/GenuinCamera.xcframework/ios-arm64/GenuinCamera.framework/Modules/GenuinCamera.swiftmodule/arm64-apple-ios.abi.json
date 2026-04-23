@@ -147,6 +147,56 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenuinCore",
+        "printedName": "GenuinCore",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenuinCore",
+        "printedName": "GenuinCore",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenuinUI",
+        "printedName": "GenuinUI",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1747,6 +1797,43 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Lottie",
+        "printedName": "Lottie",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera"
+      },
+      {
+        "kind": "Import",
+        "name": "GenuinCore",
+        "printedName": "GenuinCore",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "GenuinUI",
+        "printedName": "GenuinUI",
+        "declKind": "Import",
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "GenuinCore",
         "printedName": "GenuinCore",
         "declKind": "Import",
@@ -3110,6 +3197,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "UITextSearching",
             "printedName": "UITextSearching",
             "children": [
@@ -4223,6 +4317,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4787,6 +4888,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -6014,17 +6122,13 @@
       },
       {
         "kind": "Import",
-        "name": "SDWebImage",
-        "printedName": "SDWebImage",
-        "declKind": "Import",
-        "moduleName": "GenuinCamera"
-      },
-      {
-        "kind": "Import",
         "name": "Photos",
         "printedName": "Photos",
         "declKind": "Import",
-        "moduleName": "GenuinCamera"
+        "moduleName": "GenuinCamera",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -6816,6 +6920,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -8271,6 +8382,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ExpressibleByImageLiteral",
             "printedName": "_ExpressibleByImageLiteral",
             "usr": "s:s26_ExpressibleByImageLiteralP",
@@ -9099,6 +9217,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Strideable",
             "printedName": "Strideable",
             "children": [
@@ -9308,6 +9433,84 @@
           },
           {
             "kind": "Conformance",
+            "name": "AtomicRepresentable",
+            "printedName": "AtomicRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AtomicRepresentation",
+                "printedName": "AtomicRepresentation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Atomic32BitStorage",
+                    "printedName": "Synchronization._Atomic32BitStorage",
+                    "usr": "s:15Synchronization19_Atomic32BitStorageV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:15Synchronization19AtomicRepresentableP",
+            "mangledName": "$s15Synchronization19AtomicRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Interpolatable",
+            "printedName": "Interpolatable",
+            "usr": "s:6Lottie14InterpolatableP",
+            "mangledName": "$s6Lottie14InterpolatableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyInterpolatable",
+            "printedName": "AnyInterpolatable",
+            "usr": "s:6Lottie17AnyInterpolatableP",
+            "mangledName": "$s6Lottie17AnyInterpolatableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintInsetTarget",
+            "printedName": "ConstraintInsetTarget",
+            "usr": "s:10GenuinCore21ConstraintInsetTargetP",
+            "mangledName": "$s10GenuinCore21ConstraintInsetTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintConstantTarget",
+            "printedName": "ConstraintConstantTarget",
+            "usr": "s:10GenuinCore24ConstraintConstantTargetP",
+            "mangledName": "$s10GenuinCore24ConstraintConstantTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintMultiplierTarget",
+            "printedName": "ConstraintMultiplierTarget",
+            "usr": "s:10GenuinCore26ConstraintMultiplierTargetP",
+            "mangledName": "$s10GenuinCore26ConstraintMultiplierTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintOffsetTarget",
+            "printedName": "ConstraintOffsetTarget",
+            "usr": "s:10GenuinCore22ConstraintOffsetTargetP",
+            "mangledName": "$s10GenuinCore22ConstraintOffsetTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintPriorityTarget",
+            "printedName": "ConstraintPriorityTarget",
+            "usr": "s:10GenuinCore24ConstraintPriorityTargetP",
+            "mangledName": "$s10GenuinCore24ConstraintPriorityTargetP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConstraintRelatableTarget",
+            "printedName": "ConstraintRelatableTarget",
+            "usr": "s:10GenuinCore25ConstraintRelatableTargetP",
+            "mangledName": "$s10GenuinCore25ConstraintRelatableTargetP"
+          },
+          {
+            "kind": "Conformance",
             "name": "vDSP_FloatingPointConvertable",
             "printedName": "vDSP_FloatingPointConvertable",
             "usr": "s:10Accelerate29vDSP_FloatingPointConvertableP",
@@ -9388,6 +9591,28 @@
           },
           {
             "kind": "Conformance",
+            "name": "OperationParameter",
+            "printedName": "OperationParameter",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Accelerate9BNNSGraphO7BuilderV18OperationParameterP",
+            "mangledName": "$s10Accelerate9BNNSGraphO7BuilderV18OperationParameterP"
+          },
+          {
+            "kind": "Conformance",
             "name": "vDSP_FloatingPointGeneratable",
             "printedName": "vDSP_FloatingPointGeneratable",
             "usr": "s:10Accelerate29vDSP_FloatingPointGeneratableP",
@@ -9395,80 +9620,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "MLShapedArrayScalar",
-            "printedName": "MLShapedArrayScalar",
-            "usr": "s:6CoreML19MLShapedArrayScalarP",
-            "mangledName": "$s6CoreML19MLShapedArrayScalarP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MLTensorScalar",
-            "printedName": "MLTensorScalar",
-            "usr": "s:6CoreML14MLTensorScalarP",
-            "mangledName": "$s6CoreML14MLTensorScalarP"
-          },
-          {
-            "kind": "Conformance",
             "name": "CKRecordValueProtocol",
             "printedName": "CKRecordValueProtocol",
             "usr": "s:8CloudKit21CKRecordValueProtocolP",
             "mangledName": "$s8CloudKit21CKRecordValueProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Interpolatable",
-            "printedName": "Interpolatable",
-            "usr": "s:6Lottie14InterpolatableP",
-            "mangledName": "$s6Lottie14InterpolatableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "AnyInterpolatable",
-            "printedName": "AnyInterpolatable",
-            "usr": "s:6Lottie17AnyInterpolatableP",
-            "mangledName": "$s6Lottie17AnyInterpolatableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ConstraintInsetTarget",
-            "printedName": "ConstraintInsetTarget",
-            "usr": "s:10GenuinCore21ConstraintInsetTargetP",
-            "mangledName": "$s10GenuinCore21ConstraintInsetTargetP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ConstraintConstantTarget",
-            "printedName": "ConstraintConstantTarget",
-            "usr": "s:10GenuinCore24ConstraintConstantTargetP",
-            "mangledName": "$s10GenuinCore24ConstraintConstantTargetP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ConstraintMultiplierTarget",
-            "printedName": "ConstraintMultiplierTarget",
-            "usr": "s:10GenuinCore26ConstraintMultiplierTargetP",
-            "mangledName": "$s10GenuinCore26ConstraintMultiplierTargetP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ConstraintOffsetTarget",
-            "printedName": "ConstraintOffsetTarget",
-            "usr": "s:10GenuinCore22ConstraintOffsetTargetP",
-            "mangledName": "$s10GenuinCore22ConstraintOffsetTargetP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ConstraintPriorityTarget",
-            "printedName": "ConstraintPriorityTarget",
-            "usr": "s:10GenuinCore24ConstraintPriorityTargetP",
-            "mangledName": "$s10GenuinCore24ConstraintPriorityTargetP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ConstraintRelatableTarget",
-            "printedName": "ConstraintRelatableTarget",
-            "usr": "s:10GenuinCore25ConstraintRelatableTargetP",
-            "mangledName": "$s10GenuinCore25ConstraintRelatableTargetP"
           }
         ]
       },
@@ -10900,6 +11055,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -10948,6 +11110,69 @@
       "offset": 559,
       "length": 4,
       "value": "90.0"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 984,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1070,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "Array",
+      "offset": 1181,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "Array",
+      "offset": 1316,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "StringLiteral",
+      "offset": 1397,
+      "length": 49,
+      "value": "\"  \""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "StringLiteral",
+      "offset": 1442,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "StringLiteral",
+      "offset": 1445,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "Array",
+      "offset": 1563,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/BGPillCollectionView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1591,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/CustomCells\/UICollectionViewCell\/CameraRollCell\/CameraRollCell.swift",
@@ -11048,23 +11273,16 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/CustomCells\/UICollectionViewCell\/CameraRollCell\/CameraRollCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2098,
-      "length": 4,
-      "value": "true"
-    },
-    {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/CameraRollListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1197,
+      "offset": 1607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/CameraRollListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1465,
+      "offset": 1875,
       "length": 5,
       "value": "false"
     },
@@ -11134,7 +11352,7 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/CameraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 27425,
+      "offset": 28058,
       "length": 5,
       "value": "false"
     },
@@ -11496,6 +11714,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/CustomCells\/UITableViewCell\/IHCells\/IHLoopTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 708,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/CustomCells\/UITableViewCell\/IHCells\/IHLoopTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 752,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/CustomCells\/UITableViewCell\/IHCells\/IHLoopTableViewCell.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1969,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
       "offset": 148,
@@ -11540,429 +11779,555 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9716,
+      "offset": 12478,
       "length": 17,
       "value": "\"pst_vid_lib_cam\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9788,
+      "offset": 12550,
       "length": 13,
       "value": "\"pst_vid_lib\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9822,
+      "offset": 12584,
       "length": 12,
       "value": "\"pst_tim_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9854,
+      "offset": 12616,
       "length": 11,
       "value": "\"err_dn_ic\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9885,
+      "offset": 12647,
       "length": 11,
       "value": "\"pst_to_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9914,
+      "offset": 12676,
       "length": 9,
       "value": "\"w_t_dis\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9941,
+      "offset": 12703,
       "length": 9,
       "value": "\"t_ac_ud\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9971,
+      "offset": 12733,
       "length": 12,
       "value": "\"pst_dis_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10004,
+      "offset": 12766,
       "length": 12,
       "value": "\"cta_srt_ov\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10034,
+      "offset": 12796,
       "length": 8,
       "value": "\"st_typ\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10062,
+      "offset": 12824,
       "length": 10,
       "value": "\"pst_upld\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10091,
+      "offset": 12853,
       "length": 9,
       "value": "\"cta_rtk\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10119,
+      "offset": 12881,
       "length": 9,
       "value": "\"pst_scl\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10147,
+      "offset": 12909,
       "length": 9,
       "value": "\"pst_tim\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10177,
+      "offset": 12939,
       "length": 12,
       "value": "\"pst_tim_cd\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10212,
+      "offset": 12974,
       "length": 15,
       "value": "\"rmv_qna_pp_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10248,
+      "offset": 13010,
       "length": 13,
       "value": "\"ga_ac_pp_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10284,
+      "offset": 13046,
       "length": 15,
       "value": "\"rmv_qna_pp_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10320,
+      "offset": 13082,
       "length": 13,
       "value": "\"ga_ac_pp_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10357,
+      "offset": 13119,
       "length": 16,
       "value": "\"del_clip_pp_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10397,
+      "offset": 13159,
       "length": 16,
       "value": "\"del_clip_pp_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10436,
+      "offset": 13198,
       "length": 15,
       "value": "\"rec_1_sec_pst\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10470,
+      "offset": 13232,
       "length": 10,
       "value": "\"fe_av_rt\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10502,
+      "offset": 13264,
       "length": 13,
       "value": "\"pst_ad_clip\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10535,
+      "offset": 13297,
       "length": 11,
       "value": "\"dis_al_ed\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10570,
+      "offset": 13332,
       "length": 15,
       "value": "\"edt_clips_inf\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10608,
+      "offset": 13370,
       "length": 14,
       "value": "\"edt_clip_inf\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10646,
+      "offset": 13408,
       "length": 15,
       "value": "\"pub_psts_secs\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10684,
+      "offset": 13446,
       "length": 14,
       "value": "\"se_psts_secs\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10723,
+      "offset": 13485,
       "length": 18,
       "value": "\"del_l_clip_pp_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10760,
+      "offset": 13522,
       "length": 10,
       "value": "\"ac_cn_ud\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10789,
+      "offset": 13551,
       "length": 9,
       "value": "\"dis_clp\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10821,
+      "offset": 13583,
       "length": 14,
       "value": "\"edt_clips_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10855,
+      "offset": 13617,
       "length": 12,
       "value": "\"ua_cr_v_dn\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10886,
+      "offset": 13648,
       "length": 10,
       "value": "\"dr_t_del\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10916,
+      "offset": 13678,
       "length": 10,
       "value": "\"cta_rgen\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10946,
+      "offset": 13708,
       "length": 11,
       "value": "\"prv_pp_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10979,
+      "offset": 13741,
       "length": 14,
       "value": "\"pho_de_pp_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11011,
+      "offset": 13773,
       "length": 8,
       "value": "\"uk_err\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11037,
+      "offset": 13799,
       "length": 9,
       "value": "\"at_v_gd\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11064,
+      "offset": 13826,
       "length": 8,
       "value": "\"en_suc\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11094,
+      "offset": 13856,
       "length": 13,
       "value": "\"src_com_grp\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11125,
+      "offset": 13887,
       "length": 8,
       "value": "\"ad_qna\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11150,
+      "offset": 13912,
       "length": 7,
       "value": "\"ed_qu\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11177,
+      "offset": 13939,
       "length": 11,
       "value": "\"qna_pg_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11205,
+      "offset": 13967,
       "length": 8,
       "value": "\"q_a_ex\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11229,
+      "offset": 13991,
       "length": 6,
       "value": "\"as_q\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11254,
+      "offset": 14016,
       "length": 9,
       "value": "\"qna_shf\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11282,
+      "offset": 14044,
       "length": 9,
       "value": "\"frq_ask\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11310,
+      "offset": 14072,
       "length": 9,
       "value": "\"rec_ans\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11336,
+      "offset": 14098,
       "length": 7,
       "value": "\"ans_q\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11360,
+      "offset": 14122,
       "length": 7,
       "value": "\"ch_qu\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11384,
+      "offset": 14146,
       "length": 7,
       "value": "\"rmv_q\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11411,
+      "offset": 14173,
       "length": 11,
       "value": "\"qna_bn_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11442,
+      "offset": 14204,
       "length": 11,
       "value": "\"qna_bn_st\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11471,
+      "offset": 14233,
       "length": 9,
       "value": "\"ua_fe_v\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11498,
+      "offset": 14260,
       "length": 9,
       "value": "\"t_i_pro\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11526,
+      "offset": 14288,
       "length": 10,
       "value": "\"sh_a_lnk\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11553,
+      "offset": 14315,
       "length": 8,
       "value": "\"v_n_fe\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11581,
+      "offset": 14343,
       "length": 12,
       "value": "\"t_al_i_pro\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11617,
+      "offset": 14379,
       "length": 16,
       "value": "\"prv_pst_des_ph\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14413,
+      "length": 9,
+      "value": "\"li_ac_t\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14454,
+      "length": 13,
+      "value": "\"per_a_ga_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14493,
+      "length": 11,
+      "value": "\"ga_emp_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14534,
+      "length": 13,
+      "value": "\"per_a_in_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14566,
+      "length": 11,
+      "value": "\"v_po_c_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14610,
+      "length": 12,
+      "value": "\"v_po_pr_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14639,
+      "length": 8,
+      "value": "\"ih_p_m\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14665,
+      "length": 9,
+      "value": "\"ih_sh_l\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14693,
+      "length": 9,
+      "value": "\"src_com\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14723,
+      "length": 12,
+      "value": "\"dis_t1_rec\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14757,
+      "length": 13,
+      "value": "\"dis_rec_msg\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14791,
+      "length": 13,
+      "value": "\"m_vid_al_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14826,
+      "length": 14,
+      "value": "\"m_vid_al_msg\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14861,
+      "length": 12,
+      "value": "\"dis_ed_msg\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14892,
+      "length": 10,
+      "value": "\"vid_s_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14922,
+      "length": 11,
+      "value": "\"uk_err_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14954,
+      "length": 12,
+      "value": "\"una_err_t1\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Constants\/LanguageConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 14988,
+      "length": 15,
+      "value": "\"wa_t_st_ov_t1\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Libraries\/CustomViews\/LinkView.swift",
@@ -12170,70 +12535,70 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2934,
+      "offset": 3487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3603,
+      "offset": 4156,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3656,
+      "offset": 4209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3706,
+      "offset": 4259,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3758,
+      "offset": 4311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3812,
+      "offset": 4365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3883,
+      "offset": 4436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3998,
+      "offset": 4551,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18490,
+      "offset": 19517,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/NewPostViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 39888,
+      "offset": 41639,
       "length": 4,
       "value": "true"
     },
@@ -12401,21 +12766,21 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/RecentVideosViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 758,
+      "offset": 862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/RecentVideosViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 792,
+      "offset": 896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/RecentVideosViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 835,
+      "offset": 939,
       "length": 5,
       "value": "false"
     },
@@ -12562,28 +12927,28 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/PostShareExtension\/SELoopsListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1335,
+      "offset": 1440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/PostShareExtension\/SELoopsListViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1495,
+      "offset": 1600,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/PostShareExtension\/SELoopsListViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1532,
+      "offset": 1637,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/PostShareExtension\/SELoopsListViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1659,
+      "offset": 1764,
       "length": 5,
       "value": "false"
     },
@@ -12786,7 +13151,7 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/SquareCameraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 29798,
+      "offset": 29578,
       "length": 5,
       "value": "false"
     },
@@ -13515,279 +13880,286 @@
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
       "offset": 5244,
-      "length": 5,
-      "value": "117.0"
+      "length": 4,
+      "value": "84.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5466,
+      "offset": 5474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5595,
+      "offset": 5603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 5892,
+      "offset": 5900,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 5954,
+      "offset": 5962,
       "length": 5,
       "value": "720.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 5969,
+      "offset": 5977,
       "length": 6,
       "value": "1280.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "StringLiteral",
-      "offset": 6111,
+      "offset": 6119,
       "length": 6,
       "value": "\"rear\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "StringLiteral",
-      "offset": 6191,
+      "offset": 6199,
       "length": 7,
       "value": "\"front\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8473,
+      "offset": 8481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 19324,
+      "offset": 19410,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34089,
+      "offset": 34294,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34091,
+      "offset": 34296,
       "length": 4,
       "value": "50.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34101,
+      "offset": 34306,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34111,
+      "offset": 34316,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34125,
+      "offset": 34330,
       "length": 4,
       "value": "36.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34229,
+      "offset": 34434,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34271,
+      "offset": 34476,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34490,
+      "offset": 34695,
       "length": 4,
       "value": "20.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34542,
+      "offset": 34747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 34588,
+      "offset": 34793,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 34951,
-      "length": 1,
-      "value": "2"
+      "kind": "FloatLiteral",
+      "offset": 35125,
+      "length": 3,
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34953,
-      "length": 4,
-      "value": "50.0"
-    },
-    {
-      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
-      "kind": "FloatLiteral",
-      "offset": 34959,
+      "offset": 35131,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "IntegerLiteral",
-      "offset": 34969,
+      "offset": 35204,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
+      "kind": "FloatLiteral",
+      "offset": 35206,
+      "length": 4,
+      "value": "50.0"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 35224,
       "length": 2,
       "value": "38"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34980,
+      "offset": 35235,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 34992,
+      "offset": 35247,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35127,
+      "offset": 35382,
       "length": 5,
       "value": "242.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35133,
+      "offset": 35388,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35147,
+      "offset": 35402,
       "length": 4,
       "value": "84.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35152,
+      "offset": 35407,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35165,
+      "offset": 35420,
       "length": 4,
       "value": "91.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35170,
+      "offset": 35425,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35184,
+      "offset": 35439,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 35245,
+      "offset": 35500,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35306,
+      "offset": 35561,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 35357,
+      "offset": 35612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "FloatLiteral",
-      "offset": 70571,
+      "offset": 70826,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 74590,
+      "offset": 74845,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 75417,
+      "offset": 75672,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/VideoCaptureController.swift",
       "kind": "BooleanLiteral",
-      "offset": 85052,
+      "offset": 85436,
       "length": 5,
       "value": "false"
     },
@@ -13871,217 +14243,217 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 703,
       "length": 28,
       "value": "\"VideoPreviewViewController\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1976,
+      "offset": 1978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "Array",
-      "offset": 2055,
+      "offset": 2057,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3772,
+      "offset": 3774,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3792,
+      "offset": 3794,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3820,
+      "offset": 3822,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3855,
+      "offset": 3857,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4082,
+      "offset": 4084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4222,
+      "offset": 4224,
       "length": 18,
       "value": "\"downloaded_video\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4247,
+      "offset": 4249,
       "length": 5,
       "value": "\"mp4\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4366,
+      "offset": 4368,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4410,
+      "offset": 4412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4490,
+      "offset": 4492,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "Array",
-      "offset": 4549,
+      "offset": 4551,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4956,
+      "offset": 4958,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5300,
+      "offset": 5302,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5392,
+      "offset": 5394,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5445,
+      "offset": 5447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5720,
+      "offset": 5722,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5766,
+      "offset": 5768,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6036,
+      "offset": 6038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6079,
+      "offset": 6081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 51348,
+      "offset": 52182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 55299,
+      "offset": 56350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 128921,
+      "offset": 130350,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 129458,
+      "offset": 130887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 131916,
+      "offset": 133345,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 131980,
+      "offset": 133409,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 132041,
+      "offset": 133470,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 132155,
+      "offset": 133584,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 132227,
+      "offset": 133656,
       "length": 3,
       "value": "2.0"
     },
@@ -14272,369 +14644,397 @@
       "kind": "StringLiteral",
       "offset": 4142,
       "length": 16,
+      "value": "\"ic_close_black\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4294,
+      "length": 16,
       "value": "\"ic_close_white\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4300,
+      "offset": 4452,
       "length": 19,
       "value": "\"ic_community_post\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4444,
+      "offset": 4596,
       "length": 10,
       "value": "\"ic_cross\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4595,
+      "offset": 4747,
       "length": 19,
       "value": "\"ic_curve_add_post\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4741,
+      "offset": 4893,
       "length": 11,
       "value": "\"ic_delete\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4875,
+      "offset": 5027,
       "length": 9,
       "value": "\"ic_dice\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5018,
+      "offset": 5170,
       "length": 15,
       "value": "\"ic_down_arrow\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5178,
+      "offset": 5330,
       "length": 21,
       "value": "\"ic_down_arrow_black\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5330,
+      "offset": 5482,
       "length": 13,
       "value": "\"ic_download\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5468,
+      "offset": 5620,
       "length": 10,
       "value": "\"ic_earth\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5612,
+      "offset": 5764,
       "length": 15,
       "value": "\"ic_edit_clips\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5757,
+      "offset": 5909,
       "length": 13,
       "value": "\"ic_edit_new\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 5899,
+      "offset": 6051,
       "length": 12,
       "value": "\"ic_gallery\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6064,
+      "offset": 6216,
       "length": 25,
       "value": "\"ic_ks_checkbox_selected\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6246,
+      "offset": 6398,
       "length": 27,
       "value": "\"ic_link_image_placeholder\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6419,
+      "offset": 6571,
       "length": 21,
       "value": "\"ic_link_placeholder\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6563,
+      "offset": 6715,
       "length": 9,
       "value": "\"ic_loop\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6697,
+      "offset": 6849,
       "length": 10,
       "value": "\"ic_magic\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6842,
+      "offset": 6994,
       "length": 15,
       "value": "\"ic_microphone\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 6997,
+      "offset": 7149,
       "length": 18,
       "value": "\"ic_new_community\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7164,
+      "offset": 7316,
       "length": 23,
       "value": "\"ic_new_dp_placeholder\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7319,
+      "offset": 7471,
       "length": 14,
       "value": "\"ic_new_earth\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7463,
+      "offset": 7615,
       "length": 13,
       "value": "\"ic_new_lock\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7604,
+      "offset": 7756,
       "length": 12,
       "value": "\"ic_new_pen\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7750,
+      "offset": 7902,
       "length": 15,
       "value": "\"ic_play_round\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7893,
+      "offset": 8045,
       "length": 12,
       "value": "\"ic_plus_16\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8041,
+      "offset": 8193,
       "length": 16,
       "value": "\"ic_plus_invite\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8196,
+      "offset": 8348,
       "length": 18,
       "value": "\"ic_post_link_new\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8352,
+      "offset": 8518,
+      "length": 24,
+      "value": "\"ic_preview_placeholder\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8680,
       "length": 17,
       "value": "\"ic_public_globe\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8500,
+      "offset": 8828,
       "length": 13,
       "value": "\"ic_question\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8655,
+      "offset": 8983,
       "length": 19,
       "value": "\"ic_question_cross\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8814,
+      "offset": 9142,
       "length": 18,
       "value": "\"ic_question_grey\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8972,
+      "offset": 9300,
       "length": 18,
       "value": "\"ic_record_answer\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9123,
+      "offset": 9451,
       "length": 14,
       "value": "\"ic_recording\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9264,
+      "offset": 9592,
       "length": 11,
       "value": "\"ic_retake\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9424,
+      "offset": 9752,
       "length": 23,
       "value": "\"ic_retake_single_trim\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9593,
+      "offset": 9921,
       "length": 21,
       "value": "\"ic_right_disclosure\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9756,
+      "offset": 10084,
       "length": 19,
       "value": "\"ic_roundtable_new\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9900,
+      "offset": 10228,
       "length": 10,
       "value": "\"ic_scale\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10048,
+      "offset": 10376,
       "length": 17,
       "value": "\"ic_slider_track\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10196,
+      "offset": 10540,
+      "length": 22,
+      "value": "\"ic_square_check_idle\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10717,
+      "length": 26,
+      "value": "\"ic_square_check_selected\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10874,
       "length": 13,
       "value": "\"ic_stickers\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10347,
+      "offset": 11025,
       "length": 17,
       "value": "\"ic_text_overlay\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10506,
+      "offset": 11184,
       "length": 19,
       "value": "\"ic_time_extension\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10652,
+      "offset": 11330,
       "length": 11,
       "value": "\"ic_timmer\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10786,
+      "offset": 11464,
       "length": 9,
       "value": "\"ic_wave\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10964,
+      "offset": 11642,
       "length": 33,
       "value": "\"icon-paragraph-alignment-center\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11162,
+      "offset": 11840,
       "length": 31,
       "value": "\"icon-paragraph-alignment-left\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11360,
+      "offset": 12038,
       "length": 32,
       "value": "\"icon-paragraph-alignment-right\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11530,
+      "offset": 12208,
       "length": 17,
       "value": "\"icon-text-blank\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11683,
+      "offset": 12361,
       "length": 16,
       "value": "\"icon-text-fill\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11852,
+      "offset": 12530,
       "length": 25,
       "value": "\"no_preview_thumb_square\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12021,
+      "offset": 12699,
       "length": 20,
       "value": "\"search_icon_recent\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinCamera\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinCamera.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12191,
+      "offset": 12869,
       "length": 23,
       "value": "\"text_reply_background\""
     }

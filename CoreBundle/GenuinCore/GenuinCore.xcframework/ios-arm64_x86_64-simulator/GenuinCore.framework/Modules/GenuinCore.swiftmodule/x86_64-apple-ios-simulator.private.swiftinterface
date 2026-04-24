@@ -4648,6 +4648,7 @@ public struct GeneralService {
   #endif
   @_spi(GenuinInternal) func loadHomeScreen()
   @_spi(GenuinInternal) func logout()
+  @_spi(GenuinInternal) func switchTabAfterPost(from viewController: UIKit.UIViewController)
 }
 public enum GenuinViewType {
   case placement
@@ -4823,6 +4824,9 @@ extension GenuinButton {
   #endif
   @_spi(GenuinInternal) func retryUploadForMessage(videoName: Swift.String)
   @_spi(GenuinInternal) func removeLocalMessage(chatId: Swift.String, videoName: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(GenuinInternal) func isGalleryVideoEditorOrSELoopListVC(vc: UIKit.UIViewController?) -> Swift.Bool
+  #endif
 }
 @_hasMissingDesignatedInitializers public class GenuinContainerAttributes {
   @objc deinit
@@ -6660,6 +6664,7 @@ public enum LocalNotificationType : Swift.String {
   case CLEAR_NAVIGATION_STACK
   case GROUP_JOIN_LEAVE
   case NEW_CONVERSATION_FROM_DEEPLINK
+  case PAUSE_VIDEO_NOTIFICATION
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -12178,3 +12183,4 @@ extension VMAPTrackingEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Equatable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Hashable {}
+@_spi(GenuinInternal) extension WalletEventContentType : Swift.RawRepresentable {}

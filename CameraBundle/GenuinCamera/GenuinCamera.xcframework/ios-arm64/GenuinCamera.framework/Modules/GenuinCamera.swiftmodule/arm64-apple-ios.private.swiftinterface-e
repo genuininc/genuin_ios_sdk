@@ -352,3 +352,4 @@ extension VideoPreviewViewController : GenuinCore.CustomSliderContainerViewDeleg
 extension SwiftyCamVideoGravity : Swift.Equatable {}
 extension SwiftyCamVideoGravity : Swift.Hashable {}
 extension SwiftyGifError : Swift.Equatable {}
+extension SwiftyGifError : Swift.Hashable {}

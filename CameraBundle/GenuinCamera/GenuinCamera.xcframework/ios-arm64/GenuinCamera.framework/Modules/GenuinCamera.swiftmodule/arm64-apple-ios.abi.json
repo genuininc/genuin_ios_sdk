@@ -11352,7 +11352,14 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/CameraViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28058,
+      "offset": 4983,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/CameraViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 28197,
       "length": 5,
       "value": "false"
     },
@@ -11373,14 +11380,21 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/CommonFunctions.swift",
       "kind": "BooleanLiteral",
-      "offset": 5875,
+      "offset": 2232,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/CommonFunctions.swift",
       "kind": "BooleanLiteral",
-      "offset": 17004,
+      "offset": 6197,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/Util\/CommonFunctions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17326,
       "length": 5,
       "value": "false"
     },
@@ -14397,63 +14411,70 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 52182,
+      "offset": 6390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 56350,
+      "offset": 52321,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 56489,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 130350,
+      "offset": 130669,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 130887,
+      "offset": 131206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 133345,
+      "offset": 133664,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 133409,
+      "offset": 133728,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 133470,
+      "offset": 133789,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 133584,
+      "offset": 133903,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCamera\/Classes\/ViewControllers\/Camera\/PreviewControllers\/VideoPreviewViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 133656,
+      "offset": 133975,
       "length": 3,
       "value": "2.0"
     },

@@ -1264,6 +1264,7 @@ public enum FeedVideoPlayType : Swift.Int {
 @objc @_hasMissingDesignatedInitializers public class BrandAdConfigs : ObjectiveC.NSObject {
   public var feedStream: Swift.Bool?
   public var inVideoStream: Swift.Bool?
+  public var adsInAppBrowser: Swift.Bool?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BrandSupportedLanguage : ObjectiveC.NSObject {
@@ -7758,3 +7759,4 @@ extension BGExploreType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Equatable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Hashable {}
+@_spi(GenuinInternal) extension WalletEventContentType : Swift.RawRepresentable {}

@@ -1078,6 +1078,7 @@ public enum FeedVideoPlayType : Swift.Int {
 @objc @_hasMissingDesignatedInitializers public class BrandAdConfigs : ObjectiveC.NSObject {
   public var feedStream: Swift.Bool?
   public var inVideoStream: Swift.Bool?
+  public var adsInAppBrowser: Swift.Bool?
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BrandSupportedLanguage : ObjectiveC.NSObject {
@@ -5441,4 +5442,3 @@ extension KSToCBRequestStatusType : Swift.Hashable {}
 extension KSToCBRequestStatusType : Swift.RawRepresentable {}
 extension BGExploreType : Swift.Equatable {}
 extension BGExploreType : Swift.Hashable {}
-extension BGExploreType : Swift.RawRepresentable {}

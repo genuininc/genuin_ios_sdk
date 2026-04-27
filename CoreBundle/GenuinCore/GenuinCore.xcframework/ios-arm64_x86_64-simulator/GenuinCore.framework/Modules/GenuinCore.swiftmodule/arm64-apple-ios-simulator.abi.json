@@ -230469,6 +230469,43 @@
             "moduleName": "GenuinCore"
           },
           {
+            "kind": "Var",
+            "name": "PLAY_VIDEO_NOTIFICATION",
+            "printedName": "PLAY_VIDEO_NOTIFICATION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GenuinCore.LocalNotificationType.Type) -> GenuinCore.LocalNotificationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocalNotificationType",
+                    "printedName": "GenuinCore.LocalNotificationType",
+                    "usr": "s:10GenuinCore21LocalNotificationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GenuinCore.LocalNotificationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocalNotificationType",
+                        "printedName": "GenuinCore.LocalNotificationType",
+                        "usr": "s:10GenuinCore21LocalNotificationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10GenuinCore21LocalNotificationTypeO23PLAY_VIDEO_NOTIFICATIONyA2CmF",
+            "mangledName": "$s10GenuinCore21LocalNotificationTypeO23PLAY_VIDEO_NOTIFICATIONyA2CmF",
+            "moduleName": "GenuinCore"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -397263,21 +397300,21 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/CommonFunctions.swift",
       "kind": "BooleanLiteral",
-      "offset": 150993,
+      "offset": 150669,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/CommonFunctions.swift",
       "kind": "BooleanLiteral",
-      "offset": 155968,
+      "offset": 155644,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Util\/CommonFunctions.swift",
       "kind": "BooleanLiteral",
-      "offset": 155998,
+      "offset": 155674,
       "length": 4,
       "value": "true"
     },
@@ -401822,7 +401859,7 @@
       "kind": "StringLiteral",
       "offset": 10202,
       "length": 9,
-      "value": "\"0.0.131\""
+      "value": "\"0.0.132\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
@@ -408778,1169 +408815,1176 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87110,
+      "offset": 87078,
+      "length": 25,
+      "value": "\"PLAY_VIDEO_NOTIFICATION\""
+    },
+    {
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 87171,
       "length": 17,
       "value": "\"temp_thumnbails\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87166,
+      "offset": 87227,
       "length": 15,
       "value": "\"Conversations\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87220,
+      "offset": 87281,
       "length": 15,
       "value": "\"Genuin_Videos\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87273,
+      "offset": 87334,
       "length": 14,
       "value": "\"Screen_Shots\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87328,
+      "offset": 87389,
       "length": 17,
       "value": "\"Genuin_Contacts\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87385,
+      "offset": 87446,
       "length": 6,
       "value": "\"trim\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87428,
+      "offset": 87489,
       "length": 13,
       "value": "\"VoiceAssets\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87505,
+      "offset": 87566,
       "length": 4,
       "value": "\"rt\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87553,
+      "offset": 87614,
       "length": 20,
       "value": "\"conversation_video\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87606,
+      "offset": 87667,
       "length": 9,
       "value": "\"comment\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87645,
+      "offset": 87706,
       "length": 6,
       "value": "\"loop\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87691,
+      "offset": 87752,
       "length": 16,
       "value": "\"clickable_post\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87746,
+      "offset": 87807,
       "length": 15,
       "value": "\"all_caught_up\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87840,
+      "offset": 87901,
       "length": 10,
       "value": "\"tab_home\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87887,
+      "offset": 87948,
       "length": 13,
       "value": "\"tab_explore\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87942,
+      "offset": 88003,
       "length": 18,
       "value": "\"tab_create_video\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 87995,
+      "offset": 88056,
       "length": 11,
       "value": "\"tab_inbox\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88043,
+      "offset": 88104,
       "length": 13,
       "value": "\"tab_profile\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88098,
+      "offset": 88159,
       "length": 22,
       "value": "\"profile_txt_fullname\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88157,
+      "offset": 88218,
       "length": 17,
       "value": "\"profile_txt_bio\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88218,
+      "offset": 88279,
       "length": 20,
       "value": "\"profile_social_url\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88277,
+      "offset": 88338,
       "length": 15,
       "value": "\"camera_record\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88331,
+      "offset": 88392,
       "length": 12,
       "value": "\"opt_cancel\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88380,
+      "offset": 88441,
       "length": 17,
       "value": "\"opt_report_user\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88433,
+      "offset": 88494,
       "length": 16,
       "value": "\"opt_block_user\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88487,
+      "offset": 88548,
       "length": 14,
       "value": "\"rt_subscribe\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88535,
+      "offset": 88596,
       "length": 10,
       "value": "\"rt_share\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88578,
+      "offset": 88639,
       "length": 9,
       "value": "\"rt_link\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88625,
+      "offset": 88686,
       "length": 9,
       "value": "\"rt_desc\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88670,
+      "offset": 88731,
       "length": 12,
       "value": "\"rt_options\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88719,
+      "offset": 88780,
       "length": 13,
       "value": "\"rt_nickname\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88770,
+      "offset": 88831,
       "length": 14,
       "value": "\"contact_cell\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88828,
+      "offset": 88889,
       "length": 20,
       "value": "\"group_contact_cell\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88889,
+      "offset": 88950,
       "length": 17,
       "value": "\"rt_contact_cell\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 88945,
+      "offset": 89006,
       "length": 26,
       "value": "\"profile_edittxt_fullname\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 89005,
+      "offset": 89066,
       "length": 21,
       "value": "\"profile_edittxt_bio\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89123,
+      "offset": 89184,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89164,
+      "offset": 89225,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89250,
+      "offset": 89311,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89291,
+      "offset": 89352,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89375,
+      "offset": 89436,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89416,
+      "offset": 89477,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89500,
+      "offset": 89561,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89542,
+      "offset": 89603,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89622,
+      "offset": 89683,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89663,
+      "offset": 89724,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89743,
+      "offset": 89804,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89785,
+      "offset": 89846,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89863,
+      "offset": 89924,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 89946,
+      "offset": 90007,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90031,
+      "offset": 90092,
       "length": 3,
       "value": "160"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90114,
+      "offset": 90175,
       "length": 3,
       "value": "255"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90202,
+      "offset": 90263,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90293,
+      "offset": 90354,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90376,
+      "offset": 90437,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90462,
+      "offset": 90523,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90549,
+      "offset": 90610,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90637,
+      "offset": 90698,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90718,
+      "offset": 90779,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 90774,
+      "offset": 90835,
       "length": 3,
       "value": "150"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 90819,
+      "offset": 90880,
       "length": 64,
       "value": "\"(?:https?:\\\/\\\/)?(?:www\\.)?[\\w-]+(\\.[\\w-]+)+(\\\/[^\\s]*)?\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 90941,
+      "offset": 91002,
       "length": 8,
       "value": "\"google\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 90967,
+      "offset": 91028,
       "length": 7,
       "value": "\"apple\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 90992,
+      "offset": 91053,
       "length": 7,
       "value": "\"brand\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91017,
+      "offset": 91078,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91042,
+      "offset": 91103,
       "length": 7,
       "value": "\"phone\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91099,
+      "offset": 91160,
       "length": 15,
       "value": "\"[APP_VERSION]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91134,
+      "offset": 91195,
       "length": 12,
       "value": "\"[APP_NAME]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91172,
+      "offset": 91233,
       "length": 18,
       "value": "\"[PUBLISHER_NAME]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91213,
+      "offset": 91274,
       "length": 15,
       "value": "\"[DEVICE_TYPE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91251,
+      "offset": 91312,
       "length": 15,
       "value": "\"[DEVICE_IPV6]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91289,
+      "offset": 91350,
       "length": 15,
       "value": "\"[DEVICE_MAKE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91319,
+      "offset": 91380,
       "length": 6,
       "value": "\"[IP]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91340,
+      "offset": 91401,
       "length": 6,
       "value": "\"[UA]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91370,
+      "offset": 91431,
       "length": 16,
       "value": "\"[DEVICE_MODEL]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91407,
+      "offset": 91468,
       "length": 13,
       "value": "\"[DEVICE_OS]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91448,
+      "offset": 91509,
       "length": 21,
       "value": "\"[DEVICE_OS_VERSION]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91494,
+      "offset": 91555,
       "length": 17,
       "value": "\"[DEVICE_HEIGHT]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91535,
+      "offset": 91596,
       "length": 16,
       "value": "\"[DEVICE_WIDTH]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91576,
+      "offset": 91637,
       "length": 10,
       "value": "\"[HEIGHT]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91610,
+      "offset": 91671,
       "length": 9,
       "value": "\"[WIDTH]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91640,
+      "offset": 91701,
       "length": 13,
       "value": "\"[DEVICE_JS]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91677,
+      "offset": 91738,
       "length": 16,
       "value": "\"[LOCATION_LAT]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91717,
+      "offset": 91778,
       "length": 16,
       "value": "\"[LOCATION_LON]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91752,
+      "offset": 91813,
       "length": 10,
       "value": "\"[REGION]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91779,
+      "offset": 91840,
       "length": 8,
       "value": "\"[CITY]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91807,
+      "offset": 91868,
       "length": 12,
       "value": "\"[ZIP_CODE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91845,
+      "offset": 91906,
       "length": 18,
       "value": "\"[DEVICE_PXRATIO]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91890,
+      "offset": 91951,
       "length": 19,
       "value": "\"[DEVICE_GEOFETCH]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91936,
+      "offset": 91997,
       "length": 19,
       "value": "\"[DEVICE_FLASHVER]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 91977,
+      "offset": 92038,
       "length": 14,
       "value": "\"[COUNTRY_ID]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92015,
+      "offset": 92076,
       "length": 16,
       "value": "\"[DEVICE_LANGB]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92057,
+      "offset": 92118,
       "length": 18,
       "value": "\"[DEVICE_CARRIER]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92100,
+      "offset": 92161,
       "length": 17,
       "value": "\"[DEVICE_MCCMNC]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92150,
+      "offset": 92211,
       "length": 25,
       "value": "\"[DEVICE_CONNECTIONTYPE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92201,
+      "offset": 92262,
       "length": 19,
       "value": "\"[DEVICE_GEO_TYPE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92247,
+      "offset": 92308,
       "length": 19,
       "value": "\"[DEVICE_ACCURACY]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92295,
+      "offset": 92356,
       "length": 22,
       "value": "\"[DEVICE_GEO_LASTFIX]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92348,
+      "offset": 92409,
       "length": 24,
       "value": "\"[DEVICE_GEO_IPSERVICE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92407,
+      "offset": 92468,
       "length": 28,
       "value": "\"[DEVICE_GEO_REGIONFIPS104]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92462,
+      "offset": 92523,
       "length": 20,
       "value": "\"[DEVICE_GEO_METRO]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92513,
+      "offset": 92574,
       "length": 24,
       "value": "\"[DEVICE_GEO_UTCOFFSET]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92565,
+      "offset": 92626,
       "length": 21,
       "value": "\"[DEVICE_SUA_MOBILE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92620,
+      "offset": 92681,
       "length": 27,
       "value": "\"[DEVICE_SUA_ARCHITECTURE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92674,
+      "offset": 92735,
       "length": 19,
       "value": "\"[DEVICE_LANGUAGE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92709,
+      "offset": 92770,
       "length": 7,
       "value": "\"[DID]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92751,
+      "offset": 92812,
       "length": 29,
       "value": "\"[DEVICE_SUA_BROWSERS_BRAND]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92810,
+      "offset": 92871,
       "length": 23,
       "value": "\"[LIMITED_AD_TRACKING]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92862,
+      "offset": 92923,
       "length": 22,
       "value": "\"[DEVICE_SUA_BITNESS]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92911,
+      "offset": 92972,
       "length": 20,
       "value": "\"[DEVICE_SUA_MODEL]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 92959,
+      "offset": 93020,
       "length": 21,
       "value": "\"[DEVICE_SUA_SOURCE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93017,
+      "offset": 93078,
       "length": 31,
       "value": "\"[DEVICE_SUA_BROWSERS_VERSION]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93083,
+      "offset": 93144,
       "length": 29,
       "value": "\"[DEVICE_SUA_PLATFORM_BRAND]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93149,
+      "offset": 93210,
       "length": 31,
       "value": "\"[DEVICE_SUA_PLATFORM_VERSION]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93196,
+      "offset": 93257,
       "length": 7,
       "value": "\"[DNT]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93225,
+      "offset": 93286,
       "length": 14,
       "value": "\"[DEVICE_PPI]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93262,
+      "offset": 93323,
       "length": 15,
       "value": "\"[CONTENT_URL]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93303,
+      "offset": 93364,
       "length": 18,
       "value": "\"[CONTENT_LENGTH]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93343,
+      "offset": 93404,
       "length": 14,
       "value": "\"[SESSION_ID]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93376,
+      "offset": 93437,
       "length": 11,
       "value": "\"[USER_ID]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93409,
+      "offset": 93470,
       "length": 14,
       "value": "\"[APP_BUNDLE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93445,
+      "offset": 93506,
       "length": 14,
       "value": "\"[APP_DOMAIN]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93483,
+      "offset": 93544,
       "length": 17,
       "value": "\"[APP_STORE_URL]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93529,
+      "offset": 93590,
       "length": 22,
       "value": "\"[USER_GEO_UTCOFFSET]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93574,
+      "offset": 93635,
       "length": 16,
       "value": "\"[USER_GEO_ZIP]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93614,
+      "offset": 93675,
       "length": 17,
       "value": "\"[USER_GEO_CITY]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93656,
+      "offset": 93717,
       "length": 18,
       "value": "\"[USER_GEO_METRO]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93701,
+      "offset": 93762,
       "length": 20,
       "value": "\"[USER_GEO_LASTFIX]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93749,
+      "offset": 93810,
       "length": 21,
       "value": "\"[USER_GEO_ACCURACY]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93794,
+      "offset": 93855,
       "length": 17,
       "value": "\"[USER_GEO_TYPE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93834,
+      "offset": 93895,
       "length": 16,
       "value": "\"[USER_GEO_LON]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93873,
+      "offset": 93934,
       "length": 16,
       "value": "\"[USER_GEO_LAT]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93916,
+      "offset": 93977,
       "length": 20,
       "value": "\"[USER_GEO_COUNTRY]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 93965,
+      "offset": 94026,
       "length": 22,
       "value": "\"[USER_GEO_IPSERVICE]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94013,
+      "offset": 94074,
       "length": 19,
       "value": "\"[USER_GEO_REGION]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94048,
+      "offset": 94109,
       "length": 7,
       "value": "\"[YOB]\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94114,
+      "offset": 94175,
       "length": 26,
       "value": "\"NSCameraUsageDescription\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94161,
+      "offset": 94222,
       "length": 28,
       "value": "\"NSContactsUsageDescription\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94219,
+      "offset": 94280,
       "length": 37,
       "value": "\"NSLocationWhenInUseUsageDescription\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94286,
+      "offset": 94347,
       "length": 37,
       "value": "\"NSSpeechRecognitionUsageDescription\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94346,
+      "offset": 94407,
       "length": 30,
       "value": "\"NSMicrophoneUsageDescription\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94401,
+      "offset": 94462,
       "length": 32,
       "value": "\"NSPhotoLibraryUsageDescription\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94589,
+      "offset": 94650,
       "length": 24,
       "value": "\"https:\/\/www.iheart.com\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94688,
+      "offset": 94749,
       "length": 8,
       "value": "\"Paused\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94726,
+      "offset": 94787,
       "length": 6,
       "value": "\"Play\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94769,
+      "offset": 94830,
       "length": 13,
       "value": "\"Not pressed\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94815,
+      "offset": 94876,
       "length": 9,
       "value": "\"Pressed\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94854,
+      "offset": 94915,
       "length": 6,
       "value": "\"Mute\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94891,
+      "offset": 94952,
       "length": 7,
       "value": "\"share\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 94943,
+      "offset": 95004,
       "length": 21,
       "value": "\"Station description\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95005,
+      "offset": 95066,
       "length": 17,
       "value": "\"podcast artwork\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95063,
+      "offset": 95124,
       "length": 17,
       "value": "\"station artwork\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95111,
+      "offset": 95172,
       "length": 7,
       "value": "\"title\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95148,
+      "offset": 95209,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95197,
+      "offset": 95258,
       "length": 12,
       "value": "\"Play again\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95242,
+      "offset": 95303,
       "length": 9,
       "value": "\"heading\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95281,
+      "offset": 95342,
       "length": 6,
       "value": "\"back\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95321,
+      "offset": 95382,
       "length": 10,
       "value": "\"Thumb up\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95373,
+      "offset": 95434,
       "length": 23,
       "value": "\"Highlight description\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95428,
+      "offset": 95489,
       "length": 20,
       "value": "\"Gesture for Slider\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95491,
+      "offset": 95552,
       "length": 45,
       "value": "\"Forward 15 seconds or Skip back 15 seconds.\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95578,
+      "offset": 95639,
       "length": 19,
       "value": "\"Playback position\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95633,
+      "offset": 95694,
       "length": 17,
       "value": "\"Highlight Title\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95693,
+      "offset": 95754,
       "length": 24,
       "value": "\"Next highlight playing\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95760,
+      "offset": 95821,
       "length": 28,
       "value": "\"Previous highlight playing\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95820,
+      "offset": 95881,
       "length": 8,
       "value": "\"Follow\""
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
-      "offset": 95861,
+      "offset": 95922,
       "length": 9,
       "value": "\"Library\""
     },
@@ -416009,168 +416053,168 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 64426,
+      "offset": 64209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 81263,
+      "offset": 81046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 81962,
+      "offset": 81745,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 89097,
+      "offset": 88972,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 89128,
+      "offset": 89003,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 89156,
+      "offset": 89031,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 89192,
+      "offset": 89067,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 103176,
+      "offset": 103051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 107019,
+      "offset": 106894,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 206296,
+      "offset": 206221,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 275333,
+      "offset": 275258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 276786,
+      "offset": 276711,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 279131,
+      "offset": 279056,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 313570,
+      "offset": 313495,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 315705,
+      "offset": 315630,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 315769,
+      "offset": 315694,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 315830,
+      "offset": 315755,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 315944,
+      "offset": 315869,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 316016,
+      "offset": 315941,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 342274,
+      "offset": 342952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 352617,
+      "offset": 353295,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 366555,
+      "offset": 367233,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 370182,
+      "offset": 370860,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinCore\/Classes\/ViewControllers\/FeedViewController\/SDKFeedViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 380215,
+      "offset": 380893,
       "length": 5,
       "value": "false"
     },

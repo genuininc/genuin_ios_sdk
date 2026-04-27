@@ -6665,6 +6665,7 @@ public enum LocalNotificationType : Swift.String {
   case GROUP_JOIN_LEAVE
   case NEW_CONVERSATION_FROM_DEEPLINK
   case PAUSE_VIDEO_NOTIFICATION
+  case PLAY_VIDEO_NOTIFICATION
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -12183,4 +12184,3 @@ extension VMAPTrackingEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Equatable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Hashable {}
-@_spi(GenuinInternal) extension WalletEventContentType : Swift.RawRepresentable {}

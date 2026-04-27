@@ -254,7 +254,7 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		L5h7NbqeGbqEQEdA7pEraty3z84=
+		H1JjGD4Dc1i6jydJRkViSHwSHLU=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -270,11 +270,11 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rDFbmicir36ljShohrtnMKXuf9E=
+		qiyty21noY7D+SO9JkAQqRJBk5s=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		L5h7NbqeGbqEQEdA7pEraty3z84=
+		H1JjGD4Dc1i6jydJRkViSHwSHLU=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WRRuA3eH6h0rIb3wY8NyiDIRVfU=
+		bXzwLiOmBjKn+nhhcMKC+VVjBks=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -807,7 +807,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5EiAfbQ8C40NK8XBXraDW2Y/RXOVUYnmSJeks4DU0U=
+			nfomIdbhjbt+C0trlT5mV25EXRf/jIQWFoAFj3o8Nos=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -835,14 +835,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9k+uFTe2u8bP5VPzSjJJh5HUBo/3yct2w1dkVE9ripM=
+			hn3pArsSCFTv+pZESUjLyed1Zzy8Ke3aSfT0l9RY2Jk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5EiAfbQ8C40NK8XBXraDW2Y/RXOVUYnmSJeks4DU0U=
+			nfomIdbhjbt+C0trlT5mV25EXRf/jIQWFoAFj3o8Nos=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -870,7 +870,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LKc7Djaz99w5/wKux0CRzktMiSdSpkbtprvIr6pOTnI=
+			cAGbD/OrPt9PskeDH9IRnMztaZ+2SiVZJMWsbd+/MEM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

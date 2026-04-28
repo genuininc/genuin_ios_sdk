@@ -11,10 +11,10 @@ import AudioToolbox
 import BackgroundTasks
 import SystemConfiguration.CaptiveNetwork
 import Combine
+import CommonCrypto
 import Contacts
 import CoreLocation
 import CoreTelephony
-import CryptoSwift
 import DeveloperToolsSupport
 import Dispatch
 import EasyTipView
@@ -7474,7 +7474,7 @@ public struct ActionSheetColor {
 }
 public struct Util {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func showErrorAlertWithErrorMessage(_ errorStr: Swift.String, _ viewController: UIKit.UIViewController?)
+  public static func showErrorAlertWithErrorMessage(title: Swift.String? = nil, _ errorStr: Swift.String, _ viewController: UIKit.UIViewController?)
   #endif
   public static func isInternetAvailable() -> Swift.Bool
   public static func isInternetOnWIFI() -> Swift.Bool

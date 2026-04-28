@@ -11,10 +11,10 @@ import AudioToolbox
 import BackgroundTasks
 import SystemConfiguration.CaptiveNetwork
 import Combine
+import CommonCrypto
 import Contacts
 import CoreLocation
 import CoreTelephony
-import CryptoSwift
 import DeveloperToolsSupport
 import Dispatch
 import EasyTipView
@@ -7467,6 +7467,12 @@ public enum LoginWith : Swift.Int {
   @_spi(GenuinInternal) public static var CLEAR_VIDEO_POST_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
+  @_spi(GenuinInternal) public static var ALERT_TITLE_ERROR: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ALERT_TITLE_NO_INTERNET: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
 }
 @_hasMissingDesignatedInitializers public class LanguageManager {
   public static let shared: LanguageManager
@@ -10281,7 +10287,7 @@ public struct ActionSheetColor {
 }
 public struct Util {
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func showErrorAlertWithErrorMessage(_ errorStr: Swift.String, _ viewController: UIKit.UIViewController?)
+  public static func showErrorAlertWithErrorMessage(title: Swift.String? = nil, _ errorStr: Swift.String, _ viewController: UIKit.UIViewController?)
   #endif
   public static func isInternetAvailable() -> Swift.Bool
   public static func isInternetOnWIFI() -> Swift.Bool

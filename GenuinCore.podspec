@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'lottie-ios', '~> 4.4.0'
   spec.dependency 'Hero', '~> 1.6.2'
   spec.dependency 'SkeletonView', '~> 1.30.4'
-  spec.dependency 'CryptoSwift', '~> 1.8.1'
+  #spec.dependency 'CryptoSwift', '~> 1.8.1'
 #  spec.dependency 'SnapKit', '~> 5.7.1'
   spec.dependency 'EasyTipView', '~> 2.1'
   spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.27.4'

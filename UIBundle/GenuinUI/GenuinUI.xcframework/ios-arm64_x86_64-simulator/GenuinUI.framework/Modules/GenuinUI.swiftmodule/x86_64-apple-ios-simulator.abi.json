@@ -49487,13 +49487,6 @@
       },
       {
         "kind": "Import",
-        "name": "CryptoSwift",
-        "printedName": "CryptoSwift",
-        "declKind": "Import",
-        "moduleName": "GenuinUI"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -98866,14 +98859,14 @@
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinUI\/Classes\/ViewControllers\/Loop\/LoopDetailHeaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3108,
+      "offset": 3089,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinUI\/Classes\/ViewControllers\/Loop\/LoopDetailHeaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3387,
+      "offset": 3368,
       "length": 5,
       "value": "false"
     },

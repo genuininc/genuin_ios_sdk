@@ -43,8 +43,6 @@ let package = Package(
 //                          path: "CoreBundle/SDWebImage_5.20.0/SDWebImage.xcframework"),
             .binaryTarget(name: "libPhoneNumberiOS",
                           path: "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework"),
-            .binaryTarget(name: "CryptoSwift",
-                          path: "CoreBundle/CryptoSwift_1.8.1/CryptoSwift.xcframework"),
             .binaryTarget(name: "EasyTipView",
                           path: "CoreBundle/EasyTipView_2.1/EasyTipView.xcframework"),
             .binaryTarget(name: "Hero",
@@ -90,7 +88,6 @@ let package = Package(
             name: "GenuinCoreWrapper",
             dependencies: [
                 "GenuinCore",
-                "CryptoSwift",
                 "EasyTipView",
                 .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),
                 "TOCropViewController",

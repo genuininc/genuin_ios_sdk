@@ -304360,7 +304360,7 @@
       "kind": "StringLiteral",
       "offset": 10285,
       "length": 10,
-      "value": "\"2.0.1.18\""
+      "value": "\"2.0.1.19\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",
@@ -317357,21 +317357,21 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 46597,
+      "offset": 46487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 64879,
+      "offset": 64769,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomCells\/UITableViewCell\/FeedCell\/RTFeedCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 96738,
+      "offset": 96628,
       "length": 5,
       "value": "false"
     },

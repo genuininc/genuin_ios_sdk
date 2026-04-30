@@ -254,7 +254,7 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		H1JjGD4Dc1i6jydJRkViSHwSHLU=
+		vlCfk32f3C4LPRCINuoKL0YU9k8=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -270,11 +270,11 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MY6P1wGE6+gqpyphfx8zfosrR1E=
+		3gRDPycIUdUUfuvnGcY8zPJey+4=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		H1JjGD4Dc1i6jydJRkViSHwSHLU=
+		vlCfk32f3C4LPRCINuoKL0YU9k8=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5Kt7oMvuke217V6rJC3Wwh7+ULE=
+		bU0vgb/2PY28X62pko05h0hWXNE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>NewPostViewController.nib</key>
 		<data>
-		huBJOUSmyvyKOYe9fFOpU9QN71U=
+		ncmGWcHYgZdcidGJ2Z1lep7MPq8=
 		</data>
 		<key>Nunito-ExtraBold.ttf</key>
 		<data>
@@ -807,7 +807,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nfomIdbhjbt+C0trlT5mV25EXRf/jIQWFoAFj3o8Nos=
+			5D1Vucm4e89YDS72bndtalk0whkvcjNLEh6rdwivaWc=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -835,14 +835,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tW6KPiZDvEwmW+G3WnZot59BdvNy7a3w4d3ju0/qS04=
+			wEcfGpVcGoT2gE68jRm0PkifLObpck3ExvC8Xqw57PM=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nfomIdbhjbt+C0trlT5mV25EXRf/jIQWFoAFj3o8Nos=
+			5D1Vucm4e89YDS72bndtalk0whkvcjNLEh6rdwivaWc=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -870,7 +870,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cn5ht6QHmL4aw+gHRswrvm2qE84LFBjmK9FR5PEv94Q=
+			g7eHI5tQjU0fsTK9mGgYx4TN/VCFSQ7kimDr1RaOeck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -884,7 +884,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MjxQCEuFN0ehuNvV/j3bOyjdwxQKZyupgtYj6Uvf6lg=
+			/jQKGTs0kZqOA2l1O+28ZNcxNiHp4sz/JqADQ8zkShA=
 			</data>
 		</dict>
 		<key>Nunito-ExtraBold.ttf</key>

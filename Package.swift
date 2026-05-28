@@ -21,7 +21,7 @@ let package = Package(
             targets: ["GenuinAIWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.4.0"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.0"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.22.1"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
     ],

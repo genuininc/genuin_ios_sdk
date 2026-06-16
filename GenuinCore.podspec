@@ -39,19 +39,20 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/genuininc/genuin_ios_sdk.git", :tag => "#{spec.version}" }
 
 
-  spec.dependency 'SDWebImage', '~> 5.21.0'
-  spec.dependency 'lottie-ios', '~> 4.6.0'
+  spec.dependency 'SDWebImage', '~> 5.19.1'
+  spec.dependency 'lottie-ios', '~> 4.4.0'
   spec.dependency 'Hero', '~> 1.6.2'
   spec.dependency 'SkeletonView', '~> 1.30.4'
-  spec.dependency 'CryptoSwift', '~> 1.8.1'
-  spec.dependency 'SnapKit', '~> 5.7.1'
   spec.dependency 'EasyTipView', '~> 2.1'
   spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.22.1'
   spec.dependency 'MaterialComponents/ActivityIndicator', '~> 124.2.0'
+  spec.dependency 'XLPagerTabStrip', '~> 9.1.0'
 
   spec.vendored_frameworks = "CoreBundle/GenuinCore/GenuinCore.xcframework", "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework", "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework",
       "CoreBundle/Rudder_1.31.0/MetricsReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/Rudder.xcframework",
-      "CoreBundle/Rudder_1.31.0/RudderKit.xcframework"
+      "CoreBundle/Rudder_1.31.0/RudderKit.xcframework",
+      "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/GoogleMobileAds.xcframework", "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/UserMessagingPlatform.xcframework"
+
 end

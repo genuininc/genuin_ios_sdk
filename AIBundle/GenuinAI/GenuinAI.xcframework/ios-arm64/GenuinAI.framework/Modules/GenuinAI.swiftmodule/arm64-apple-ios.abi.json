@@ -2070,2590 +2070,2590 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCategorySearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCategorySearchViewController.swift",
       "kind": "StringLiteral",
       "offset": 507,
       "length": 34,
       "value": "\"AutoCategorySearchViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCategorySearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCategorySearchViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1264,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "StringLiteral",
       "offset": 434,
       "length": 40,
       "value": "\"AutoCommunityWalkthroughViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1171,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1213,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1254,
       "length": 3,
       "value": "555"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1295,
       "length": 3,
       "value": "363"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1337,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCommunityWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1364,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
       "kind": "StringLiteral",
       "offset": 406,
       "length": 30,
       "value": "\"AutoCreateLoopViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
       "kind": "Array",
       "offset": 2714,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2926,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2975,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoCreateLoopViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3370,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 30,
       "value": "\"AutoCreatePostViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
       "kind": "Array",
       "offset": 3242,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3454,
       "length": 2,
       "value": "56"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3503,
       "length": 2,
       "value": "56"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoCreatePostViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 4029,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 26,
       "value": "\"AutoCreateViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
       "kind": "Array",
       "offset": 2694,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2906,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2955,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/AutoCreateViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3569,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AutoKeywordSearchCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AutoKeywordSearchCell.swift",
       "kind": "BooleanLiteral",
       "offset": 396,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AutoKeywordSearchCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AutoKeywordSearchCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1069,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoKeywordSearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoKeywordSearchViewController.swift",
       "kind": "StringLiteral",
       "offset": 456,
       "length": 33,
       "value": "\"AutoKeywordSearchViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoKeywordSearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoKeywordSearchViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1187,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoKeywordSearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/AutoKeywordSearchViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1309,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 35,
       "value": "\"AutoLoopWalkthroughViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1092,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1134,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1175,
       "length": 3,
       "value": "555"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1216,
       "length": 3,
       "value": "363"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1258,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoLoopWalkthroughViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1285,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoTopicSearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoTopicSearchViewController.swift",
       "kind": "StringLiteral",
       "offset": 465,
       "length": 31,
       "value": "\"AutoTopicSearchViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoTopicSearchViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/AutoTopicSearchViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1225,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Models\/Avatar.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Models\/Avatar.swift",
       "kind": "BooleanLiteral",
       "offset": 355,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1149,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1200,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1251,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 1520,
       "length": 6,
       "value": "\"face\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1687,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1739,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1789,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1893,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarListCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarListCell.swift",
       "kind": "StringLiteral",
       "offset": 1774,
       "length": 6,
       "value": "\"face\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarListCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/AvatarListCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1973,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/AvatarManager.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/AvatarManager.swift",
       "kind": "BooleanLiteral",
       "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/BrandAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/BrandAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 21,
       "value": "\"BrandAutoCreateCell\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/CameraFeedService.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/CameraFeedService.swift",
       "kind": "StringLiteral",
       "offset": 2744,
       "length": 55,
       "value": "\"com.begenuin.mediapipe.CameraFeedService.sessionQueue\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/CameraFeedService.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/CameraFeedService.swift",
       "kind": "BooleanLiteral",
       "offset": 3110,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ChooseAvatarViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ChooseAvatarViewController.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 28,
       "value": "\"ChooseAvatarViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ChooseAvatarViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ChooseAvatarViewController.swift",
       "kind": "Array",
       "offset": 2112,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 32,
       "value": "\"CommunityAndLoopAutoCreateCell\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "IntegerLiteral",
       "offset": 2472,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "FloatLiteral",
       "offset": 2913,
       "length": 4,
       "value": "24.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 3103,
       "length": 9,
       "value": "\"#A4E6DA\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 3129,
       "length": 9,
       "value": "\"#49CDB5\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "FloatLiteral",
       "offset": 3150,
       "length": 4,
       "value": "24.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 3440,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/CommunityAndLoopAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 3639,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 286,
       "length": 25,
       "value": "\"CommunityAutoCreateCell\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "IntegerLiteral",
       "offset": 2052,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "FloatLiteral",
       "offset": 2493,
       "length": 4,
       "value": "24.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 2683,
       "length": 9,
       "value": "\"#A4E6DA\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "StringLiteral",
       "offset": 2709,
       "length": 9,
       "value": "\"#49CDB5\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "FloatLiteral",
       "offset": 2730,
       "length": 4,
       "value": "24.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 3020,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/CommunityAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 3219,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/CreateAvatarTableCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/CreateAvatarTableCell.swift",
       "kind": "StringLiteral",
       "offset": 374,
       "length": 23,
       "value": "\"CreateAvatarTableCell\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
       "kind": "StringLiteral",
       "offset": 693,
       "length": 28,
       "value": "\"CreateAvatarViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
       "kind": "Array",
       "offset": 1439,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1668,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1720,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarVoiceInfoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateAvatarVoiceInfoViewController.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 37,
       "value": "\"CreateAvatarVoiceInfoViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoiceNameViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoiceNameViewController.swift",
       "kind": "StringLiteral",
       "offset": 461,
       "length": 31,
       "value": "\"CreateVoiceNameViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 33,
       "value": "\"CreateVoicePhraseViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2799,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2840,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2877,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2916,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3563,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3604,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "FloatLiteral",
       "offset": 32681,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CreateVoicePhraseViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 40622,
+      "offset": 41602,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeAutoVideoController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeAutoVideoController.swift",
       "kind": "StringLiteral",
       "offset": 424,
       "length": 29,
       "value": "\"DescribeAutoVideoController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeAutoVideoController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeAutoVideoController.swift",
       "kind": "IntegerLiteral",
       "offset": 1236,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeAutoVideoController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeAutoVideoController.swift",
       "kind": "IntegerLiteral",
       "offset": 1277,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/DescribeCommunity\/DescribeCommunityViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/DescribeCommunity\/DescribeCommunityViewController.swift",
       "kind": "StringLiteral",
       "offset": 396,
       "length": 33,
       "value": "\"DescribeCommunityViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/DescribeCommunity\/DescribeCommunityViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/DescribeCommunity\/DescribeCommunityViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1240,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/DescribeCommunity\/DescribeCommunityViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/DescribeCommunity\/DescribeCommunityViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1281,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeLoopViewController.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 28,
       "value": "\"DescribeLoopViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeLoopViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1199,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeLoopViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/DescribeLoop\/DescribeLoopViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1240,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/DescribePost\/DescribePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/DescribePost\/DescribePostViewController.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 28,
       "value": "\"DescribePostViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/DescribePost\/DescribePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/DescribePost\/DescribePostViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1194,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/DescribePost\/DescribePostViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/DescribePost\/DescribePostViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1235,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/EditVoiceViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/EditVoiceViewController.swift",
       "kind": "StringLiteral",
       "offset": 495,
       "length": 25,
       "value": "\"EditVoiceViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/GenderTableViewCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/GenderTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 463,
       "length": 21,
       "value": "\"GenderTableViewCell\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/GenderTableViewCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/GenderTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 6,
       "value": "\"male\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/GenderTableViewCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/GenderTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 557,
       "length": 6,
       "value": "\"male\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
       "offset": 165,
       "length": 6,
       "value": "\"Main\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
       "offset": 257,
       "length": 9,
       "value": "\"General\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 8,
       "value": "\"Camera\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
       "offset": 443,
       "length": 7,
       "value": "\"Loops\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/KeyConstants.swift",
       "kind": "StringLiteral",
       "offset": 538,
       "length": 57,
       "value": "\"https:\/\/media.begenuin.com\/static-assets\/phrases_1.json\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17126,
       "length": 7,
       "value": "\"en_kw\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17151,
       "length": 8,
       "value": "\"gp_com\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17176,
       "length": 7,
       "value": "\"gp_tp\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17202,
       "length": 9,
       "value": "\"slc_sch\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17231,
       "length": 11,
       "value": "\"av_det_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17262,
       "length": 11,
       "value": "\"av_det_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17292,
       "length": 10,
       "value": "\"av_fc_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17321,
       "length": 10,
       "value": "\"av_fc_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17350,
       "length": 10,
       "value": "\"av_vc_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17379,
       "length": 10,
       "value": "\"av_vc_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17407,
       "length": 8,
       "value": "\"cta_up\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17434,
       "length": 9,
       "value": "\"cta_slc\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17461,
       "length": 8,
       "value": "\"del_av\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17488,
       "length": 10,
       "value": "\"av_nm_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17517,
       "length": 10,
       "value": "\"av_nm_ph\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17546,
       "length": 10,
       "value": "\"av_hl_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17575,
       "length": 10,
       "value": "\"av_hl_ph\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17604,
       "length": 10,
       "value": "\"av_ex_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17633,
       "length": 10,
       "value": "\"av_ex_ph\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17661,
       "length": 9,
       "value": "\"av_g_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17687,
       "length": 8,
       "value": "\"av_g_m\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17712,
       "length": 8,
       "value": "\"av_g_f\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17738,
       "length": 9,
       "value": "\"av_p_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17764,
       "length": 7,
       "value": "\"rec_v\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17788,
       "length": 7,
       "value": "\"cm_so\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17813,
       "length": 8,
       "value": "\"tk_pho\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17839,
       "length": 8,
       "value": "\"up_pho\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17866,
       "length": 10,
       "value": "\"up_a_pho\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17898,
       "length": 14,
       "value": "\"del_av_pp_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17934,
       "length": 14,
       "value": "\"del_av_pp_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17968,
       "length": 11,
       "value": "\"tk_pho_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 17999,
       "length": 11,
       "value": "\"lt_tk_pho\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18033,
       "length": 15,
       "value": "\"up_pho_err_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18071,
       "length": 15,
       "value": "\"up_pho_err_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18107,
       "length": 12,
       "value": "\"tk_pho_suc\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18137,
       "length": 10,
       "value": "\"up_y_p_s\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18167,
       "length": 11,
       "value": "\"up_pho_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18199,
       "length": 12,
       "value": "\"up_pho_st1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18231,
       "length": 11,
       "value": "\"up_pho_t2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18263,
       "length": 12,
       "value": "\"up_pho_st2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18295,
       "length": 11,
       "value": "\"up_pho_t3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18327,
       "length": 12,
       "value": "\"up_pho_st3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18361,
       "length": 13,
       "value": "\"cta_man_crt\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18395,
       "length": 13,
       "value": "\"at_cr_ct_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18429,
       "length": 12,
       "value": "\"cr_com_lod\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18462,
       "length": 13,
       "value": "\"at_cr_ct_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18498,
       "length": 16,
       "value": "\"at_cr_st_ct_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18535,
       "length": 12,
       "value": "\"desc_y_com\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18574,
       "length": 19,
       "value": "\"gp_prmpt_des_info\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18615,
       "length": 13,
       "value": "\"com_bus_des\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18648,
       "length": 12,
       "value": "\"ad_v_in_eg\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18679,
       "length": 10,
       "value": "\"en_per_v\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18711,
       "length": 14,
       "value": "\"cr_gp_wt2_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18747,
       "length": 14,
       "value": "\"cr_gp_wt2_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18783,
       "length": 14,
       "value": "\"cr_gp_wt3_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18819,
       "length": 14,
       "value": "\"cr_gp_wt3_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18853,
       "length": 11,
       "value": "\"gp_tp_slc\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18885,
       "length": 12,
       "value": "\"gp_det_gen\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18916,
       "length": 9,
       "value": "\"cat_str\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18948,
       "length": 15,
       "value": "\"at_com_cat_cl\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 18982,
       "length": 10,
       "value": "\"gp_tp_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19015,
       "length": 14,
       "value": "\"gp_prmpt_des\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19054,
       "length": 17,
       "value": "\"gp_prmpt_des_ph\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19093,
       "length": 14,
       "value": "\"v_phr_err_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19129,
       "length": 14,
       "value": "\"v_phr_err_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19162,
       "length": 11,
       "value": "\"v_up_f_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19190,
       "length": 8,
       "value": "\"a_up_f\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19216,
       "length": 9,
       "value": "\"at_cr_v\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19245,
       "length": 11,
       "value": "\"crtg_ai_v\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19273,
       "length": 8,
       "value": "\"kw_o_v\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19299,
       "length": 8,
       "value": "\"ed_sch\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19327,
       "length": 11,
       "value": "\"desc_v_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19356,
       "length": 9,
       "value": "\"v_up_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19388,
       "length": 15,
       "value": "\"del_sch_pp_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19426,
       "length": 15,
       "value": "\"del_sch_pp_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19460,
       "length": 9,
       "value": "\"del_sch\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19488,
       "length": 10,
       "value": "\"av_p_det\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19517,
       "length": 10,
       "value": "\"v_pro_in\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19546,
       "length": 10,
       "value": "\"sl_kw_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19574,
       "length": 8,
       "value": "\"to_str\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19599,
       "length": 7,
       "value": "\"to_cl\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19624,
       "length": 8,
       "value": "\"sug_kw\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19649,
       "length": 7,
       "value": "\"ch_av\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19674,
       "length": 8,
       "value": "\"cus_av\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19699,
       "length": 7,
       "value": "\"de_av\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19726,
       "length": 11,
       "value": "\"vo_tr_prg\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19759,
       "length": 13,
       "value": "\"num_phr_rec\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19789,
       "length": 8,
       "value": "\"v_s_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19815,
       "length": 9,
       "value": "\"up_v_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19843,
       "length": 10,
       "value": "\"up_v_cta\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19870,
       "length": 8,
       "value": "\"v_s_t2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19897,
       "length": 11,
       "value": "\"up_v_l_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19926,
       "length": 9,
       "value": "\"cr_v_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19954,
       "length": 10,
       "value": "\"cr_v_st1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 19982,
       "length": 9,
       "value": "\"cr_v_t2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20010,
       "length": 10,
       "value": "\"cr_v_st2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20038,
       "length": 9,
       "value": "\"cr_v_t3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20066,
       "length": 10,
       "value": "\"cr_v_st3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20095,
       "length": 11,
       "value": "\"v_n_pg_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20123,
       "length": 8,
       "value": "\"v_n_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20148,
       "length": 8,
       "value": "\"v_n_in\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20173,
       "length": 8,
       "value": "\"v_n_ph\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20199,
       "length": 8,
       "value": "\"lis_cl\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20226,
       "length": 10,
       "value": "\"v_phr_cn\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20253,
       "length": 7,
       "value": "\"v_phr\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20282,
       "length": 14,
       "value": "\"v_phr_suc_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20318,
       "length": 14,
       "value": "\"v_phr_suc_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20353,
       "length": 13,
       "value": "\"v_phr_l_cta\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20387,
       "length": 13,
       "value": "\"v_phr_s_cta\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20417,
       "length": 7,
       "value": "\"lo_cl\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20442,
       "length": 9,
       "value": "\"v_up_st\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20468,
       "length": 7,
       "value": "\"ed_vo\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20491,
       "length": 6,
       "value": "\"vo_n\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20519,
       "length": 14,
       "value": "\"v_r_cntu_cta\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20550,
       "length": 7,
       "value": "\"del_v\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20575,
       "length": 8,
       "value": "\"del_vo\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20604,
       "length": 13,
       "value": "\"del_v_pp_t1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20774,
       "length": 16,
       "value": "\"auto_community\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20866,
       "length": 17,
       "value": "\"auto_community2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 20959,
       "length": 17,
       "value": "\"auto_community3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 21530,
       "length": 11,
       "value": "\"auto_loop\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 21967,
       "length": 12,
       "value": "\"auto_loop2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Constants\/LanguageConstants.swift",
       "kind": "StringLiteral",
       "offset": 22405,
       "length": 12,
       "value": "\"auto_loop3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "Array",
       "offset": 1139,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 1374,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 1489,
       "length": 3,
       "value": "7.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 1547,
       "length": 4,
       "value": "13.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "IntegerLiteral",
       "offset": 1643,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "IntegerLiteral",
       "offset": 1690,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 1736,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 1783,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "StringLiteral",
       "offset": 1823,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/Util\/FaceDetector\/OverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 2016,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/PersonaDetailsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/PersonaDetailsViewController.swift",
       "kind": "StringLiteral",
       "offset": 576,
       "length": 30,
       "value": "\"PersonaDetailsViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/PersonaDetailsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/PersonaDetailsViewController.swift",
       "kind": "StringLiteral",
       "offset": 3098,
       "length": 6,
       "value": "\"male\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/PersonaDetailsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/PersonaDetailsViewController.swift",
       "kind": "Array",
       "offset": 3193,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 31,
       "value": "\"ScheduleAIPostsViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "Array",
       "offset": 2850,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3129,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3301,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3534,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3715,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/ScheduleAIPostsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3777,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomView\/ScheduleListView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomView\/ScheduleListView.swift",
       "kind": "IntegerLiteral",
       "offset": 1255,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomView\/ScheduleListView.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomView\/ScheduleListView.swift",
       "kind": "BooleanLiteral",
       "offset": 1269,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/SelectedCategoryAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/SelectedCategoryAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1503,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/SelectedCategoryAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/SelectedCategoryAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1558,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/SelectedCategoryAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Community\/Create Community\/Auto\/CustomCells\/SelectedCategoryAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1608,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1579,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1634,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1684,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordScheduleCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordScheduleCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1447,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordScheduleCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordScheduleCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1502,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordScheduleCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/Camera\/PreviewControllers\/New Post\/Auto\/CustomCells\/SelectedKeywordScheduleCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1552,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/SelectedTopicAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/SelectedTopicAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1488,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/SelectedTopicAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/SelectedTopicAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1543,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/SelectedTopicAutoCreateCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/ConversationController\/Loops\/Auto\/CustomCells\/SelectedTopicAutoCreateCell.swift",
       "kind": "BooleanLiteral",
       "offset": 1593,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/SelectVoiceViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/SelectVoiceViewController.swift",
       "kind": "StringLiteral",
       "offset": 467,
       "length": 27,
       "value": "\"SelectVoiceViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/SelectVoiceViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/SelectVoiceViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2031,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 25,
       "value": "\"TakePhotoViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "FloatLiteral",
       "offset": 969,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1898,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1934,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "StringLiteral",
       "offset": 1995,
       "length": 57,
       "value": "\"com.begenuin.mediapipe.cameraController.backgroundQueue\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2445,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "StringLiteral",
       "offset": 2529,
       "length": 66,
       "value": "\"com.begenuin.mediapipe.cameraController.faceDetectorServiceQueue\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5442,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "FloatLiteral",
       "offset": 5676,
       "length": 4,
       "value": "0.65"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5701,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 5790,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "FloatLiteral",
       "offset": 5868,
       "length": 5,
       "value": "258.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "FloatLiteral",
       "offset": 5895,
       "length": 5,
       "value": "332.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "FloatLiteral",
       "offset": 5927,
       "length": 4,
       "value": "90.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6012,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6113,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6131,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6234,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "FloatLiteral",
       "offset": 6260,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6383,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6412,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6489,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6521,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6547,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 6620,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6989,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "Array",
       "offset": 7104,
       "length": 6,
       "value": "[8, 8]"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/TakePhotoViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 7263,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
       "kind": "StringLiteral",
       "offset": 423,
       "length": 40,
       "value": "\"UploadAvatarPhotoPreviewViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1531,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1572,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoPreviewViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1699,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoViewController.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/UploadAvatarPhotoViewController.swift",
       "kind": "StringLiteral",
       "offset": 437,
       "length": 33,
       "value": "\"UploadAvatarPhotoViewController\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/VoiceTableViewCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/VoiceTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 906,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_demo_sdk_ios\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/VoiceTableViewCell.swift",
+      "filePath": "\/Users\/suhaneemavar\/Documents\/GenuinGithub\/Genuin iOS SDK Codebase\/GenuinAI\/Classes\/ViewControllers\/CreateAvatar\/CustomCells\/VoiceTableViewCell.swift",
       "kind": "StringLiteral",
       "offset": 912,
       "length": 5,
       "value": "\" - \""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 753,
       "length": 22,
       "value": "\"autoCreateBackground\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 912,
       "length": 16,
       "value": "\"auto_community\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1067,
       "length": 17,
       "value": "\"auto_community2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1223,
       "length": 17,
       "value": "\"auto_community3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1367,
       "length": 11,
       "value": "\"auto_loop\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1507,
       "length": 12,
       "value": "\"auto_loop2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1648,
       "length": 12,
       "value": "\"auto_loop3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1802,
       "length": 19,
       "value": "\"bg_auto_community\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1965,
       "length": 20,
       "value": "\"btn_auto_community\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2163,
       "length": 38,
       "value": "\"create_community_nudge_bottom_center\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2369,
       "length": 33,
       "value": "\"create_loop_nudge_bottom_center\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2529,
       "length": 11,
       "value": "\"flash_off\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2665,
       "length": 10,
       "value": "\"flash_on\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2817,
       "length": 19,
       "value": "\"ic_auto_community\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2972,
       "length": 16,
       "value": "\"ic_auto_create\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3123,
       "length": 15,
       "value": "\"ic_autocreate\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3293,
       "length": 26,
       "value": "\"ic_avatar_voice_generate\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3464,
       "length": 21,
       "value": "\"ic_avatar_voice_mic\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3632,
       "length": 22,
       "value": "\"ic_avatar_voice_name\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3808,
       "length": 26,
       "value": "\"ic_avatar_voice_on_video\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 3968,
       "length": 15,
       "value": "\"ic_back_black\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4121,
       "length": 17,
       "value": "\"ic_branch_curve\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4274,
       "length": 16,
       "value": "\"ic_branch_line\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4438,
       "length": 22,
       "value": "\"ic_brand_placeholder\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4587,
       "length": 11,
       "value": "\"ic_camera\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4734,
       "length": 16,
       "value": "\"ic_camera_back\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 4890,
       "length": 18,
       "value": "\"ic_camera_delete\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5044,
       "length": 16,
       "value": "\"ic_camera_done\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5200,
       "length": 18,
       "value": "\"ic_camera_switch\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5358,
       "length": 18,
       "value": "\"ic_checkbox_idle\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5524,
       "length": 22,
       "value": "\"ic_checkbox_selected\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5682,
       "length": 16,
       "value": "\"ic_close_black\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5823,
       "length": 10,
       "value": "\"ic_error\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 5971,
       "length": 17,
       "value": "\"ic_face_capture\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6135,
       "length": 22,
       "value": "\"ic_face_detect_check\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6310,
       "length": 25,
       "value": "\"ic_ks_checkbox_selected\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6475,
       "length": 18,
       "value": "\"ic_microphone_24\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6642,
       "length": 23,
       "value": "\"ic_new_dp_placeholder\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6807,
       "length": 20,
       "value": "\"ic_no_post_layer_1\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 6969,
       "length": 20,
       "value": "\"ic_no_post_layer_2\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7131,
       "length": 20,
       "value": "\"ic_no_post_layer_3\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7287,
       "length": 16,
       "value": "\"ic_pause_audio\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7437,
       "length": 15,
       "value": "\"ic_play_audio\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7604,
       "length": 24,
       "value": "\"ic_profile_placeholder\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7789,
       "length": 29,
       "value": "\"ic_profile_placeholder_dark\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 7958,
       "length": 18,
       "value": "\"ic_record_answer\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8114,
       "length": 17,
       "value": "\"ic_record_small\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8282,
       "length": 24,
       "value": "\"ic_record_video_avatar\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8453,
       "length": 22,
       "value": "\"ic_record_wave_thumb\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8608,
       "length": 14,
       "value": "\"ic_recording\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8758,
       "length": 16,
       "value": "\"ic_right_arrow\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 8916,
       "length": 19,
       "value": "\"ic_search_contact\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9082,
       "length": 22,
       "value": "\"ic_sq_check_selected\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9255,
       "length": 24,
       "value": "\"ic_sq_check_unselected\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9413,
       "length": 15,
       "value": "\"ic_step_check\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9575,
       "length": 22,
       "value": "\"ic_take_photo_avatar\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9746,
       "length": 23,
       "value": "\"ic_upload_avatar_face\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 9914,
       "length": 21,
       "value": "\"ic_upload_avatar_hd\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10095,
       "length": 29,
       "value": "\"ic_upload_avatar_take_photo\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10275,
       "length": 24,
       "value": "\"ic_upload_image_avatar\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10437,
       "length": 17,
       "value": "\"ic_voice_active\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10597,
       "length": 20,
       "value": "\"ic_voice_active_bg\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10751,
       "length": 15,
       "value": "\"ic_voice_play\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 10900,
       "length": 15,
       "value": "\"ic_voice_stop\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11057,
       "length": 19,
       "value": "\"img_avatar_upload\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11231,
       "length": 26,
       "value": "\"post_nudge_bottom_center\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11410,
       "length": 25,
       "value": "\"post_nudge_bottom_right\""
     },
     {
-      "filePath": "\/Users\/ashishkakkad\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-ghjgighnayxdcndhkmjutqoorkcz\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/suhaneemavar\/Library\/Developer\/Xcode\/DerivedData\/GenuinSDKExample-cagqzndkptpnaxajwspawnsaevaf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/GenuinAI\/IntermediateBuildFilesPath\/Pods.build\/Release-iphoneos\/GenuinAI.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 11575,
       "length": 18,

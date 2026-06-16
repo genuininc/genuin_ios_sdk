@@ -1,0 +1,81 @@
+{
+  "name": "GenuinCore",
+  "version": "0.0.1",
+  "summary": "GenuinCore is an SDK that consist feeds for which user has shown interest.",
+  "description": "This is a home sdk of Genuin",
+  "homepage": "https://ankit_begenuin@bitbucket.org/genuindev/genuin_demo_sdk_ios.git",
+  "license": "MIT",
+  "authors": {
+    "Ankit Gabani": "ankit@begenuin.com"
+  },
+  "platforms": {
+    "ios": "15.0"
+  },
+  "source": {
+    "git": "git@bitbucket.org:genuindev/genuin_demo_sdk_ios.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "GenuinCore/Classes/**/*.{swift,plist,xcdatamodeld,momd,h,m,storyboard,xib}",
+    "GenuinCore/Classes/Database/genuin.xcdatamodeld",
+    "GenuinCore/Classes/Database/genuin.xcdatamodeld/*.xcdatamodel",
+    "GenuinCore/GenuinCore.h"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "swift_versions": "5.0",
+  "preserve_paths": "GenuinCore/Classes/Database/genuin.xcdatamodeld",
+  "static_framework": false,
+  "resource_bundles": {
+    "GenuinCore_Privacy": [
+      "PrivacyInfo.xcprivacy"
+    ]
+  },
+  "public_header_files": [
+    "GenuinCore/GenuinCore.h",
+    "GenuinCore/Classes/Libraries/XHScrollMenu/Source/*.h",
+    "GenuinCore/Classes/Libraries/CustomViews/*.h",
+    "GenuinCore/Classes/Libraries/libPhoneNumber/*.h",
+    "GenuinCore/Classes/Libraries/SDWebImage_5.21.5/*.h"
+  ],
+  "resources": [
+    "GenuinCore/Resources/**/*.{storyboard,xib,xcassets,json,png,gif,jpg,mp4,ttf,tflite,strings}",
+    "GenuinCore/Classes/Database/genuin.xcdatamodeld",
+    "GenuinCore/Classes/Database/genuin.xcdatamodeld/*.xcdatamodel",
+    "GenuinCore/PrivacyInfo.xcprivacy"
+  ],
+  "dependencies": {
+    "lottie-ios": [
+      "~> 4.4.0"
+    ],
+    "Hero": [
+      "~> 1.6.2"
+    ],
+    "SkeletonView": [
+      "~> 1.30.4"
+    ],
+    "EasyTipView": [
+      "~> 2.1"
+    ],
+    "XLPagerTabStrip": [
+      "~> 9.1.0"
+    ],
+    "GoogleAds-IMA-iOS-SDK": [
+      "~> 3.27.4"
+    ]
+  },
+  "vendored_frameworks": [
+    "GenuinCore/Frameworks/MaterialComponents.xcframework",
+    "GenuinCore/Frameworks/MDFInternationalization.xcframework",
+    "GenuinCore/Frameworks/MotionAnimator.xcframework",
+    "GenuinCore/Frameworks/MotionInterchange.xcframework",
+    "GenuinCore/Frameworks/libPhoneNumberiOS.xcframework",
+    "GenuinCore/Frameworks/TOCropViewController.xcframework",
+    "GenuinCore/Frameworks/MetricsReporter.xcframework",
+    "GenuinCore/Frameworks/RSCrashReporter.xcframework",
+    "GenuinCore/Frameworks/Rudder.xcframework",
+    "GenuinCore/Frameworks/RudderKit.xcframework",
+    "GenuinCore/Frameworks/GoogleMobileAdsSdkiOS-13.3.0/GoogleMobileAds.xcframework",
+    "GenuinCore/Frameworks/GoogleMobileAdsSdkiOS-13.3.0/UserMessagingPlatform.xcframework"
+  ],
+  "swift_version": "5.0"
+}

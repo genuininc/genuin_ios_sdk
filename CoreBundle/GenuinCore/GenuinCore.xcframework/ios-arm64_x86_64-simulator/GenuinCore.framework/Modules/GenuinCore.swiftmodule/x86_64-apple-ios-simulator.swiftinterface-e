@@ -8392,3 +8392,4 @@ extension KSToCBRequestStatusType : Swift.Hashable {}
 extension KSToCBRequestStatusType : Swift.RawRepresentable {}
 extension BGExploreType : Swift.Equatable {}
 extension BGExploreType : Swift.Hashable {}
+extension BGExploreType : Swift.RawRepresentable {}

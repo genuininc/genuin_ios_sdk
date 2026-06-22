@@ -390894,91 +390894,91 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18178,
+      "offset": 18439,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39913,
+      "offset": 40174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 47306,
+      "offset": 47567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "Dictionary",
-      "offset": 92175,
+      "offset": 92436,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 101822,
+      "offset": 102083,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 103405,
+      "offset": 103666,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 108674,
+      "offset": 108935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 115202,
+      "offset": 115463,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 117080,
+      "offset": 117341,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 130369,
+      "offset": 130630,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 131299,
+      "offset": 131560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 131335,
+      "offset": 131596,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 137144,
+      "offset": 137405,
       "length": 4,
       "value": "true"
     },
@@ -393626,7 +393626,7 @@
       "kind": "StringLiteral",
       "offset": 10277,
       "length": 9,
-      "value": "\"0.0.136\""
+      "value": "\"0.0.137\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",

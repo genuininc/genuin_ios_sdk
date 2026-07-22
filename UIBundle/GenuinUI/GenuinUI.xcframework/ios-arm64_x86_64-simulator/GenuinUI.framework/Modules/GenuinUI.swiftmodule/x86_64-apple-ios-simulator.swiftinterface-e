@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GenuinUI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFAudio
 import AVFoundation
 import AVKit
@@ -669,7 +669,7 @@ public enum CompressionStatus : Swift.String {
 @objc @_inheritsConvenienceInitializers nonisolated public class BGMessage : CoreData.NSManagedObject {
   public var owner: BGUser?
   #if compiler(>=5.3) && $NonescapableTypes
-  public class func createLocalMessage(chatId: Swift.String, messageId: Swift.String, conversationType: Swift.Int16, compressionStatus: Swift.String?, ffmpegCommand: Swift.String?, attachedLink: Swift.String?, metadata: [Swift.String : Any]?, questions: [[Swift.String : Any]]?, owner: [Swift.String : Any]?, thumbnailName: Swift.String?, thumbnailUrl: Swift.String?, videoName: Swift.String?, descriptionText: Swift.String?, descriptionData: Swift.String?, linkouts: [[Swift.String : Any]]?, trackingId: Swift.String? = nil, autoMessageId: Swift.String? = nil, autoThumbnailPath: Swift.String? = nil, clickableUrl: Swift.String? = nil, brandContext: [[Swift.String : Any]]? = nil, communityId: Swift.String? = nil)
+  public class func createLocalMessage(chatId: Swift.String, messageId: Swift.String, conversationType: Swift.Int16, compressionStatus: Swift.String?, ffmpegCommand: Swift.String?, attachedLink: Swift.String?, metadata: [Swift.String : Any]?, questions: [[Swift.String : Any]]?, owner: [Swift.String : Any]?, thumbnailName: Swift.String?, thumbnailUrl: Swift.String?, videoName: Swift.String?, descriptionText: Swift.String?, descriptionData: Swift.String?, linkouts: [[Swift.String : Any]]?, trackingId: Swift.String? = nil, autoMessageId: Swift.String? = nil, autoThumbnailPath: Swift.String? = nil, clickableUrl: Swift.String? = nil, brandContext: [[Swift.String : Any]]? = nil, communityId: Swift.String? = nil, attributesInfo: [Swift.String : Any]? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func updateStatus(compressionStatus: Swift.String? = nil, imageUploadStatus: Swift.String? = nil, videoUploadStatus: Swift.String? = nil, apiCallStatus: Swift.String? = nil, isRetry: Swift.Bool? = nil, messageId: Swift.String? = nil, mediaUrl: Swift.String? = nil, messageAt: Any? = nil, chatId: Swift.String? = nil, thumbnailUrl: Swift.String? = nil)
@@ -887,6 +887,12 @@ extension BGMessage {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var brandContext: [[Swift.String : Any]]? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var attributesInfo: [Swift.String : Any]? {
     @objc get
     @objc set
   }

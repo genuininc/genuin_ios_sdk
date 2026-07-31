@@ -743,6 +743,7 @@ extension BaseView {
   @_spi(GenuinInternal) var bgAdHouseAdsUrl: Swift.String? { get }
   #endif
   @_spi(GenuinInternal) var bgAdPlayerSize: CoreFoundation.CGSize { get }
+  @_spi(GenuinInternal) var bgAdIsFullScreen: Swift.Bool { get }
   @_spi(GenuinInternal) func bgAdsManager(_ manager: BGAdsManager, loaderDidFailWith errorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
   @_spi(GenuinInternal) func bgAdsManager(_ manager: BGAdsManager, didFailWith error: GoogleInteractiveMediaAds.IMAAdError)
   @_spi(GenuinInternal) func bgAdsManagerDidDetectPostroll(_ manager: BGAdsManager)
@@ -762,7 +763,6 @@ extension BaseView {
   @_spi(GenuinInternal) func bgAdsManagerAdBreakFetchError(_ manager: BGAdsManager, event: GoogleInteractiveMediaAds.IMAAdEvent)
   @_spi(GenuinInternal) func bgAdsManagerDidFinishAdSlot(_ manager: BGAdsManager)
   @_spi(GenuinInternal) func bgAdsManagerDidStartShowingGAMAd(_ manager: BGAdsManager)
-  @_spi(GenuinInternal) func bgAdsManagerNativeVideoAdDidStartPlayback(_ manager: BGAdsManager, duration: Foundation.TimeInterval)
   @_spi(GenuinInternal) func bgAdsManagerAdRequested(_ manager: BGAdsManager)
   @_spi(GenuinInternal) func bgAdsManagerAdResponseReceived(_ manager: BGAdsManager)
   @_spi(GenuinInternal) func bgAdsManagerAdRendered(_ manager: BGAdsManager, latency: Foundation.TimeInterval)
@@ -786,6 +786,9 @@ extension BaseView {
   @_spi(GenuinInternal) public var bgAdPlayerSize: CoreFoundation.CGSize {
     @_spi(GenuinInternal) get
   }
+  @_spi(GenuinInternal) public var bgAdIsFullScreen: Swift.Bool {
+    @_spi(GenuinInternal) get
+  }
   @_spi(GenuinInternal) public func bgAdsManager(_ manager: BGAdsManager, loaderDidFailWith errorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
   @_spi(GenuinInternal) public func bgAdsManager(_ manager: BGAdsManager, didFailWith error: GoogleInteractiveMediaAds.IMAAdError)
   @_spi(GenuinInternal) public func bgAdsManagerDidDetectPostroll(_ manager: BGAdsManager)
@@ -805,7 +808,6 @@ extension BaseView {
   @_spi(GenuinInternal) public func bgAdsManagerAdBreakFetchError(_ manager: BGAdsManager, event: GoogleInteractiveMediaAds.IMAAdEvent)
   @_spi(GenuinInternal) public func bgAdsManagerDidFinishAdSlot(_ manager: BGAdsManager)
   @_spi(GenuinInternal) public func bgAdsManagerDidStartShowingGAMAd(_ manager: BGAdsManager)
-  @_spi(GenuinInternal) public func bgAdsManagerNativeVideoAdDidStartPlayback(_ manager: BGAdsManager, duration: Foundation.TimeInterval)
   @_spi(GenuinInternal) public func bgAdsManagerAdRequested(_ manager: BGAdsManager)
   @_spi(GenuinInternal) public func bgAdsManagerAdResponseReceived(_ manager: BGAdsManager)
   @_spi(GenuinInternal) public func bgAdsManagerAdRendered(_ manager: BGAdsManager, latency: Foundation.TimeInterval)
@@ -861,9 +863,6 @@ extension BaseView {
     @_spi(GenuinInternal) get
   }
   #endif
-  @_spi(GenuinInternal) final public var isCurrentNativeAdVideo: Swift.Bool {
-    @_spi(GenuinInternal) get
-  }
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) final public var currentAdSlot: BGAdSlot? {
     @_spi(GenuinInternal) get
@@ -938,6 +937,7 @@ extension BaseView {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didFailToReceiveAdWithError error: any Swift.Error)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func videoControllerDidEndVideoPlayback(_ videoController: GoogleMobileAds.VideoController)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func videoControllerDidPlayVideo(_ videoController: GoogleMobileAds.VideoController)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func videoControllerDidPauseVideo(_ videoController: GoogleMobileAds.VideoController)
 }
 @_spi(GenuinInternal) extension BGAdsManager : GoogleInteractiveMediaAds.IMAAdsLoaderDelegate {
   @_spi(GenuinInternal) @objc final public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
@@ -966,6 +966,17 @@ extension BaseView {
     @_spi(GenuinInternal) get
   }
 }
+public enum BGAdAspectRatioType : Swift.String {
+  case allowAll
+  case matchPlayer
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class BGMonetizePreset : ObjectiveC.NSObject {
   public var infeed: BGInfeedAdConfig?
   public var instream: BGInstreamAdConfig?
@@ -978,6 +989,7 @@ extension BaseView {
 @objc @_inheritsConvenienceInitializers public class BGInfeedAdConfig : ObjectiveC.NSObject {
   public var isAdDurationVisible: Swift.Bool
   public var adTypes: [BGAdType]
+  public var aspectRatio: BGAdAspectRatioType
   public class func parseInMemory(data: [Swift.String : Any]) -> BGInfeedAdConfig
   #if compiler(>=5.3) && $NonescapableTypes
   public func adType(for type: Swift.String) -> BGAdType?
@@ -1015,6 +1027,7 @@ extension BaseView {
   @_spi(GenuinInternal) public var isAdDurationVisible: Swift.Bool
   @_spi(GenuinInternal) public var displayAdDuration: Foundation.TimeInterval
   @_spi(GenuinInternal) public var nativeAdDuration: Foundation.TimeInterval
+  @_spi(GenuinInternal) public var infeedAspectRatio: BGAdAspectRatioType
   @_spi(GenuinInternal) public var lastLeftScreenAt: Foundation.Date?
   @_spi(GenuinInternal) @objc override dynamic public init()
   @_spi(GenuinInternal) public func toDictionary() -> [Swift.String : Any]
@@ -1560,6 +1573,8 @@ public enum BGCTAStatus {
   @_spi(GenuinInternal) public var no_of_sparks: Swift.Double?
   @_spi(GenuinInternal) public var is_sparked: Swift.Bool?
   @_spi(GenuinInternal) public var isTranscribed: Swift.Bool?
+  @_spi(GenuinInternal) public var isHouseAd: Swift.Bool
+  @_spi(GenuinInternal) public var isSponsored: Swift.Bool
   @_spi(GenuinInternal) public var isViewCountUpdated: Swift.Bool?
   @_spi(GenuinInternal) public var isPlayedFromDownloaded: Swift.Bool
   @_spi(GenuinInternal) public var duration: Swift.String?
@@ -1670,7 +1685,7 @@ public enum RecordContentType {
 }
 @_spi(GenuinInternal) extension BGConversationMessageDisplay {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func getSponsoredTag() -> Swift.String?
+  @_spi(GenuinInternal) public func getSponsoredTag(isOwner: Swift.Bool) -> Swift.String?
   #endif
 }
 public class BGCustomEventHandler {
@@ -5460,9 +5475,13 @@ extension UIKit.UILabel {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   #endif
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func populate(_ ad: GoogleMobileAds.NativeAd)
   @_spi(GenuinInternal) @objc deinit
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func populate(_ ad: GoogleMobileAds.NativeAd, container: UIKit.UIView, isFullScreen: Swift.Bool = false)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func showAdPill()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func startCountdown(duration: Foundation.TimeInterval)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func stopCountdown()
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func pauseCountdown()
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class GenuinPlacementView : GenuinBaseView {
   @_Concurrency.MainActor @preconcurrency public init()
@@ -7504,6 +7523,18 @@ public enum LoginWith : Swift.Int {
     @_spi(GenuinInternal) get
   }
   @_spi(GenuinInternal) public static var DELETE_POST: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var SPONSORED: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var SPONSORED_DELETE_POST_POPUP_TITLE: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var SPONSORED_DELETE_POST_POPUP_SUBTITLE: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var HOUSE_AD_DELETE_POST_POPUP_SUBTITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
   @_spi(GenuinInternal) public static var EDIT_POST: LanguageInfo {
@@ -9786,6 +9817,9 @@ public typealias AFResult<Success> = Swift.Result<Success, AFError>
     @_spi(GenuinInternal) get
   }
   #endif
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var bgAdIsFullScreen: Swift.Bool {
+    @_spi(GenuinInternal) get
+  }
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var bgAdPlayerSize: CoreFoundation.CGSize {
     @_spi(GenuinInternal) get
   }
@@ -9798,7 +9832,6 @@ public typealias AFResult<Success> = Swift.Result<Success, AFError>
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManager(_ manager: BGAdsManager, didFailWith error: GoogleInteractiveMediaAds.IMAAdError)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManagerDidFinishAdSlot(_ manager: BGAdsManager)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManagerDidStartShowingGAMAd(_ manager: BGAdsManager)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManagerNativeVideoAdDidStartPlayback(_ manager: BGAdsManager, duration: Foundation.TimeInterval)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManagerDidDetectPostroll(_ manager: BGAdsManager)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManagerPostrollDidStart(_ manager: BGAdsManager)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func bgAdsManagerDidUpdatePostrollState(_ manager: BGAdsManager)
@@ -11695,6 +11728,9 @@ extension AuthenticationError : Swift.Hashable {}
 @_spi(GenuinInternal) extension BGAdSlot : Swift.Equatable {}
 @_spi(GenuinInternal) extension BGAdSlot : Swift.Hashable {}
 @_spi(GenuinInternal) extension BGAdSlot : Swift.RawRepresentable {}
+extension BGAdAspectRatioType : Swift.Equatable {}
+extension BGAdAspectRatioType : Swift.Hashable {}
+extension BGAdAspectRatioType : Swift.RawRepresentable {}
 extension CommunityRole : Swift.Equatable {}
 extension CommunityRole : Swift.Hashable {}
 extension CommunityRole : Swift.RawRepresentable {}

@@ -511,6 +511,7 @@ SWIFT_CLASS("_TtC10GenuinCore12BGAdsManager")
 - (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
 - (void)videoControllerDidEndVideoPlayback:(GADVideoController * _Nonnull)videoController;
 - (void)videoControllerDidPlayVideo:(GADVideoController * _Nonnull)videoController;
+- (void)videoControllerDidPauseVideo:(GADVideoController * _Nonnull)videoController;
 @end
 
 @class GADBannerView;

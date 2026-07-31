@@ -64,10 +64,6 @@
 		<data>
 		H9XjBUhSRXpBODKGURtVqiBhVS4=
 		</data>
-		<key>ButtonCell.nib</key>
-		<data>
-		8Kv9CvBCRAWg1329kodyPBgNkdM=
-		</data>
 		<key>CardView.nib</key>
 		<data>
 		J91zy/le4ZScOxvtuHqcG0iF7ac=
@@ -106,7 +102,7 @@
 		</data>
 		<key>Feed.storyboardc/RyR-oM-eqD-view-QUu-X5-bIw.nib</key>
 		<data>
-		9A1ALv0z3dtfd9do0Fxj83bzirE=
+		X8WIinzBtGN7F2HB2DQTdM3DpgM=
 		</data>
 		<key>Feed.storyboardc/SDKFeedViewController.nib</key>
 		<data>
@@ -114,11 +110,11 @@
 		</data>
 		<key>Feed.storyboardc/kdN-03-BNH-view-nCy-Qd-QnL.nib</key>
 		<data>
-		OJTR4WpDjjPU5YmA0k6NvacO8To=
+		jwV8vMBWSBvtfvX8iiESIjesgCM=
 		</data>
 		<key>Feed.storyboardc/qaD-fS-htq-view-RAp-NO-aCC.nib</key>
 		<data>
-		flEWRgjfDgnFAHjZP4EcxDcLAjg=
+		DncOyp36dZ9YO+N7KjVgG3ydwZg=
 		</data>
 		<key>FeedBaseContainerViewController.nib</key>
 		<data>
@@ -140,10 +136,6 @@
 		<data>
 		fhhyeHullOBczAwqoxKjX/gxw68=
 		</data>
-		<key>GenuinAI.podspec.json</key>
-		<data>
-		LHRDjvZ2YtgtBvM7nwB3ajzaGtk=
-		</data>
 		<key>GenuinBaseView.nib</key>
 		<data>
 		Q2qPOAveI9PamB33VJdBQyeSRX0=
@@ -152,17 +144,9 @@
 		<data>
 		pCWYc57L8wE37LJfu+XmhU8Q9GM=
 		</data>
-		<key>GenuinCamera.podspec.json</key>
-		<data>
-		SJVP+7dEhnojpc3qRa7WNZ8cB7c=
-		</data>
-		<key>GenuinCore.podspec.json</key>
-		<data>
-		GAfM7C1f7CKIDwSUNxqAmYetc7k=
-		</data>
 		<key>GenuinCore_Privacy.bundle/Info.plist</key>
 		<data>
-		Vpc/RjWX8g0sSK6EoXLtXB5Pl9o=
+		I2p73wK+M/qH/JPiUnZufbCX1JQ=
 		</data>
 		<key>GenuinSectionView.nib</key>
 		<data>
@@ -172,13 +156,9 @@
 		<data>
 		pZ9mc6s0RsG7ZN3zRct9bdKyb9k=
 		</data>
-		<key>GenuinUI.podspec.json</key>
-		<data>
-		5vrSPfFq+z93gZ/M9l36sGomOHU=
-		</data>
 		<key>Headers/GenuinCore-Swift.h</key>
 		<data>
-		A5QZyo8rBaKrwch/UIPHQqA/4AA=
+		ip5wW5FXJi6w0ujkjmmCHg/tnxY=
 		</data>
 		<key>Headers/GenuinCore-umbrella.h</key>
 		<data>
@@ -506,7 +486,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qOI0NTGrZW6a0xvx3UhZ30hqJuw=
+		0As51Ir8NXwWFtwSffaFRGW++Og=
 		</data>
 		<key>IntroView.nib</key>
 		<data>
@@ -574,7 +554,7 @@
 		</data>
 		<key>Main.storyboardc/9JV-lw-FQg-view-KGm-Lo-PmN.nib</key>
 		<data>
-		hHeSbGqjz0Z0tt2qFQ/5+L4UXgw=
+		KIC3q2XpZgGhcqyuOL54f+IX+oQ=
 		</data>
 		<key>Main.storyboardc/CMSContentViewController.nib</key>
 		<data>
@@ -582,11 +562,11 @@
 		</data>
 		<key>Main.storyboardc/DBI-UL-fAr-view-78E-x7-g26.nib</key>
 		<data>
-		oID+CI19rT6CW+WfmvUHnysj0zg=
+		okIgJEb22QNb3ZuLTbk5VXjXNps=
 		</data>
 		<key>Main.storyboardc/IA9-NH-cWX-view-Y85-c6-bYj.nib</key>
 		<data>
-		RLCW99DuUtFjBa+HpbBYB6TnhqY=
+		kDqOKUzXBntyMKr7WqdXo1nq594=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -622,11 +602,11 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4eQ6PE3gqjyW3B5no854NV/LvGw=
+		l5WiIlM/CS03OqUae7RK/q7lmjY=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		o+RsGc/DBqykPYwPH6/JOE9ITeE=
+		VX1bDOS1AFoYNUPw2I5lq6xMbv8=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -634,19 +614,19 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		B6XmW5szrKGU5jmqft78BGUrTws=
+		fRJTK2UNFO6dKUVuDG6hUnOx9PE=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+SWjvwjrKArtx7Lx1aKLXty7QeA=
+		6m/gCbAv5NiKFeOIyY0UDsSv2/Y=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4eQ6PE3gqjyW3B5no854NV/LvGw=
+		l5WiIlM/CS03OqUae7RK/q7lmjY=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5Y1AqiIkzaA3xrf9eqI9SXQ266E=
+		M2PfI2Lv1k4+B/vtcfVXMqFinxE=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -654,11 +634,11 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		n6yKqX5rIZabLqzr/UHqFPcarZk=
+		jopRq9e23ouyNNpsy+iJBInq2cA=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V54xY/YEJKUN9xpy71wZYnMPEjo=
+		+FHjw7wTnQtCnJcr4E/eGbQNuNk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -734,7 +714,7 @@
 		</data>
 		<key>RTFeedCell.nib</key>
 		<data>
-		HgIJNjHYhGhdqHEyGDwvdCOGrgE=
+		7LQykaR4VoDikxSqEDgnTy/KoHw=
 		</data>
 		<key>SDKEndOfFeedCell.nib</key>
 		<data>
@@ -840,7 +820,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4oBSrv3q52yDoxVhJFNuf1m56kM=
+			vqH1Z7HeRd/lWFpv0bix6V/t0e8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1085,13 +1065,6 @@
 			BZN1o1jLLSMTZUQQ0xZP+Pe089yb0mU3xHPvNO1Mwnw=
 			</data>
 		</dict>
-		<key>ButtonCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			h6r1obDoKwjy6tig3AmzNMPtMQMBP4dYqQaWJ+OfuJ0=
-			</data>
-		</dict>
 		<key>CardView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1159,7 +1132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ERDYSTViDyATypuAbHD3xzUR1Lzod5HscbvEN5BSRy8=
+			FCFSpbQKurgKQcjgSMXYMPL8tzJYxP7VsbwYzn+ygLI=
 			</data>
 		</dict>
 		<key>Feed.storyboardc/SDKFeedViewController.nib</key>
@@ -1173,14 +1146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ztj2SZ4ylZ8VUFGAVWJZA6qhCeqloTHtlveZWmEHJz0=
+			LPtWaiVCCRzUdMFnIlfWOX1YTovktPp/oxZSmWvA5+o=
 			</data>
 		</dict>
 		<key>Feed.storyboardc/qaD-fS-htq-view-RAp-NO-aCC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mUQEzzlyDKNZmYW9/M9nLw1dx8UrgTJspvInso6iUL4=
+			GdkDWN8yBEqURJlEeKHzKF4Y2shLKK+m/UtRPUnFuLo=
 			</data>
 		</dict>
 		<key>FeedBaseContainerViewController.nib</key>
@@ -1218,13 +1191,6 @@
 			zhgVIcyLvpev3JprQTXD3KufqAGYzWWbnB4J9PD9G6k=
 			</data>
 		</dict>
-		<key>GenuinAI.podspec.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZoMZYwp5ynancDvEEMMPwW9ApbM7+UVVcPYXFaAr+Yk=
-			</data>
-		</dict>
 		<key>GenuinBaseView.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -1239,25 +1205,11 @@
 			VyTiTk0ee0UbJB1ANI3OHBct0+eBJbeVPKSfo4BtJQc=
 			</data>
 		</dict>
-		<key>GenuinCamera.podspec.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lCzqzz5bKqZweNnE1VGtC62ELygHAnKJZ2D7zSAfDIw=
-			</data>
-		</dict>
-		<key>GenuinCore.podspec.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RP95N+zRRVqd5xJshDzu70gLygJ70Fw6HNWqcVuUeVQ=
-			</data>
-		</dict>
 		<key>GenuinCore_Privacy.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ijEJ8oTksbkUKzMLeBWef1i6c8miuFpK+vBH6L411k=
+			AGOn+ck3u4C+tThbmWDkKZ/q/z1g8LD502L9TVHrMT4=
 			</data>
 		</dict>
 		<key>GenuinSectionView.nib</key>
@@ -1274,18 +1226,11 @@
 			XfsK6WCU04qtTGAL3q2ehZe9mqjF0K8iB8YXfCwzj6E=
 			</data>
 		</dict>
-		<key>GenuinUI.podspec.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UJubD86LfMWjwW3GFj1A68xJo4giKcwyIyJRtkqNevQ=
-			</data>
-		</dict>
 		<key>Headers/GenuinCore-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lXFGwrEAf9w3Y0V2vRd5z+cSGVRfiDx19s+VXqownqM=
+			4mET+N7n3J3FyZOfSJm22jtIS2nbNbSrm7OEjX6MwBU=
 			</data>
 		</dict>
 		<key>Headers/GenuinCore-umbrella.h</key>
@@ -1971,7 +1916,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i8JCUhQcbguP2AXMyv39py7T+hXKdhkq0Ve+EvonXHQ=
+			wbjvZtTQaX2AlCGWmHobfgjMh+F8Gg/cbkSILHgeZbc=
 			</data>
 		</dict>
 		<key>Main.storyboardc/CMSContentViewController.nib</key>
@@ -1985,14 +1930,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HyUMP8sAT2hZLXS1ZFZZM7Hf8eqI4sVAETJtMkYYjZk=
+			pt8zjikmB4K/zzYbdui/SHpj9mv5xRe8c2GWuJwBEY0=
 			</data>
 		</dict>
 		<key>Main.storyboardc/IA9-NH-cWX-view-Y85-c6-bYj.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sRgvp/4jfrsiuJFnwvlvpHStTHzWUu2GnQwDTdjaV0M=
+			RIP/HwAuWwZ3sJtegx8U8AR8Ky6GwWuIYdvOXBJwHAI=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -2055,14 +2000,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GMR8m6x+bjhBvKkTtsDby6HnfBswZ0KAXRxbgojadqY=
+			UcUpk8K8HyfX6fejBXMRccJBPkGypyJLP4REp8uOe98=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vEwXQpd3gQojbU9DKRpXCsTSwlRT0cg9lxXUIPjH+rM=
+			m4hQAuhufitOWANurTJs3dqp74tkEiULfeYjKzI1HeM=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -2076,28 +2021,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			stgbVVJkdNzh2jWSVsx3g+FQFPni1KRVR/dKDL+TLxI=
+			BOeZO18Lj9ERme9idxb8sK/6/xmhzM4EvLwfIXxlgik=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IUkETsfCUfhNH+7ib8+u5Zj3oaC2Am7Yg0uOCqOqJ98=
+			XWIT4v8kgFAb+J22VYJSlmonCDx/SOg6GXldWoI3XQU=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GMR8m6x+bjhBvKkTtsDby6HnfBswZ0KAXRxbgojadqY=
+			UcUpk8K8HyfX6fejBXMRccJBPkGypyJLP4REp8uOe98=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lzv/tWs39q96zcRWX8Lg3ljICSUGe3dorZ3W3OmmzIA=
+			akPobnCq4ab+aKK388SAKhLM4s/4lQGyCRlTr+4y7Us=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2111,14 +2056,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2jWQKNcxm6458xmJDyCoIbNyxdw4la9lE739Jc2qV08=
+			1Z3+Ojt0Nvg+5JeM6Q0oP2dYU8m35dRSp0sj/zIzV1M=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JKONogzKI7WWDBVLgkKVdG1h/NnybfHJLbY0Zs4+QPc=
+			IvEsKpDNss2wDIPOI+krJYqvAlOASt6i5x2wlLRaYms=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2251,7 +2196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjOJUQ3BVor8ncHSobMdiDZM6RCLxNOBkGqDD/RLV9E=
+			Adhmxp34YLUzna+2Ssak4SZkShAKZvYjQM22w3d5PzY=
 			</data>
 		</dict>
 		<key>SDKEndOfFeedCell.nib</key>
@@ -2433,7 +2378,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BTzobABrkx6pZVQ3aL2C99hybBz0pizJythr3uHZJJQ=
+			09qwPIW9m/dDYf2vlhwConM5EqTppeovDSpWy/dQkGU=
 			</data>
 			<key>optional</key>
 			<true/>

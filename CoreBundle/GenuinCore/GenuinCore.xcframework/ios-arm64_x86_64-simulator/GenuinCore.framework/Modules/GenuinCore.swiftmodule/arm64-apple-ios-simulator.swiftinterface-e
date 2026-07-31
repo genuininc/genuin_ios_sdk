@@ -650,6 +650,17 @@ extension BaseView {
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   #endif
 }
+public enum BGAdAspectRatioType : Swift.String {
+  case allowAll
+  case matchPlayer
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class BGMonetizePreset : ObjectiveC.NSObject {
   public var infeed: BGInfeedAdConfig?
   public var instream: BGInstreamAdConfig?
@@ -662,6 +673,7 @@ extension BaseView {
 @objc @_inheritsConvenienceInitializers public class BGInfeedAdConfig : ObjectiveC.NSObject {
   public var isAdDurationVisible: Swift.Bool
   public var adTypes: [BGAdType]
+  public var aspectRatio: BGAdAspectRatioType
   public class func parseInMemory(data: [Swift.String : Any]) -> BGInfeedAdConfig
   #if compiler(>=5.3) && $NonescapableTypes
   public func adType(for type: Swift.String) -> BGAdType?
@@ -8185,6 +8197,9 @@ extension AGMemberRole : Swift.Hashable {}
 extension AGMemberRole : Swift.RawRepresentable {}
 extension AuthenticationError : Swift.Equatable {}
 extension AuthenticationError : Swift.Hashable {}
+extension BGAdAspectRatioType : Swift.Equatable {}
+extension BGAdAspectRatioType : Swift.Hashable {}
+extension BGAdAspectRatioType : Swift.RawRepresentable {}
 extension CommunityRole : Swift.Equatable {}
 extension CommunityRole : Swift.Hashable {}
 extension CommunityRole : Swift.RawRepresentable {}

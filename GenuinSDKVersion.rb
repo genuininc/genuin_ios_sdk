@@ -1,2 +1,2 @@
 # GenuinSDKVersion.rb
-GENUIN_SDK_VERSION = "0.0.139"
+GENUIN_SDK_VERSION = "0.0.140"

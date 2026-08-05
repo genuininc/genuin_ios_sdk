@@ -39,7 +39,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/genuininc/genuin_ios_sdk.git", :tag => "#{spec.version}" }
 
 
-  spec.dependency 'SDWebImage', '~> 5.21.0'
   spec.dependency 'lottie-ios', '~> 4.6.0'
   spec.dependency 'Hero', '~> 1.6.2'
   spec.dependency 'SkeletonView', '~> 1.30.4'

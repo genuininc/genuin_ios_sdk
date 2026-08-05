@@ -1689,6 +1689,7 @@ public protocol BottomPageDelegate : AnyObject {
   public var brandId: Swift.Int?
   public var name: Swift.String?
   public var logo: Swift.String?
+  public var brandWebLogo: Swift.String?
   public var brandSystemUserId: Swift.String?
   public var videos: Swift.Int?
   public var views: Swift.Int?
@@ -4343,6 +4344,7 @@ public struct VideoPlayback {
 @_hasMissingDesignatedInitializers public class SDKData {
   public var isSDK: Swift.Bool
   public var isFromCrossPlatform: Swift.Bool
+  public var apiKey: Swift.String?
   public var sdkVersion: Swift.String
   public var brand: Brand?
   public var previousPlaybackState: BGPlaybackState?

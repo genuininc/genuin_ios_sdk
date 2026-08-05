@@ -1971,6 +1971,9 @@ extension GenuinCore.BGWebImageAssets {
   @_spi(GenuinInternal) public static var AVATAR_TITLE: GenuinCore.LanguageInfo {
     @_spi(GenuinInternal) get
   }
+  @_spi(GenuinInternal) public static var INVITE_A_FRIEND: GenuinCore.LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
   @_spi(GenuinInternal) public static var CTA_INVITE: GenuinCore.LanguageInfo {
     @_spi(GenuinInternal) get
   }
@@ -3325,4 +3328,3 @@ extension WaveformAnalyzer.AnalyzeError : Swift.Equatable {}
 extension WaveformAnalyzer.AnalyzeError : Swift.Hashable {}
 extension WaveformImageDrawer.GenerationError : Swift.Equatable {}
 extension WaveformImageDrawer.GenerationError : Swift.Hashable {}
-extension Waveform.Damping.Sides : Swift.Hashable {}

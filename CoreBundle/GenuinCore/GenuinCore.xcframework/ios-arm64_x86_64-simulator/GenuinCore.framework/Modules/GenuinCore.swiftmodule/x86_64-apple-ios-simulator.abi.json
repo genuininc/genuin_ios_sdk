@@ -84252,6 +84252,62 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "didClickActiveAd",
+            "printedName": "didClickActiveAd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GenuinCore20BGPangleAdControllerC014didClickActiveD0Sbvp",
+            "mangledName": "$s10GenuinCore20BGPangleAdControllerC014didClickActiveD0Sbvp",
+            "moduleName": "GenuinCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "GenuinInternal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GenuinCore20BGPangleAdControllerC014didClickActiveD0Sbvg",
+                "mangledName": "$s10GenuinCore20BGPangleAdControllerC014didClickActiveD0Sbvg",
+                "moduleName": "GenuinCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "GenuinInternal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -186611,6 +186667,36 @@
               "Custom",
               "AccessControl",
               "RawDocComment"
+            ],
+            "spi_group_names": [
+              "GenuinInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@GenuinCore@objc(cs)GenuinPangleNativeAdView(im)layoutSubviews",
+            "mangledName": "$s10GenuinCore0A18PangleNativeAdViewC14layoutSubviewsyyF",
+            "moduleName": "GenuinCore",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
             ],
             "spi_group_names": [
               "GenuinInternal"
@@ -394763,14 +394849,14 @@
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17383,
+      "offset": 17809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 34018,
+      "offset": 34444,
       "length": 3,
       "value": "140"
     },
@@ -395812,29 +395898,36 @@
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGPangleAdController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3880,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGPangleAdController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3741,
+      "offset": 4087,
       "length": 3,
       "value": "140"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGPangleAdController.swift",
       "kind": "Array",
-      "offset": 3841,
+      "offset": 4187,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGPangleAdController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4310,
+      "offset": 4656,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/Others\/BGPangleAdController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4482,
+      "offset": 4828,
       "length": 1,
       "value": "0"
     },
@@ -401343,539 +401436,546 @@
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2036,
+      "offset": 2219,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2117,
+      "offset": 2465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2546,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2455,
+      "offset": 2884,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2859,
+      "offset": 3288,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2886,
+      "offset": 3315,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "StringLiteral",
-      "offset": 3008,
+      "offset": 3437,
       "length": 4,
       "value": "\"Ad\""
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3101,
+      "offset": 3530,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "StringLiteral",
-      "offset": 3261,
+      "offset": 3690,
       "length": 7,
       "value": "\" • \""
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3357,
+      "offset": 3786,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3423,
+      "offset": 3852,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3619,
+      "offset": 4048,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3685,
+      "offset": 4114,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4222,
+      "offset": 4651,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4260,
+      "offset": 4689,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4435,
+      "offset": 4864,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4841,
+      "offset": 5270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5979,
+      "offset": 6408,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6013,
+      "offset": 6442,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6045,
+      "offset": 6474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6089,
+      "offset": 6518,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6663,
+      "offset": 7092,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6840,
+      "offset": 7269,
       "length": 3,
       "value": "325"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6869,
+      "offset": 7298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6903,
+      "offset": 7332,
       "length": 3,
       "value": "293"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6930,
+      "offset": 7359,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6963,
+      "offset": 7392,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7017,
+      "offset": 7446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7061,
+      "offset": 7490,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7132,
+      "offset": 7561,
       "length": 3,
       "value": "280"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7177,
+      "offset": 7606,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7220,
+      "offset": 7649,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7265,
+      "offset": 7694,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7319,
+      "offset": 7748,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7363,
+      "offset": 7792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7434,
+      "offset": 7863,
       "length": 3,
       "value": "244"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7463,
+      "offset": 7892,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7497,
+      "offset": 7926,
       "length": 3,
       "value": "220"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7524,
+      "offset": 7953,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7557,
+      "offset": 7986,
       "length": 3,
       "value": "192"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7611,
+      "offset": 8040,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7655,
+      "offset": 8084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7727,
+      "offset": 8156,
       "length": 3,
       "value": "361"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7781,
+      "offset": 8210,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7824,
+      "offset": 8253,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7869,
+      "offset": 8298,
       "length": 3,
       "value": "321"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7898,
+      "offset": 8327,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7932,
+      "offset": 8361,
       "length": 3,
       "value": "256"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7960,
+      "offset": 8389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8020,
+      "offset": 8449,
       "length": 3,
       "value": "184"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8065,
+      "offset": 8494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8108,
+      "offset": 8537,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8153,
+      "offset": 8582,
       "length": 3,
       "value": "160"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8207,
+      "offset": 8636,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8251,
+      "offset": 8680,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8528,
+      "offset": 8957,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8588,
+      "offset": 9017,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8787,
+      "offset": 9216,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8817,
+      "offset": 9246,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9048,
+      "offset": 9477,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9121,
+      "offset": 9550,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9358,
+      "offset": 9787,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9388,
+      "offset": 9817,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9651,
+      "offset": 10080,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9793,
+      "offset": 10222,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9833,
+      "offset": 10262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10032,
+      "offset": 10461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10041,
-      "length": 1,
-      "value": "8"
+      "offset": 10470,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10052,
+      "offset": 10482,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10062,
+      "offset": 10492,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10311,
+      "offset": 10741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10355,
+      "offset": 10785,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10796,
+      "offset": 11226,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25042,
+      "offset": 26789,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25087,
+      "offset": 26834,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25243,
+      "offset": 26990,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "Array",
-      "offset": 25315,
+      "offset": 27062,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25351,
+      "offset": 27098,
       "length": 1,
       "value": "0"
     },
@@ -401903,7 +402003,7 @@
     {
       "filePath": "\/Users\/arjavdave\/Development\/genuin\/ios_sdk_codebase_v2\/GenuinCore\/Classes\/CustomViews\/GenuinPangleNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2062,
+      "offset": 2143,
       "length": 5,
       "value": "false"
     },

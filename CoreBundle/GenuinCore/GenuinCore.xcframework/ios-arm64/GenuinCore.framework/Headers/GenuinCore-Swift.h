@@ -1322,6 +1322,7 @@ SWIFT_CLASS("_TtC10GenuinCore24GenuinPangleNativeAdView")
 @interface GenuinPangleNativeAdView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore28GenuinPlacementConfiguration")

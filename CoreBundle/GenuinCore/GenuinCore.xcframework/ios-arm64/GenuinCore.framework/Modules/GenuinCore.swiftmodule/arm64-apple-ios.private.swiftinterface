@@ -1808,6 +1808,9 @@ extension BGMentionsTextView : UIKit.UITextViewDelegate {
   @_spi(GenuinInternal) final public var isFullScreenAdShowing: Swift.Bool {
     get
   }
+  @_spi(GenuinInternal) final public var didClickActiveAd: Swift.Bool {
+    get
+  }
   @_spi(GenuinInternal) @objc override dynamic public init()
   @_spi(GenuinInternal) @objc deinit
   @_spi(GenuinInternal) @discardableResult
@@ -4850,6 +4853,7 @@ extension UIKit.UILabel {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_spi(GenuinInternal) @objc deinit
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func populate(_ ad: PAGAdSDK.PAGLNativeAd, container: UIKit.UIView, isFullScreen: Swift.Bool = false)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public var isVideoCreative: Swift.Bool {
     @_spi(GenuinInternal) get
   }

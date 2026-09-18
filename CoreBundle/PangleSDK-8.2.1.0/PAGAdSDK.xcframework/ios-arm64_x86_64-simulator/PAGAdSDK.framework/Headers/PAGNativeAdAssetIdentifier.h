@@ -1,0 +1,23 @@
+//
+//  PAGNativeAdAssetIdentifier.h
+//  PAGAdSDK
+//
+//  Created by bytedance on 2023/4/11.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString *PAGNativeAdAssetIdentifier NS_STRING_ENUM;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierIconView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierAdTitleView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierAdDescriptionView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierButtonTextView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierDislikeButton;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierLogoADImageView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierAdChoicesView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierMediaView;
+FOUNDATION_EXTERN PAGNativeAdAssetIdentifier const PAGNativeAdAssetIdentifierFeedbackView;
+
+NS_ASSUME_NONNULL_END

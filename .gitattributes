@@ -1,0 +1,13 @@
+# Pangle ships PAGAdSDK as a fat static library: 168 MB for the simulator
+# slice (arm64 + x86_64) and 82 MB for the device slice. The simulator one
+# is over GitHub's hard 100 MB file limit, so both binaries are stored in
+# Git LFS and the repository keeps only ~130-byte pointers.
+#
+# The pattern matches the Mach-O binaries themselves - the files named
+# PAGAdSDK inside each PAGAdSDK.framework - not PAGAdSDK.framework,
+# PAGAdSDK.bundle or the headers, which are small and diff usefully.
+#
+# Anyone cloning needs git-lfs installed (`brew install git-lfs`,
+# `git lfs install`) or those two files arrive as pointer text and the
+# build fails to link.
+CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework/**/PAGAdSDK filter=lfs diff=lfs merge=lfs -text

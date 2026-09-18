@@ -572,6 +572,8 @@ SWIFT_CLASS("_TtC8GenuinUI9BGMessage")
 @property (nonatomic, copy) NSString * _Nullable autoMessageId;
 @property (nonatomic, copy) NSString * _Nullable autoThumbnailPath;
 @property (nonatomic, copy) NSString * _Nullable clickableUrl;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Nullable brandContext;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable attributesInfo;
 @end
 
 SWIFT_CLASS("_TtC8GenuinUI10BGQuestion")
@@ -1717,6 +1719,8 @@ SWIFT_CLASS("_TtC8GenuinUI9BGMessage")
 @property (nonatomic, copy) NSString * _Nullable autoMessageId;
 @property (nonatomic, copy) NSString * _Nullable autoThumbnailPath;
 @property (nonatomic, copy) NSString * _Nullable clickableUrl;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Nullable brandContext;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable attributesInfo;
 @end
 
 SWIFT_CLASS("_TtC8GenuinUI10BGQuestion")

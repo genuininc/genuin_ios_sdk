@@ -11,7 +11,6 @@ import Combine
 import Contacts
 import CoreData
 import CoreGraphics
-import CryptoSwift
 import DeveloperToolsSupport
 import EasyTipView
 import Foundation
@@ -79,10 +78,7 @@ public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
   @_Concurrency.MainActor @preconcurrency public var endTimeView: ABTimeView
   @_Concurrency.MainActor @preconcurrency public var minSpace: Swift.Float
   @_Concurrency.MainActor @preconcurrency public var maxSpace: Swift.Float
-  @_Concurrency.MainActor @preconcurrency public var isFromGalleryUpload: Swift.Bool {
-    get
-    set
-  }
+  @_Concurrency.MainActor @preconcurrency public var isFromGalleryUpload: Swift.Bool
   public enum ABTimeViewPosition {
     case top
     case bottom
@@ -338,7 +334,7 @@ extension BGAvatarVoice : Swift.Identifiable {
   public var scheduler: GenuinCore.BGScheduler?
   public var position: Swift.Int?
   public class func upsert(communityId: Swift.String? = nil, data: [Swift.String : Any])
-  public class func createLocalConversation(communityId: Swift.String, chatId: Swift.String, templateId: Swift.String?, conversationType: Swift.Int16, settings: [Swift.String : Any]?, isWelcomeLoop: Swift.Bool = false, actions: [[Swift.String : Any]]? = nil, trackingId: Swift.String? = nil, isAiGenerated: Swift.Bool? = nil, autoChatId: Swift.String? = nil)
+  public class func createLocalConversation(communityId: Swift.String?, chatId: Swift.String, templateId: Swift.String?, conversationType: Swift.Int16, settings: [Swift.String : Any]?, isWelcomeLoop: Swift.Bool = false, actions: [[Swift.String : Any]]? = nil, trackingId: Swift.String? = nil, isAiGenerated: Swift.Bool? = nil, autoChatId: Swift.String? = nil)
   nonisolated public func update(newChatId: Swift.String? = nil, settings: [Swift.String : Any]? = nil, latestMessageAt: Swift.Double? = nil, unreadMessageCount: Swift.Double? = nil)
   public class func getConversations() -> [BGConversation]?
   public class func getFailedConversations() -> [BGConversation]?
@@ -542,7 +538,7 @@ public enum CompressionStatus : Swift.String {
 }
 @objc @_inheritsConvenienceInitializers nonisolated public class BGMessage : CoreData.NSManagedObject {
   public var owner: BGUser?
-  public class func createLocalMessage(chatId: Swift.String, messageId: Swift.String, conversationType: Swift.Int16, compressionStatus: Swift.String?, ffmpegCommand: Swift.String?, attachedLink: Swift.String?, metadata: [Swift.String : Any]?, questions: [[Swift.String : Any]]?, owner: [Swift.String : Any]?, thumbnailName: Swift.String?, thumbnailUrl: Swift.String?, videoName: Swift.String?, descriptionText: Swift.String?, descriptionData: Swift.String?, linkouts: [[Swift.String : Any]]?, trackingId: Swift.String? = nil, autoMessageId: Swift.String? = nil, autoThumbnailPath: Swift.String? = nil, clickableUrl: Swift.String? = nil)
+  public class func createLocalMessage(chatId: Swift.String, messageId: Swift.String, conversationType: Swift.Int16, compressionStatus: Swift.String?, ffmpegCommand: Swift.String?, attachedLink: Swift.String?, metadata: [Swift.String : Any]?, questions: [[Swift.String : Any]]?, owner: [Swift.String : Any]?, thumbnailName: Swift.String?, thumbnailUrl: Swift.String?, videoName: Swift.String?, descriptionText: Swift.String?, descriptionData: Swift.String?, linkouts: [[Swift.String : Any]]?, trackingId: Swift.String? = nil, autoMessageId: Swift.String? = nil, autoThumbnailPath: Swift.String? = nil, clickableUrl: Swift.String? = nil, brandContext: [[Swift.String : Any]]? = nil, communityId: Swift.String? = nil, attributesInfo: [Swift.String : Any]? = nil)
   nonisolated public func updateStatus(compressionStatus: Swift.String? = nil, imageUploadStatus: Swift.String? = nil, videoUploadStatus: Swift.String? = nil, apiCallStatus: Swift.String? = nil, isRetry: Swift.Bool? = nil, messageId: Swift.String? = nil, mediaUrl: Swift.String? = nil, messageAt: Any? = nil, chatId: Swift.String? = nil, thumbnailUrl: Swift.String? = nil)
   public class func getAllFailedMessages() -> [BGMessage]?
   public class func getMessage(chatId: Swift.String, messageId: Swift.String) -> BGMessage?
@@ -688,6 +684,14 @@ extension BGMessage {
     @objc set
   }
   @objc @NSManaged nonisolated dynamic public var clickableUrl: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged nonisolated dynamic public var brandContext: [[Swift.String : Any]]? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged nonisolated dynamic public var attributesInfo: [Swift.String : Any]? {
     @objc get
     @objc set
   }
@@ -1554,6 +1558,9 @@ extension PublishRoundtableViewController : UIKit.UIScrollViewDelegate {
 extension PublishRoundtableViewController : AutoCreateLoopDelegate {
   @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
 }
+extension PublishRoundtableViewController : GenuinCore.CloseCameraDelegate {
+  @_Concurrency.MainActor @preconcurrency public func cameraDidClosed(withPostSuccess: Swift.Bool)
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : GenuinCore.BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> SearchCommunityMembersViewController
   @_Concurrency.MainActor @preconcurrency public var viewModel: SearchCommunityMembersViewModel
@@ -1944,3 +1951,4 @@ extension WaveformAnalyzer.AnalyzeError : Swift.Equatable {}
 extension WaveformAnalyzer.AnalyzeError : Swift.Hashable {}
 extension WaveformImageDrawer.GenerationError : Swift.Equatable {}
 extension WaveformImageDrawer.GenerationError : Swift.Hashable {}
+extension Waveform.Damping.Sides : Swift.Hashable {}

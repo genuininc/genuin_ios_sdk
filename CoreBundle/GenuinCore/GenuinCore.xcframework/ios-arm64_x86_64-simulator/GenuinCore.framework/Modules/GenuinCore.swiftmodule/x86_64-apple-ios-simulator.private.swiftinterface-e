@@ -11,10 +11,10 @@ import AudioToolbox
 import BackgroundTasks
 import SystemConfiguration.CaptiveNetwork
 import Combine
+import CommonCrypto
 import Contacts
 import CoreLocation
 import CoreTelephony
-import CryptoSwift
 import DeveloperToolsSupport
 import Dispatch
 import EasyTipView
@@ -584,7 +584,7 @@ extension BaseView {
   public func getEmbed() -> BGEmbed?
   public func getViewModelForPlacement() -> EmbedFeedViewModel?
   public func getViewModelForEmbed() -> EmbedFeedViewModel?
-  public func getGenericLogParams() -> [Swift.String : Any]
+  public func getGenericLogParams(from data: [Swift.String : Any]? = nil) -> [Swift.String : Any]
   public func setPreviousPlaybackState(playbackState: BGPlaybackState)
   public func getContexualParams() -> [Swift.String : Any]?
   @objc deinit
@@ -593,7 +593,7 @@ extension BaseView {
   @_Concurrency.MainActor @preconcurrency public var epIdentityModel: EPIdentityModel?
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func present(_ viewControllerToPresent: UIKit.UIViewController, animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
-  @_Concurrency.MainActor @preconcurrency public func getGenericLogParams() -> [Swift.String : Any]
+  @_Concurrency.MainActor @preconcurrency public func getGenericLogParams(from data: [Swift.String : Any]? = nil) -> [Swift.String : Any]
   @_Concurrency.MainActor @preconcurrency public func isGroupRedirectionEnabled() -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func registerPlayerPlayCallback(_ fromPlaybackSource: FromPlaybackSource)
   @_Concurrency.MainActor @preconcurrency public func registerPlayerPauseCallback(_ fromPlaybackSource: FromPlaybackSource)
@@ -734,6 +734,7 @@ public enum CommunityType : Swift.Int {
   public var slug: Swift.String?
   public var brand: Brand?
   public var brandId: Swift.Int?
+  public var attributes: BGAttributes?
   @objc override dynamic public init()
   open func parse(data: [Swift.String : Any])
   public func checkIsAddMemberAllowed() -> Swift.Bool
@@ -800,6 +801,7 @@ extension BGContainerViewController : BottomPageDelegate {
   @_spi(GenuinInternal) public var slug: Swift.String?
   @_spi(GenuinInternal) public var position: Swift.Int?
   @_spi(GenuinInternal) public var isAiGenerated: Swift.Bool?
+  @_spi(GenuinInternal) public var isLocalVideo: Swift.Bool?
   @_spi(GenuinInternal) public func toDictionary() -> [Swift.String : Any]
   @_spi(GenuinInternal) public func toRequestDictionaryForAutoLoop() -> [Swift.String : Any]
   @_spi(GenuinInternal) public class func parseInMemory(data: [Swift.String : Any]) -> BGConversationDisplay?
@@ -939,6 +941,7 @@ public enum BGCTAStatus {
 }
 @objc public class BGAttributes : ObjectiveC.NSObject {
   public var desc: Swift.String?
+  public var imageUrl: Swift.String?
   public var title: Swift.String?
   public var subtitle: Swift.String?
   public var timestamp: Swift.Double?
@@ -951,7 +954,7 @@ public enum BGCTAStatus {
   public var eId: Swift.String?
   public var ctaCurrentState: BGCTAStatus?
   public var ctaStatus: Swift.Bool?
-  public init(clipType: Swift.String? = nil, desc: Swift.String? = nil, imageUrl: Swift.String? = nil, title: Swift.String? = nil, subtitle: Swift.String? = nil, timestamp: Swift.Double? = nil, offerText: Swift.String? = nil, ihContentType: IhContentType? = nil, slug: Swift.String? = nil, contentId: Swift.String? = nil, pId: Swift.String? = nil, sId: Swift.String? = nil, eId: Swift.String? = nil)
+  public init(clipType: Swift.String? = nil, desc: Swift.String? = nil, imageUrl: Swift.String? = nil, title: Swift.String? = nil, subtitle: Swift.String? = nil, timestamp: Swift.Double? = nil, offerText: Swift.String? = nil, ihContentType: IhContentType? = nil, slug: Swift.String? = nil, contentId: Swift.String? = nil, pId: Swift.String? = nil, sId: Swift.String? = nil, eId: Swift.String? = nil, source: Swift.String? = nil)
   public init(data: [Swift.String : Any])
   public func toDictionary() -> [Swift.String : Any]
   public func getContentId() -> Swift.String?
@@ -1022,7 +1025,7 @@ public enum BGCTAStatus {
   @_spi(GenuinInternal) public func toRequestDictionary(isAiGeneratedVideo: Swift.Bool, isAiGeneratedThumbnail: Swift.Bool, isForVideo: Swift.Bool? = nil) -> [Swift.String : Any]
   @_spi(GenuinInternal) public func toMessageDictionary() -> [Swift.String : Any]
   @_spi(GenuinInternal) public class func parseInMemory(data: [Swift.String : Any], chatId: Swift.String, conversationType: Swift.Int16) -> BGConversationMessageDisplay?
-  @_spi(GenuinInternal) public class func newParseInMemory(data: [Swift.String : Any], repostData: [Swift.String : Any]?, chatId: Swift.String, conversationType: Swift.Int16) -> BGConversationMessageDisplay?
+  @_spi(GenuinInternal) public class func newParseInMemory(data: [Swift.String : Any], repostData: [Swift.String : Any]?, chatId: Swift.String, conversationType: Swift.Int16, includeUploadStatus: Swift.Bool = false) -> BGConversationMessageDisplay?
   @_spi(GenuinInternal) public class func parseInMemoryWithoutIds(data: [Swift.String : Any], chatId: Swift.String?, conversationType: Swift.Int16) -> BGConversationMessageDisplay?
   @_spi(GenuinInternal) public func prepareMentions(jsonString: Swift.String) -> [Mention]?
   @_spi(GenuinInternal) @objc deinit
@@ -1061,6 +1064,9 @@ public enum RecordContentType {
   public var hashValue: Swift.Int {
     get
   }
+}
+@_spi(GenuinInternal) extension BGConversationMessageDisplay {
+  @_spi(GenuinInternal) public func getVideoIdBasedLogParams() -> [Swift.String : Any]
 }
 public class BGCustomEventHandler {
   public init()
@@ -2005,7 +2011,7 @@ extension Foundation.NSMutableAttributedString {
   public func time(_ value: Swift.String) -> Foundation.NSMutableAttributedString
 }
 extension UIKit.UITapGestureRecognizer {
-  @_Concurrency.MainActor @preconcurrency public func didTapAttributedTextInLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func didTapAttributedTextInBGLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency public func checkIfTappedIn(range: Foundation.NSRange) -> Swift.Bool
 }
 extension UIKit.UINavigationController {
@@ -2236,7 +2242,8 @@ public enum BGResizeAspect {
 }
 @_spi(GenuinInternal) extension CommonFunctions {
   @_spi(GenuinInternal) public static func getResizeAspect(embed: BGEmbed?, placement: BGPlacement?, ignoreIpad: Swift.Bool = false) -> BGResizeAspect
-  @_spi(GenuinInternal) public static func getGenericLogParams(epIdentityModel: EPIdentityModel) -> [Swift.String : Any]
+  @_spi(GenuinInternal) public static func getGenericLogParams(epIdentityModel: EPIdentityModel, data: [Swift.String : Any]? = nil) -> [Swift.String : Any]
+  @_spi(GenuinInternal) public static func getParamsFromAttributes(attributes: BGAttributes?) -> [Swift.String : Any]
   @_spi(GenuinInternal) public static func getVideoDurationLogValue(conversationDisplay: BGConversationDisplay) -> Swift.Double?
   @_spi(GenuinInternal) public static func getFeedVideoPlayLogValue() -> Swift.String?
   @_spi(GenuinInternal) public static func getLinkDelayLogValue() -> Swift.String?
@@ -3337,6 +3344,7 @@ public protocol CustomSliderContainerViewDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func cancelTracking(with event: UIKit.UIEvent?)
   @_Concurrency.MainActor @preconcurrency public func getThumbOriginX() -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func getIsDragging() -> Swift.Bool
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class VideoThumbnailView : UIKit.UIView {
@@ -3907,6 +3915,8 @@ public struct GeneralService {
   @_spi(GenuinInternal) func getSocialProfilesVC(isFromCompleteProfileSuggestion: Swift.Bool) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func getNotificationVC(sourceVC: UIKit.UIViewController?, shouldReloadFeed: Swift.Bool) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func loadHomeScreen()
+  @_spi(GenuinInternal) func logout()
+  @_spi(GenuinInternal) func switchTabAfterPost(from viewController: UIKit.UIViewController)
 }
 public enum GenuinViewType {
   case placement
@@ -4020,10 +4030,13 @@ extension GenuinBaseView {
 extension UIKit.UIButton {
   @_Concurrency.MainActor @preconcurrency public func setLanguageInfo(languageInfo: LanguageInfo)
 }
+extension GenuinButton {
+  @_Concurrency.MainActor @preconcurrency public func setCornerRadius(_ radius: CoreFoundation.CGFloat? = nil)
+}
 @_spi(GenuinInternal) public protocol GenuinCameraInterface {
-  @_spi(GenuinInternal) func getCameraVC(recordType: Any?, community: BGCommunity?, groupName: Swift.String?, groupDesc: Swift.String?, communityTemplate: Any?, selectedContacts: [Any]?, isWelcomeLoop: Swift.Bool?, trackingId: Swift.String?, privacyActions: [[Swift.String : Any]]?) -> UIKit.UIViewController?
+  @_spi(GenuinInternal) func getCameraVC(recordType: Any?, community: BGCommunity?, groupName: Swift.String?, groupDesc: Swift.String?, communityTemplate: Any?, selectedContacts: [Any]?, isWelcomeLoop: Swift.Bool?, trackingId: Swift.String?, privacyActions: [[Swift.String : Any]]?, closeCameraDelegate: (any CloseCameraDelegate)?) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func configureData()
-  @_spi(GenuinInternal) func getCameraVCForReply(chatId: Swift.String?, conversationType: Swift.Int16?, group: AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?, recordContentType: RecordContentType, shareLink: Swift.String?, screenName: Swift.String?, shouldShowQuestion: Swift.Bool) -> UIKit.UIViewController?
+  @_spi(GenuinInternal) func getCameraVCForReply(chatId: Swift.String?, conversationType: Swift.Int16?, group: AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?, recordContentType: RecordContentType, shareLink: Swift.String?, screenName: Swift.String?, shouldShowQuestion: Swift.Bool, closeCameraDelegate: (any CloseCameraDelegate)?) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func getSquareCameraVC(chatId: Swift.String?, messageId: Swift.String?, sourceVC: UIKit.UIViewController?) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func uploadAudioComment(fileName: Swift.String, audioURL: Swift.String, audioParams: [Swift.String : Any])
   @_spi(GenuinInternal) func getSELoopsListVCWithNav(link: Swift.String?, isForLinkFlow: Swift.Bool?, avAsset: AVFoundation.AVURLAsset?) -> UIKit.UIViewController?
@@ -4034,11 +4047,14 @@ extension UIKit.UIButton {
   @_spi(GenuinInternal) func getPreviewVCIndex(sourceVC: UIKit.UIViewController) -> Swift.Int?
   @_spi(GenuinInternal) func onUploadTaskCompletionInBackground(uploadTask: Foundation.URLSessionUploadTask)
   @_spi(GenuinInternal) func removeUploadTask(videoId: Swift.String)
-  @_spi(GenuinInternal) func getVideoPreviewVC(isFromNotification: Swift.Bool, video: BGConversationMessageDisplay?, isForLoop: Swift.Bool, trackingId: Swift.String?, loop: BGConversationDisplay?, retryCount: Swift.Int?, community: BGCommunity?) -> UIKit.UIViewController?
+  @_spi(GenuinInternal) func getVideoPreviewVC(isFromNotification: Swift.Bool, video: BGConversationMessageDisplay?, isForLoop: Swift.Bool, trackingId: Swift.String?, loop: BGConversationDisplay?, retryCount: Swift.Int?, community: BGCommunity?, closeCameraDelegate: (any CloseCameraDelegate)?) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func shouldShowInAppNotification() -> Swift.Bool
   @_spi(GenuinInternal) func getCameraVCIndex(sourceNavVC: UIKit.UINavigationController?) -> Swift.Int?
   @_spi(GenuinInternal) func handleGalleryVideoRedirection(videoURL: Swift.String, sourceVC: UIKit.UIViewController?)
   @_spi(GenuinInternal) func handleSharedLinkFlow(link: Swift.String, shouldCallApi: Swift.Bool, sourceVC: UIKit.UIViewController?)
+  @_spi(GenuinInternal) func retryUploadForMessage(videoName: Swift.String)
+  @_spi(GenuinInternal) func removeLocalMessage(chatId: Swift.String, videoName: Swift.String)
+  @_spi(GenuinInternal) func isGalleryVideoEditorOrSELoopListVC(vc: UIKit.UIViewController?) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class GenuinContainerAttributes {
   @objc deinit
@@ -4282,6 +4298,7 @@ public enum KSFlowFor {
   @objc public func getStandardWallController(embedId: Swift.String, uniqueId: Swift.String? = nil, ssoToken: Swift.String? = nil, params: [Swift.String : Any]? = nil, contextualParams: [Swift.String : Any]? = nil, embedConfiguration: EmbedConfiguration = EmbedConfiguration()) -> UIKit.UINavigationController?
   @objc public func loadEmbedData(embedId: Swift.String, uniqueId: Swift.String? = nil, contextualParams: [Swift.String : Any]? = nil)
   @objc public func hasDataAvailable(params: [Swift.String : Any]) async -> Swift.Bool
+  public func initiateCreatePost(fromVC: UIKit.UIViewController, ssoToken: Swift.String, params: [Swift.String : Any]? = nil, closeCameraDelegate: (any CloseCameraDelegate)? = nil)
   @objc deinit
 }
 extension GenuinSDK {
@@ -4388,8 +4405,9 @@ extension GenuinSDK {
   @_spi(GenuinInternal) func addVideoCacheRecord(chatId: Swift.String, mediaUrl: Swift.String, localPath: Swift.String)
   @_spi(GenuinInternal) func updateLastPlayedDate(messageId: Swift.String)
   @_spi(GenuinInternal) func handleRedirectionForApp(fromViewController: UIKit.UIViewController)
-  @_spi(GenuinInternal) func getLoopSuccessVC(isFromAutoVideo: Swift.Bool?, loop: BGConversationDisplay?, isAiVideoEdited: Swift.Bool?, community: BGCommunity?) -> UIKit.UIViewController?
+  @_spi(GenuinInternal) func getLoopSuccessVC(isFromAutoVideo: Swift.Bool?, loop: BGConversationDisplay?, isAiVideoEdited: Swift.Bool?, community: BGCommunity?, closeCameraDelegate: (any CloseCameraDelegate)?) -> UIKit.UIViewController?
   @_spi(GenuinInternal) func checkIsGroupFeedViewController(viewController: UIKit.UIViewController) -> Swift.Bool
+  @_spi(GenuinInternal) func getPendingMessages(extEntityId: Swift.String, extEntityType: Swift.String) -> [BGConversationMessageDisplay]?
 }
 @_spi(GenuinInternal) @_hasMissingDesignatedInitializers public class GenuinUIInterfaceProvider {
   @_spi(GenuinInternal) public static var uiProvider: (any GenuinUIInterface)?
@@ -5478,6 +5496,9 @@ public struct LogParams {
   public static let streamFeedPosition: Swift.String
   public static let streamFeedTotal: Swift.String
   public static let isAutoplay: Swift.String
+  public static let PARENT_STATION_TYPE: Swift.String
+  public static let PARENT_STATION_ID: Swift.String
+  public static let PARENT_STATION_NAME: Swift.String
   public struct ContentCategory {
     public static let PUBLIC: Swift.String
     public static let RT: Swift.String
@@ -5719,6 +5740,8 @@ public enum LocalNotificationType : Swift.String {
   case CLEAR_NAVIGATION_STACK
   case GROUP_JOIN_LEAVE
   case NEW_CONVERSATION_FROM_DEEPLINK
+  case PAUSE_VIDEO_NOTIFICATION
+  case PLAY_VIDEO_NOTIFICATION
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -5891,6 +5914,15 @@ public struct BGAccessibilityConstants {
   public static let prev_clip_playing: Swift.String
   public static let follow: Swift.String
   public static let library: Swift.String
+}
+public enum ExtEntityType : Swift.String, Swift.Codable {
+  case podcast
+  case station
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_spi(GenuinInternal) public protocol SignUpViewDelegate : AnyObject {
   @_spi(GenuinInternal) func didDismissed(ksDataModel: KSDataModel?)
@@ -6485,6 +6517,24 @@ public enum LoginWith : Swift.Int {
     @_spi(GenuinInternal) get
   }
   @_spi(GenuinInternal) public static var IH_CTA_LIBRARY: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_RETRY: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CTA_CLEAR: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CLEAR_VIDEO_TITLE: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var CLEAR_VIDEO_POST_MESSAGE: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ALERT_TITLE_ERROR: LanguageInfo {
+    @_spi(GenuinInternal) get
+  }
+  @_spi(GenuinInternal) public static var ALERT_TITLE_NO_INTERNET: LanguageInfo {
     @_spi(GenuinInternal) get
   }
 }
@@ -7838,7 +7888,7 @@ public typealias AFResult<Success> = Swift.Result<Success, AFError>
   @_spi(GenuinInternal) func shareDidTapped(videoId: Swift.String?, shareURL: Swift.String, viewShare: UIKit.UIView, attributes: BGAttributes?, description: Swift.String?, thumbnailUrl: Swift.String?)
   @_spi(GenuinInternal) func eventLogForShare(contentId: Swift.String, contentCategory: Swift.String, shareURL: Swift.String)
   @_spi(GenuinInternal) func soundTapped(status: Swift.String, isPlaying: Swift.Bool)
-  @_spi(GenuinInternal) func eventLogForSound(isMuted: Swift.Bool, contentId: Swift.String, contentCategory: Swift.String)
+  @_spi(GenuinInternal) func eventLogForSound(isMuted: Swift.Bool, contentId: Swift.String, contentCategory: Swift.String, videoId: Swift.String)
   @_spi(GenuinInternal) func repostTapped(contentId: Swift.String, contentCategory: Swift.String, thumbURL: Swift.String?)
   @_spi(GenuinInternal) func askQuestionTapped(chatId: Swift.String)
   @_spi(GenuinInternal) func sparkedDobbleTapped()
@@ -8008,6 +8058,9 @@ public protocol RepostViewControllerDelegate : AnyObject {
 }
 public protocol AskQuestionDelegate : AnyObject {
   func didClosed()
+}
+public protocol CloseCameraDelegate : AnyObject {
+  func cameraDidClosed(withPostSuccess: Swift.Bool)
 }
 public enum FromPlaybackSource {
   case fromForeground
@@ -8813,7 +8866,7 @@ public struct ActionSheetColor {
   public static let ProfileActionSheetColor: UIKit.UIColor
 }
 public struct Util {
-  public static func showErrorAlertWithErrorMessage(_ errorStr: Swift.String, _ viewController: UIKit.UIViewController?)
+  public static func showErrorAlertWithErrorMessage(title: Swift.String? = nil, _ errorStr: Swift.String, _ viewController: UIKit.UIViewController?)
   public static func isInternetAvailable() -> Swift.Bool
   public static func isInternetOnWIFI() -> Swift.Bool
   public static func getTimeStamp() -> Foundation.NSNumber
@@ -10412,6 +10465,9 @@ extension AppPermission : Swift.Hashable {}
 extension AppPermission : Swift.RawRepresentable {}
 extension DBTransactionType : Swift.Equatable {}
 extension DBTransactionType : Swift.Hashable {}
+extension ExtEntityType : Swift.Equatable {}
+extension ExtEntityType : Swift.Hashable {}
+extension ExtEntityType : Swift.RawRepresentable {}
 extension LoginWith : Swift.Equatable {}
 extension LoginWith : Swift.Hashable {}
 extension LoginWith : Swift.RawRepresentable {}

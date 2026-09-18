@@ -21,8 +21,8 @@ let package = Package(
             targets: ["GenuinAIWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.1"),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.33.0"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.5.2"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.28.10"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
 //        .package(url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.19.7"),
     ],
@@ -43,8 +43,6 @@ let package = Package(
 //                          path: "CoreBundle/SDWebImage_5.20.0/SDWebImage.xcframework"),
             .binaryTarget(name: "libPhoneNumberiOS",
                           path: "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework"),
-            .binaryTarget(name: "CryptoSwift",
-                          path: "CoreBundle/CryptoSwift_1.8.1/CryptoSwift.xcframework"),
             .binaryTarget(name: "EasyTipView",
                           path: "CoreBundle/EasyTipView_2.1/EasyTipView.xcframework"),
             .binaryTarget(name: "Hero",
@@ -90,7 +88,6 @@ let package = Package(
             name: "GenuinCoreWrapper",
             dependencies: [
                 "GenuinCore",
-                "CryptoSwift",
                 "EasyTipView",
                 .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),
                 "TOCropViewController",

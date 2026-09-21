@@ -7,5 +7,4 @@ framework module GenuinUI {
 
 module GenuinUI.Swift {
   header "GenuinUI-Swift.h"
-  requires objc
 }

@@ -47,6 +47,21 @@ Pod::Spec.new do |spec|
   spec.dependency 'MaterialComponents/ActivityIndicator', '~> 124.2.0'
   spec.dependency 'XLPagerTabStrip', '~> 9.1.0'
 
+  pangle_xcframework = 'CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework'
+  spec.preserve_paths = pangle_xcframework
+
+  pangle_search_path = lambda do |slice|
+    paths = [%("$(PODS_ROOT)/GenuinCore/#{pangle_xcframework}/#{slice}")]
+    local = File.join(__dir__, pangle_xcframework, slice)
+    paths << %("#{local}") if File.directory?(local)
+    paths.join(' ')
+  end
+
+  spec.user_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS[sdk=iphoneos*]'        => "$(inherited) #{pangle_search_path.call('ios-arm64')}",
+    'FRAMEWORK_SEARCH_PATHS[sdk=iphonesimulator*]' => "$(inherited) #{pangle_search_path.call('ios-arm64_x86_64-simulator')}"
+  }
+
   spec.vendored_frameworks = "CoreBundle/GenuinCore/GenuinCore.xcframework", "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework", "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework",
       "CoreBundle/Rudder_1.31.0/MetricsReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",

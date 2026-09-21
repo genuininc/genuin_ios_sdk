@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GenuinUI
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GenuinUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AVFAudio
 import AVFoundation
 import AVKit
@@ -31,7 +31,7 @@ import TOCropViewController
 import UIKit
 import URLEmbeddedView
 import UserNotifications
-import WebKit
+@preconcurrency import WebKit
 import XLPagerTabStrip
 import _Concurrency
 import _StringProcessing
@@ -39,16 +39,12 @@ import _SwiftConcurrencyShims
 import libPhoneNumberiOS
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ABFrameIndicator : ABProgressIndicator {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
-  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class ABProgressIndicator : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
-  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency open class ABTimeView : UIKit.UIView {
@@ -63,9 +59,7 @@ import libPhoneNumberiOS
   @_Concurrency.MainActor @preconcurrency public var marginRight: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public init(size: CoreFoundation.CGSize, position: Swift.Int)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
@@ -95,13 +89,9 @@ public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
     }
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func setupFrameSelector()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func hideHandles()
   @_Concurrency.MainActor @preconcurrency public func setProgressIndicatorImage(image: UIKit.UIImage)
   @_Concurrency.MainActor @preconcurrency public func hideProgressIndicator()
@@ -117,18 +107,14 @@ public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
   @_Concurrency.MainActor @preconcurrency public func setStartPosition(seconds: Swift.Float)
   @_Concurrency.MainActor @preconcurrency public func setEndPosition(seconds: Swift.Float)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
-  #endif
   @objc deinit
 }
 @objc public enum AGCommentType : Swift.Int {
   case video = 1
   case audio = 2
   case text = 3
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -152,7 +138,7 @@ public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
   public var isAvatar: Swift.Bool
   public var profileImage: Swift.String
   public var genuinUUID: Swift.String
-  public var brand: GenuinCore.Brand?
+  public var brand: Brand?
   public init(contactDict: [Swift.String : Any])
   public init(fromDictionary dictionary: [Swift.String : Any])
   public func displayName() -> Swift.String
@@ -188,9 +174,7 @@ public enum BadgeSize {
   }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class BadgedButtonItem : UIKit.UIBarButtonItem {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func setBadge(with value: Swift.String?)
-  #endif
   @_Concurrency.MainActor @preconcurrency public var badgeTintColor: UIKit.UIColor? {
     get
     set
@@ -228,77 +212,49 @@ public enum BadgeSize {
 }
 @_inheritsConvenienceInitializers @objc(BGAudioAsset) nonisolated public class BGAudioAsset : CoreData.NSManagedObject {
   public class func createLocalAudioAsset(avatarId: Swift.String, assetLocalURL: Swift.String, duration: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAudioAsset(assetLocalURL: Swift.String) -> BGAudioAsset?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func updateAudioAsset(assetId: Swift.String? = nil, assetType: Swift.String? = nil, mediaKey: Swift.String? = nil, mimetype: Swift.String? = nil, audioUploadStatus: Swift.String? = nil, duration: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAllFailedAssets() -> [BGAudioAsset]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAllAssets(avatarId: Swift.String) -> [BGAudioAsset]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAllCompletedAssets(avatarId: Swift.String) -> [BGAudioAsset]?
-  #endif
   public class func deleteAssets(avatarId: Swift.String, completion: @escaping (Swift.Bool) -> ())
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGAudioAsset {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGAudioAsset>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var assetId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var assetType: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var audioUploadStatus: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var mediaKey: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var mimetype: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var assetLocalURL: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var avatarId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var duration: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension BGAudioAsset : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
@@ -317,9 +273,7 @@ public enum AVCapturSessionSetupResult {
 @objc @_inheritsConvenienceInitializers public class BGAudioRecorder : ObjectiveC.NSObject {
   weak public var recordingDelegate: (any BGAudioManagerRecordingDelegate)?
   weak public var playbackDelegate: (any BGAudioManagerPlaybackDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
   public func recordedAudioFileURL() -> Foundation.URL?
-  #endif
   public var isForVoiceAsset: Swift.Bool
   public var isRecording: Swift.Bool {
     get
@@ -350,42 +304,30 @@ public protocol BGAudioManagerPlaybackDelegate : AnyObject {
 }
 @_inheritsConvenienceInitializers @objc(BGAvatarVoice) nonisolated public class BGAvatarVoice : CoreData.NSManagedObject {
   public class func createLocalAvatarVoice(avatarId: Swift.String, name: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func updateAvatarVoice(name: Swift.String? = nil, lastStep: Swift.Int16? = nil, status: Swift.String? = nil, totalSteps: Swift.Int16? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAllAvatarVoice() -> [BGAvatarVoice]?
-  #endif
   public class func deleteAvatarVoice(avatarId: Swift.String, completion: @escaping (Swift.Bool) -> ())
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGAvatarVoice {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGAvatarVoice>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var avatarId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var lastStep: Swift.Int16 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var status: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var totalSteps: Swift.Int16 {
     @objc get
     @objc set
@@ -397,47 +339,31 @@ extension BGAvatarVoice : Swift.Identifiable {
 @objc @_inheritsConvenienceInitializers nonisolated public class BGConversation : CoreData.NSManagedObject {
   public var group: BGGroup?
   public var messages: [BGMessage]?
-  public var privacyActions: [GenuinCore.CommunityAction]?
+  public var privacyActions: [CommunityAction]?
   public var isAiGeneratedVideo: Swift.Bool?
-  public var scheduler: GenuinCore.BGScheduler?
+  public var scheduler: BGScheduler?
   public var position: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func upsert(communityId: Swift.String? = nil, data: [Swift.String : Any])
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func createLocalConversation(communityId: Swift.String?, chatId: Swift.String, templateId: Swift.String?, conversationType: Swift.Int16, settings: [Swift.String : Any]?, isWelcomeLoop: Swift.Bool = false, actions: [[Swift.String : Any]]? = nil, trackingId: Swift.String? = nil, isAiGenerated: Swift.Bool? = nil, autoChatId: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func update(newChatId: Swift.String? = nil, settings: [Swift.String : Any]? = nil, latestMessageAt: Swift.Double? = nil, unreadMessageCount: Swift.Double? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getConversations() -> [BGConversation]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getFailedConversations() -> [BGConversation]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getConversation(by chatId: Swift.String) -> BGConversation?
-  #endif
   public class func delete(using chatId: Swift.String)
   public class func deleteAll(using chatIds: [Swift.String])
   public class func deleteAll(for communityId: Swift.String)
   public class func deleteAll(using conversationType: Swift.Int16, exceptPending: Swift.Bool = false)
   nonisolated public func toRequestDictionary() -> [Swift.String : Any]
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGConversation {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGConversation>
   @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var chatId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var conversationType: Swift.Int16 {
     @objc get
     @objc set
@@ -446,144 +372,104 @@ extension BGConversation {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var settings: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var shareUrl: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var unreadMessageCount: Swift.Double {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var communityId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var templateId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isSubscriber: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var memberInfo: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isWelcomeLoop: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var actions: [[Swift.String : Any]]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var loggedinUserId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trackingId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isAiGenerated: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var autoChatId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 @objc @_inheritsConvenienceInitializers nonisolated public class BGGroup : CoreData.NSManagedObject {
   public var members: [BGMember]?
   public var subscribers: [BGSubscriber]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func createLocalGroup(chatId: Swift.String, conversationType: Swift.Int16, desc: Swift.String?, tags: Swift.String?, dp: Swift.String?, name: Swift.String?, members: [[Swift.String : Any]]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func updateStatus(dpUploadStatus: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getGroup(by chatId: Swift.String) -> BGGroup?
-  #endif
   nonisolated public func toDictionary() -> [Swift.String : Any]
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGGroup {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGGroup>
   @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var chatId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var colorCode: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var conversationType: Swift.Int16 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var desc: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var dp: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var dpL: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var groupId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var noOfMembers: Swift.Double {
     @objc get
     @objc set
@@ -600,57 +486,43 @@ extension BGGroup {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var textColorCode: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var tags: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var dpUploadStatus: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 @objc @_inheritsConvenienceInitializers nonisolated public class BGMember : CoreData.NSManagedObject {
   public var user: BGUser?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGMember {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGMember>
   @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var chatId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var conversationType: Swift.Int16 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var groupId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var memberId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var role: Swift.Int16 {
     @objc get
     @objc set
@@ -669,9 +541,7 @@ public enum CompressionStatus : Swift.String {
   case completed
   case failed
   case cancelled
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -679,65 +549,43 @@ public enum CompressionStatus : Swift.String {
 }
 @objc @_inheritsConvenienceInitializers nonisolated public class BGMessage : CoreData.NSManagedObject {
   public var owner: BGUser?
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func createLocalMessage(chatId: Swift.String, messageId: Swift.String, conversationType: Swift.Int16, compressionStatus: Swift.String?, ffmpegCommand: Swift.String?, attachedLink: Swift.String?, metadata: [Swift.String : Any]?, questions: [[Swift.String : Any]]?, owner: [Swift.String : Any]?, thumbnailName: Swift.String?, thumbnailUrl: Swift.String?, videoName: Swift.String?, descriptionText: Swift.String?, descriptionData: Swift.String?, linkouts: [[Swift.String : Any]]?, trackingId: Swift.String? = nil, autoMessageId: Swift.String? = nil, autoThumbnailPath: Swift.String? = nil, clickableUrl: Swift.String? = nil, brandContext: [[Swift.String : Any]]? = nil, communityId: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func updateStatus(compressionStatus: Swift.String? = nil, imageUploadStatus: Swift.String? = nil, videoUploadStatus: Swift.String? = nil, apiCallStatus: Swift.String? = nil, isRetry: Swift.Bool? = nil, messageId: Swift.String? = nil, mediaUrl: Swift.String? = nil, messageAt: Any? = nil, chatId: Swift.String? = nil, thumbnailUrl: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getAllFailedMessages() -> [BGMessage]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getMessage(chatId: Swift.String, messageId: Swift.String) -> BGMessage?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getMessage(videoName: Swift.String) -> BGMessage?
-  #endif
   public class func delete(using chatId: Swift.String, videoName: Swift.String)
   nonisolated public func toRequestDictionary() -> [Swift.String : Any]
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGMessage {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGMessage>
   @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var apiCallStatus: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var chatId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var compressionStatus: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var conversationType: Swift.Int16 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var ffmpegCommand: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var imageUploadStatus: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isRead: Swift.Bool {
     @objc get
     @objc set
@@ -746,28 +594,22 @@ extension BGMessage {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var attachedLink: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var messageAt: Swift.Double {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var messageId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var metadata: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var noOfComments: Swift.Double {
     @objc get
     @objc set
@@ -776,139 +618,97 @@ extension BGMessage {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var ownerId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var questions: [[Swift.String : Any]]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var repost: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var shareUrl: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var thumbnailName: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var thumbnailUrl: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var thumbnailUrlL: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var thumbnailUrlS: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var videoName: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var messageSummary: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var videoUploadStatus: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var mediaUrl: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var mediaUrlM3u8: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var descriptionText: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var descriptionData: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var linkouts: [[Swift.String : Any]]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trackingId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var autoMessageId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var autoThumbnailPath: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var clickableUrl: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var brandContext: [[Swift.String : Any]]? {
     @objc get
     @objc set
   }
-  #endif
 }
 @objc public class BGQuestion : ObjectiveC.NSObject, Foundation.NSSecureCoding {
   @objc public static var supportsSecureCoding: Swift.Bool
   public var question_id: Swift.String?
   public var question: Swift.String?
   public var date: Swift.String?
-  public var owner: GenuinCore.AGMember?
+  public var owner: AGMember?
   public var share_url: Swift.String?
   public init(from dictionary: [Swift.String : Any])
   public func toDictionary() -> [Swift.String : Any]
@@ -937,56 +737,42 @@ public enum BGSettingOptionType {
 }
 @_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BGSettingsManager : ObjectiveC.NSObject {
   @_spi(GenuinInternal) public static let shared: BGSettingsManager
-  @_spi(GenuinInternal) public var brands: [GenuinCore.Brand]
+  @_spi(GenuinInternal) public var brands: [Brand]
   @_spi(GenuinInternal) public func getSettingsFromJson() -> [[Swift.String : Any]]
   @_spi(GenuinInternal) public func getCommunityPrivacySettings() -> BGSetting
   @_spi(GenuinInternal) public func getCreateLoopSettings(communityType: Swift.Int) -> BGSetting
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func getWhoCanSeeLoopSettings(communityType: Swift.Int, isWelcomeLoop: Swift.Bool? = false) -> BGSetting
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func getWhoCanPostInLoopSettings(communityType: Swift.Int, isWelcomeLoop: Swift.Bool? = false) -> BGSetting
-  #endif
   @_spi(GenuinInternal) public func cleanData()
-  @_spi(GenuinInternal) public func cleanDataIfBrandNotExist(brand: GenuinCore.Brand)
+  @_spi(GenuinInternal) public func cleanDataIfBrandNotExist(brand: Brand)
   @_spi(GenuinInternal) public func getPrivateCommunityInfo() -> BGSetting
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func getBrandList(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
   @_spi(GenuinInternal) @objc deinit
 }
 @objc @_inheritsConvenienceInitializers nonisolated public class BGSubscriber : CoreData.NSManagedObject {
   public var user: BGUser?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGSubscriber {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGSubscriber>
   @nonobjc public class func fetchRequestResult() -> CoreData.NSFetchRequest<any CoreData.NSFetchRequestResult>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var chatId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var conversationType: Swift.Int16 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var groupId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var memberId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var role: Swift.Int16 {
     @objc get
     @objc set
@@ -1001,90 +787,64 @@ extension BGSubscriber {
   }
 }
 @objc @_inheritsConvenienceInitializers nonisolated public class BGUser : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension BGUser {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BGUser>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var bio: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isAvatar: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var phoneNumber: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var profileImage: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var profileImageL: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var profileImageM: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var profileImageS: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var userId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var username: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 public protocol BrandSearchViewDelegate : AnyObject {
-  func getSelectedBrand(brand: GenuinCore.Brand)
+  func getSelectedBrand(brand: Brand)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BrandSearchViewController : GenuinCore.BaseViewController, UIKit.UIScrollViewDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BrandSearchViewController : BaseViewController, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency public static let identifier: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func instantiate() -> BrandSearchViewController?
-  #endif
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BrandSearchViewDelegate)?
   @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 extension BrandSearchViewController : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
@@ -1104,18 +864,14 @@ extension BrandSearchViewController : UIKit.UISearchBarDelegate, UIKit.UISearchD
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CenterCellCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func targetContentOffset(forProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint, withScrollingVelocity velocity: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public protocol ChangeCoverImageDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func didSelectedCover(at time: CoreMedia.CMTime, videoURL: Swift.String?, videoAsset: AVFoundation.AVAsset?)
-  #endif
   func didCancelled()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ChangeCoverImageViewController : GenuinCore.BaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ChangeCoverImageViewController : BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> ChangeCoverImageViewController
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any ChangeCoverImageDelegate)?
   @_Concurrency.MainActor @preconcurrency public var videoURL: Swift.String?
@@ -1126,16 +882,10 @@ public protocol ChangeCoverImageDelegate : AnyObject {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
-  #endif
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 extension ChangeCoverImageViewController : ABVideoRangeSliderDelegate {
   @_Concurrency.MainActor @preconcurrency public func didChangeValue(videoRangeSlider: ABVideoRangeSlider, startTime: Swift.Float64, endTime: Swift.Float64)
@@ -1146,9 +896,7 @@ extension ChangeCoverImageViewController : ABVideoRangeSliderDelegate {
 }
 @objc public enum CircularProgressTrackViewGlowMode : Swift.Int {
   case forward, reverse, constant, noGlow
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1213,29 +961,21 @@ extension ChangeCoverImageViewController : ABVideoRangeSliderDelegate {
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency convenience public init(frame: CoreFoundation.CGRect, colors: UIKit.UIColor...)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public class var layerClass: Swift.AnyClass {
     @objc get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency public func set(colors: UIKit.UIColor...)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func animate(fromAngle: Swift.Double, toAngle: Swift.Double, duration: Foundation.TimeInterval, relativeDuration: Swift.Bool = true, completion: ((Swift.Bool) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency public func animate(toAngle: Swift.Double, duration: Foundation.TimeInterval, relativeDuration: Swift.Bool = true, completion: ((Swift.Bool) -> Swift.Void)?)
-  #endif
   @objc @_Concurrency.MainActor @preconcurrency public func pauseAnimation()
   @objc @_Concurrency.MainActor @preconcurrency public func stopAnimation()
   @objc @_Concurrency.MainActor @preconcurrency public func isAnimating() -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForInterfaceBuilder()
   @objc deinit
 }
@@ -1251,81 +991,61 @@ public protocol SquareCameraDelegate : AnyObject {
   func commentPosted()
 }
 @_hasMissingDesignatedInitializers public class Suggestion {
-  public var type: GenuinCore.SuggestionType
-  public var user: GenuinCore.AGMember?
-  public var community: GenuinCore.BGCommunity?
+  public var type: SuggestionType
+  public var user: AGMember?
+  public var community: BGCommunity?
   public init()
   @objc deinit
 }
 public struct CommentsService {
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getSuggestions(communityId: Swift.String? = nil, chatId: Swift.String? = nil, queryString: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
 }
 @_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CommunitiesCollectionView : UIKit.UICollectionView {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var collectionViewDelegate: (any CommunitiesCollectionViewDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public init(communities: [GenuinCore.BGCommunity], communityDelegate: (any CommunityCellDelegate)?, hasCellAction: Swift.Bool, cellSize: CoreFoundation.CGSize? = nil)
-  #endif
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func applySnapshot(communities: [GenuinCore.BGCommunity], animatingDifferences: Swift.Bool = true)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public init(communities: [BGCommunity], communityDelegate: (any CommunityCellDelegate)?, hasCellAction: Swift.Bool, cellSize: CoreFoundation.CGSize? = nil)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func applySnapshot(communities: [BGCommunity], animatingDifferences: Swift.Bool = true)
   @_spi(GenuinInternal) @objc deinit
 }
 @_spi(GenuinInternal) extension CommunitiesCollectionView : UIKit.UICollectionViewDelegate {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
 }
 public protocol CommunitiesCollectionViewDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func didSelectCommunity(community: GenuinCore.BGCommunity?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func actionTapped(community: GenuinCore.BGCommunity?)
-  #endif
+  func didSelectCommunity(community: BGCommunity?)
+  func actionTapped(community: BGCommunity?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCategoryShimmerCell : UIKit.UICollectionViewCell {
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public protocol CommunityCellDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func actionTapped(community: GenuinCore.BGCommunity?)
-  #endif
+  func actionTapped(community: BGCommunity?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCell : UIKit.UITableViewCell {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CommunityCellDelegate)?
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency weak public var community: GenuinCore.BGCommunity? {
+  @_Concurrency.MainActor @preconcurrency weak public var community: BGCommunity? {
     get
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCreateCell : UIKit.UITableViewCell {
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public protocol CommunityEmptyCellDelegate : AnyObject {
@@ -1336,104 +1056,48 @@ public protocol CommunityEmptyCellDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CommunitySectionHeaderView : UIKit.UITableViewHeaderFooterView {
   @_Concurrency.MainActor @preconcurrency public static func getViewNIB() -> UIKit.UINib
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblTitle: GenuinCore.GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblTitle: GenuinLabel!
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @objc deinit
 }
-extension GenuinCore.CommunityService {
-  #if compiler(>=5.3) && $NonescapableTypes
+extension CommunityService {
   public static func doVerifyHandleNameAvailable(handle: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getProfileCommunity(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getBrandProfileCommunity(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getProfileLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getBrandProfileLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getProfileLoopsVideos(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getBrandProfileLoopsVideos(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getCommunityCategories(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [GenuinCore.CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [GenuinCore.AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: GenuinCore.Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public static func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCommunityDetail(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getCommunityLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getCommunityHandleSuggestion(name: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func editCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getCommunityMembers(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func addModeratorsInCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func deleteCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getMetaDataFromSlug(type: Swift.Int, slug: Swift.String? = nil, userName: Swift.String? = nil, uuid: Swift.String? = nil, inviteId: Swift.String? = nil, brandId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
 }
-extension GenuinCore.CommunityService {
-  #if compiler(>=5.3) && $NonescapableTypes
+extension CommunityService {
   public static func getCommunityTutorialDetails(tutorialId: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getRequestsForCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func rejectRequest(communityId: Swift.String, userId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getFeedLoops(userId: Swift.String, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, pageSession: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getBrandFeedLoops(brandId: Swift.Int, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func generateCommunityDetails(category: GenuinCore.BGCategory? = nil, brandId: Swift.Int? = nil, lat: Swift.String? = nil, lng: Swift.String? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  public static func generateCommunityDetails(category: BGCategory? = nil, brandId: Swift.Int? = nil, lat: Swift.String? = nil, lng: Swift.String? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCategoryAndTopicList(communityId: Swift.String, brandId: Swift.Int? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
 }
-extension GenuinCore.CommunityService {
-  #if compiler(>=5.3) && $NonescapableTypes
+extension CommunityService {
   public static func getBrandList(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func checkIfGroupIsEmpty(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
 }
 public enum CommunitySetupActions : Swift.Int {
   case communityCreated
@@ -1441,9 +1105,7 @@ public enum CommunitySetupActions : Swift.Int {
   case loopCreatedInCommunity
   case communityGuidelinesCreated
   case communityMembersInvited
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1453,17 +1115,13 @@ public enum CommunitySetupActions : Swift.Int {
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityTabCell : UIKit.UICollectionViewCell {
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblOption: GenuinCore.GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblOption: GenuinLabel!
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var viewOptionCount: UIKit.UIView!
   @_Concurrency.MainActor @preconcurrency public var unreadCount: Swift.String? {
     get
@@ -1471,9 +1129,7 @@ public enum CommunitySetupActions : Swift.Int {
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public struct CommunityTemplate {
@@ -1497,144 +1153,76 @@ public enum CommunitySection {
 }
 @_spi(GenuinInternal) public class CommunityViewModel {
   @_spi(GenuinInternal) public init()
-  @_spi(GenuinInternal) public var leaderCommunities: [GenuinCore.BGCommunity]
-  @_spi(GenuinInternal) public var moderatorCommunities: [GenuinCore.BGCommunity]
-  @_spi(GenuinInternal) public var memberCommunities: [GenuinCore.BGCommunity]
-  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(GenuinInternal) public var leaderCommunities: [BGCommunity]
+  @_spi(GenuinInternal) public var moderatorCommunities: [BGCommunity]
+  @_spi(GenuinInternal) public var memberCommunities: [BGCommunity]
   @_spi(GenuinInternal) public func getCommunities(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func verifyHandleNameAvailable(handle: Swift.String, completion: @escaping (Swift.Bool?, GenuinCore.BGError?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [GenuinCore.CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [GenuinCore.AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: GenuinCore.Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool?, Swift.String?, GenuinCore.BGError?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func editCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool?, Swift.String?, GenuinCore.BGError?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func deleteCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool?, GenuinCore.BGError?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func leaveCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool?, GenuinCore.BGError?) -> ())
-  #endif
+  @_spi(GenuinInternal) public func verifyHandleNameAvailable(handle: Swift.String, completion: @escaping (Swift.Bool?, BGError?) -> ())
+  @_spi(GenuinInternal) public func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool?, Swift.String?, BGError?) -> ())
+  @_spi(GenuinInternal) public func editCommunity(params: [Swift.String : Any], completion: @escaping (Swift.Bool?, Swift.String?, BGError?) -> ())
+  @_spi(GenuinInternal) public func deleteCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool?, BGError?) -> ())
+  @_spi(GenuinInternal) public func leaveCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool?, BGError?) -> ())
   @_spi(GenuinInternal) @objc deinit
 }
 public struct WalkthroughModel {
   public let image: Swift.String
-  public let bigTitle: GenuinCore.LanguageInfo?
-  public let title: GenuinCore.LanguageInfo
-  public let description: GenuinCore.LanguageInfo
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(image: Swift.String, bigTitle: GenuinCore.LanguageInfo?, title: GenuinCore.LanguageInfo, description: GenuinCore.LanguageInfo)
-  #endif
+  public let bigTitle: LanguageInfo?
+  public let title: LanguageInfo
+  public let description: LanguageInfo
+  public init(image: Swift.String, bigTitle: LanguageInfo?, title: LanguageInfo, description: LanguageInfo)
 }
 public protocol ContactsManagerProtocol : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func contactsDidFinishSyncing(contacts: [[Swift.String : Any]], _ error: Swift.String?)
-  #endif
 }
 @_spi(GenuinInternal) @_hasMissingDesignatedInitializers public class ContactsManager {
   @_spi(GenuinInternal) public static let shared: ContactsManager
   @_spi(GenuinInternal) weak public var delegate: (any ContactsManagerProtocol)?
   @_spi(GenuinInternal) public func checkPermissionStatus() -> Contacts.CNAuthorizationStatus
   @_spi(GenuinInternal) public func checkIfAuthorised() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func requestPermission(showAlertIfNotAvailable: Swift.Bool = true, screenName: Swift.String? = nil, _ completion: @escaping (_ isAllowed: Swift.Bool) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func syncContacts(_ completion: @escaping (_ contacts: [[Swift.String : Any]], _ error: Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func getDataFromJSONFile() -> [Swift.String : Any]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func getInvitedContactsFromJSONFile() -> [[Swift.String : Any]]?
-  #endif
   @_spi(GenuinInternal) public func writeInvitedContactsToJSON(invitedContacts: [[Swift.String : Any]])
   @_spi(GenuinInternal) @objc deinit
 }
-extension GenuinCore.ConversationVideos {
-  #if compiler(>=5.3) && $NonescapableTypes
+extension ConversationVideos {
   public static func updateGroupDetails(chatId: Swift.String, param: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getDestinations(sourceVideoId: Swift.String, sourceContentType: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func createRepost(sourceVideoId: Swift.String, sourceContentType: Swift.Int, chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func rejectRequest(chatId: Swift.String, userId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func embedEmail(sourceId: Swift.String, embedType: Swift.Int, emailId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getSubscribers(chatId: Swift.String, lastSubscriberId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getMembers(chatId: Swift.String, lastMemberId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getLoopMessages(chatId: Swift.String, messageIds: [Swift.String]? = nil, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, isOrderByPinned: Swift.Bool? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getRequesters(chatId: Swift.String, lastRequesterId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func pinUnpinVideo(loopId: Swift.String, videoId: Swift.String, isPin: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func pinUnpinGroup(communityId: Swift.String, groupId: Swift.String, isPin: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getSummaryFromTranscription(transcript: Swift.String, noOfClicks: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func leaveConversation(chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func createAutoVideo(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func uploadThumbnail(thumbnailLocalPath: Foundation.URL, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getTranscriptDetails(uuid: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getTranscriptShareImage(conversationId: Swift.String, shareUrl: Swift.String, fileName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func uploadTranscriptThumbnail(thumbnailLinkLocalPath: Foundation.URL, completion: @escaping (Swift.Bool, Swift.String?, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func deleteComment(commentId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getAllowedBrandsList(page: Swift.Int, queryString: Swift.String?, brandId: Swift.Int?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
 }
 @_hasMissingDesignatedInitializers public class CoreDataManager {
   public static let shared: CoreDataManager
   @objc deinit
 }
 public protocol AutoCreateDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func communityDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, community: GenuinCore.BGCommunity, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?, selectedCategory: GenuinCore.BGCategory?, brand: GenuinCore.Brand?)
-  #endif
+  func communityDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, community: BGCommunity, trackingId: Swift.String?, selectedMembers: [AGMember]?, selectedCategory: BGCategory?, brand: Brand?)
 }
 public protocol AGContactPickerDelegate : AnyObject {
   func agContactPicker(didContactFetchFailed error: Foundation.NSError)
-  #if compiler(>=5.3) && $NonescapableTypes
   func agContactPicker(didCancel error: Foundation.NSError?)
-  #endif
   func agContactPicker(didSelectContact contact: AGContact)
   func agContactPicker(didSelectMultipleContacts contacts: [AGContact])
   func agContactPickerDidSkipped()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CreateGroupViewController : GenuinCore.BaseViewController, UIKit.UIGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CreateGroupViewController : BaseViewController, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> CreateGroupViewController
   @_Concurrency.MainActor @preconcurrency weak public var contactDelegate: (any AGContactPickerDelegate)?
   @_Concurrency.MainActor @preconcurrency public var isFromGroupEdit: Swift.Bool
@@ -1649,21 +1237,13 @@ public protocol AGContactPickerDelegate : AnyObject {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 extension CreateGroupViewController : UIKit.UITableViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
@@ -1674,9 +1254,7 @@ extension CreateGroupViewController : UIKit.UISearchResultsUpdating, UIKit.UISea
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
 }
 extension CreateGroupViewController : ContactsManagerProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func contactsDidFinishSyncing(contacts: [[Swift.String : Any]], _ error: Swift.String?)
-  #endif
 }
 public class DeltaResponse {
   public var pageLimit: Swift.Int?
@@ -1688,9 +1266,7 @@ public class DeltaResponse {
   @objc deinit
 }
 public protocol CommunityDetailDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func reloadData(community: GenuinCore.BGCommunity?)
-  #endif
+  func reloadData(community: BGCommunity?)
 }
 public protocol CreateAvatarDelegate : AnyObject {
   func avatarDataUpdated()
@@ -1713,57 +1289,35 @@ public enum AiNudgeSourceViewType : Swift.String {
   case loopInboxPostButton
   case communityDetailCreateLoop
   case feedViewLoopViewPostButton
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 @_spi(GenuinInternal) public protocol UpdateInboxProtocol : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) func progressUpdateForChat(chatId: Swift.String?, videoName: Swift.String?, progress: Swift.Double)
-  #endif
 }
 @_spi(GenuinInternal) public protocol UpdateProfileProtocol : ObjectiveC.NSObject {
-  @_spi(GenuinInternal) func rtCreated(conversation: GenuinCore.BGConversationDisplay)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) func rtUpdated(chatId: Swift.String, group: GenuinCore.AGGroup, settings: [Swift.String : Any]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(GenuinInternal) func rtCreated(conversation: BGConversationDisplay)
+  @_spi(GenuinInternal) func rtUpdated(chatId: Swift.String, group: AGGroup, settings: [Swift.String : Any]?)
   @_spi(GenuinInternal) func rtVideoDeleted(chatId: Swift.String, conversationId: Swift.String?)
-  #endif
   @_spi(GenuinInternal) func receivedNewNotification(isNewNotification: Swift.Bool)
 }
 @_spi(GenuinInternal) public protocol UpdateCommentProtocol : ObjectiveC.NSObject {
   @_spi(GenuinInternal) func commentCreated(comment: AGComment)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) func reloadMyComment(comment: AGComment?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) func progressUpdateForComment(fileName: Swift.String?, progress: Swift.Double)
-  #endif
 }
 @_spi(GenuinInternal) @_hasMissingDesignatedInitializers public class GenuinSocket {
   @_spi(GenuinInternal) public static let shared: GenuinSocket
   @_spi(GenuinInternal) public func updateMessage(_ chatId: Swift.String, _ messageData: [Swift.String : Any], isFromSocket: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) public func sendConversationUpdatedNotification(transactionType: GenuinCore.DBTransactionType, conversation: BGConversation? = nil, chatId: Swift.String? = nil, message: BGMessage? = nil, isSubscribed: Swift.Bool? = nil, deletedMessageId: Swift.String? = nil, isForLoopDelete: Swift.Bool? = nil, groupDict: [Swift.String : Any]? = nil, attributesDict: [Swift.String : Any]? = nil)
-  #endif
+  @_spi(GenuinInternal) public func sendConversationUpdatedNotification(transactionType: DBTransactionType, conversation: BGConversation? = nil, chatId: Swift.String? = nil, message: BGMessage? = nil, isSubscribed: Swift.Bool? = nil, deletedMessageId: Swift.String? = nil, isForLoopDelete: Swift.Bool? = nil, groupDict: [Swift.String : Any]? = nil, attributesDict: [Swift.String : Any]? = nil)
   @_spi(GenuinInternal) public func commentCreated(_ commentData: [Swift.String : Any])
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func reloadConversation(conversation: BGConversation?, message: BGMessage?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func progressUpdateForChat(chatId: Swift.String?, videoName: Swift.String?, progress: Swift.Double)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func reloadMyComment(myComment: MyComment?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) public func progressUpdateForComment(fileName: Swift.String?, progress: Swift.Double)
-  #endif
   @_spi(GenuinInternal) public func newLoopCreated(loopData: [Swift.String : Any])
   @_spi(GenuinInternal) public func sigConnectIfNotConnected()
   @_spi(GenuinInternal) @objc deinit
@@ -1773,7 +1327,7 @@ public enum AiNudgeSourceViewType : Swift.String {
   @objc @_Concurrency.MainActor public func initialize()
   @objc deinit
 }
-extension GenuinCore.Guideline : Swift.Equatable {
+extension Guideline : Swift.Equatable {
 }
 public struct SocialLinksImages {
   public static let LINKED_IN_IMAGE: Swift.String
@@ -1797,7 +1351,7 @@ public enum RecordVideoType {
   public var type: Swift.String {
     get
   }
-  public var languageInfo: GenuinCore.LanguageInfo {
+  public var languageInfo: LanguageInfo {
     get
   }
   public static func == (a: RecordVideoType, b: RecordVideoType) -> Swift.Bool
@@ -1806,7 +1360,7 @@ public enum RecordVideoType {
     get
   }
 }
-extension GenuinCore.BGWebImageAssets {
+extension BGWebImageAssets {
   public static var AUTO_COMMUNITY: Swift.String {
     get
   }
@@ -1829,389 +1383,389 @@ extension GenuinCore.BGWebImageAssets {
     get
   }
 }
-@_spi(GenuinInternal) extension GenuinCore.LanguageConstants {
-  @_spi(GenuinInternal) public static var HOME: GenuinCore.LanguageInfo {
+@_spi(GenuinInternal) extension LanguageConstants {
+  @_spi(GenuinInternal) public static var HOME: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var MANAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var MANAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITIES: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITIES: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var POST: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var POST: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var GROUP: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var GROUP: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var GROUPS: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var GROUPS: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var PUBLIC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var PUBLIC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var PRIVATE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var PRIVATE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var VISIBLE_TO_EVERYONE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var VISIBLE_TO_EVERYONE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var VISIBLE_TO_GROUP_MEMBERS_ONLY: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var VISIBLE_TO_GROUP_MEMBERS_ONLY: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var VISIBLE_TO_COMMUNITY_MEMBERS_ONLY: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var VISIBLE_TO_COMMUNITY_MEMBERS_ONLY: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var NO_POSTS_YET: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var NO_POSTS_YET: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var REMOVE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var REMOVE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var QNA: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var QNA: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var ADD_MEMBERS: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var ADD_MEMBERS: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DELETE_COMMENT_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DELETE_COMMENT_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DELETE_COMMENT_MESSAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DELETE_COMMENT_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_DONE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_DONE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_GO_BACK: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_GO_BACK: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var ONE_LINK: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var ONE_LINK: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var N_LINKS: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var N_LINKS: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var POST_SAVED_MESSAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var POST_SAVED_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var POST_SAVE_ERROR_MESSAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var POST_SAVE_ERROR_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var EDIT_COVER: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var EDIT_COVER: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var ADD_LINK: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var ADD_LINK: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var POST_TO: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var POST_TO: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_TO_EVERYONE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_TO_EVERYONE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_TO_MEM_ONLY: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_TO_MEM_ONLY: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_GRP_MEM_ONLY: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var THIS_POST_VISIBLE_GRP_MEM_ONLY: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var NEW_POST: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var NEW_POST: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DISCARD_EDIT_POST_MSG_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DISCARD_EDIT_POST_MSG_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DISCARD_EDIT_POST_MSG: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DISCARD_EDIT_POST_MSG: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var PLACEHOLDER_NEW_POST_DESCRIPTION: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var PLACEHOLDER_NEW_POST_DESCRIPTION: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var GROUP_CREATED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var GROUP_CREATED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var RECORD_A_POST: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var RECORD_A_POST: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var SCHEDULE_POST: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var SCHEDULE_POST: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var AUTO_LOOP_SUCCESS_DESC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var AUTO_LOOP_SUCCESS_DESC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var WO_POST_SUCCESS_DESC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var WO_POST_SUCCESS_DESC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var REPOST_NO_LOOPS_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var REPOST_NO_LOOPS_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var POST_NO_LOOPS_DESC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var POST_NO_LOOPS_DESC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DISCARD_DETAILS_MSG_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DISCARD_DETAILS_MSG_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DISCARD_DETAILS_MSG_DESC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DISCARD_DETAILS_MSG_DESC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DELETED_ROUNDTABLE_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DELETED_ROUNDTABLE_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var YOU: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var YOU: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CREATE_YOUR_AVATAR: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CREATE_YOUR_AVATAR: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var AVATAR_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var AVATAR_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var INVITE_A_FRIEND: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var INVITE_A_FRIEND: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_INVITE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_INVITE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var INVITED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var INVITED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var PERSONALISATION: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var PERSONALISATION: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CONTACT_PERMISSION_ER_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CONTACT_PERMISSION_ER_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CONTACT_PERMISSION_ERROR: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CONTACT_PERMISSION_ERROR: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_CLEAR_ALL: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_CLEAR_ALL: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var RECENT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var RECENT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var NO_SEARCH_RESULTS: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var NO_SEARCH_RESULTS: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TRY_SOMETHING_ELSE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TRY_SOMETHING_ELSE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BIRTHDATE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BIRTHDATE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var EMAIL_ALREADY_ASSOCIATED_MESSAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var EMAIL_ALREADY_ASSOCIATED_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var PHONE_ALREADY_ASSOCIATED_MESSAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var PHONE_ALREADY_ASSOCIATED_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var UNABLE_TO_SEND_CODE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var UNABLE_TO_SEND_CODE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BIRTHDATE_INFO: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BIRTHDATE_INFO: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TIKTOK_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TIKTOK_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TIKTOK_PH: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TIKTOK_PH: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var INSTAGRAM_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var INSTAGRAM_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var INSTAGRAM_PH: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var INSTAGRAM_PH: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var X_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var X_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var X_PH: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var X_PH: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var LINKED_IN_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var LINKED_IN_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var LINKEDIN_PH: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var LINKEDIN_PH: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var YOUTUBE_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var YOUTUBE_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var YOUTUBE_PH: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var YOUTUBE_PH: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var INVALID_PROFILE_URL: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var INVALID_PROFILE_URL: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var INVALID_USER_NAME: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var INVALID_USER_NAME: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_ONBOARD_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_ONBOARD_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_ONBOARD_DESC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_ONBOARD_DESC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_1: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_1: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_1: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_1: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_2: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_2: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_2: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_2: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_3: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_INFO_TITLE_3: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_3: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var BRAND_INFO_DESC_3: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_1: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_1: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_1: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_1: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_2: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_2: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_2: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_2: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_3: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_TITLE_3: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_3: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMUNITY_WALKTHROUGH_DESC_3: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_BECOME_A_CREATOR: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_BECOME_A_CREATOR: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var SUGGESTED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var SUGGESTED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var AUTO_CREATE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var AUTO_CREATE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var DISCARD: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var DISCARD: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_GENERATE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_GENERATE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CAMERA_PERMISSION_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CAMERA_PERMISSION_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COVER_IMAGE_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COVER_IMAGE_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COVER_IMAGE_SUB_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COVER_IMAGE_SUB_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var PREVIEW: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var PREVIEW: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var ADD_BUTTON: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var ADD_BUTTON: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_GIVE_PERMISSIONS: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_GIVE_PERMISSIONS: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var MICROPHONE_NO_PERMISSION_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var MICROPHONE_NO_PERMISSION_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var MICROPHONE_NO_PERMISSION_DESCRIPTION_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var MICROPHONE_NO_PERMISSION_DESCRIPTION_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CAMERA_MICROPHONE_NO_PERMISSION_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CAMERA_MICROPHONE_NO_PERMISSION_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CAMERA_NO_PERMISSION_DESCRIPTION_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CAMERA_NO_PERMISSION_DESCRIPTION_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var POSTING: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var POSTING: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var JUST_NOW: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var JUST_NOW: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TIME_AGO: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TIME_AGO: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var FAILED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var FAILED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var NO_TRANSCRIPTION_AVAIALABLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var NO_TRANSCRIPTION_AVAIALABLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TAP_TO_HIDE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TAP_TO_HIDE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TAP_TO_SEE_TRANSCRIPTION: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TAP_TO_SEE_TRANSCRIPTION: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var LOADING_TRANSCRIPTION: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var LOADING_TRANSCRIPTION: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var COMMENT_COPIED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var COMMENT_COPIED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_COPY: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_COPY: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var TAP_TO_RECORD_COMMENT_TOOL_TIP: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var TAP_TO_RECORD_COMMENT_TOOL_TIP: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var REPOST_TUTORIAL_TITLE_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var REPOST_TUTORIAL_TITLE_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var REPOST_TUTORIAL_DESC_TEXT: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var REPOST_TUTORIAL_DESC_TEXT: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_REPOST: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_REPOST: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_REPOSTED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_REPOSTED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CONTACT_AWAITING_RESPONSE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CONTACT_AWAITING_RESPONSE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var START_COMMUNITY_TITE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var START_COMMUNITY_TITE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CLEAR_ALL_VIDEO_TITLE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CLEAR_ALL_VIDEO_TITLE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CLEAR_ALL_VIDEO_MESSAGE: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CLEAR_ALL_VIDEO_MESSAGE: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var NO_CONTACTS: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var NO_CONTACTS: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CTA_CLEAR_ALL_CAP: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CTA_CLEAR_ALL_CAP: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var CHOOSE_AVATAR_DESC: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var CHOOSE_AVATAR_DESC: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var JOIN_COMMUNITY_SMS_MSG: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var JOIN_COMMUNITY_SMS_MSG: LanguageInfo {
     @_spi(GenuinInternal) get
   }
-  @_spi(GenuinInternal) public static var ALL_SELECTED: GenuinCore.LanguageInfo {
+  @_spi(GenuinInternal) public static var ALL_SELECTED: LanguageInfo {
     @_spi(GenuinInternal) get
   }
 }
@@ -2220,29 +1774,19 @@ public struct LinearWaveformRenderer : WaveformRenderer {
   public func render(samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, lastOffset: Swift.Int)
 }
 public protocol LinksDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func linkoutUpdated(linkout: GenuinCore.LinkOutCollection?)
-  #endif
+  func linkoutUpdated(linkout: LinkOutCollection?)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinksViewController : GenuinCore.BaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinksViewController : BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static let identifier: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public static func instantiate() -> LinksViewController?
-  #endif
   @_Concurrency.MainActor @preconcurrency public var isEditMode: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var linkout: GenuinCore.LinkOutCollection?
+  @_Concurrency.MainActor @preconcurrency public var linkout: LinkOutCollection?
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LinksDelegate)?
   @_Concurrency.MainActor @preconcurrency public var communityBrandId: Swift.Int?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension LinksViewController : UIKit.UITableViewDelegate {
@@ -2250,18 +1794,14 @@ extension LinksViewController : UIKit.UITableViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
 }
 extension LinksViewController : UIKit.UITableViewDragDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, itemsForBeginning session: any UIKit.UIDragSession, at indexPath: Foundation.IndexPath) -> [UIKit.UIDragItem]
 }
 extension LinksViewController : UIKit.UITableViewDropDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, dropSessionDidUpdate session: any UIKit.UIDropSession, withDestinationIndexPath destinationIndexPath: Foundation.IndexPath?) -> UIKit.UITableViewDropProposal
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, performDropWith coordinator: any UIKit.UITableViewDropCoordinator)
 }
 extension LinksViewController : UIKit.UIGestureRecognizerDelegate {
@@ -2279,9 +1819,7 @@ extension LinksViewController : UIKit.UISheetPresentationControllerDelegate {
 public enum SharedContentType : Swift.Int {
   case video
   case link
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -2289,27 +1827,21 @@ public enum SharedContentType : Swift.Int {
 }
 public protocol ScheduleAIPostsDelegate : AnyObject {
   func schedulerUpdated()
-  func schedulerCreatedEditted(schedule: GenuinCore.BGScheduler)
+  func schedulerCreatedEditted(schedule: BGScheduler)
   func schedulerDeleted()
 }
 public protocol LoopInboxCellDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func postTapped(chatId: Swift.String?, conversationType: Swift.Int16, group: GenuinCore.AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
+  func postTapped(chatId: Swift.String?, conversationType: Swift.Int16, group: AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?)
   func retryTapped(conversation: BGConversation?, message: BGMessage?)
-  #endif
   func deleteTapped(chatId: Swift.String, videoName: Swift.String)
   func deleteAllTapped(chatId: Swift.String, pendingMessages: [Swift.String])
   func beginChanges()
   func endChanges()
-  #if compiler(>=5.3) && $NonescapableTypes
   func cellTapped(chatId: Swift.String, isWelcomeLoop: Swift.Bool?)
-  #endif
   func thumbnailTapped(conversation: BGConversation)
 }
 @_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LoopInboxCell : UIKit.UITableViewCell {
-  @_spi(GenuinInternal) @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var btnPost: GenuinCore.GenuinButton!
+  @_spi(GenuinInternal) @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var btnPost: GenuinButton!
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LoopInboxCellDelegate)?
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
@@ -2318,74 +1850,40 @@ public protocol LoopInboxCellDelegate : AnyObject {
     @_spi(GenuinInternal) get
     @_spi(GenuinInternal) set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func showAndReturnToolTip() -> EasyTipView?
-  #endif
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func progressUpdateForChat(chatId: Swift.String?, videoName: Swift.String?, progress: Swift.Double)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @_spi(GenuinInternal) @objc deinit
 }
 @_spi(GenuinInternal) extension LoopInboxCell {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func collapseUploadView(completion: (() -> Swift.Void)? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func collapseUploadViewWithoutDelay(completion: (() -> Swift.Void)? = nil)
-  #endif
 }
 public enum LoggedInUserStatus : Swift.Int {
   case notMember
   case requested
   case member
   public static func getLoggedInUserStatus(status: Swift.Int) -> LoggedInUserStatus
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-extension GenuinCore.LoopInboxService {
-  #if compiler(>=5.3) && $NonescapableTypes
+extension LoopInboxService {
   public static func getCommunities(userId: Swift.String, brandId: Swift.Int? = nil, loggedInUserRole: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getLoopsConversations(lastChatId: Swift.String? = nil, chatIds: [Swift.String]? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getRecentUpdates(lastSyncId: Swift.Int, screenName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getMessagesIds(chatId: Swift.String, fromMessageId: Swift.String?, firstMessageId: Swift.String?, lastMessageId: Swift.String?, fromTopToSpecificMessageId: Swift.String?, getSingleVideo: Swift.Bool? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getOldestUnreadMessageId(chatId: Swift.String, shouldGetUnreadCount: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func markAllMessagesAsRead(chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getConversationDetails(chatId: Swift.String, getMiniMembersList: Swift.Bool = false, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func createComment(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func createConversation(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func generateLoopDetails(community: GenuinCore.BGCommunity? = nil, selectedCategory: GenuinCore.BGCategory? = nil, selectedSubCategory: GenuinCore.BGSubCategory? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  #endif
+  public static func generateLoopDetails(community: BGCommunity? = nil, selectedCategory: BGCategory? = nil, selectedSubCategory: BGSubCategory? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
 @_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LoopInboxShimmerCell : UIKit.UITableViewCell {
   @_spi(GenuinInternal) @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var imgSingleVideo: UIKit.UIImageView!
@@ -2393,36 +1891,26 @@ extension GenuinCore.LoopInboxService {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @_spi(GenuinInternal) @objc deinit
 }
 @_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class LoopsCollectionView : UIKit.UICollectionView {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var collectionViewDelegate: (any LoopsCollectionViewDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public init(conversations: [GenuinCore.BGConversationDisplay], collectionViewDelegate: (any LoopsCollectionViewDelegate)?, showRecentUpdates: Swift.Bool, cellSize: CoreFoundation.CGSize? = nil)
-  #endif
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func applySnapshot(conversations: [GenuinCore.BGConversationDisplay], animatingDifferences: Swift.Bool = true)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public init(conversations: [BGConversationDisplay], collectionViewDelegate: (any LoopsCollectionViewDelegate)?, showRecentUpdates: Swift.Bool, cellSize: CoreFoundation.CGSize? = nil)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func applySnapshot(conversations: [BGConversationDisplay], animatingDifferences: Swift.Bool = true)
   @_spi(GenuinInternal) @objc deinit
 }
 @_spi(GenuinInternal) extension LoopsCollectionView : UIKit.UICollectionViewDelegate {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
 }
 @_spi(GenuinInternal) public protocol LoopsCollectionViewDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) func didSelect(conversation: GenuinCore.BGConversationDisplay?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) func thumbnailsTapped(conversation: GenuinCore.BGConversationDisplay?)
-  #endif
+  @_spi(GenuinInternal) func didSelect(conversation: BGConversationDisplay?)
+  @_spi(GenuinInternal) func thumbnailsTapped(conversation: BGConversationDisplay?)
 }
 public protocol ModeratorsListViewDelegate : ObjectiveC.NSObject {
-  func updateModeratorsList(moderators: [GenuinCore.AGMember])
+  func updateModeratorsList(moderators: [AGMember])
 }
 public enum ModeratorsSectionType {
   case main
@@ -2435,164 +1923,114 @@ public enum ModeratorsSectionType {
 @_inheritsConvenienceInitializers @objc(MyComment) nonisolated public class MyComment : CoreData.NSManagedObject {
   public class func insertMyComment(dict: [Swift.String : Any], _ completion: @escaping (_ myComment: MyComment) -> Swift.Void)
   public class func retriveAllComments() -> [MyComment]
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func updateMyComment(fileName: Swift.String, videoStatus: Swift.String?, imageStatus: Swift.String?, apiStatus: Swift.String?, compressionStatus: Swift.String? = nil, isRetry: Swift.Bool, onCompletion: ((MyComment?) -> ())? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func updateMyComment(thumbName: Swift.String, videoStatus: Swift.String?, imageStatus: Swift.String?, apiStatus: Swift.String?, isRetry: Swift.Bool, onCompletion: ((MyComment?) -> ())? = nil)
-  #endif
   public class func deleteComment(fileName: Swift.String, completion: @escaping (Swift.Bool) -> ())
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getMyComment(by file_name: Swift.String) -> MyComment?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension MyComment {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<MyComment>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var chat_id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var conversation_id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment_id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var type: Swift.Int16 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var url: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var thumbnail: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var link: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var duration: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var meta_data: [Swift.String : Any]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var created_at: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var no_of_views: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var is_read: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var file_name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var thumbnail_name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var api_call_status: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var image_upload_status: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var video_upload_status: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isRetry: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var questions: [BGQuestion]? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var compression_status: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var ffmpeg_command: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment_text: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment_data: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var loggedinUserId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class NoContactFoundView : UIKit.UIView {
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblSearchTerm: GenuinCore.GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblSearchTerm: GenuinLabel!
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
@@ -2600,19 +2038,15 @@ public protocol CommunityOptionsDelegate : AnyObject {
   func optionDidSelected(createCommunityOption: BGSetting)
   func optionDidEditted(createCommunityOption: BGSetting, selectedOption: BGSettingOption)
 }
-@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PrivacySettingOptionsViewController : GenuinCore.BaseViewController {
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PrivacySettingOptionsViewController : BaseViewController {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func instance() -> PrivacySettingOptionsViewController
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var setting: BGSetting?
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CommunityOptionsDelegate)?
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public var isReadOnly: Swift.Bool
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLayoutSubviews()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @_spi(GenuinInternal) @objc deinit
 }
 @_spi(GenuinInternal) extension PrivacySettingOptionsViewController : UIKit.UITableViewDelegate {
@@ -2628,29 +2062,23 @@ public enum MenuOption {
   }
 }
 public protocol AutoCreateLoopDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
-  #endif
+  func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [AGMember]?)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PublishRoundtableViewController : GenuinCore.BaseViewController, UIKit.UIGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PublishRoundtableViewController : BaseViewController, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> PublishRoundtableViewController
-  @_Concurrency.MainActor @preconcurrency public var community: GenuinCore.BGCommunity?
+  @_Concurrency.MainActor @preconcurrency public var community: BGCommunity?
   @_Concurrency.MainActor @preconcurrency public var communityTemplate: CommunityTemplate?
   @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var generatedGroup: GenuinCore.BGConversationGroupDisplay?
+  @_Concurrency.MainActor @preconcurrency public var generatedGroup: BGConversationGroupDisplay?
   @_Concurrency.MainActor @preconcurrency public var trackingId: Swift.String?
-  @_Concurrency.MainActor @preconcurrency public var selectedMembers: [GenuinCore.AGMember]?
+  @_Concurrency.MainActor @preconcurrency public var selectedMembers: [AGMember]?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 extension PublishRoundtableViewController : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
@@ -2658,7 +2086,7 @@ extension PublishRoundtableViewController : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
 }
-extension PublishRoundtableViewController : GenuinCore.SJTwitterTagInputTextViewDelegate {
+extension PublishRoundtableViewController : SJTwitterTagInputTextViewDelegate {
   @_Concurrency.MainActor @preconcurrency public func didTextChanged(count: Swift.Int)
   @_Concurrency.MainActor @preconcurrency public func didSearchWithAtTag(tagString: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func didSearchWithHashTag(tagString: Swift.String)
@@ -2667,9 +2095,7 @@ extension PublishRoundtableViewController : GenuinCore.SJTwitterTagInputTextView
 extension PublishRoundtableViewController : AGContactPickerDelegate {
   @_Concurrency.MainActor @preconcurrency public func agContactPicker(didContactFetchFailed error: Foundation.NSError)
   @_Concurrency.MainActor @preconcurrency public func agContactPickerDidSkipped()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func agContactPicker(didCancel error: Foundation.NSError?)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func agContactPicker(didSelectContact contact: AGContact)
   @_Concurrency.MainActor @preconcurrency public func agContactPicker(didSelectMultipleContacts contacts: [AGContact])
 }
@@ -2678,21 +2104,19 @@ extension PublishRoundtableViewController : CommunityOptionsDelegate {
   @_Concurrency.MainActor @preconcurrency public func optionDidSelected(createCommunityOption: BGSetting)
 }
 extension PublishRoundtableViewController : CollaboratorListDelegate {
-  @_Concurrency.MainActor @preconcurrency public func updateCollaboratorList(members: [GenuinCore.AGMember])
+  @_Concurrency.MainActor @preconcurrency public func updateCollaboratorList(members: [AGMember])
 }
 extension PublishRoundtableViewController : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewWillBeginDecelerating(_ scrollView: UIKit.UIScrollView)
 }
 extension PublishRoundtableViewController : AutoCreateLoopDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
-  #endif
+  @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [AGMember]?)
 }
-extension PublishRoundtableViewController : GenuinCore.CloseCameraDelegate {
+extension PublishRoundtableViewController : CloseCameraDelegate {
   @_Concurrency.MainActor @preconcurrency public func cameraDidClosed(withPostSuccess: Swift.Bool)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : GenuinCore.BaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> SearchCommunityMembersViewController
   @_Concurrency.MainActor @preconcurrency public var viewModel: SearchCommunityMembersViewModel
   @_Concurrency.MainActor @preconcurrency public var isFromPrivateCommunity: Swift.Bool
@@ -2700,21 +2124,13 @@ extension PublishRoundtableViewController : GenuinCore.CloseCameraDelegate {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 extension SearchCommunityMembersViewController : UIKit.UITableViewDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreFoundation.CGFloat
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGFloat
@@ -2725,10 +2141,10 @@ extension SearchCommunityMembersViewController : UIKit.UISearchResultsUpdating, 
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
 }
 public protocol CollaboratorListDelegate : ObjectiveC.NSObject {
-  func updateCollaboratorList(members: [GenuinCore.AGMember])
+  func updateCollaboratorList(members: [AGMember])
 }
 @_hasMissingDesignatedInitializers public class SearchCommunityMembersViewModel {
-  public var community: GenuinCore.BGCommunity?
+  public var community: BGCommunity?
   weak public var loopDelegate: (any CollaboratorListDelegate)?
   @objc deinit
 }
@@ -2746,13 +2162,11 @@ public protocol CollaboratorListDelegate : ObjectiveC.NSObject {
   }
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @_spi(GenuinInternal) @objc deinit
 }
 public protocol SuggestionsViewDelegate : AnyObject {
-  func suggestionDidSelected(mention: GenuinCore.Mention)
+  func suggestionDidSelected(mention: Mention)
 }
 @_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SuggestionsView : UIKit.UIView {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var delegate: (any SuggestionsViewDelegate)?
@@ -2762,9 +2176,7 @@ public protocol SuggestionsViewDelegate : AnyObject {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func reloadTableView()
   @_spi(GenuinInternal) @objc deinit
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
 }
 @_spi(GenuinInternal) extension SuggestionsView : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
@@ -2782,17 +2194,13 @@ public enum UPCarouselFlowLayoutSpacingMode {
   @_Concurrency.MainActor @preconcurrency open var spacingMode: UPCarouselFlowLayoutSpacingMode
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func prepare()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreFoundation.CGRect) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func targetContentOffset(forProposedContentOffset proposedContentOffset: CoreFoundation.CGPoint, withScrollingVelocity velocity: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
-@_spi(GenuinInternal) extension GenuinCore.APPURL {
+@_spi(GenuinInternal) extension APPURL {
   @_spi(GenuinInternal) public static var BRAND_CONTINUE_ON_WEB_LINK: Swift.String {
     @_spi(GenuinInternal) get
   }
@@ -2904,12 +2312,8 @@ public enum UPCarouselFlowLayoutSpacingMode {
 }
 @_inheritsConvenienceInitializers @objc(UTMSource) nonisolated public class UTMSource : CoreData.NSManagedObject {
   public class func clearDumpedUTMSources()
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func getLatestUTMSource() -> UTMSource?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public enum UTMSourceAction : Swift.String {
@@ -2924,9 +2328,7 @@ public enum UTMSourceAction : Swift.String {
   case invite
   case upgrade
   case report
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2942,9 +2344,7 @@ public enum UTMSourceContentType : Swift.String {
   case notification
   case sms_download
   case highlights
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2952,176 +2352,126 @@ public enum UTMSourceContentType : Swift.String {
 }
 extension UTMSource {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<UTMSource>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var sourceLink: Foundation.URL? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var dynamicLink: Foundation.URL? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var utmSource: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var utmMedium: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var utmCampaign: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var action: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var fromUsername: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var sourceId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var inviteId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var contentType: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var parentId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var isDump: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var createdAt: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var utmId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var utmUUID: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var sourceApplication: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var invitedUserId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 @_inheritsConvenienceInitializers @objc(VideoCacheRecord) nonisolated public class VideoCacheRecord : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 extension VideoCacheRecord {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<VideoCacheRecord>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var video_id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var video_url: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var video_local_path: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var downloaded_date: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var last_played_date: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var conversation_id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
-@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class VideoCollectionViewCell : UIKit.UICollectionViewCell, GenuinCore.AutoPlayableCollectionViewCellProtocol {
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class VideoCollectionViewCell : UIKit.UICollectionViewCell, AutoPlayableCollectionViewCellProtocol {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency weak public var videoPlaybackDelegate: (any VideoPlaybackDelegate)?
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func prepareForReuse()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSublayers(of layer: QuartzCore.CALayer)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func setCell(video: GenuinCore.BGConversationMessageDisplay?, shouldPlay autoPlay: Swift.Bool = true)
-  #endif
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func setCell(video: BGConversationMessageDisplay?, shouldPlay autoPlay: Swift.Bool = true)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func playIfPossible()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func pause(isPlayerDidPlayToEndTime: Swift.Bool, isFromScroll: Swift.Bool)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func resume()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func isPlaying() -> Swift.Bool
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @_spi(GenuinInternal) @objc deinit
 }
 public protocol VideoPlaybackDelegate : AnyObject {
   func playerDidPlayToEndTime(for cell: UIKit.UICollectionViewCell)
 }
-@_spi(GenuinInternal) extension VideoCollectionViewCell : GenuinCore.BrandProfileBadgeViewDelegate {
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func sizeChanged(brandProfileBadgeView: GenuinCore.BrandProfileBadgeView, size: CoreFoundation.CGSize)
+@_spi(GenuinInternal) extension VideoCollectionViewCell : BrandProfileBadgeViewDelegate {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency public func sizeChanged(brandProfileBadgeView: BrandProfileBadgeView, size: CoreFoundation.CGSize)
 }
 public class WaveformAnalyzer {
   public enum AnalyzeError : Swift.Error {
@@ -3133,13 +2483,9 @@ public class WaveformAnalyzer {
     }
   }
   public var noiseFloorDecibelCutoff: Swift.Float
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(audioAssetURL: Foundation.URL)
-  #endif
   public func samples(count: Swift.Int, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated) async throws -> [Swift.Float]
-  #if compiler(>=5.3) && $NonescapableTypes
   public func samples(count: Swift.Int, qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ amplitudes: [Swift.Float]?) -> ())
-  #endif
   @objc deinit
 }
 public class WaveformImageDrawer : Foundation.ObservableObject {
@@ -3154,9 +2500,7 @@ public class WaveformImageDrawer : Foundation.ObservableObject {
   public init()
   public var shouldDrawSilencePadding: Swift.Bool
   public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: Waveform.Configuration, renderer: any WaveformRenderer = LinearWaveformRenderer(), qos: Dispatch.DispatchQoS.QoSClass = .userInitiated) async throws -> DSImage
-  #if compiler(>=5.3) && $NonescapableTypes
   public func waveformImage(fromAudioAt audioAssetURL: Foundation.URL, with configuration: Waveform.Configuration, renderer: any WaveformRenderer = LinearWaveformRenderer(), qos: Dispatch.DispatchQoS.QoSClass = .userInitiated, completionHandler: @escaping (_ waveformImage: DSImage?) -> ())
-  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -3164,9 +2508,7 @@ extension WaveformImageDrawer {
   public func draw(waveform samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, renderer: any WaveformRenderer)
 }
 extension WaveformImageDrawer {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func waveformImage(from samples: [Swift.Float], with configuration: Waveform.Configuration, renderer: any WaveformRenderer) -> DSImage?
-  #endif
 }
 public typealias DSColor = UIKit.UIColor
 public typealias DSImage = UIKit.UIImage
@@ -3210,9 +2552,7 @@ public enum Waveform {
     public let sides: Waveform.Damping.Sides
     public let easing: (Swift.Float) -> Swift.Float
     public init(percentage: Swift.Float = 0.125, sides: Waveform.Damping.Sides = .both, easing: @escaping (Swift.Float) -> Swift.Float = { x in pow(x, 2) })
-    #if compiler(>=5.3) && $NonescapableTypes
     public func with(percentage: Swift.Float? = nil, sides: Waveform.Damping.Sides? = nil, easing: ((Swift.Float) -> Swift.Float)? = nil) -> Waveform.Damping
-    #endif
     public static func == (lhs: Waveform.Damping, rhs: Waveform.Damping) -> Swift.Bool
   }
   public struct Configuration : Swift.Equatable {
@@ -3223,12 +2563,8 @@ public enum Waveform {
     public let scale: CoreFoundation.CGFloat
     public let verticalScalingFactor: CoreFoundation.CGFloat
     public let shouldAntialias: Swift.Bool
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(size: CoreFoundation.CGSize = .zero, backgroundColor: DSColor = DSColor.clear, style: Waveform.Style = .gradient([DSColor.black, DSColor.gray]), damping: Waveform.Damping? = nil, scale: CoreFoundation.CGFloat = DSScreen.scale, verticalScalingFactor: CoreFoundation.CGFloat = 0.95, shouldAntialias: Swift.Bool = false)
-    #endif
-    #if compiler(>=5.3) && $NonescapableTypes
     public func with(size: CoreFoundation.CGSize? = nil, backgroundColor: DSColor? = nil, style: Waveform.Style? = nil, damping: Waveform.Damping? = nil, scale: CoreFoundation.CGFloat? = nil, verticalScalingFactor: CoreFoundation.CGFloat? = nil, shouldAntialias: Swift.Bool? = nil) -> Waveform.Configuration
-    #endif
     public static func == (a: Waveform.Configuration, b: Waveform.Configuration) -> Swift.Bool
   }
 }
@@ -3242,9 +2578,7 @@ public enum Waveform {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency public func reset()
   @objc deinit

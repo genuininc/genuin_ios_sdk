@@ -128,7 +128,7 @@ public protocol ABVideoRangeSliderDelegate : ObjectiveC.NSObject {
   public var isAvatar: Swift.Bool
   public var profileImage: Swift.String
   public var genuinUUID: Swift.String
-  public var brand: Brand?
+  public var brand: GenuinCore.Brand?
   public init(contactDict: [Swift.String : Any])
   public init(fromDictionary dictionary: [Swift.String : Any])
   public func displayName() -> Swift.String
@@ -329,9 +329,9 @@ extension BGAvatarVoice : Swift.Identifiable {
 @objc @_inheritsConvenienceInitializers nonisolated public class BGConversation : CoreData.NSManagedObject {
   public var group: BGGroup?
   public var messages: [BGMessage]?
-  public var privacyActions: [CommunityAction]?
+  public var privacyActions: [GenuinCore.CommunityAction]?
   public var isAiGeneratedVideo: Swift.Bool?
-  public var scheduler: BGScheduler?
+  public var scheduler: GenuinCore.BGScheduler?
   public var position: Swift.Int?
   public class func upsert(communityId: Swift.String? = nil, data: [Swift.String : Any])
   public class func createLocalConversation(communityId: Swift.String?, chatId: Swift.String, templateId: Swift.String?, conversationType: Swift.Int16, settings: [Swift.String : Any]?, isWelcomeLoop: Swift.Bool = false, actions: [[Swift.String : Any]]? = nil, trackingId: Swift.String? = nil, isAiGenerated: Swift.Bool? = nil, autoChatId: Swift.String? = nil)
@@ -698,7 +698,7 @@ extension BGMessage {
   public var question_id: Swift.String?
   public var question: Swift.String?
   public var date: Swift.String?
-  public var owner: AGMember?
+  public var owner: GenuinCore.AGMember?
   public var share_url: Swift.String?
   public init(from dictionary: [Swift.String : Any])
   public func toDictionary() -> [Swift.String : Any]
@@ -810,9 +810,9 @@ extension BGUser {
   }
 }
 public protocol BrandSearchViewDelegate : AnyObject {
-  func getSelectedBrand(brand: Brand)
+  func getSelectedBrand(brand: GenuinCore.Brand)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BrandSearchViewController : BaseViewController, UIKit.UIScrollViewDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class BrandSearchViewController : GenuinCore.BaseViewController, UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency public static let identifier: Swift.String
   @_Concurrency.MainActor @preconcurrency public static func instantiate() -> BrandSearchViewController?
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any BrandSearchViewDelegate)?
@@ -847,7 +847,7 @@ public protocol ChangeCoverImageDelegate : AnyObject {
   func didSelectedCover(at time: CoreMedia.CMTime, videoURL: Swift.String?, videoAsset: AVFoundation.AVAsset?)
   func didCancelled()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ChangeCoverImageViewController : BaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class ChangeCoverImageViewController : GenuinCore.BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> ChangeCoverImageViewController
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any ChangeCoverImageDelegate)?
   @_Concurrency.MainActor @preconcurrency public var videoURL: Swift.String?
@@ -967,9 +967,9 @@ public protocol SquareCameraDelegate : AnyObject {
   func commentPosted()
 }
 @_hasMissingDesignatedInitializers public class Suggestion {
-  public var type: SuggestionType
-  public var user: AGMember?
-  public var community: BGCommunity?
+  public var type: GenuinCore.SuggestionType
+  public var user: GenuinCore.AGMember?
+  public var community: GenuinCore.BGCommunity?
   public init()
   @objc deinit
 }
@@ -977,8 +977,8 @@ public struct CommentsService {
   public static func getSuggestions(communityId: Swift.String? = nil, chatId: Swift.String? = nil, queryString: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
 public protocol CommunitiesCollectionViewDelegate : AnyObject {
-  func didSelectCommunity(community: BGCommunity?)
-  func actionTapped(community: BGCommunity?)
+  func didSelectCommunity(community: GenuinCore.BGCommunity?)
+  func actionTapped(community: GenuinCore.BGCommunity?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCategoryShimmerCell : UIKit.UICollectionViewCell {
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
@@ -989,14 +989,14 @@ public protocol CommunitiesCollectionViewDelegate : AnyObject {
   @objc deinit
 }
 public protocol CommunityCellDelegate : AnyObject {
-  func actionTapped(community: BGCommunity?)
+  func actionTapped(community: GenuinCore.BGCommunity?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityCell : UIKit.UITableViewCell {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any CommunityCellDelegate)?
   @_Concurrency.MainActor @preconcurrency public static func getCellNIB() -> UIKit.UINib
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
-  @_Concurrency.MainActor @preconcurrency weak public var community: BGCommunity? {
+  @_Concurrency.MainActor @preconcurrency weak public var community: GenuinCore.BGCommunity? {
     get
     set
   }
@@ -1030,11 +1030,11 @@ public protocol CommunityEmptyCellDelegate : AnyObject {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class CommunitySectionHeaderView : UIKit.UITableViewHeaderFooterView {
   @_Concurrency.MainActor @preconcurrency public static func getViewNIB() -> UIKit.UINib
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblTitle: GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblTitle: GenuinCore.GenuinLabel!
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
   @objc deinit
 }
-extension CommunityService {
+extension GenuinCore.CommunityService {
   public static func doVerifyHandleNameAvailable(handle: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getProfileCommunity(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getBrandProfileCommunity(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
@@ -1043,7 +1043,7 @@ extension CommunityService {
   public static func getProfileLoopsVideos(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getBrandProfileLoopsVideos(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCommunityCategories(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  public static func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func createCommunity(type: Swift.Int, handle: Swift.String, name: Swift.String, description: Swift.String, categories: [GenuinCore.CommunityCategory], tags: Swift.String, dp: Swift.String, banner: Swift.String, isAIGeneratedDP: Swift.Bool, isAIGeneratedBanner: Swift.Bool, members: [GenuinCore.AGMember]? = nil, actions: [[Swift.String : Any]]? = nil, brand: GenuinCore.Brand? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCommunityDetail(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCommunityLoops(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCommunityHandleSuggestion(name: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
@@ -1053,16 +1053,16 @@ extension CommunityService {
   public static func deleteCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getMetaDataFromSlug(type: Swift.Int, slug: Swift.String? = nil, userName: Swift.String? = nil, uuid: Swift.String? = nil, inviteId: Swift.String? = nil, brandId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
-extension CommunityService {
+extension GenuinCore.CommunityService {
   public static func getCommunityTutorialDetails(tutorialId: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getRequestsForCommunity(communityId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func rejectRequest(communityId: Swift.String, userId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getFeedLoops(userId: Swift.String, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, pageSession: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getBrandFeedLoops(brandId: Swift.Int, fromMessageId: Swift.String? = nil, firstMessageId: Swift.String? = nil, lastMessageId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  public static func generateCommunityDetails(category: BGCategory? = nil, brandId: Swift.Int? = nil, lat: Swift.String? = nil, lng: Swift.String? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func generateCommunityDetails(category: GenuinCore.BGCategory? = nil, brandId: Swift.Int? = nil, lat: Swift.String? = nil, lng: Swift.String? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getCategoryAndTopicList(communityId: Swift.String, brandId: Swift.Int? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
-extension CommunityService {
+extension GenuinCore.CommunityService {
   public static func getBrandList(completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func checkIfGroupIsEmpty(params: [Swift.String : Any]?, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
@@ -1088,7 +1088,7 @@ public enum CommunitySetupActions : Swift.Int {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CommunityTabCell : UIKit.UICollectionViewCell {
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblOption: GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblOption: GenuinCore.GenuinLabel!
   @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var viewOptionCount: UIKit.UIView!
   @_Concurrency.MainActor @preconcurrency public var unreadCount: Swift.String? {
     get
@@ -1120,15 +1120,15 @@ public enum CommunitySection {
 }
 public struct WalkthroughModel {
   public let image: Swift.String
-  public let bigTitle: LanguageInfo?
-  public let title: LanguageInfo
-  public let description: LanguageInfo
-  public init(image: Swift.String, bigTitle: LanguageInfo?, title: LanguageInfo, description: LanguageInfo)
+  public let bigTitle: GenuinCore.LanguageInfo?
+  public let title: GenuinCore.LanguageInfo
+  public let description: GenuinCore.LanguageInfo
+  public init(image: Swift.String, bigTitle: GenuinCore.LanguageInfo?, title: GenuinCore.LanguageInfo, description: GenuinCore.LanguageInfo)
 }
 public protocol ContactsManagerProtocol : ObjectiveC.NSObject {
   func contactsDidFinishSyncing(contacts: [[Swift.String : Any]], _ error: Swift.String?)
 }
-extension ConversationVideos {
+extension GenuinCore.ConversationVideos {
   public static func updateGroupDetails(chatId: Swift.String, param: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getDestinations(sourceVideoId: Swift.String, sourceContentType: Swift.Int, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func createRepost(sourceVideoId: Swift.String, sourceContentType: Swift.Int, chatId: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
@@ -1155,7 +1155,7 @@ extension ConversationVideos {
   @objc deinit
 }
 public protocol AutoCreateDelegate : AnyObject {
-  func communityDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, community: BGCommunity, trackingId: Swift.String?, selectedMembers: [AGMember]?, selectedCategory: BGCategory?, brand: Brand?)
+  func communityDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, community: GenuinCore.BGCommunity, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?, selectedCategory: GenuinCore.BGCategory?, brand: GenuinCore.Brand?)
 }
 public protocol AGContactPickerDelegate : AnyObject {
   func agContactPicker(didContactFetchFailed error: Foundation.NSError)
@@ -1164,7 +1164,7 @@ public protocol AGContactPickerDelegate : AnyObject {
   func agContactPicker(didSelectMultipleContacts contacts: [AGContact])
   func agContactPickerDidSkipped()
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CreateGroupViewController : BaseViewController, UIKit.UIGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class CreateGroupViewController : GenuinCore.BaseViewController, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> CreateGroupViewController
   @_Concurrency.MainActor @preconcurrency weak public var contactDelegate: (any AGContactPickerDelegate)?
   @_Concurrency.MainActor @preconcurrency public var isFromGroupEdit: Swift.Bool
@@ -1208,7 +1208,7 @@ public class DeltaResponse {
   @objc deinit
 }
 public protocol CommunityDetailDelegate : AnyObject {
-  func reloadData(community: BGCommunity?)
+  func reloadData(community: GenuinCore.BGCommunity?)
 }
 public protocol CreateAvatarDelegate : AnyObject {
   func avatarDataUpdated()
@@ -1242,7 +1242,7 @@ public enum AiNudgeSourceViewType : Swift.String {
   @objc @_Concurrency.MainActor public func initialize()
   @objc deinit
 }
-extension Guideline : Swift.Equatable {
+extension GenuinCore.Guideline : Swift.Equatable {
 }
 public struct SocialLinksImages {
   public static let LINKED_IN_IMAGE: Swift.String
@@ -1266,7 +1266,7 @@ public enum RecordVideoType {
   public var type: Swift.String {
     get
   }
-  public var languageInfo: LanguageInfo {
+  public var languageInfo: GenuinCore.LanguageInfo {
     get
   }
   public static func == (a: RecordVideoType, b: RecordVideoType) -> Swift.Bool
@@ -1275,7 +1275,7 @@ public enum RecordVideoType {
     get
   }
 }
-extension BGWebImageAssets {
+extension GenuinCore.BGWebImageAssets {
   public static var AUTO_COMMUNITY: Swift.String {
     get
   }
@@ -1303,13 +1303,13 @@ public struct LinearWaveformRenderer : WaveformRenderer {
   public func render(samples: [Swift.Float], on context: CoreGraphics.CGContext, with configuration: Waveform.Configuration, lastOffset: Swift.Int)
 }
 public protocol LinksDelegate : AnyObject {
-  func linkoutUpdated(linkout: LinkOutCollection?)
+  func linkoutUpdated(linkout: GenuinCore.LinkOutCollection?)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinksViewController : BaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class LinksViewController : GenuinCore.BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static let identifier: Swift.String
   @_Concurrency.MainActor @preconcurrency public static func instantiate() -> LinksViewController?
   @_Concurrency.MainActor @preconcurrency public var isEditMode: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var linkout: LinkOutCollection?
+  @_Concurrency.MainActor @preconcurrency public var linkout: GenuinCore.LinkOutCollection?
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any LinksDelegate)?
   @_Concurrency.MainActor @preconcurrency public var communityBrandId: Swift.Int?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
@@ -1356,11 +1356,11 @@ public enum SharedContentType : Swift.Int {
 }
 public protocol ScheduleAIPostsDelegate : AnyObject {
   func schedulerUpdated()
-  func schedulerCreatedEditted(schedule: BGScheduler)
+  func schedulerCreatedEditted(schedule: GenuinCore.BGScheduler)
   func schedulerDeleted()
 }
 public protocol LoopInboxCellDelegate : AnyObject {
-  func postTapped(chatId: Swift.String?, conversationType: Swift.Int16, group: AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?)
+  func postTapped(chatId: Swift.String?, conversationType: Swift.Int16, group: GenuinCore.AGGroup?, settings: [Swift.String : Any]?, isLongPressed: Swift.Bool, privacyActions: [[Swift.String : Any]]?)
   func retryTapped(conversation: BGConversation?, message: BGMessage?)
   func deleteTapped(chatId: Swift.String, videoName: Swift.String)
   func deleteAllTapped(chatId: Swift.String, pendingMessages: [Swift.String])
@@ -1380,7 +1380,7 @@ public enum LoggedInUserStatus : Swift.Int {
     get
   }
 }
-extension LoopInboxService {
+extension GenuinCore.LoopInboxService {
   public static func getCommunities(userId: Swift.String, brandId: Swift.Int? = nil, loggedInUserRole: Swift.Bool, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getLoopsConversations(lastChatId: Swift.String? = nil, chatIds: [Swift.String]? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func getRecentUpdates(lastSyncId: Swift.Int, screenName: Swift.String, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
@@ -1390,10 +1390,10 @@ extension LoopInboxService {
   public static func getConversationDetails(chatId: Swift.String, getMiniMembersList: Swift.Bool = false, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func createComment(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
   public static func createConversation(params: [Swift.String : Any], completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
-  public static func generateLoopDetails(community: BGCommunity? = nil, selectedCategory: BGCategory? = nil, selectedSubCategory: BGSubCategory? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
+  public static func generateLoopDetails(community: GenuinCore.BGCommunity? = nil, selectedCategory: GenuinCore.BGCategory? = nil, selectedSubCategory: GenuinCore.BGSubCategory? = nil, prompt: Swift.String? = nil, trackingId: Swift.String? = nil, completion: @escaping (Swift.Bool, [Swift.String : Any]?) -> ())
 }
 public protocol ModeratorsListViewDelegate : ObjectiveC.NSObject {
-  func updateModeratorsList(moderators: [AGMember])
+  func updateModeratorsList(moderators: [GenuinCore.AGMember])
 }
 public enum ModeratorsSectionType {
   case main
@@ -1513,7 +1513,7 @@ extension MyComment {
   }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class NoContactFoundView : UIKit.UIView {
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblSearchTerm: GenuinLabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var lblSearchTerm: GenuinCore.GenuinLabel!
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
@@ -1531,16 +1531,16 @@ public enum MenuOption {
   }
 }
 public protocol AutoCreateLoopDelegate : AnyObject {
-  func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [AGMember]?)
+  func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PublishRoundtableViewController : BaseViewController, UIKit.UIGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class PublishRoundtableViewController : GenuinCore.BaseViewController, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> PublishRoundtableViewController
-  @_Concurrency.MainActor @preconcurrency public var community: BGCommunity?
+  @_Concurrency.MainActor @preconcurrency public var community: GenuinCore.BGCommunity?
   @_Concurrency.MainActor @preconcurrency public var communityTemplate: CommunityTemplate?
   @_Concurrency.MainActor @preconcurrency public var isAutoCreate: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public var generatedGroup: BGConversationGroupDisplay?
+  @_Concurrency.MainActor @preconcurrency public var generatedGroup: GenuinCore.BGConversationGroupDisplay?
   @_Concurrency.MainActor @preconcurrency public var trackingId: Swift.String?
-  @_Concurrency.MainActor @preconcurrency public var selectedMembers: [AGMember]?
+  @_Concurrency.MainActor @preconcurrency public var selectedMembers: [GenuinCore.AGMember]?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
@@ -1555,7 +1555,7 @@ extension PublishRoundtableViewController : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
 }
-extension PublishRoundtableViewController : SJTwitterTagInputTextViewDelegate {
+extension PublishRoundtableViewController : GenuinCore.SJTwitterTagInputTextViewDelegate {
   @_Concurrency.MainActor @preconcurrency public func didTextChanged(count: Swift.Int)
   @_Concurrency.MainActor @preconcurrency public func didSearchWithAtTag(tagString: Swift.String)
   @_Concurrency.MainActor @preconcurrency public func didSearchWithHashTag(tagString: Swift.String)
@@ -1573,19 +1573,19 @@ extension PublishRoundtableViewController : CommunityOptionsDelegate {
   @_Concurrency.MainActor @preconcurrency public func optionDidSelected(createCommunityOption: BGSetting)
 }
 extension PublishRoundtableViewController : CollaboratorListDelegate {
-  @_Concurrency.MainActor @preconcurrency public func updateCollaboratorList(members: [AGMember])
+  @_Concurrency.MainActor @preconcurrency public func updateCollaboratorList(members: [GenuinCore.AGMember])
 }
 extension PublishRoundtableViewController : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewWillBeginDecelerating(_ scrollView: UIKit.UIScrollView)
 }
 extension PublishRoundtableViewController : AutoCreateLoopDelegate {
-  @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [AGMember]?)
+  @_Concurrency.MainActor @preconcurrency public func loopDetailsGenerated(isFromAutoCreate: Swift.Bool, isFromRetryPrompt: Swift.Bool, group: GenuinCore.BGConversationGroupDisplay, trackingId: Swift.String?, selectedMembers: [GenuinCore.AGMember]?)
 }
-extension PublishRoundtableViewController : CloseCameraDelegate {
+extension PublishRoundtableViewController : GenuinCore.CloseCameraDelegate {
   @_Concurrency.MainActor @preconcurrency public func cameraDidClosed(withPostSuccess: Swift.Bool)
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : BaseViewController {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class SearchCommunityMembersViewController : GenuinCore.BaseViewController {
   @_Concurrency.MainActor @preconcurrency public static func instance() -> SearchCommunityMembersViewController
   @_Concurrency.MainActor @preconcurrency public var viewModel: SearchCommunityMembersViewModel
   @_Concurrency.MainActor @preconcurrency public var isFromPrivateCommunity: Swift.Bool
@@ -1610,10 +1610,10 @@ extension SearchCommunityMembersViewController : UIKit.UISearchResultsUpdating, 
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
 }
 public protocol CollaboratorListDelegate : ObjectiveC.NSObject {
-  func updateCollaboratorList(members: [AGMember])
+  func updateCollaboratorList(members: [GenuinCore.AGMember])
 }
 @_hasMissingDesignatedInitializers public class SearchCommunityMembersViewModel {
-  public var community: BGCommunity?
+  public var community: GenuinCore.BGCommunity?
   weak public var loopDelegate: (any CollaboratorListDelegate)?
   @objc deinit
 }
@@ -1622,7 +1622,7 @@ public protocol CollaboratorListDelegate : ObjectiveC.NSObject {
   @objc deinit
 }
 public protocol SuggestionsViewDelegate : AnyObject {
-  func suggestionDidSelected(mention: Mention)
+  func suggestionDidSelected(mention: GenuinCore.Mention)
 }
 public enum UPCarouselFlowLayoutSpacingMode {
   case fixed(spacing: CoreFoundation.CGFloat)

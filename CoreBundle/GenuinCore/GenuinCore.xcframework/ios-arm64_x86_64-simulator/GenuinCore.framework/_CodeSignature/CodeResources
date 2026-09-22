@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		KwYo/kJuUN2YpYGhGE1P0B4U5C4=
+		Tr2T3B+s4brUpul7CyVHsWqOLOg=
 		</data>
 		<key>BGCategoryCell.nib</key>
 		<data>
@@ -602,7 +602,7 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Jitt7n2h3IektLmm2+pOYjOs8B8=
+		C1kW3zo1yWG3m1vG4DUGBo2Ypw4=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -618,11 +618,11 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/Cc2+zzeAqnEO0WDKFFLUbLLVqo=
+		Vu9nhEF8xsAXlWHw2g937mLfY3Y=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Jitt7n2h3IektLmm2+pOYjOs8B8=
+		C1kW3zo1yWG3m1vG4DUGBo2Ypw4=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -638,7 +638,7 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ndYJjjSc6lBuMBgsBmZ1fbyjOMw=
+		PdzcjXoDg+5rIWkgpMaJgKNkM6Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1061,7 +1061,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SffaHbm1slkGmIfn7mpgfoIKTUw2wJFP8MFdWVLqils=
+			SjT7hzLJRa5Qpap671NWjtsUEHGFL3w6TPSSyG6+/X0=
 			</data>
 		</dict>
 		<key>BGCategoryCell.nib</key>
@@ -2076,7 +2076,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8dq+me6mdrSRiZgw0MJsF77tQqI9oXME25zBTIeL9Jg=
+			tDNpiZ4BloffZEgznGzhls8JkCs6Ilwa9JzTSlziSkI=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -2104,14 +2104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DBwfGXvRRMVkMWTtba9C9D0WYp294Z4jWfgEhimoHhE=
+			EqZWV4JH4ctu/NG6gnNkemVbVmqR39N+Yeqax1Tjl34=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8dq+me6mdrSRiZgw0MJsF77tQqI9oXME25zBTIeL9Jg=
+			tDNpiZ4BloffZEgznGzhls8JkCs6Ilwa9JzTSlziSkI=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -2139,7 +2139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yUiuXYsvjV2ieODz3LD+/KNSmI3YEi6+eXqTZm/0UKk=
+			EcqawbML4RELKYXbXwo3OmZvfCp18Bf6B7lXaPm/P68=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -46,7 +46,19 @@ Pod::Spec.new do |spec|
   spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.22.1'
   spec.dependency 'MaterialComponents/ActivityIndicator', '~> 124.2.0'
   spec.dependency 'XLPagerTabStrip', '~> 9.1.0'
-  spec.libraries = 'c++', 'c++abi', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv'  
+
+  # PAGAdSDK (Pangle) is vendored below alongside GoogleMobileAds, so linking it
+  # requires Pangle's own system dependencies. This mirrors the upstream
+  # Ads-Global podspec in full: in this pod graph only zlib and libresolv are
+  # actually missing, but a consumer with a smaller graph could need any of the
+  # others, and system libs/frameworks cost nothing at runtime.
+  spec.libraries = 'c++', 'c++abi', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv'
+  spec.frameworks = 'UIKit', 'WebKit', 'MediaPlayer', 'AdSupport', 'CoreMedia',
+                    'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration',
+                    'MobileCoreServices', 'CoreMotion', 'Accelerate', 'AudioToolbox',
+                    'JavaScriptCore', 'Security', 'CoreImage'
+  spec.weak_frameworks = 'AppTrackingTransparency', 'CoreML', 'DeviceCheck'
+
   spec.vendored_frameworks = "CoreBundle/GenuinCore/GenuinCore.xcframework", "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework", "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework",
       "CoreBundle/Rudder_1.31.0/MetricsReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",

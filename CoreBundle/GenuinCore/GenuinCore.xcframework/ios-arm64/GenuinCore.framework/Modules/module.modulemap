@@ -7,4 +7,5 @@ framework module GenuinCore {
 
 module GenuinCore.Swift {
   header "GenuinCore-Swift.h"
+  requires objc
 }

@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		BTIyENyRdAWBb4ucDZfe3f+3Bf8=
+		VzrZ+6tbKbwosakjiJbWjQ6WLmc=
 		</data>
 		<key>BGPillCell.nib</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>GenuinCamera_Privacy.bundle/Info.plist</key>
 		<data>
-		SfbIn8mPuYpTi1HzExxviR/ZqQU=
+		84KMX4vrY5bE/uERQ2HaPEgexXI=
 		</data>
 		<key>Headers/GenuinCamera-Swift.h</key>
 		<data>
-		s+bUJc+j726s6r3wgrYmL/s+DLs=
+		JpGNwoV8mX7wtfnG0IkWaC78IlY=
 		</data>
 		<key>Headers/GenuinCamera-umbrella.h</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/oUyVCp0wmxdDLjWHeRDf5jxgSI=
+		pG/SU7gepZxguTCrnr4HujvldKg=
 		</data>
 		<key>Inter-ExtraBold.ttf</key>
 		<data>
@@ -254,47 +254,47 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		orJa8NLiPxe1k3CjxlQyR2xjD60=
+		ReIKjqgpgkXRSb7vqPz+tu1u3i4=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZxydHkI38OPrFhRauPMTcwgFVQ4=
+		xnGKKhZEe/3xVDNTeUj/If+mZmI=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8DxoI3ox6uBuzQo83CMFTcx3fhs=
+		x3FMKr4Hg+3ox6DEBtaOLN8MiZM=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l96Y9GYlcbJ2v0rXAPFIZrZIcmY=
+		+KUrOPPXdb0gzYrED5F6CcVj5ls=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PPzcVtHE0H3V09jbYxwXqMUnAcg=
+		fOv8+bqtFqAcG13uLqv1sz6/2ps=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		orJa8NLiPxe1k3CjxlQyR2xjD60=
+		ReIKjqgpgkXRSb7vqPz+tu1u3i4=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dMHcbqCqv11tzBDNuyV5/ybsNi0=
+		devcl0Xnr0Ncqyv/PtekTgk8zrA=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aBXqV/ivMeGADweib4Hrv9QSex0=
+		3QbGL1AwIUkW6pLBrFayy7okRnQ=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ut8NGb/B67kOiuiFUQhaNOwS4Ns=
+		Ixd2l0bklpP+65bsRaPTIiqm0vw=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ptAXoaNCU6GXS7G2WVeJlRAiuTQ=
+		EP646prq8zCS30yHs+znCnbAbMI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		at6UUI7vI0XHSjB7JKLZMabPo1s=
+		zpXjez49EIUF1lHt2kUJXovCQtY=
 		</data>
 		<key>NewPostViewController.nib</key>
 		<data>
@@ -387,7 +387,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xjrmGxoL12AcFEXut8zRR0zPUa21vE/sO4nCo7IcBQU=
+			671KL9CHMkgPYfCJDwXY967LxFiF6mIOfcHpAD/k4+M=
 			</data>
 		</dict>
 		<key>BGPillCell.nib</key>
@@ -646,14 +646,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kvPv/sGQRzfGR/TABNGdBvaZoix3FawybnCCVHWA4aQ=
+			OjA5oRmmoFZkWRfIMKIrpW4Ch8XbyOAEWKNZC4ee5bQ=
 			</data>
 		</dict>
 		<key>Headers/GenuinCamera-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sR4vgQ2F4V8nkHD8wvxqfnON4xdlEc/lUTRk1cSVzl4=
+			7xCZFtjw/9Ulflbvqm36cTQpnbczl/dwBYd/J81zVJA=
 			</data>
 		</dict>
 		<key>Headers/GenuinCamera-umbrella.h</key>
@@ -807,77 +807,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+o/YvIK6xI5K0u5u+e8TAvNmytP5YCbTABxhGldvUM4=
+			kfXXP4pcvNMj/rlOzDKueTYyq6JIziaNL8XAh+Z76xs=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2eR1R00Ck9txcZLYVptbwMx9DlpSh+1fsB66RcRIcmI=
+			TNybS/lm+3lkNezV0e4Reh11Ta851wxe+xqwA0N+yks=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qfp7tTDxpfb3TJUcjdopWxkCGxx4K0RMZwvUwj1KPa8=
+			KhapWMEl4Xh/qfXO+Qr0pr9r3B0jizaGry1X28jhfiI=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6mV/CIUx6RRc5dSbmiTBS8U9lX79Li4mmrDlGQc7NKc=
+			tFgH2U3GWpqor70OFZgn9KVNoakHRQ7LjQFUZlzjLvk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FfOzWoP51DwQprXIcgA273MxxzE9DET1vUYprnl5Ewo=
+			9NaaoV43jQPUjBEdAOH6Ezkw8LBWfiNTkdhtgHJawK8=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+o/YvIK6xI5K0u5u+e8TAvNmytP5YCbTABxhGldvUM4=
+			kfXXP4pcvNMj/rlOzDKueTYyq6JIziaNL8XAh+Z76xs=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			odd/eq+1ATaiNXg1lKsbDMSIgwMj9W1uGZUP9GZpkAI=
+			qItByi1fDSzyp4BGPdM6/iu8vujpZOb5IHOj0GzJzZk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yIE2EA5ePRAwXbbDOOHQozGC8j6oLUJwu8hO4MJKSvU=
+			sd2979XrSsaP5wySmyHtWgPOVChXh+87EL1U7mGGWgk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CqxePDFCbGUp8nZa4lDNY9NoPcNn8qDOaJWF6BBN6B4=
+			id7MD4161G5g4KFJWRhdgJCTQgyzuUbcavegtnrAZzg=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CKCZ/sAe3AEw/oAA4bJtgKUD0iZdXjvXIkASzs8vam8=
+			PpTN3ardBWZCi0DAOgBn17BS9G14q3DKbSRf7XTs+fQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RzZp3flMABbVr3og+MP7yb7bhR2ZbHmKxlzCfdWbEA0=
+			g87atWjoKrmsALrx36OZAb6aJYL1O7hjKvLu0l5l7FQ=
 			</data>
 		</dict>
 		<key>NewPostViewController.nib</key>

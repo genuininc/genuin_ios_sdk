@@ -24,18 +24,11 @@ let package = Package(
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.0"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.22.1"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
+        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.2.1-release.0")
     ],
     targets: [
             .binaryTarget(name: "GenuinCore",
                           path: "CoreBundle/GenuinCore/GenuinCore.xcframework"),
-            // Needed even though both are already statically linked inside
-            // GenuinCore.xcframework: its swiftinterface says
-            // `import PAGAdSDK` / `import GoogleMobileAds`, and
-            // GenuinCore-Swift.h carries `@import PAGAdSDK;`. SwiftPM has no
-            // way to expose a module without also linking it, so these do
-            // get linked - see the duplicate-class note in the README.
-            .binaryTarget(name: "PAGAdSDK",
-                          path: "CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework"),
             .binaryTarget(name: "GoogleMobileAds",
                           path: "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/GoogleMobileAds.xcframework"),
             .binaryTarget(name: "UserMessagingPlatform",
@@ -97,7 +90,7 @@ let package = Package(
             name: "GenuinCoreWrapper",
             dependencies: [
                 "GenuinCore",
-                "PAGAdSDK",
+                .product(name: "AdsGlobalPackage", package: "AdsGlobalPackage"),
                 "GoogleMobileAds", "UserMessagingPlatform",
                 "EasyTipView",
                 .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),

@@ -71,13 +71,15 @@ Pod::Spec.new do |spec|
   # GitHub's 100 MB limit), so a plain `git clone` by CocoaPods gets ~130-byte
   # text files instead of Mach-O archives and the link fails. If either slice
   # is not Mach-O, replace the xcframework with Pangle's official 8.2.1.0 zip
-  # (SHA-256 verified). Host apps do not need git-lfs. Not run for :path pods.
+  # (SHA-256 verified). The xcframework is not committed; a missing one is
+  # downloaded too. Host apps do not need git-lfs. Not run for :path pods.
   pangle_dir = 'CoreBundle/PangleSDK-8.2.1.0'
   pangle_url = 'https://sf16-fe-tos-sg.i18n-pglstatp.com/obj/pangle-sdk-static-va/8.2.1.0/PAGAdSDK.xcframework.zip'
   pangle_sha256 = 'c03d7b5845d334f7e56fc007b4e557762154634cf1f6639876f9b69eeb0bf904'
   spec.prepare_command = <<-CMD
     set -e
     DIR="#{pangle_dir}"
+    mkdir -p "$DIR"
     NEEDS_DOWNLOAD=0
     for BIN in "$DIR"/PAGAdSDK.xcframework/*/PAGAdSDK.framework/PAGAdSDK; do
       file -b "$BIN" | grep -q "Mach-O" || NEEDS_DOWNLOAD=1

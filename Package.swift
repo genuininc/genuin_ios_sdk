@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "GenuinSDK",
-    platforms: [.iOS(SupportedPlatform.IOSVersion.v13)],
+    platforms: [.iOS(SupportedPlatform.IOSVersion.v15)],
     products: [
         .library(
             name: "GenuinCore",
@@ -22,7 +22,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.0"),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.22.1"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.33.0"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
         .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.2.1-release.0")
     ],
@@ -61,6 +61,10 @@ let package = Package(
                           path: "CoreBundle/Rudder_1.31.0/RudderKit.xcframework"),
             .binaryTarget(name: "XLPagerTabStrip",
                           path: "CoreBundle/XLPagerTabStrip_9.1.0/XLPagerTabStrip.xcframework"),
+            .binaryTarget(name: "PrebidMobile",
+                          path: "CoreBundle/PrebidMobile-3.4.1-genuin/PrebidMobile.xcframework"),
+            .binaryTarget(name: "OMSDK_Prebidorg",
+                          path: "CoreBundle/PrebidMobile-3.4.1-genuin/OMSDK_Prebidorg.xcframework"),
             .binaryTarget(name: "GenuinUI",
                           path: "UIBundle/GenuinUI/GenuinUI.xcframework"),
             .binaryTarget(name: "URLEmbeddedView",
@@ -102,6 +106,7 @@ let package = Package(
                 "libPhoneNumberiOS",
                 "MetricsReporter", "RSCrashReporter", "Rudder", "RudderKit",
                 "XLPagerTabStrip",
+                "PrebidMobile", "OMSDK_Prebidorg",
             ],
             path: "CoreBundle/GenuinCoreWrapper"
         ),

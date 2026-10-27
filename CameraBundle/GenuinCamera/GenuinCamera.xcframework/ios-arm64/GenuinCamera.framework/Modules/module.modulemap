@@ -7,5 +7,4 @@ framework module GenuinCamera {
 
 module GenuinCamera.Swift {
   header "GenuinCamera-Swift.h"
-  requires objc
 }

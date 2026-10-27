@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		VzrZ+6tbKbwosakjiJbWjQ6WLmc=
+		BTIyENyRdAWBb4ucDZfe3f+3Bf8=
 		</data>
 		<key>BGPillCell.nib</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>GenuinCamera_Privacy.bundle/Info.plist</key>
 		<data>
-		84KMX4vrY5bE/uERQ2HaPEgexXI=
+		n4XsoGffs4KxWyuXNlS8rKByUr0=
 		</data>
 		<key>Headers/GenuinCamera-Swift.h</key>
 		<data>
-		JpGNwoV8mX7wtfnG0IkWaC78IlY=
+		s+bUJc+j726s6r3wgrYmL/s+DLs=
 		</data>
 		<key>Headers/GenuinCamera-umbrella.h</key>
 		<data>
@@ -202,7 +202,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pG/SU7gepZxguTCrnr4HujvldKg=
+		SeyQjI2g4feRuhCWVNiuUEXJ9Q0=
 		</data>
 		<key>Inter-ExtraBold.ttf</key>
 		<data>
@@ -254,51 +254,51 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ReIKjqgpgkXRSb7vqPz+tu1u3i4=
+		DlJ3D8Ge8g2HF5RZPC3NzcLU2CY=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xnGKKhZEe/3xVDNTeUj/If+mZmI=
+		ZxydHkI38OPrFhRauPMTcwgFVQ4=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		x3FMKr4Hg+3ox6DEBtaOLN8MiZM=
+		8DxoI3ox6uBuzQo83CMFTcx3fhs=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+KUrOPPXdb0gzYrED5F6CcVj5ls=
+		l96Y9GYlcbJ2v0rXAPFIZrZIcmY=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fOv8+bqtFqAcG13uLqv1sz6/2ps=
+		J8Gp18NgcBBcQt4AQ6R55HbbhbM=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ReIKjqgpgkXRSb7vqPz+tu1u3i4=
+		DlJ3D8Ge8g2HF5RZPC3NzcLU2CY=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		devcl0Xnr0Ncqyv/PtekTgk8zrA=
+		dMHcbqCqv11tzBDNuyV5/ybsNi0=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3QbGL1AwIUkW6pLBrFayy7okRnQ=
+		aBXqV/ivMeGADweib4Hrv9QSex0=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ixd2l0bklpP+65bsRaPTIiqm0vw=
+		Ut8NGb/B67kOiuiFUQhaNOwS4Ns=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EP646prq8zCS30yHs+znCnbAbMI=
+		uTZuWPBiu2+VgAGIdB6vSgfSYr0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		zpXjez49EIUF1lHt2kUJXovCQtY=
+		at6UUI7vI0XHSjB7JKLZMabPo1s=
 		</data>
 		<key>NewPostViewController.nib</key>
 		<data>
-		ncmGWcHYgZdcidGJ2Z1lep7MPq8=
+		+mtQJqvje5/M1J0EUxWv2CEN/KY=
 		</data>
 		<key>Nunito-ExtraBold.ttf</key>
 		<data>
@@ -387,7 +387,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			671KL9CHMkgPYfCJDwXY967LxFiF6mIOfcHpAD/k4+M=
+			xjrmGxoL12AcFEXut8zRR0zPUa21vE/sO4nCo7IcBQU=
 			</data>
 		</dict>
 		<key>BGPillCell.nib</key>
@@ -646,14 +646,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OjA5oRmmoFZkWRfIMKIrpW4Ch8XbyOAEWKNZC4ee5bQ=
+			ovekd4FuS6wtQzYNFbTMp8G2E+y6M4ukZL1QzabR6Y8=
 			</data>
 		</dict>
 		<key>Headers/GenuinCamera-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7xCZFtjw/9Ulflbvqm36cTQpnbczl/dwBYd/J81zVJA=
+			sR4vgQ2F4V8nkHD8wvxqfnON4xdlEc/lUTRk1cSVzl4=
 			</data>
 		</dict>
 		<key>Headers/GenuinCamera-umbrella.h</key>
@@ -807,84 +807,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kfXXP4pcvNMj/rlOzDKueTYyq6JIziaNL8XAh+Z76xs=
+			ynTRKrirN7rkPAX8wM/X3FSibCRY0h4/sU+DtOhAQ6s=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TNybS/lm+3lkNezV0e4Reh11Ta851wxe+xqwA0N+yks=
+			2eR1R00Ck9txcZLYVptbwMx9DlpSh+1fsB66RcRIcmI=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KhapWMEl4Xh/qfXO+Qr0pr9r3B0jizaGry1X28jhfiI=
+			qfp7tTDxpfb3TJUcjdopWxkCGxx4K0RMZwvUwj1KPa8=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tFgH2U3GWpqor70OFZgn9KVNoakHRQ7LjQFUZlzjLvk=
+			6mV/CIUx6RRc5dSbmiTBS8U9lX79Li4mmrDlGQc7NKc=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9NaaoV43jQPUjBEdAOH6Ezkw8LBWfiNTkdhtgHJawK8=
+			Hd3bmPGB5i5dhh8ncLMLyTcvmMnSJ0yo+5CPJxd3/YQ=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kfXXP4pcvNMj/rlOzDKueTYyq6JIziaNL8XAh+Z76xs=
+			ynTRKrirN7rkPAX8wM/X3FSibCRY0h4/sU+DtOhAQ6s=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qItByi1fDSzyp4BGPdM6/iu8vujpZOb5IHOj0GzJzZk=
+			odd/eq+1ATaiNXg1lKsbDMSIgwMj9W1uGZUP9GZpkAI=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sd2979XrSsaP5wySmyHtWgPOVChXh+87EL1U7mGGWgk=
+			yIE2EA5ePRAwXbbDOOHQozGC8j6oLUJwu8hO4MJKSvU=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			id7MD4161G5g4KFJWRhdgJCTQgyzuUbcavegtnrAZzg=
+			CqxePDFCbGUp8nZa4lDNY9NoPcNn8qDOaJWF6BBN6B4=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpTN3ardBWZCi0DAOgBn17BS9G14q3DKbSRf7XTs+fQ=
+			OZ9Ss+6XcPJHteEjt+AePvnilFyEl1P/YYg/4K6s/cE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g87atWjoKrmsALrx36OZAb6aJYL1O7hjKvLu0l5l7FQ=
+			RzZp3flMABbVr3og+MP7yb7bhR2ZbHmKxlzCfdWbEA0=
 			</data>
 		</dict>
 		<key>NewPostViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jQKGTs0kZqOA2l1O+28ZNcxNiHp4sz/JqADQ8zkShA=
+			OfcwHHJR7JNA4cfcxd+8XrjeQLUPdI1ZmPErJEjE3c0=
 			</data>
 		</dict>
 		<key>Nunito-ExtraBold.ttf</key>

@@ -39,13 +39,14 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/genuininc/genuin_ios_sdk.git", :tag => "#{spec.version}" }
 
 
-  spec.dependency 'lottie-ios', '~> 4.6.0'
+  spec.dependency 'lottie-ios', '~> 4.6.1'
   spec.dependency 'Hero', '~> 1.6.2'
   spec.dependency 'SkeletonView', '~> 1.30.4'
   spec.dependency 'EasyTipView', '~> 2.1'
-  spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.22.1'
+  spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.33.0'
   spec.dependency 'MaterialComponents/ActivityIndicator', '~> 124.2.0'
   spec.dependency 'XLPagerTabStrip', '~> 9.1.0'
+  spec.dependency 'Google-Mobile-Ads-SDK'
 
   # PAGAdSDK (Pangle) is vendored below alongside GoogleMobileAds, so linking it
   # requires Pangle's own system dependencies. This mirrors the upstream
@@ -64,8 +65,8 @@ Pod::Spec.new do |spec|
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/Rudder.xcframework",
       "CoreBundle/Rudder_1.31.0/RudderKit.xcframework",
-      "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/GoogleMobileAds.xcframework", "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/UserMessagingPlatform.xcframework",
-      "CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework"
+      "CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework",
+      "CoreBundle/PrebidMobile-3.4.1-genuin/PrebidMobile.xcframework", "CoreBundle/PrebidMobile-3.4.1-genuin/OMSDK_Prebidorg.xcframework"
 
   # PAGAdSDK binaries are committed as Git LFS pointers (each slice is over
   # GitHub's 100 MB limit), so a plain `git clone` by CocoaPods gets ~130-byte

@@ -5,3 +5,7 @@
 # Xcode user-specific state
 xcuserdata/
 *.xcuserdatad
+
+# Pangle binaries exceed GitHub's 100 MB limit; GenuinCore.podspec's
+# prepare_command downloads them, and SPM uses AdsGlobalPackage.
+CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework/

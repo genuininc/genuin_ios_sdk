@@ -21,10 +21,9 @@ let package = Package(
             targets: ["GenuinAIWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.0"),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.1"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.33.0"),
-        .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
-        .package(url: "https://github.com/bytedance/AdsGlobalPackage.git", exact: "8.2.1-release.0")
+        .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22")
     ],
     targets: [
             .binaryTarget(name: "GenuinCore",
@@ -94,7 +93,6 @@ let package = Package(
             name: "GenuinCoreWrapper",
             dependencies: [
                 "GenuinCore",
-                .product(name: "AdsGlobalPackage", package: "AdsGlobalPackage"),
                 "GoogleMobileAds", "UserMessagingPlatform",
                 "EasyTipView",
                 .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),

@@ -29,7 +29,6 @@ import MaterialComponents
 import MessageUI
 import MobileCoreServices
 import Network
-import PAGAdSDK
 import Photos
 import PrebidMobile
 import QuartzCore
@@ -1610,7 +1609,6 @@ public enum FeedVideoPlayType : Swift.Int {
   public var feedStream: Swift.Bool?
   public var inVideoStream: Swift.Bool?
   public var adsInAppBrowser: Swift.Bool?
-  public var pangleRewarded: Swift.Bool
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class BrandSupportedLanguage : ObjectiveC.NSObject {
@@ -4499,8 +4497,6 @@ public struct LogParams {
   public static let CREATIVE_ID: Swift.String
   public static let QUARTILE: Swift.String
   public static let AD_LATENCY: Swift.String
-  public static let AD_FORMAT: Swift.String
-  public static let AD_SLOT_ID: Swift.String
   public static let SPONSORSHIP_ID: Swift.String
   public static let CPM_RATE: Swift.String
   public struct AdType {

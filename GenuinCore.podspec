@@ -48,50 +48,11 @@ Pod::Spec.new do |spec|
   spec.dependency 'XLPagerTabStrip', '~> 9.1.0'
   spec.dependency 'Google-Mobile-Ads-SDK'
 
-  # PAGAdSDK (Pangle) is vendored below alongside GoogleMobileAds, so linking it
-  # requires Pangle's own system dependencies. This mirrors the upstream
-  # Ads-Global podspec in full: in this pod graph only zlib and libresolv are
-  # actually missing, but a consumer with a smaller graph could need any of the
-  # others, and system libs/frameworks cost nothing at runtime.
-  spec.libraries = 'c++', 'c++abi', 'resolv', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv'
-  spec.frameworks = 'UIKit', 'WebKit', 'MediaPlayer', 'AdSupport', 'CoreMedia',
-                    'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration',
-                    'MobileCoreServices', 'CoreMotion', 'Accelerate', 'AudioToolbox',
-                    'JavaScriptCore', 'Security', 'CoreImage'
-  spec.weak_frameworks = 'AppTrackingTransparency', 'CoreML', 'DeviceCheck'
-
   spec.vendored_frameworks = "CoreBundle/GenuinCore/GenuinCore.xcframework", "CoreBundle/libPhoneNumberiOS_0.9.15/libPhoneNumberiOS.xcframework", "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework",
       "CoreBundle/Rudder_1.31.0/MetricsReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/Rudder.xcframework",
       "CoreBundle/Rudder_1.31.0/RudderKit.xcframework",
-      "CoreBundle/PangleSDK-8.2.1.0/PAGAdSDK.xcframework",
       "CoreBundle/PrebidMobile-3.4.1-genuin/PrebidMobile.xcframework", "CoreBundle/PrebidMobile-3.4.1-genuin/OMSDK_Prebidorg.xcframework"
-
-  # PAGAdSDK binaries are committed as Git LFS pointers (each slice is over
-  # GitHub's 100 MB limit), so a plain `git clone` by CocoaPods gets ~130-byte
-  # text files instead of Mach-O archives and the link fails. If either slice
-  # is not Mach-O, replace the xcframework with Pangle's official 8.2.1.0 zip
-  # (SHA-256 verified). The xcframework is not committed; a missing one is
-  # downloaded too. Host apps do not need git-lfs. Not run for :path pods.
-  pangle_dir = 'CoreBundle/PangleSDK-8.2.1.0'
-  pangle_url = 'https://sf16-fe-tos-sg.i18n-pglstatp.com/obj/pangle-sdk-static-va/8.2.1.0/PAGAdSDK.xcframework.zip'
-  pangle_sha256 = 'c03d7b5845d334f7e56fc007b4e557762154634cf1f6639876f9b69eeb0bf904'
-  spec.prepare_command = <<-CMD
-    set -e
-    DIR="#{pangle_dir}"
-    mkdir -p "$DIR"
-    NEEDS_DOWNLOAD=0
-    for BIN in "$DIR"/PAGAdSDK.xcframework/*/PAGAdSDK.framework/PAGAdSDK; do
-      file -b "$BIN" | grep -q "Mach-O" || NEEDS_DOWNLOAD=1
-    done
-    if [ "$NEEDS_DOWNLOAD" = "1" ]; then
-      curl -fsSL --retry 3 -o "$DIR/PAGAdSDK.xcframework.zip" "#{pangle_url}"
-      echo "#{pangle_sha256}  $DIR/PAGAdSDK.xcframework.zip" | shasum -a 256 -c -
-      rm -rf "$DIR/PAGAdSDK.xcframework"
-      unzip -q -o "$DIR/PAGAdSDK.xcframework.zip" -d "$DIR"
-      rm -f "$DIR/PAGAdSDK.xcframework.zip"
-    fi
-  CMD
 
 end

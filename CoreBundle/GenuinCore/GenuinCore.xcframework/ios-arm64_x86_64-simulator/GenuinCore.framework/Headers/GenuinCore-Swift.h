@@ -352,7 +352,6 @@ extern "C" {
 @import GoogleInteractiveMediaAds;
 @import GoogleMobileAds;
 @import ObjectiveC;
-@import PAGAdSDK;
 @import PrebidMobile;
 @import SafariServices;
 @import TOCropViewController;
@@ -839,30 +838,6 @@ SWIFT_CLASS("_TtC10GenuinCore22BGNavigationController")
 SWIFT_CLASS("_TtC10GenuinCore16BGNetworkMonitor")
 @interface BGNetworkMonitor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-/// Pangle app id + slot ids, delivered inline on a <code>video_ad</code> entry whose
-/// <code>platform</code> is <code>pangle</code>. Every slot id is optional: a missing one just
-/// drops that format out of the ladder.
-SWIFT_CLASS("_TtC10GenuinCore16BGPangleAdConfig")
-@interface BGPangleAdConfig : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore20BGPangleAdController")
-@interface BGPangleAdController : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@protocol PAGAdProtocol;
-@class PAGRewardedAd;
-@class PAGRewardModel;
-@interface BGPangleAdController (SWIFT_EXTENSION(GenuinCore)) <PAGBannerAdDelegate, PAGLInterstitialAdDelegate, PAGLNativeAdDelegate, PAGRewardedAdDelegate>
-- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
-- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
-- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
-- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userDidEarnReward:(PAGRewardModel * _Nonnull)rewardModel;
-- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userEarnRewardFailWithError:(NSError * _Nonnull)error;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore11BGPlacement")
@@ -1357,13 +1332,6 @@ SWIFT_CLASS("_TtC10GenuinCore18GenuinNativeAdView")
 @interface GenuinNativeAdView : GADNativeAdView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore24GenuinPangleNativeAdView")
-@interface GenuinPangleNativeAdView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore28GenuinPlacementConfiguration")
@@ -2390,7 +2358,6 @@ extern "C" {
 @import GoogleInteractiveMediaAds;
 @import GoogleMobileAds;
 @import ObjectiveC;
-@import PAGAdSDK;
 @import PrebidMobile;
 @import SafariServices;
 @import TOCropViewController;
@@ -2877,30 +2844,6 @@ SWIFT_CLASS("_TtC10GenuinCore22BGNavigationController")
 SWIFT_CLASS("_TtC10GenuinCore16BGNetworkMonitor")
 @interface BGNetworkMonitor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-/// Pangle app id + slot ids, delivered inline on a <code>video_ad</code> entry whose
-/// <code>platform</code> is <code>pangle</code>. Every slot id is optional: a missing one just
-/// drops that format out of the ladder.
-SWIFT_CLASS("_TtC10GenuinCore16BGPangleAdConfig")
-@interface BGPangleAdConfig : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore20BGPangleAdController")
-@interface BGPangleAdController : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@protocol PAGAdProtocol;
-@class PAGRewardedAd;
-@class PAGRewardModel;
-@interface BGPangleAdController (SWIFT_EXTENSION(GenuinCore)) <PAGBannerAdDelegate, PAGLInterstitialAdDelegate, PAGLNativeAdDelegate, PAGRewardedAdDelegate>
-- (void)adDidShow:(id <PAGAdProtocol> _Nonnull)ad;
-- (void)adDidClick:(id <PAGAdProtocol> _Nonnull)ad;
-- (void)adDidDismiss:(id <PAGAdProtocol> _Nonnull)ad;
-- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userDidEarnReward:(PAGRewardModel * _Nonnull)rewardModel;
-- (void)rewardedAd:(PAGRewardedAd * _Nonnull)rewardedAd userEarnRewardFailWithError:(NSError * _Nonnull)error;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore11BGPlacement")
@@ -3395,13 +3338,6 @@ SWIFT_CLASS("_TtC10GenuinCore18GenuinNativeAdView")
 @interface GenuinNativeAdView : GADNativeAdView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC10GenuinCore24GenuinPangleNativeAdView")
-@interface GenuinPangleNativeAdView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore28GenuinPlacementConfiguration")

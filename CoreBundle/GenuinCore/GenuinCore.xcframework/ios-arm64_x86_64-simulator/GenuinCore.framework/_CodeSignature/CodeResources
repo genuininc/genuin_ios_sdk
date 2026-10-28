@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/GenuinCore-Swift.h</key>
 		<data>
-		PKbVZZ5Hn9tLZyuMG5heuMO/0ow=
+		Ps8zNr3/hkWISTBBnoJrIF/ADbc=
 		</data>
 		<key>Headers/GenuinCore-umbrella.h</key>
 		<data>
@@ -602,43 +602,43 @@
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bah3MG+ywvKb0M528ar/r/V5cYU=
+		znrfIzj+S2BnhS2k4BdsprUjThU=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4P8WIuea22SRYhIXwK79m00zNB4=
+		stozVhbLyGhcrFbDE7JtvXi7X1Q=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bKivO67vXPnwCstaF+Qi2+UXGM4=
+		pQL2Qg4eyiYg6jzPCMyn6WsVbvE=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		UWzHtZN7ZtcPfLmBHjQC/YABlIs=
+		xR9JSaEYWG5iCOujSEzS+W/NCiI=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+gUOqdIuQ3wSZrpqCiM2zA79iFI=
+		U2q+qMlnU3JzBBnZfGmYobMx3UQ=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bah3MG+ywvKb0M528ar/r/V5cYU=
+		znrfIzj+S2BnhS2k4BdsprUjThU=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WLGqLdDtcE+M2xlArY3H6M5UYxA=
+		kuVGbuQUUuHyWH6z/ik0q1gfo40=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4Lsbd3KxN2iOS1zAcQAsZ9+429M=
+		5S3fXU4v5vNI7DNs7PcvYc2zS+E=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Y7DHXdRhtkRGxERwJJ15PiTQYuY=
+		0k4izJvOWQH2wKU2Cm0i89s/4+A=
 		</data>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4Fy4F1xf3nRYU0n7e6hw2f8JwuQ=
+		6XqkksmR84U+VltvyQ2NP5vbh+w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -687,82 +687,6 @@
 		<key>OptionCell.nib</key>
 		<data>
 		Eqmq/Z6fXCiGUbJa3PyBZaDdX+g=
-		</data>
-		<key>PAGAdSDK.bundle/100004311.json</key>
-		<data>
-		P02utKGqZE7217M3JUzpkJDO1zY=
-		</data>
-		<key>PAGAdSDK.bundle/100004312.json</key>
-		<data>
-		gTzozJIQwfNKm+NfSBAyIN9zbdY=
-		</data>
-		<key>PAGAdSDK.bundle/100004313.json</key>
-		<data>
-		hE/+Thyy117DlzQdj2LsQscZErU=
-		</data>
-		<key>PAGAdSDK.bundle/100004314.json</key>
-		<data>
-		130RHqacNULxss4IK2m/nnr7cpU=
-		</data>
-		<key>PAGAdSDK.bundle/400001965.json</key>
-		<data>
-		8a3U+V+2zHkhNboUayGyA6XGUD8=
-		</data>
-		<key>PAGAdSDK.bundle/400007896.json</key>
-		<data>
-		fAPLnYiX95ptTcM1oOSf+61M/fo=
-		</data>
-		<key>PAGAdSDK.bundle/400007913.json</key>
-		<data>
-		5q86CJE9HpjQQ9Ukbb9WPcxUxi0=
-		</data>
-		<key>PAGAdSDK.bundle/400007914.json</key>
-		<data>
-		C9na1jUPC9lfttfQ+c3/zIvM5lg=
-		</data>
-		<key>PAGAdSDK.bundle/400007918.json</key>
-		<data>
-		ps6UK8x6zr8lwb5lndr89EZcL5M=
-		</data>
-		<key>PAGAdSDK.bundle/400007923.json</key>
-		<data>
-		wszSaxcAh8+sfbw5X7r35sGzsrI=
-		</data>
-		<key>PAGAdSDK.bundle/400007941.json</key>
-		<data>
-		QNNyKQTwHu2w7V229uebCNdtzPs=
-		</data>
-		<key>PAGAdSDK.bundle/400007999.json</key>
-		<data>
-		+uUTZq6R6wiVpauUJPZsrcwZo9E=
-		</data>
-		<key>PAGAdSDK.bundle/400013145.json</key>
-		<data>
-		wYG19K/OlHndq/9fsKrP7Tj1Ti4=
-		</data>
-		<key>PAGAdSDK.bundle/400013146.json</key>
-		<data>
-		3Oh8Gy11y2+/Hsdh7gMHZhoytnk=
-		</data>
-		<key>PAGAdSDK.bundle/Assets.car</key>
-		<data>
-		GM1zQfxDdVe4nfVDDYxfgMcnybE=
-		</data>
-		<key>PAGAdSDK.bundle/Info.plist</key>
-		<data>
-		WYImHY6EVK14bnsaQZdrclH+RKg=
-		</data>
-		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<data>
-		/9EtcEGxvliJS6WqSyAMGN1TBwE=
-		</data>
-		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
-		<data>
-		WX9bWVBNl+h/NW1bQTdx+psJVyU=
-		</data>
-		<key>PAGAdSDK.bundle/version.txt</key>
-		<data>
-		lVJtgYXGxH/iCEivRx2EIZ6DuN4=
 		</data>
 		<key>Personalisation.storyboardc/BGCategoriesViewController.nib</key>
 		<data>
@@ -1306,7 +1230,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SwueHdtS+0X7DugWqxYsAJ0UGssBZiWygXuKbbQx5Jw=
+			EmpdCZ8NZdOodd6V+3Enzeieb/MezGhWhNvQX7ltN8g=
 			</data>
 		</dict>
 		<key>Headers/GenuinCore-umbrella.h</key>
@@ -2076,70 +2000,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vsqour+jBlHqzcBdmMecNr2zWb0XGehRO12/nYoDTMg=
+			/P+6T5anGmhw4wMv083xJbObjClNbPjSqF09+aTsaG0=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ctTGlZcZnXnSZTQteMGmEfpdeWPCEJzIfx4M9jRPd94=
+			vrJZpRMr374Dd11YVeK60nPgYzydhj0iorf6qBNt4qQ=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8RznnzoGfgapJ7tKWtv7HoFLYOT9mHBocR+2l1GbdVk=
+			5Qv1ecCPZh4y7gbRs3tAFuHE1TNuhOsHkGLGemZk6SA=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vY9U29a+4w38aY+RiIl0xl1m+tnNEtoOmIYtr1zdJuY=
+			XWpQclJiGug0/q+63EXQp5e35e44LonBXzEh0/GYP5M=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			740of0z8YbIi1PNzrUZeBOujAbH1o1SfSeJiDiwqFv8=
+			kkDd2Pw8VQFhaWn9QtCZDJQLj5JSMOF70Lr10rLJ2tk=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vsqour+jBlHqzcBdmMecNr2zWb0XGehRO12/nYoDTMg=
+			/P+6T5anGmhw4wMv083xJbObjClNbPjSqF09+aTsaG0=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			umeDC9ZTd2g5unlN+L6uDzyxPh6+zVaQO2pfQoVqjW0=
+			6IK5Mr7HGCPnXE34bKRwRYzFDw74l4/6FIxhUCOzFjU=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XXNHZiSW5gZWemlwaLAeb66qX0YHwjAAKsRGZRLUWLs=
+			SpyOpEXX+R9cu9j7wu6EkU52Ax2cBeN7/n0Y7Onq2vc=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2zEKA16nPBu/hdIJH8Xdq5V5Rws0/YPhbyLn8obqo7M=
+			PiBfXA4IRl6CHcJ2SP3BRdsNmgjsNE78715lhOhxPkw=
 			</data>
 		</dict>
 		<key>Modules/GenuinCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cn6hi4Iw8WqrchJRDftnyscxB8Ji2yWN6tEJFk0PgZo=
+			YL1UstHn/krftC2FNwN6uYt5Ta/YTR6jyq7dBROSpPw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2224,139 +2148,6 @@
 			<key>hash2</key>
 			<data>
 			xJmpcN1v2nbJnQOa/31U3hh3xP5RgtiqcRcp/mYbOvU=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/100004311.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QTQrasQsUh3tyC9HRMxvNFSmIYU+xFOkSB5FB59UysI=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/100004312.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M3G2wGPZFvooSFhBKAkTNfeP6KUQWSKMNlbBtwY3T7s=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/100004313.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			O73A3yCueixxtehqInqtTYP9nn4oYLog/b2GzrJZS3k=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/100004314.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5EhOvpnIzqokh4QTpHfy3P8h4kRvyC5FSTtAgb8h5lg=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400001965.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xku2W6M9lDz8/2hdgdK4qO1J8i6kgeT9Y4Ku88E3J9Y=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007896.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7FRejQA6EO6xM7/Vq8odwaL+zYMFOLQG6UvksqPk+Dg=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007913.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			W9xXJWyecKwR527OgT2PElwBZBd+Rp3lxqSPV/sC24M=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007914.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x2meWrRsMaW574Tibh34fB8SAF9A+EeFw86wIzrwcRU=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007918.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			kXeu/VRr7KpBcWD+80yGalGaEHINNAzNc4Bi2j1XKEU=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007923.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			P3wuO4W9SIp/mzbPC8yQDURE4nPXgdjKJ6K7feI1MPM=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007941.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hmV93IfMO9AQfrKUH0jTC5bLw6p5ffOTmXSekJKQrYI=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400007999.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0ZvzpkSC5n0z7SrSS0dUbe3kBtAf5xhsghbnF2Lw5sw=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400013145.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yzyDZBg6z4GKDBwFgkCH+4V0v07XuqKm1HOpBQJsO2o=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/400013146.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3TL27yg0uEKB0WGwmtAIeL8sNAvOD7GlfuFKnK+AFZk=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			54YjOW/UEsAvVDhWT9fgt3Wf9h9Q94fzTMTLsGjH6+M=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			WBgNLsdm3EhFUBBgokNbcHb0ZJG2T+gYRhsuaPUPMRY=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			y5cXDuafZAHCK9CZXFBYYkEI7u+LZGwDEwlq24JR8ik=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/omsdk-v1.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Hlaaa4S6qm4V7fKq/DHH3FhORcQgKZ+hqniOO4ptmHc=
-			</data>
-		</dict>
-		<key>PAGAdSDK.bundle/version.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RKDsLACTu0IGpICJ3UEnagAdm+RaidPtG4uIJIPY8jE=
 			</data>
 		</dict>
 		<key>Personalisation.storyboardc/BGCategoriesViewController.nib</key>

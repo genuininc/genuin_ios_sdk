@@ -3451,6 +3451,7 @@ extension GenuinSDK {
   @objc dynamic public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data, isFCMIntegrated: Swift.Bool)
   @objc dynamic public func registerFCMToken(token: Swift.String)
   @objc dynamic public func setCrossPlatformToTrue()
+  @objc dynamic public func setPrivacyOptOut(_ isOptOut: Swift.Bool)
   @objc dynamic public func registerLinkoutInterceptor(associateDomains: [Swift.String], linkOutInterceptorDelegate: any GenuinLinkOutInterceptorDelegate)
   @objc dynamic public func getClientAssociatedDomains() -> [Swift.String]?
 }
@@ -7487,4 +7488,3 @@ extension KSToCBRequestStatusType : Swift.Hashable {}
 extension KSToCBRequestStatusType : Swift.RawRepresentable {}
 extension BGExploreType : Swift.Equatable {}
 extension BGExploreType : Swift.Hashable {}
-extension BGExploreType : Swift.RawRepresentable {}

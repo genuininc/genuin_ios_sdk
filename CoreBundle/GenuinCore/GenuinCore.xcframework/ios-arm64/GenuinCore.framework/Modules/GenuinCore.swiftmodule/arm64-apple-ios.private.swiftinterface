@@ -4998,6 +4998,7 @@ extension GenuinSDK {
   @objc dynamic public func application(_ application: UIKit.UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Foundation.Data, isFCMIntegrated: Swift.Bool)
   @objc dynamic public func registerFCMToken(token: Swift.String)
   @objc dynamic public func setCrossPlatformToTrue()
+  @objc dynamic public func setPrivacyOptOut(_ isOptOut: Swift.Bool)
   @objc dynamic public func registerLinkoutInterceptor(associateDomains: [Swift.String], linkOutInterceptorDelegate: any GenuinLinkOutInterceptorDelegate)
   @objc dynamic public func getClientAssociatedDomains() -> [Swift.String]?
 }
@@ -10629,4 +10630,3 @@ extension BGExploreType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventType : Swift.RawRepresentable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Equatable {}
 @_spi(GenuinInternal) extension WalletEventContentType : Swift.Hashable {}
-@_spi(GenuinInternal) extension WalletEventContentType : Swift.RawRepresentable {}

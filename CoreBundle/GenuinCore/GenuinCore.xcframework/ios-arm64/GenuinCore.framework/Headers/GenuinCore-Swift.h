@@ -1401,6 +1401,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GenuinSDK * 
 - (void)application:(UIApplication * _Nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * _Nonnull)deviceToken isFCMIntegrated:(BOOL)isFCMIntegrated;
 - (void)registerFCMTokenWithToken:(NSString * _Nonnull)token;
 - (void)setCrossPlatformToTrue;
+/// Sets the user’s privacy opt-out preference. Pass <code>true</code> when the user
+/// opts out of the sale / sharing of their personal data. Defaults to <code>false</code>.
+- (void)setPrivacyOptOut:(BOOL)isOptOut;
 - (void)registerLinkoutInterceptorWithAssociateDomains:(NSArray<NSString *> * _Nonnull)associateDomains linkOutInterceptorDelegate:(id <GenuinLinkOutInterceptorDelegate> _Nonnull)linkOutInterceptorDelegate;
 - (NSArray<NSString *> * _Nullable)getClientAssociatedDomains SWIFT_WARN_UNUSED_RESULT;
 @end

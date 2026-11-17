@@ -23,15 +23,12 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.1"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.33.0"),
-        .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22")
+        .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .upToNextMinor(from: "13.11.0"))
     ],
     targets: [
             .binaryTarget(name: "GenuinCore",
                           path: "CoreBundle/GenuinCore/GenuinCore.xcframework"),
-            .binaryTarget(name: "GoogleMobileAds",
-                          path: "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/GoogleMobileAds.xcframework"),
-            .binaryTarget(name: "UserMessagingPlatform",
-                          path: "CoreBundle/GoogleMobileAdsSdkiOS-13.3.0/UserMessagingPlatform.xcframework"),
             .binaryTarget(name: "TOCropViewController",
                           path: "CoreBundle/TOCropViewController_2.6.1/TOCropViewController.xcframework"),
             .binaryTarget(name: "MaterialComponents",
@@ -93,7 +90,7 @@ let package = Package(
             name: "GenuinCoreWrapper",
             dependencies: [
                 "GenuinCore",
-                "GoogleMobileAds", "UserMessagingPlatform",
+                .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
                 "EasyTipView",
                 .product(name: "GoogleInteractiveMediaAds", package: "swift-package-manager-google-interactive-media-ads-ios"),
                 "TOCropViewController",

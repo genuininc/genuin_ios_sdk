@@ -406616,7 +406616,7 @@
       "kind": "StringLiteral",
       "offset": 10415,
       "length": 7,
-      "value": "\"2.1.8\""
+      "value": "\"2.1.9\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",

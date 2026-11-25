@@ -53,15 +53,6 @@ Pod::Spec.new do |spec|
       "CoreBundle/Rudder_1.31.0/RSCrashReporter.xcframework",
       "CoreBundle/Rudder_1.31.0/Rudder.xcframework",
       "CoreBundle/Rudder_1.31.0/RudderKit.xcframework",
-      "CoreBundle/PrebidMobile-3.4.1-genuin/PrebidMobile.xcframework", "CoreBundle/PrebidMobile-3.4.1-genuin/OMSDK_Prebidorg.xcframework"
-
-  # GenuinCore does not embed Google Mobile Ads; it resolves the GMA symbols listed in
-  # genuin-gma-symbols.txt from the host app at launch. Release/TestFlight/App Store builds strip
-  # the app's exports, so without this keep list dyld aborts with
-  # "symbol not found in flat namespace '_GADAdLoaderAdTypeNative'". Debug builds do not strip.
-  spec.preserve_paths = "CoreBundle/GenuinCore/genuin-gma-symbols.txt"
-  spec.user_target_xcconfig = {
-    'STRIPFLAGS' => '$(inherited) -i -s "${PODS_ROOT}/GenuinCore/CoreBundle/GenuinCore/genuin-gma-symbols.txt"'
-  }
+      "CoreBundle/GenuinPrebidMobile-3.4.1-genuin/GenuinPrebidMobile.xcframework", "CoreBundle/GenuinPrebidMobile-3.4.1-genuin/OMSDK_Prebidorg.xcframework"
 
 end

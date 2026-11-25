@@ -24,7 +24,11 @@ let package = Package(
         .package(url: "https://github.com/airbnb/lottie-spm.git", exact: "4.6.1"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-interactive-media-ads-ios.git", exact: "3.33.0"),
         .package(url: "https://github.com/Giphy/giphy-ios-sdk.git", exact: "2.1.22"),
-        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", .upToNextMinor(from: "13.11.0"))
+        .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git", exact: "13.11.0"),
+        // OMSDK_Prebidorg only: GenuinPrebidMobile links it, and declaring Genuin's own copy would clash
+        // with a host app that also uses prebid-mobile-ios (two packages, one framework name).
+        // The range admits iHeart's pinned 3.3.4; 3.3.4 through 3.4.1 ship a byte-identical OMSDK.
+        .package(url: "https://github.com/prebid/prebid-mobile-ios.git", "3.3.4"..<"4.0.0")
     ],
     targets: [
             .binaryTarget(name: "GenuinCore",
@@ -57,10 +61,10 @@ let package = Package(
                           path: "CoreBundle/Rudder_1.31.0/RudderKit.xcframework"),
             .binaryTarget(name: "XLPagerTabStrip",
                           path: "CoreBundle/XLPagerTabStrip_9.1.0/XLPagerTabStrip.xcframework"),
-            .binaryTarget(name: "PrebidMobile",
-                          path: "CoreBundle/PrebidMobile-3.4.1-genuin/PrebidMobile.xcframework"),
-            .binaryTarget(name: "OMSDK_Prebidorg",
-                          path: "CoreBundle/PrebidMobile-3.4.1-genuin/OMSDK_Prebidorg.xcframework"),
+            // Genuin's Prebid 3.4.1 fork under its own module name, so it coexists with a host's
+            // stock PrebidMobile (SwiftPM rejects two targets named `PrebidMobile`).
+            .binaryTarget(name: "GenuinPrebidMobile",
+                          path: "CoreBundle/GenuinPrebidMobile-3.4.1-genuin/GenuinPrebidMobile.xcframework"),
             .binaryTarget(name: "GenuinUI",
                           path: "UIBundle/GenuinUI/GenuinUI.xcframework"),
             .binaryTarget(name: "URLEmbeddedView",
@@ -101,7 +105,8 @@ let package = Package(
                 "libPhoneNumberiOS",
                 "MetricsReporter", "RSCrashReporter", "Rudder", "RudderKit",
                 "XLPagerTabStrip",
-                "PrebidMobile", "OMSDK_Prebidorg",
+                "GenuinPrebidMobile",
+                .product(name: "PrebidMobile", package: "prebid-mobile-ios"),
             ],
             path: "CoreBundle/GenuinCoreWrapper"
         ),

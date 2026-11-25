@@ -270,7 +270,7 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8dXidr6gQcB1p5ZDPJIcanJjlH4=
+		+VDvvDMih8v/tlLkALbWfRlbt7o=
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -290,7 +290,7 @@
 		</data>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pquQbCyqAPVnRBG91FI5cxNpJKc=
+		fRwd9JOFcEQ0KKdOCqdPfj1inGg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -835,7 +835,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cvOKioOUBOAS7m7X/6pCfv8m5Gk+Ip7N3TzyLGxBw78=
+			ni8R6HiW/IRZIDryeHfMj6GEMXb+4U9vQJs6NuAezr8=
 			</data>
 		</dict>
 		<key>Modules/GenuinCamera.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -870,7 +870,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gmpyutOBh5kv7wqtAht/fH4EWGasV47+ayVekmTzhJQ=
+			8TJ+0GCA7x8Jqb63qE9ocOjXi2FYgN7Qk1b6keS9N4M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

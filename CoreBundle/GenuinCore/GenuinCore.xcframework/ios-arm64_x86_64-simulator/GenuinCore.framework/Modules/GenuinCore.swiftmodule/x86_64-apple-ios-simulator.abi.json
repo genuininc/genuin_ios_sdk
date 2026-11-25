@@ -25222,13 +25222,6 @@
         "moduleName": "GenuinCore"
       },
       {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "GenuinCore"
-      },
-      {
         "kind": "TypeDecl",
         "name": "BGAdsManagerDelegate",
         "printedName": "BGAdsManagerDelegate",
@@ -30429,22 +30422,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerViewDidReceiveAd:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC22bannerViewDidReceiveAdyySo09GADBannerF0CF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC22bannerViewDidReceiveAdyySo6UIViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerViewDidReceiveAd:",
             "declAttributes": [
               "Final",
+              "AccessControl",
               "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30464,9 +30456,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
               },
               {
                 "kind": "TypeNominal",
@@ -30477,50 +30469,13 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerView:didFailToReceiveAdWithError:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC10bannerView_27didFailToReceiveAdWithErrorySo09GADBannerF0C_s0M0_ptF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC10bannerView_27didFailToReceiveAdWithErrorySo6UIViewC_s0M0_ptF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerView:didFailToReceiveAdWithError:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "GenuinInternal"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "bannerViewDidRecordClick",
-            "printedName": "bannerViewDidRecordClick(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerViewDidRecordClick:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC24bannerViewDidRecordClickyySo09GADBannerF0CF",
-            "moduleName": "GenuinCore",
-            "objc_name": "bannerViewDidRecordClick:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30540,127 +30495,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerViewDidRecordImpression:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC29bannerViewDidRecordImpressionyySo09GADBannerF0CF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC29bannerViewDidRecordImpressionyySo6UIViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerViewDidRecordImpression:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "GenuinInternal"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "bannerViewWillPresentScreen",
-            "printedName": "bannerViewWillPresentScreen(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerViewWillPresentScreen:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC27bannerViewWillPresentScreenyySo09GADBannerF0CF",
-            "moduleName": "GenuinCore",
-            "objc_name": "bannerViewWillPresentScreen:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "GenuinInternal"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "bannerViewWillDismissScreen",
-            "printedName": "bannerViewWillDismissScreen(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerViewWillDismissScreen:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC27bannerViewWillDismissScreenyySo09GADBannerF0CF",
-            "moduleName": "GenuinCore",
-            "objc_name": "bannerViewWillDismissScreen:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "spi_group_names": [
-              "GenuinInternal"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "bannerViewDidDismissScreen",
-            "printedName": "bannerViewDidDismissScreen(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BannerView",
-                "printedName": "GoogleMobileAds.BannerView",
-                "usr": "c:objc(cs)GADBannerView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)bannerViewDidDismissScreen:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC26bannerViewDidDismissScreenyySo09GADBannerF0CF",
-            "moduleName": "GenuinCore",
-            "objc_name": "bannerViewDidDismissScreen:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30680,22 +30528,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NativeAd",
-                "printedName": "GoogleMobileAds.NativeAd",
-                "usr": "c:objc(cs)GADNativeAd"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)nativeAdDidRecordImpression:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC27nativeAdDidRecordImpressionyySo09GADNativeF0CF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC27nativeAdDidRecordImpressionyySo8NSObjectCF",
             "moduleName": "GenuinCore",
             "objc_name": "nativeAdDidRecordImpression:",
             "declAttributes": [
               "Final",
+              "AccessControl",
               "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30715,28 +30562,27 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AdLoader",
-                "printedName": "GoogleMobileAds.AdLoader",
-                "usr": "c:objc(cs)GADAdLoader"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               },
               {
                 "kind": "TypeNominal",
-                "name": "NativeAd",
-                "printedName": "GoogleMobileAds.NativeAd",
-                "usr": "c:objc(cs)GADNativeAd"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)adLoader:didReceiveNativeAd:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC8adLoader_10didReceiveySo05GADAdF0C_So11GADNativeAdCtF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC8adLoader_10didReceiveySo8NSObjectC_AGtF",
             "moduleName": "GenuinCore",
             "objc_name": "adLoader:didReceiveNativeAd:",
             "declAttributes": [
               "Final",
+              "AccessControl",
               "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30756,9 +30602,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AdLoader",
-                "printedName": "GoogleMobileAds.AdLoader",
-                "usr": "c:objc(cs)GADAdLoader"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               },
               {
                 "kind": "TypeNominal",
@@ -30769,15 +30615,13 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)adLoader:didFailToReceiveAdWithError:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC8adLoader_27didFailToReceiveAdWithErrorySo05GADAdF0C_s0M0_ptF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC8adLoader_27didFailToReceiveAdWithErrorySo8NSObjectC_s0M0_ptF",
             "moduleName": "GenuinCore",
             "objc_name": "adLoader:didFailToReceiveAdWithError:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30797,22 +30641,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VideoController",
-                "printedName": "GoogleMobileAds.VideoController",
-                "usr": "c:objc(cs)GADVideoController"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)videoControllerDidEndVideoPlayback:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC34videoControllerDidEndVideoPlaybackyySo08GADVideoF0CF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC34videoControllerDidEndVideoPlaybackyySo8NSObjectCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoControllerDidEndVideoPlayback:",
             "declAttributes": [
               "Final",
+              "AccessControl",
               "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30832,22 +30675,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VideoController",
-                "printedName": "GoogleMobileAds.VideoController",
-                "usr": "c:objc(cs)GADVideoController"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)videoControllerDidPlayVideo:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC27videoControllerDidPlayVideoyySo08GADVideoF0CF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC27videoControllerDidPlayVideoyySo8NSObjectCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoControllerDidPlayVideo:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -30867,22 +30708,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "VideoController",
-                "printedName": "GoogleMobileAds.VideoController",
-                "usr": "c:objc(cs)GADVideoController"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGAdsManager(im)videoControllerDidPauseVideo:",
-            "mangledName": "$s10GenuinCore12BGAdsManagerC28videoControllerDidPauseVideoyySo08GADVideoF0CF",
+            "mangledName": "$s10GenuinCore12BGAdsManagerC28videoControllerDidPauseVideoyySo8NSObjectCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoControllerDidPauseVideo:",
             "declAttributes": [
               "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isFromExtension": true,
             "spi_group_names": [
@@ -79991,6 +79830,23 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "ObjectiveC",
+        "printedName": "ObjectiveC",
+        "declKind": "Import",
+        "moduleName": "GenuinCore"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GenuinCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "SuggestionType",
         "printedName": "SuggestionType",
@@ -102510,8 +102366,8 @@
       },
       {
         "kind": "Import",
-        "name": "PrebidMobile",
-        "printedName": "PrebidMobile",
+        "name": "GenuinPrebidMobile",
+        "printedName": "GenuinPrebidMobile",
         "declKind": "Import",
         "moduleName": "GenuinCore"
       },
@@ -104491,8 +104347,8 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               },
               {
                 "kind": "TypeNominal",
@@ -104503,7 +104359,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)bannerView:didReceiveAdWithAdSize:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC10bannerView_016didReceiveAdWithJ4Sizey12PrebidMobile06BannerG0C_So6CGSizeVtF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC10bannerView_016didReceiveAdWithJ4Sizey0A12PrebidMobile06BannerG0C_So6CGSizeVtF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerView:didReceiveAdWithAdSize:",
             "declAttributes": [
@@ -104530,8 +104386,8 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               },
               {
                 "kind": "TypeNominal",
@@ -104542,7 +104398,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)bannerView:didFailToReceiveAdWith:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC10bannerView_22didFailToReceiveAdWithy12PrebidMobile06BannerG0C_s5Error_ptF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC10bannerView_22didFailToReceiveAdWithy0A12PrebidMobile06BannerG0C_s5Error_ptF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerView:didFailToReceiveAdWith:",
             "declAttributes": [
@@ -104569,13 +104425,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)bannerViewDidExpire:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC19bannerViewDidExpireyy12PrebidMobile06BannerG0CF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC19bannerViewDidExpireyy0A12PrebidMobile06BannerG0CF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerViewDidExpire:",
             "declAttributes": [
@@ -104603,13 +104459,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)bannerViewWillPresentModal:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC26bannerViewWillPresentModalyy12PrebidMobile06BannerG0CF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC26bannerViewWillPresentModalyy0A12PrebidMobile06BannerG0CF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerViewWillPresentModal:",
             "declAttributes": [
@@ -104636,13 +104492,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)bannerViewDidDismissModal:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC25bannerViewDidDismissModalyy12PrebidMobile06BannerG0CF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC25bannerViewDidDismissModalyy0A12PrebidMobile06BannerG0CF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerViewDidDismissModal:",
             "declAttributes": [
@@ -104669,13 +104525,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)bannerViewWillLeaveApplication:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC30bannerViewWillLeaveApplicationyy12PrebidMobile06BannerG0CF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC30bannerViewWillLeaveApplicationyy0A12PrebidMobile06BannerG0CF",
             "moduleName": "GenuinCore",
             "objc_name": "bannerViewWillLeaveApplication:",
             "declAttributes": [
@@ -104702,13 +104558,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)videoPlaybackDidPause:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC21videoPlaybackDidPauseyy12PrebidMobile10BannerViewCF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC21videoPlaybackDidPauseyy0A12PrebidMobile10BannerViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoPlaybackDidPause:",
             "declAttributes": [
@@ -104735,13 +104591,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)videoPlaybackDidResume:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC22videoPlaybackDidResumeyy12PrebidMobile10BannerViewCF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC22videoPlaybackDidResumeyy0A12PrebidMobile10BannerViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoPlaybackDidResume:",
             "declAttributes": [
@@ -104768,13 +104624,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)videoPlaybackWasMuted:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC21videoPlaybackWasMutedyy12PrebidMobile10BannerViewCF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC21videoPlaybackWasMutedyy0A12PrebidMobile10BannerViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoPlaybackWasMuted:",
             "declAttributes": [
@@ -104801,13 +104657,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)videoPlaybackWasUnmuted:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC23videoPlaybackWasUnmutedyy12PrebidMobile10BannerViewCF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC23videoPlaybackWasUnmutedyy0A12PrebidMobile10BannerViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoPlaybackWasUnmuted:",
             "declAttributes": [
@@ -104834,13 +104690,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BannerView",
-                "printedName": "PrebidMobile.BannerView",
-                "usr": "c:@M@PrebidMobile@objc(cs)BannerView"
+                "printedName": "GenuinPrebidMobile.BannerView",
+                "usr": "c:@M@GenuinPrebidMobile@objc(cs)BannerView"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@GenuinCore@objc(cs)BGPrebidVideoSlot(im)videoPlaybackDidComplete:",
-            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC24videoPlaybackDidCompleteyy12PrebidMobile10BannerViewCF",
+            "mangledName": "$s10GenuinCore17BGPrebidVideoSlotC24videoPlaybackDidCompleteyy0A12PrebidMobile10BannerViewCF",
             "moduleName": "GenuinCore",
             "objc_name": "videoPlaybackDidComplete:",
             "declAttributes": [
@@ -104891,15 +104747,15 @@
             "kind": "Conformance",
             "name": "BannerViewVideoPlaybackDelegate",
             "printedName": "BannerViewVideoPlaybackDelegate",
-            "usr": "c:@M@PrebidMobile@objc(pl)PBMBannerViewVideoPlaybackDelegate",
-            "mangledName": "$s12PrebidMobile31BannerViewVideoPlaybackDelegateP"
+            "usr": "c:@M@GenuinPrebidMobile@objc(pl)GenuinPBMBannerViewVideoPlaybackDelegate",
+            "mangledName": "$s18GenuinPrebidMobile31BannerViewVideoPlaybackDelegateP"
           },
           {
             "kind": "Conformance",
             "name": "BannerViewDelegate",
             "printedName": "BannerViewDelegate",
-            "usr": "c:@M@PrebidMobile@objc(pl)BannerViewDelegate",
-            "mangledName": "$s12PrebidMobile18BannerViewDelegateP"
+            "usr": "c:@M@GenuinPrebidMobile@objc(pl)BannerViewDelegate",
+            "mangledName": "$s18GenuinPrebidMobile18BannerViewDelegateP"
           },
           {
             "kind": "Conformance",
@@ -189467,17 +189323,79 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "GoogleMobileAds",
-        "printedName": "GoogleMobileAds",
-        "declKind": "Import",
-        "moduleName": "GenuinCore"
-      },
-      {
         "kind": "TypeDecl",
         "name": "GenuinNativeAdView",
         "printedName": "GenuinNativeAdView",
         "children": [
+          {
+            "kind": "Var",
+            "name": "nativeAd",
+            "printedName": "nativeAd",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ObjectiveC.NSObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10GenuinCore0A12NativeAdViewC06nativeD0So8NSObjectCSgvp",
+            "mangledName": "$s10GenuinCore0A12NativeAdViewC06nativeD0So8NSObjectCSgvp",
+            "moduleName": "GenuinCore",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "GenuinInternal"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ObjectiveC.NSObject?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSObject",
+                        "printedName": "ObjectiveC.NSObject",
+                        "usr": "c:objc(cs)NSObject"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10GenuinCore0A12NativeAdViewC06nativeD0So8NSObjectCSgvg",
+                "mangledName": "$s10GenuinCore0A12NativeAdViewC06nativeD0So8NSObjectCSgvg",
+                "moduleName": "GenuinCore",
+                "declAttributes": [
+                  "Final"
+                ],
+                "spi_group_names": [
+                  "GenuinInternal"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -189573,9 +189491,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NativeAd",
-                "printedName": "GoogleMobileAds.NativeAd",
-                "usr": "c:objc(cs)GADNativeAd"
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
               },
               {
                 "kind": "TypeNominal",
@@ -189592,13 +189510,40 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10GenuinCore0A12NativeAdViewC8populate_9container12isFullScreenySo09GADNativeD0C_So6UIViewCSbtF",
-            "mangledName": "$s10GenuinCore0A12NativeAdViewC8populate_9container12isFullScreenySo09GADNativeD0C_So6UIViewCSbtF",
+            "usr": "s:10GenuinCore0A12NativeAdViewC8populate_9container12isFullScreenySo8NSObjectC_So6UIViewCSbtF",
+            "mangledName": "$s10GenuinCore0A12NativeAdViewC8populate_9container12isFullScreenySo8NSObjectC_So6UIViewCSbtF",
             "moduleName": "GenuinCore",
             "declAttributes": [
               "Final",
               "Preconcurrency",
               "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "GenuinInternal"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearNativeAd",
+            "printedName": "clearNativeAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10GenuinCore0A12NativeAdViewC05clearcD0yyF",
+            "mangledName": "$s10GenuinCore0A12NativeAdViewC05clearcD0yyF",
+            "moduleName": "GenuinCore",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
               "AccessControl",
               "RawDocComment"
             ],
@@ -189734,10 +189679,9 @@
         "spi_group_names": [
           "GenuinInternal"
         ],
-        "superclassUsr": "c:objc(cs)GADNativeAdView",
+        "superclassUsr": "c:objc(cs)UIView",
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "GoogleMobileAds.NativeAdView",
           "UIKit.UIView",
           "UIKit.UIResponder",
           "ObjectiveC.NSObject"
@@ -388909,6 +388853,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -397696,226 +397647,233 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "Array",
-      "offset": 9441,
+      "offset": 9417,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9550,
+      "offset": 9526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9643,
+      "offset": 9619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9751,
+      "offset": 9727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "Array",
-      "offset": 9996,
+      "offset": 9972,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10150,
+      "offset": 10126,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10259,
+      "offset": 10235,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "Array",
-      "offset": 10385,
+      "offset": 10361,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "Dictionary",
-      "offset": 10942,
+      "offset": 10918,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "Array",
-      "offset": 11070,
+      "offset": 11046,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11166,
+      "offset": 11142,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11195,
+      "offset": 11171,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11298,
+      "offset": 11274,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "Array",
-      "offset": 11436,
+      "offset": 11412,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11614,
+      "offset": 11590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11937,
+      "offset": 11913,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12150,
+      "offset": 12126,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12491,
+      "offset": 12467,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12604,
+      "offset": 12580,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12871,
+      "offset": 12847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "StringLiteral",
-      "offset": 12988,
+      "offset": 12964,
       "length": 6,
       "value": "\"mute\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "StringLiteral",
-      "offset": 13010,
+      "offset": 12986,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "StringLiteral",
-      "offset": 13018,
+      "offset": 12994,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13024,
+      "offset": 13000,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13028,
+      "offset": 13004,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13089,
+      "offset": 13065,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13150,
+      "offset": 13126,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13433,
+      "offset": 13409,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14733,
+      "offset": 14658,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 14945,
+      "offset": 14870,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18248,
+      "offset": 18173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 45344,
+      "offset": 44178,
       "length": 3,
       "value": "140"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGAdsManager.swift",
+      "kind": "Array",
+      "offset": 46841,
+      "length": 165,
+      "value": "[\"GADBannerViewDelegate\", \"GADAdLoaderDelegate\", \"GADNativeAdLoaderDelegate\", \"GADNativeAdDelegate\", \"GADVideoControllerDelegate\"]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Models\/BGAdsModel.swift",
@@ -398863,6 +398821,342 @@
       "value": "\"0000\""
     },
     {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 2540,
+      "length": 14,
+      "value": "\"loadRequest:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 2625,
+      "length": 26,
+      "value": "\"registerAdNetworkExtras:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 2720,
+      "length": 54,
+      "value": "\"initWithAdUnitID:rootViewController:adTypes:options:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2990,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3024,
+      "length": 12,
+      "value": "\"display_ad\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3053,
+      "length": 28,
+      "value": "\"GAMBannerView loadRequest:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3147,
+      "length": 22,
+      "value": "\"GAMBannerView adSize\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3220,
+      "length": 12,
+      "value": "\"setAdSize:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3250,
+      "length": 28,
+      "value": "\"GAMBannerView validAdSizes\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3329,
+      "length": 18,
+      "value": "\"setValidAdSizes:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3365,
+      "length": 24,
+      "value": "\"GAMBannerView delegate\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3440,
+      "length": 14,
+      "value": "\"setDelegate:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3472,
+      "length": 36,
+      "value": "\"GADAdSize layout \""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3507,
+      "length": 29,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3535,
+      "length": 8,
+      "value": "\"adSize\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3574,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 3594,
+      "length": 37,
+      "value": "\"GAMRequest registerAdNetworkExtras:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3993,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4027,
+      "length": 11,
+      "value": "\"native_ad\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4055,
+      "length": 34,
+      "value": "\"GADAdLoader initWithAdUnitID:…\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4167,
+      "length": 26,
+      "value": "\"GADAdLoader loadRequest:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4270,
+      "length": 26,
+      "value": "\"GADNativeAdView nativeAd\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4353,
+      "length": 14,
+      "value": "\"setNativeAd:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4385,
+      "length": 27,
+      "value": "\"GADMediaView mediaContent\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4466,
+      "length": 18,
+      "value": "\"setMediaContent:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 4502,
+      "length": 37,
+      "value": "\"GAMRequest registerAdNetworkExtras:\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 5618,
+      "length": 26,
+      "value": "\"{GADAdSize={CGSize=dd}Q}\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5703,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5716,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5728,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5793,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5806,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5819,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5888,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5901,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5914,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5978,
+      "length": 3,
+      "value": "468"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5991,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6003,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6068,
+      "length": 3,
+      "value": "728"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6081,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6093,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6152,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "StringLiteral",
+      "offset": 6881,
+      "length": 3,
+      "value": "\"6\""
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6969,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6984,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6998,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/BGGMARuntime.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7010,
+      "length": 1,
+      "value": "4"
+    },
+    {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Libraries\/BGMentionsTextView.swift",
       "kind": "IntegerLiteral",
       "offset": 201,
@@ -399124,126 +399418,126 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 2384,
+      "offset": 2396,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "IntegerLiteral",
-      "offset": 2895,
+      "offset": 2907,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "Array",
-      "offset": 3000,
+      "offset": 3012,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6113,
+      "offset": 6131,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6160,
+      "offset": 6178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6195,
+      "offset": 6213,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6227,
+      "offset": 6245,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6358,
+      "offset": 6376,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6401,
+      "offset": 6419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "Array",
-      "offset": 6456,
+      "offset": 6474,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6697,
+      "offset": 6715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6733,
+      "offset": 6751,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 7034,
+      "offset": 7052,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 6963,
+      "offset": 6981,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 7275,
+      "offset": 7293,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 7310,
+      "offset": 7328,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "StringLiteral",
-      "offset": 7424,
+      "offset": 7442,
       "length": 32,
       "value": "\"ad expired before it was shown\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Others\/Prebid\/BGPrebidVideoSlot.swift",
       "kind": "BooleanLiteral",
-      "offset": 7557,
+      "offset": 7575,
       "length": 5,
       "value": "false"
     },
@@ -405333,21 +405627,7 @@
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 852,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 911,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/CustomViews\/GenuinNativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3026,
+      "offset": 4141,
       "length": 5,
       "value": "false"
     },
@@ -406616,7 +406896,7 @@
       "kind": "StringLiteral",
       "offset": 10415,
       "length": 8,
-      "value": "\"2.1.10\""
+      "value": "\"2.1.11\""
     },
     {
       "filePath": "\/Users\/ashishkakkad\/Documents\/AshishKakkad\/Projects\/genuin_ios_sdk_codebase\/GenuinCore\/Classes\/Constants\/KeyConstants.swift",

@@ -20,8 +20,8 @@ import Dispatch
 import EasyTipView
 import Foundation
 @_exported import GenuinCore
+import GenuinPrebidMobile
 import GoogleInteractiveMediaAds
-import GoogleMobileAds
 import Hero
 import Lottie
 import MaterialComponents.MaterialActivityIndicator
@@ -29,8 +29,8 @@ import MaterialComponents
 import MessageUI
 import MobileCoreServices
 import Network
+import ObjectiveC
 import Photos
-import PrebidMobile
 import QuartzCore
 import RegexBuilder
 import Rudder
@@ -850,22 +850,16 @@ extension BaseView {
   @_spi(GenuinInternal) final public func bgAdWaterfallLoadDisplayAd(tagId: Swift.String) -> Swift.Bool
   @_spi(GenuinInternal) final public func bgAdWaterfallLoadNativeAd(tagId: Swift.String) -> Swift.Bool
 }
-@_spi(GenuinInternal) extension BGAdsManager : GoogleMobileAds.BannerViewDelegate {
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidReceiveAd(_ bannerView: GoogleMobileAds.BannerView)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerView(_ bannerView: GoogleMobileAds.BannerView, didFailToReceiveAdWithError error: any Swift.Error)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidRecordClick(_ bannerView: GoogleMobileAds.BannerView)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidRecordImpression(_ bannerView: GoogleMobileAds.BannerView)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewWillPresentScreen(_ bannerView: GoogleMobileAds.BannerView)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewWillDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func bannerViewDidDismissScreen(_ bannerView: GoogleMobileAds.BannerView)
-}
-@_spi(GenuinInternal) extension BGAdsManager : GoogleMobileAds.AdLoaderDelegate, GoogleMobileAds.NativeAdLoaderDelegate, GoogleMobileAds.VideoControllerDelegate, GoogleMobileAds.NativeAdDelegate {
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func nativeAdDidRecordImpression(_ nativeAd: GoogleMobileAds.NativeAd)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didReceive nativeAd: GoogleMobileAds.NativeAd)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func adLoader(_ adLoader: GoogleMobileAds.AdLoader, didFailToReceiveAdWithError error: any Swift.Error)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func videoControllerDidEndVideoPlayback(_ videoController: GoogleMobileAds.VideoController)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func videoControllerDidPlayVideo(_ videoController: GoogleMobileAds.VideoController)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc final public func videoControllerDidPauseVideo(_ videoController: GoogleMobileAds.VideoController)
+@_spi(GenuinInternal) extension BGAdsManager {
+  @_spi(GenuinInternal) @objc(bannerViewDidReceiveAd:) final public func bannerViewDidReceiveAd(_ bannerView: UIKit.UIView)
+  @_spi(GenuinInternal) @objc(bannerView:didFailToReceiveAdWithError:) final public func bannerView(_ bannerView: UIKit.UIView, didFailToReceiveAdWithError error: any Swift.Error)
+  @_spi(GenuinInternal) @objc(bannerViewDidRecordImpression:) final public func bannerViewDidRecordImpression(_ bannerView: UIKit.UIView)
+  @_spi(GenuinInternal) @objc(nativeAdDidRecordImpression:) final public func nativeAdDidRecordImpression(_ nativeAd: ObjectiveC.NSObject)
+  @_spi(GenuinInternal) @objc(adLoader:didReceiveNativeAd:) final public func adLoader(_ adLoader: ObjectiveC.NSObject, didReceive nativeAd: ObjectiveC.NSObject)
+  @_spi(GenuinInternal) @objc(adLoader:didFailToReceiveAdWithError:) final public func adLoader(_ adLoader: ObjectiveC.NSObject, didFailToReceiveAdWithError error: any Swift.Error)
+  @_spi(GenuinInternal) @objc(videoControllerDidEndVideoPlayback:) final public func videoControllerDidEndVideoPlayback(_ videoController: ObjectiveC.NSObject)
+  @_spi(GenuinInternal) @objc(videoControllerDidPlayVideo:) final public func videoControllerDidPlayVideo(_ videoController: ObjectiveC.NSObject)
+  @_spi(GenuinInternal) @objc(videoControllerDidPauseVideo:) final public func videoControllerDidPauseVideo(_ videoController: ObjectiveC.NSObject)
 }
 @_spi(GenuinInternal) extension BGAdsManager : BGPrebidVideoSlotDelegate {
   @_spi(GenuinInternal) final public var prebidVideoSlotPresentingViewController: UIKit.UIViewController? {
@@ -2159,21 +2153,21 @@ public class VideoDetails {
     @_spi(GenuinInternal) get
   }
 }
-@_spi(GenuinInternal) extension BGPrebidVideoSlot : PrebidMobile.BannerViewDelegate {
+@_spi(GenuinInternal) extension BGPrebidVideoSlot : GenuinPrebidMobile.BannerViewDelegate {
   @_spi(GenuinInternal) @objc final public func bannerViewPresentationController() -> UIKit.UIViewController?
-  @_spi(GenuinInternal) @objc final public func bannerView(_ bannerView: PrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
-  @_spi(GenuinInternal) @objc final public func bannerView(_ bannerView: PrebidMobile.BannerView, didFailToReceiveAdWith error: any Swift.Error)
-  @_spi(GenuinInternal) @objc final public func bannerViewDidExpire(_ bannerView: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func bannerViewWillPresentModal(_ bannerView: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func bannerViewDidDismissModal(_ bannerView: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func bannerViewWillLeaveApplication(_ bannerView: PrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func bannerView(_ bannerView: GenuinPrebidMobile.BannerView, didReceiveAdWithAdSize adSize: CoreFoundation.CGSize)
+  @_spi(GenuinInternal) @objc final public func bannerView(_ bannerView: GenuinPrebidMobile.BannerView, didFailToReceiveAdWith error: any Swift.Error)
+  @_spi(GenuinInternal) @objc final public func bannerViewDidExpire(_ bannerView: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func bannerViewWillPresentModal(_ bannerView: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func bannerViewDidDismissModal(_ bannerView: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func bannerViewWillLeaveApplication(_ bannerView: GenuinPrebidMobile.BannerView)
 }
-@_spi(GenuinInternal) extension BGPrebidVideoSlot : PrebidMobile.BannerViewVideoPlaybackDelegate {
-  @_spi(GenuinInternal) @objc final public func videoPlaybackDidPause(_ banner: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func videoPlaybackDidResume(_ banner: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func videoPlaybackWasMuted(_ banner: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func videoPlaybackWasUnmuted(_ banner: PrebidMobile.BannerView)
-  @_spi(GenuinInternal) @objc final public func videoPlaybackDidComplete(_ banner: PrebidMobile.BannerView)
+@_spi(GenuinInternal) extension BGPrebidVideoSlot : GenuinPrebidMobile.BannerViewVideoPlaybackDelegate {
+  @_spi(GenuinInternal) @objc final public func videoPlaybackDidPause(_ banner: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func videoPlaybackDidResume(_ banner: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func videoPlaybackWasMuted(_ banner: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func videoPlaybackWasUnmuted(_ banner: GenuinPrebidMobile.BannerView)
+  @_spi(GenuinInternal) @objc final public func videoPlaybackDidComplete(_ banner: GenuinPrebidMobile.BannerView)
 }
 public enum SchedulerIntervalType : Swift.Int {
   case daily
@@ -4900,10 +4894,14 @@ extension UIKit.UILabel {
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_spi(GenuinInternal) @objc deinit
 }
-@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class GenuinNativeAdView : GoogleMobileAds.NativeAdView {
+@_spi(GenuinInternal) @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class GenuinNativeAdView : UIKit.UIView {
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public var nativeAd: ObjectiveC.NSObject? {
+    @_spi(GenuinInternal) get
+  }
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func populate(_ ad: GoogleMobileAds.NativeAd, container: UIKit.UIView, isFullScreen: Swift.Bool = false)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func populate(_ ad: ObjectiveC.NSObject, container: UIKit.UIView, isFullScreen: Swift.Bool = false)
+  @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func clearNativeAd()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func showAdPill()
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func startCountdown(duration: Foundation.TimeInterval)
   @_spi(GenuinInternal) @_Concurrency.MainActor @preconcurrency final public func stopCountdown()

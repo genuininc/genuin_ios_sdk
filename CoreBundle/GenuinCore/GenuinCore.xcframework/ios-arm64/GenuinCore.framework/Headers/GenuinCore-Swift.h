@@ -349,10 +349,9 @@ extern "C" {
 @import CoreFoundation;
 @import CoreLocation;
 @import Foundation;
+@import GenuinPrebidMobile;
 @import GoogleInteractiveMediaAds;
-@import GoogleMobileAds;
 @import ObjectiveC;
-@import PrebidMobile;
 @import SafariServices;
 @import TOCropViewController;
 @import UIKit;
@@ -574,27 +573,16 @@ SWIFT_CLASS("_TtC10GenuinCore12BGAdsManager")
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
 @end
 
-@class GADNativeAd;
-@class GADAdLoader;
-@class GADVideoController;
-@interface BGAdsManager (SWIFT_EXTENSION(GenuinCore)) <GADNativeAdDelegate, GADNativeAdLoaderDelegate, GADVideoControllerDelegate>
-- (void)nativeAdDidRecordImpression:(GADNativeAd * _Nonnull)nativeAd;
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didReceiveNativeAd:(GADNativeAd * _Nonnull)nativeAd;
-- (void)adLoader:(GADAdLoader * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-- (void)videoControllerDidEndVideoPlayback:(GADVideoController * _Nonnull)videoController;
-- (void)videoControllerDidPlayVideo:(GADVideoController * _Nonnull)videoController;
-- (void)videoControllerDidPauseVideo:(GADVideoController * _Nonnull)videoController;
-@end
-
-@class GADBannerView;
-@interface BGAdsManager (SWIFT_EXTENSION(GenuinCore)) <GADBannerViewDelegate>
-- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerView:(GADBannerView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
-- (void)bannerViewDidRecordClick:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidRecordImpression:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewWillPresentScreen:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewWillDismissScreen:(GADBannerView * _Nonnull)bannerView;
-- (void)bannerViewDidDismissScreen:(GADBannerView * _Nonnull)bannerView;
+@interface BGAdsManager (SWIFT_EXTENSION(GenuinCore))
+- (void)bannerViewDidReceiveAd:(UIView * _Nonnull)bannerView;
+- (void)bannerView:(UIView * _Nonnull)bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)bannerViewDidRecordImpression:(UIView * _Nonnull)bannerView;
+- (void)nativeAdDidRecordImpression:(NSObject * _Nonnull)nativeAd;
+- (void)adLoader:(NSObject * _Nonnull)adLoader didReceiveNativeAd:(NSObject * _Nonnull)nativeAd;
+- (void)adLoader:(NSObject * _Nonnull)adLoader didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+- (void)videoControllerDidEndVideoPlayback:(NSObject * _Nonnull)videoController;
+- (void)videoControllerDidPlayVideo:(NSObject * _Nonnull)videoController;
+- (void)videoControllerDidPauseVideo:(NSObject * _Nonnull)videoController;
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore10BGAdsModel")
@@ -858,7 +846,7 @@ SWIFT_CLASS("_TtC10GenuinCore17BGPrebidVideoSlot")
 @end
 
 @class BannerView;
-@interface BGPrebidVideoSlot (SWIFT_EXTENSION(GenuinCore)) <PBMBannerViewVideoPlaybackDelegate>
+@interface BGPrebidVideoSlot (SWIFT_EXTENSION(GenuinCore)) <GenuinPBMBannerViewVideoPlaybackDelegate>
 - (void)videoPlaybackDidPause:(BannerView * _Nonnull)banner;
 - (void)videoPlaybackDidResume:(BannerView * _Nonnull)banner;
 - (void)videoPlaybackWasMuted:(BannerView * _Nonnull)banner;
@@ -1329,7 +1317,7 @@ SWIFT_CLASS("_TtC10GenuinCore22GenuinNativeAdCardView")
 @end
 
 SWIFT_CLASS("_TtC10GenuinCore18GenuinNativeAdView")
-@interface GenuinNativeAdView : GADNativeAdView
+@interface GenuinNativeAdView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

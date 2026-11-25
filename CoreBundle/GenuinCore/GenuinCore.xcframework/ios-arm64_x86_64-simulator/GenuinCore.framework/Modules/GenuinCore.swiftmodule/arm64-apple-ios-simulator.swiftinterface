@@ -20,8 +20,8 @@ import Dispatch
 import EasyTipView
 import Foundation
 @_exported import GenuinCore
+import GenuinPrebidMobile
 import GoogleInteractiveMediaAds
-import GoogleMobileAds
 import Hero
 import Lottie
 import MaterialComponents.MaterialActivityIndicator
@@ -29,8 +29,8 @@ import MaterialComponents
 import MessageUI
 import MobileCoreServices
 import Network
+import ObjectiveC
 import Photos
-import PrebidMobile
 import QuartzCore
 import RegexBuilder
 import Rudder
